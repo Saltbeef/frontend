@@ -1086,5 +1086,37 @@
   "Funda-7088197": {
     "preference": "up",
     "timestamp": "2024-12-03T19:38:18.846Z"
+  },
+  "Funda-7194271": {
+    "preference": "down",
+    "timestamp": "2024-12-03T10:08:04.202Z"
+  },
+  "Funda-7194940": {
+    "preference": "down",
+    "timestamp": "2024-12-10T11:56:00.709Z"
+  },
+  "Funda-7178286": {
+    "preference": "down",
+    "timestamp": "2024-12-10T11:56:08.179Z"
+  },
+  "Funda-7086820": {
+    "preference": "down",
+    "timestamp": "2024-12-10T11:57:56.301Z"
+  },
+  "Funda-7198738": {
+    "preference": "down",
+    "timestamp": "2024-12-10T11:59:27.980Z"
+  },
+  "Funda-6842453": {
+    "preference": "down",
+    "timestamp": "2024-12-10T11:59:35.326Z"
+  },
+  "Funda-6882185": {
+    "preference": "down",
+    "timestamp": "2024-12-10T11:59:49.295Z"
+  },
+  "Funda-6842204": {
+    "preference": "down",
+    "timestamp": "2024-12-10T11:59:57.037Z"
   }
 }
