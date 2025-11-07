@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - {{ house_id }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> {{ house_id }}<br>
+                <strong>Analyzed:</strong> {{ analyzed_at }}<br>
+                <strong>Rules Version:</strong> {{ rules_version }}
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">{{ overall_score }}/10</div>
+            <div class="recommendation {{ recommendation_class }}">
+                {{ investment_recommendation }}
+            </div>
+        </div>
+
+        {% if overall_assessment %}
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>{{ overall_assessment }}</p>
+        </div>
+        {% endif %}
+
+        {% if top_strengths %}
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                {% for strength in top_strengths %}
+                <li>{{ strength }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if top_concerns %}
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                {% for concern in top_concerns %}
+                <li>{{ concern }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            {% for category_name, category_data in category_scores.items() %}
+            <div class="category">
+                <h2>
+                    <span>{{ category_name|title }}</span>
+                    <span class="category-score">{{ category_data.score }}/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    {{ category_data.reasoning }}
+                </div>
+
+                {% if category_data.red_flags %}
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                    {% for flag in category_data.red_flags %}
+                    <div class="flag-item">{{ flag }}</div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                {% if category_data.recommendations %}
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                    {% for rec in category_data.recommendations %}
+                    <div class="rec-item">{{ rec }}</div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="footer">
+            <p>This report was generated automatically using AI analysis.</p>
+            <p>Always conduct your own due diligence before making investment decisions.</p>
+            {% if metadata %}
+            <p style="margin-top: 10px;">
+                Generated using {{ metadata.llm_model }} in {{ metadata.processing_time_seconds }}s
+            </p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
