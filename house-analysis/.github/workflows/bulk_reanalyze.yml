@@ -1,0 +1,138 @@
+name: Bulk Re-analyze Houses
+
+on:
+  workflow_dispatch:
+    inputs:
+      apify_dataset_id:
+        description: 'Apify dataset ID containing houses'
+        required: true
+        type: string
+      rules_version:
+        description: 'New rules version to apply'
+        required: true
+        type: string
+      house_ids:
+        description: 'Comma-separated house IDs (leave empty for all)'
+        required: false
+        type: string
+      llm_provider:
+        description: 'LLM provider to use'
+        required: false
+        default: 'claude'
+        type: choice
+        options:
+          - mock
+          - claude
+          - openai
+      max_concurrent:
+        description: 'Maximum concurrent analyses'
+        required: false
+        default: '5'
+        type: string
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      house_list: ${{ steps.get_houses.outputs.houses }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Get house list
+        id: get_houses
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        run: |
+          cd house-analysis
+          python -c "
+          import json
+          import sys
+          from pathlib import Path
+          from src.apify_client import ApifyClient
+
+          # Get houses to analyze
+          if '${{ inputs.house_ids }}'.strip():
+              # Use provided list
+              houses = [h.strip() for h in '${{ inputs.house_ids }}'.split(',')]
+          else:
+              # Get all houses from existing analyses
+              houses_dir = Path('houses')
+              if houses_dir.exists():
+                  houses = [d.name for d in houses_dir.iterdir() if d.is_dir()]
+              else:
+                  houses = []
+
+          if not houses:
+              print('No houses to analyze')
+              sys.exit(1)
+
+          # Output as JSON array
+          houses_json = json.dumps(houses)
+          print(f'Houses to analyze: {houses_json}')
+
+          # GitHub Actions output
+          with open('$GITHUB_OUTPUT', 'a') as f:
+              f.write(f'houses={houses_json}\n')
+          "
+
+  analyze:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    strategy:
+      max-parallel: ${{ fromJSON(inputs.max_concurrent) }}
+      fail-fast: false
+      matrix:
+        house_id: ${{ fromJSON(needs.prepare.outputs.house_list) }}
+
+    steps:
+      - name: Trigger single analysis
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'analyze_house.yml',
+              ref: context.ref,
+              inputs: {
+                house_id: '${{ matrix.house_id }}',
+                apify_dataset_id: '${{ inputs.apify_dataset_id }}',
+                rules_version: '${{ inputs.rules_version }}',
+                llm_provider: '${{ inputs.llm_provider }}'
+              }
+            });
+
+            console.log('Triggered analysis for house: ${{ matrix.house_id }}');
+
+      - name: Wait for completion
+        run: |
+          echo "Analysis triggered for ${{ matrix.house_id }}"
+          echo "Check individual workflow runs for details"
+
+  summary:
+    needs: analyze
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate summary
+        run: |
+          echo "# Bulk Re-analysis Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Rules Version:** ${{ inputs.rules_version }}" >> $GITHUB_STEP_SUMMARY
+          echo "**LLM Provider:** ${{ inputs.llm_provider }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Check individual workflow runs for detailed results." >> $GITHUB_STEP_SUMMARY

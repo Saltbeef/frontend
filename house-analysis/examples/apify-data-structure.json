@@ -1,0 +1,190 @@
+{
+  "description": "Example Apify dataset structure for house listings",
+  "notes": [
+    "Adjust the apify_client.py get_house_data() method to match your actual field names",
+    "The service looks for an 'id' or 'house_id' field to identify houses",
+    "All other fields are passed to the LLM for analysis"
+  ],
+
+  "example_house_record": {
+    "id": "listing_12345",
+    "url": "https://example.com/listing/12345",
+    "scraped_at": "2025-01-07T14:30:00Z",
+
+    "basic_info": {
+      "title": "Beautiful Canal View Apartment in City Center",
+      "description": "Luxurious 2-bedroom apartment with stunning canal views. Perfect for short-stay rentals. Recently renovated with modern amenities. Located in the heart of Amsterdam's historic center.",
+      "property_type": "Apartment",
+      "listing_type": "Entire place"
+    },
+
+    "location": {
+      "address": "Prinsengracht 123",
+      "city": "Amsterdam",
+      "postal_code": "1015 DD",
+      "country": "Netherlands",
+      "neighborhood": "Jordaan",
+      "coordinates": {
+        "lat": 52.3738,
+        "lng": 4.8832
+      },
+      "nearby_attractions": [
+        "Anne Frank House (5 min walk)",
+        "Dam Square (10 min walk)",
+        "Central Station (15 min walk)"
+      ],
+      "transport": {
+        "nearest_tram": "Tram 13, 17 - 2 min walk",
+        "nearest_metro": "Metro 52 - 10 min walk",
+        "airport_distance_km": 18
+      }
+    },
+
+    "property_details": {
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "max_guests": 4,
+      "beds": 2,
+      "square_meters": 75,
+      "floor": 2,
+      "total_floors": 4,
+      "has_elevator": false,
+      "year_built": 1890,
+      "last_renovated": 2023
+    },
+
+    "amenities": {
+      "essentials": ["WiFi", "Kitchen", "Heating", "Hot water"],
+      "features": [
+        "Washer",
+        "Dryer",
+        "Dishwasher",
+        "Coffee maker",
+        "Hair dryer",
+        "Iron"
+      ],
+      "entertainment": ["TV", "Netflix", "Bluetooth speaker"],
+      "workspace": ["Dedicated workspace", "High-speed internet"],
+      "outdoor": ["Canal view", "Balcony"],
+      "safety": ["Smoke alarm", "Carbon monoxide alarm", "First aid kit"],
+      "parking": "Paid street parking nearby",
+      "accessibility": []
+    },
+
+    "pricing": {
+      "currency": "EUR",
+      "base_price_per_night": 150,
+      "weekend_price_per_night": 180,
+      "weekly_discount_percent": 10,
+      "monthly_discount_percent": 20,
+      "cleaning_fee": 50,
+      "security_deposit": 200,
+      "extra_guest_fee": 20,
+      "minimum_stay_nights": 2,
+      "maximum_stay_nights": 30
+    },
+
+    "availability": {
+      "instant_book": true,
+      "minimum_advance_booking_days": 1,
+      "booking_lead_time": "Flexible",
+      "cancellation_policy": "Moderate",
+      "occupied_next_30_days": 18,
+      "occupied_next_90_days": 45
+    },
+
+    "host_info": {
+      "host_id": "host_789",
+      "host_name": "Jan",
+      "host_since": "2018-03-15",
+      "response_rate": 98,
+      "response_time": "within an hour",
+      "is_superhost": true,
+      "total_listings": 3,
+      "verified": true,
+      "languages": ["English", "Dutch", "German"]
+    },
+
+    "ratings": {
+      "overall_rating": 4.8,
+      "number_of_reviews": 127,
+      "rating_breakdown": {
+        "cleanliness": 4.9,
+        "accuracy": 4.8,
+        "communication": 4.9,
+        "location": 4.9,
+        "check_in": 4.8,
+        "value": 4.6
+      }
+    },
+
+    "reviews_summary": {
+      "recent_reviews": [
+        {
+          "date": "2025-01-01",
+          "rating": 5,
+          "comment": "Perfect location, beautifully renovated apartment with amazing canal views!"
+        },
+        {
+          "date": "2024-12-20",
+          "rating": 5,
+          "comment": "Great host, very responsive. Apartment is exactly as described."
+        }
+      ],
+      "common_positive_keywords": ["location", "clean", "comfortable", "view", "responsive"],
+      "common_negative_keywords": ["stairs", "noise"]
+    },
+
+    "photos": {
+      "main_photo": "https://example.com/photo1.jpg",
+      "photo_urls": [
+        "https://example.com/photo1.jpg",
+        "https://example.com/photo2.jpg",
+        "https://example.com/photo3.jpg"
+      ],
+      "photo_count": 25
+    },
+
+    "legal_compliance": {
+      "registration_number": "0363A12345678",
+      "license_verified": true,
+      "max_nights_per_year": 60,
+      "tourist_tax_included": true,
+      "business_license": true
+    },
+
+    "competition_analysis": {
+      "similar_listings_in_area": 45,
+      "average_price_in_area": 145,
+      "price_position": "Above average",
+      "occupancy_rate_area_avg": 0.65
+    },
+
+    "calculated_metrics": {
+      "estimated_monthly_revenue": 3200,
+      "estimated_annual_revenue": 35000,
+      "estimated_occupancy_rate": 0.70,
+      "revenue_per_available_night": 105,
+      "estimated_cleaning_frequency": 15
+    },
+
+    "red_flags": [],
+    "notes": "Recently renovated, high demand area, experienced host"
+  },
+
+  "minimal_required_fields": {
+    "id": "listing_12345",
+    "title": "House title",
+    "address": "Full address",
+    "price_per_night": 150,
+    "bedrooms": 2,
+    "description": "Property description"
+  },
+
+  "field_mapping_notes": {
+    "note_1": "If your Apify data has different field names, update get_house_data() in apify_client.py",
+    "note_2": "The LLM receives the entire house_data dict, so include as much detail as possible",
+    "note_3": "More data = better analysis quality",
+    "note_4": "The service is flexible and works with any JSON structure"
+  }
+}

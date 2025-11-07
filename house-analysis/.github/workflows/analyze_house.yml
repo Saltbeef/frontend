@@ -1,0 +1,243 @@
+name: Analyze House
+
+on:
+  workflow_dispatch:
+    inputs:
+      house_id:
+        description: 'Unique ID of the house to analyze'
+        required: true
+        type: string
+      apify_dataset_id:
+        description: 'Apify dataset ID containing house data'
+        required: true
+        type: string
+      rules_version:
+        description: 'Version of analysis rules to use (e.g., v1.0.0 or latest)'
+        required: false
+        default: 'latest'
+        type: string
+      llm_provider:
+        description: 'LLM provider to use (mock, claude, openai)'
+        required: false
+        default: 'claude'
+        type: choice
+        options:
+          - mock
+          - claude
+          - openai
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # No external dependencies needed - using stdlib only
+
+      - name: Fetch house data from Apify
+        id: fetch_data
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        run: |
+          cd house-analysis
+          python -c "
+          import sys
+          import json
+          from src.apify_client import ApifyClient
+
+          client = ApifyClient()
+          house_data = client.get_house_data('${{ inputs.apify_dataset_id }}', '${{ inputs.house_id }}')
+
+          if not house_data:
+              print('ERROR: House not found in dataset')
+              sys.exit(1)
+
+          # Save to file for next step
+          with open('house_data.json', 'w') as f:
+              json.dump(house_data, f, indent=2)
+
+          print('House data fetched successfully')
+          "
+
+      - name: Update Apify status - Processing
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        run: |
+          cd house-analysis
+          python -c "
+          from src.apify_client import ApifyClient
+
+          client = ApifyClient()
+          client.update_analysis_status(
+              dataset_id='${{ inputs.apify_dataset_id }}',
+              house_id='${{ inputs.house_id }}',
+              status='processing'
+          )
+          "
+
+      - name: Run analysis
+        id: analyze
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          cd house-analysis
+          python -c "
+          import json
+          from src.agent import HouseAnalysisAgent
+          from pathlib import Path
+
+          # Load house data
+          with open('house_data.json', 'r') as f:
+              house_data = json.load(f)
+
+          # Initialize agent
+          agent = HouseAnalysisAgent(
+              rules_version='${{ inputs.rules_version }}',
+              llm_provider='${{ inputs.llm_provider }}'
+          )
+
+          # Run analysis
+          analysis = agent.analyze_house(
+              house_data=house_data,
+              house_id='${{ inputs.house_id }}',
+              apify_dataset_id='${{ inputs.apify_dataset_id }}'
+          )
+
+          # Validate
+          agent.validate_analysis(analysis)
+
+          # Save analysis
+          house_dir = Path('houses') / '${{ inputs.house_id }}'
+          house_dir.mkdir(parents=True, exist_ok=True)
+
+          # Save to analyses directory with version and timestamp
+          analyses_dir = house_dir / 'analyses'
+          analyses_dir.mkdir(exist_ok=True)
+
+          timestamp = analysis['analyzed_at'].replace(':', '-').split('.')[0]
+          filename = f\"{analysis['rules_version']}_{timestamp}.json\"
+          analysis_path = analyses_dir / filename
+
+          with open(analysis_path, 'w') as f:
+              json.dump(analysis, f, indent=2)
+
+          print(f'Analysis saved to: {analysis_path}')
+
+          # Also save raw data if not exists
+          raw_dir = house_dir / 'raw'
+          raw_dir.mkdir(exist_ok=True)
+          raw_path = raw_dir / f'data_{timestamp}.json'
+
+          with open(raw_path, 'w') as f:
+              json.dump(house_data, f, indent=2)
+
+          # Save latest analysis reference
+          with open(house_dir / 'latest_analysis.json', 'w') as f:
+              json.dump({
+                  'analyzed_at': analysis['analyzed_at'],
+                  'rules_version': analysis['rules_version'],
+                  'overall_score': analysis['overall_score'],
+                  'analysis_file': str(analysis_path.relative_to(house_dir))
+              }, f, indent=2)
+
+          # Output for next steps
+          print(f'::set-output name=score::{analysis[\"overall_score\"]}')
+          print(f'::set-output name=analysis_path::{analysis_path}')
+          "
+
+      - name: Generate HTML report
+        run: |
+          cd house-analysis
+          python -c "
+          import json
+          from pathlib import Path
+          from src.report_generator import ReportGenerator
+
+          # Load latest analysis
+          house_dir = Path('houses') / '${{ inputs.house_id }}'
+          with open(house_dir / 'latest_analysis.json', 'r') as f:
+              latest = json.load(f)
+
+          analysis_file = house_dir / latest['analysis_file']
+          with open(analysis_file, 'r') as f:
+              analysis = json.load(f)
+
+          # Generate report
+          generator = ReportGenerator()
+          reports_dir = house_dir / 'reports'
+          reports_dir.mkdir(exist_ok=True)
+
+          timestamp = analysis['analyzed_at'].replace(':', '-').split('.')[0]
+          report_path = reports_dir / f\"{analysis['rules_version']}_{timestamp}.html\"
+
+          generator.save(analysis, report_path)
+          print(f'Report generated: {report_path}')
+          "
+
+      - name: Commit analysis results
+        run: |
+          git config user.name "House Analysis Bot"
+          git config user.email "bot@github-actions"
+
+          git add house-analysis/houses/${{ inputs.house_id }}/
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Analysis: ${{ inputs.house_id }} using ${{ inputs.rules_version }} (score: ${{ steps.analyze.outputs.score }})"
+            git push
+          fi
+
+      - name: Update Apify status - Completed
+        if: success()
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        run: |
+          cd house-analysis
+          python -c "
+          from src.apify_client import ApifyClient
+
+          # Generate GitHub URL to report
+          repo_url = 'https://github.com/${{ github.repository }}'
+          report_url = f\"{repo_url}/blob/${{ github.ref_name }}/house-analysis/houses/${{ inputs.house_id }}/reports/\"
+
+          client = ApifyClient()
+          client.update_analysis_status(
+              dataset_id='${{ inputs.apify_dataset_id }}',
+              house_id='${{ inputs.house_id }}',
+              status='completed',
+              score=${{ steps.analyze.outputs.score }},
+              analysis_url=report_url
+          )
+          print('Apify status updated: completed')
+          "
+
+      - name: Update Apify status - Failed
+        if: failure()
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        run: |
+          cd house-analysis
+          python -c "
+          from src.apify_client import ApifyClient
+
+          client = ApifyClient()
+          client.update_analysis_status(
+              dataset_id='${{ inputs.apify_dataset_id }}',
+              house_id='${{ inputs.house_id }}',
+              status='failed'
+          )
+          print('Apify status updated: failed')
+          "

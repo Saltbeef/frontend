@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "House Analysis Result",
+  "type": "object",
+  "required": [
+    "house_id",
+    "analyzed_at",
+    "rules_version",
+    "overall_score",
+    "category_scores"
+  ],
+  "properties": {
+    "house_id": {
+      "type": "string",
+      "description": "Unique identifier for the house"
+    },
+    "analyzed_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of analysis"
+    },
+    "rules_version": {
+      "type": "string",
+      "pattern": "^v\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of rules used"
+    },
+    "overall_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10,
+      "description": "Weighted overall score"
+    },
+    "category_scores": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z_]+$": {
+          "type": "object",
+          "required": ["score", "reasoning"],
+          "properties": {
+            "score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10
+            },
+            "reasoning": {
+              "type": "string",
+              "minLength": 10
+            },
+            "red_flags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "recommendations": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "overall_assessment": {
+      "type": "string",
+      "description": "Summary of investment opportunity"
+    },
+    "top_strengths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 5
+    },
+    "top_concerns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 5
+    },
+    "investment_recommendation": {
+      "type": "string",
+      "description": "Overall recommendation (BUY, CONSIDER, PASS)"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "processing_time_seconds": {
+          "type": "number"
+        },
+        "llm_model": {
+          "type": "string"
+        },
+        "apify_dataset_id": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

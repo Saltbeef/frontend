@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis - SPA Integration Example</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .house-card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .house-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .house-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #1e293b;
+        }
+
+        .house-details {
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+
+        .analysis-section {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-primary:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .status-pending { background: #f1f5f9; color: #64748b; }
+        .status-processing { background: #fef3c7; color: #92400e; }
+        .status-completed { background: #dcfce7; color: #166534; }
+        .status-failed { background: #fee2e2; color: #991b1b; }
+
+        .score-display {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2563eb;
+            margin: 10px 0;
+        }
+
+        .config-section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #475569;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+
+        .alert {
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+
+        .alert-info { background: #dbeafe; color: #1e40af; }
+        .alert-success { background: #dcfce7; color: #166534; }
+        .alert-error { background: #fee2e2; color: #991b1b; }
+
+        .log {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+
+        .log-entry {
+            margin: 5px 0;
+        }
+
+        .log-timestamp {
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+    <h1>🏠 House Analysis Service - Integration Example</h1>
+
+    <div class="config-section">
+        <h2>Configuration</h2>
+        <div class="form-group">
+            <label>GitHub Personal Access Token (PAT)</label>
+            <input type="password" id="githubToken" placeholder="ghp_...">
+            <small>Required for triggering workflows. Scope: workflow</small>
+        </div>
+        <div class="form-group">
+            <label>Apify API Token</label>
+            <input type="password" id="apifyToken" placeholder="apify_api_...">
+            <small>Required for fetching analysis status</small>
+        </div>
+        <div class="form-group">
+            <label>Apify Dataset ID</label>
+            <input type="text" id="datasetId" placeholder="dataset_id">
+        </div>
+        <div class="form-group">
+            <label>GitHub Repository</label>
+            <input type="text" id="githubRepo" value="Saltbeef/frontend">
+        </div>
+        <div class="form-group">
+            <label>LLM Provider</label>
+            <select id="llmProvider">
+                <option value="mock">Mock (Testing)</option>
+                <option value="claude" selected>Claude</option>
+                <option value="openai">OpenAI</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Rules Version</label>
+            <input type="text" id="rulesVersion" value="latest">
+        </div>
+    </div>
+
+    <div id="housesContainer">
+        <!-- Example houses will be rendered here -->
+    </div>
+
+    <div class="config-section">
+        <h3>Activity Log</h3>
+        <div id="log" class="log"></div>
+    </div>
+
+    <script>
+        // Example houses data (in production, fetch from Apify)
+        const exampleHouses = [
+            {
+                id: 'house_001',
+                title: 'Luxury Canal View Apartment',
+                address: 'Prinsengracht 123, Amsterdam',
+                price_per_night: 250,
+                bedrooms: 2,
+                bathrooms: 1
+            },
+            {
+                id: 'house_002',
+                title: 'Modern City Center Studio',
+                address: 'Damstraat 45, Amsterdam',
+                price_per_night: 120,
+                bedrooms: 1,
+                bathrooms: 1
+            }
+        ];
+
+        // State management
+        const state = {
+            analyses: {},
+            pollIntervals: {}
+        };
+
+        // Logging
+        function log(message, type = 'info') {
+            const logEl = document.getElementById('log');
+            const timestamp = new Date().toLocaleTimeString();
+            const entry = document.createElement('div');
+            entry.className = 'log-entry';
+            entry.innerHTML = `<span class="log-timestamp">[${timestamp}]</span> ${message}`;
+            logEl.appendChild(entry);
+            logEl.scrollTop = logEl.scrollHeight;
+            console.log(`[${type}]`, message);
+        }
+
+        // Trigger analysis via GitHub API
+        async function triggerAnalysis(houseId) {
+            const githubToken = document.getElementById('githubToken').value;
+            const githubRepo = document.getElementById('githubRepo').value;
+            const datasetId = document.getElementById('datasetId').value;
+            const llmProvider = document.getElementById('llmProvider').value;
+            const rulesVersion = document.getElementById('rulesVersion').value;
+
+            if (!githubToken) {
+                alert('Please enter your GitHub Personal Access Token');
+                return;
+            }
+
+            if (!datasetId) {
+                alert('Please enter your Apify Dataset ID');
+                return;
+            }
+
+            try {
+                log(`🚀 Triggering analysis for house ${houseId}...`);
+                updateHouseStatus(houseId, 'processing');
+
+                const response = await fetch(
+                    `https://api.github.com/repos/${githubRepo}/actions/workflows/analyze_house.yml/dispatches`,
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `token ${githubToken}`,
+                            'Accept': 'application/vnd.github.v3+json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            ref: 'main', // or your branch name
+                            inputs: {
+                                house_id: houseId,
+                                apify_dataset_id: datasetId,
+                                rules_version: rulesVersion,
+                                llm_provider: llmProvider
+                            }
+                        })
+                    }
+                );
+
+                if (response.ok) {
+                    log(`✅ Analysis workflow triggered for ${houseId}`);
+                    log(`📊 Polling for results...`);
+                    startPolling(houseId);
+                } else {
+                    const error = await response.text();
+                    log(`❌ Failed to trigger workflow: ${response.status} - ${error}`, 'error');
+                    updateHouseStatus(houseId, 'failed');
+                }
+            } catch (error) {
+                log(`❌ Error: ${error.message}`, 'error');
+                updateHouseStatus(houseId, 'failed');
+            }
+        }
+
+        // Poll Apify for analysis status
+        async function pollAnalysisStatus(houseId) {
+            const apifyToken = document.getElementById('apifyToken').value;
+
+            if (!apifyToken) {
+                log(`⚠️ Apify token required for polling`, 'warning');
+                return null;
+            }
+
+            try {
+                const response = await fetch(
+                    `https://api.apify.com/v2/key-value-stores/default/records/analysis_${houseId}?token=${apifyToken}`
+                );
+
+                if (response.ok) {
+                    return await response.json();
+                } else if (response.status === 404) {
+                    return null; // Not found yet
+                } else {
+                    log(`⚠️ Polling error: ${response.status}`, 'warning');
+                    return null;
+                }
+            } catch (error) {
+                log(`⚠️ Polling error: ${error.message}`, 'warning');
+                return null;
+            }
+        }
+
+        // Start polling for results
+        function startPolling(houseId) {
+            // Clear existing interval
+            if (state.pollIntervals[houseId]) {
+                clearInterval(state.pollIntervals[houseId]);
+            }
+
+            // Poll every 5 seconds
+            state.pollIntervals[houseId] = setInterval(async () => {
+                const status = await pollAnalysisStatus(houseId);
+
+                if (status) {
+                    if (status.status === 'completed') {
+                        log(`✅ Analysis completed for ${houseId} - Score: ${status.score}/10`);
+                        updateHouseStatus(houseId, 'completed', status);
+                        clearInterval(state.pollIntervals[houseId]);
+                    } else if (status.status === 'failed') {
+                        log(`❌ Analysis failed for ${houseId}`, 'error');
+                        updateHouseStatus(houseId, 'failed');
+                        clearInterval(state.pollIntervals[houseId]);
+                    } else {
+                        log(`⏳ Analysis ${status.status} for ${houseId}...`);
+                    }
+                }
+            }, 5000);
+
+            // Stop polling after 10 minutes
+            setTimeout(() => {
+                if (state.pollIntervals[houseId]) {
+                    clearInterval(state.pollIntervals[houseId]);
+                    log(`⏱️ Polling timeout for ${houseId}`, 'warning');
+                }
+            }, 600000);
+        }
+
+        // Update house card UI
+        function updateHouseStatus(houseId, status, data = null) {
+            state.analyses[houseId] = { status, data };
+
+            const statusEl = document.getElementById(`status-${houseId}`);
+            const analysisEl = document.getElementById(`analysis-${houseId}`);
+            const btnEl = document.getElementById(`btn-${houseId}`);
+
+            if (statusEl) {
+                statusEl.className = `status-badge status-${status}`;
+                statusEl.textContent = status.toUpperCase();
+            }
+
+            if (btnEl) {
+                btnEl.disabled = (status === 'processing');
+                btnEl.textContent = status === 'processing' ? 'Analyzing...' : 'Analyze';
+            }
+
+            if (analysisEl && data) {
+                analysisEl.innerHTML = `
+                    <div class="score-display">${data.score}/10</div>
+                    <a href="${data.analysis_url}" target="_blank" class="btn btn-primary">
+                        View Full Report →
+                    </a>
+                `;
+            }
+        }
+
+        // Render house cards
+        function renderHouses() {
+            const container = document.getElementById('housesContainer');
+
+            exampleHouses.forEach(house => {
+                const card = document.createElement('div');
+                card.className = 'house-card';
+                card.innerHTML = `
+                    <div class="house-header">
+                        <div>
+                            <div class="house-title">${house.title}</div>
+                            <div class="house-details">
+                                📍 ${house.address}<br>
+                                💰 €${house.price_per_night}/night • ${house.bedrooms} bed • ${house.bathrooms} bath
+                            </div>
+                        </div>
+                        <div>
+                            <span id="status-${house.id}" class="status-badge status-pending">PENDING</span>
+                        </div>
+                    </div>
+                    <button id="btn-${house.id}" class="btn btn-primary" onclick="triggerAnalysis('${house.id}')">
+                        Analyze
+                    </button>
+                    <div class="analysis-section">
+                        <div id="analysis-${house.id}"></div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderHouses();
+            log('🚀 House Analysis Service initialized');
+            log('ℹ️ Configure your API tokens above to get started');
+        });
+    </script>
+</body>
+</html>

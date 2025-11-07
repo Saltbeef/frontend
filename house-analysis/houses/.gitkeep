@@ -1,0 +1,11 @@
+# This directory will contain all house analyses
+# Each subdirectory represents a unique house with its complete history
+#
+# Structure:
+# houses/
+#   {house-id}/
+#     ├── metadata.json         (house information)
+#     ├── latest_analysis.json  (quick reference)
+#     ├── raw/                  (raw Apify data)
+#     ├── analyses/             (all analyses with timestamps)
+#     └── reports/              (HTML reports)

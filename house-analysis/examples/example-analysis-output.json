@@ -1,0 +1,91 @@
+{
+  "house_id": "listing_12345",
+  "analyzed_at": "2025-01-07T14:30:22Z",
+  "rules_version": "v1.0.0",
+  "overall_score": 8.38,
+  "category_scores": {
+    "location": {
+      "score": 9.0,
+      "reasoning": "Outstanding location in Amsterdam's historic Jordaan neighborhood with excellent walkability. The property is within 5 minutes of Anne Frank House and 10 minutes from Dam Square, making it highly attractive to tourists. Public transport connectivity is excellent with trams 13 and 17 just 2 minutes away. The canal view adds significant appeal. Only minor concern is the 18km distance to airport, though this is typical for city center locations.",
+      "red_flags": [
+        "No direct metro connection - guests rely on trams",
+        "Paid street parking only (challenging for guests with cars)"
+      ],
+      "recommendations": [
+        "Highlight the walkability and proximity to major attractions in marketing",
+        "Provide detailed public transport guide for airport transfers",
+        "Consider partnering with local parking services for guest discounts"
+      ]
+    },
+    "property": {
+      "score": 8.5,
+      "reasoning": "Well-maintained 75m² apartment with recent 2023 renovation showing modern standards. The 2-bedroom, 1-bathroom layout accommodating 4 guests is ideal for short-stay rentals. Comprehensive amenities including WiFi, full kitchen, washer/dryer, and entertainment options meet modern guest expectations. The canal view and balcony are significant selling points. The property earns exceptional ratings (4.8 overall, 4.9 cleanliness) from 127 reviews, indicating consistent quality. Main limitation is the 2nd floor location without elevator, which may deter some guests.",
+      "red_flags": [
+        "No elevator (2nd floor) - accessibility issue for elderly or mobility-impaired guests",
+        "Only 1 bathroom for 4 guests may be tight",
+        "Historic building (1890) may have noise insulation issues"
+      ],
+      "recommendations": [
+        "Install sound dampening measures if noise complaints arise",
+        "Consider adding a rainfall shower head to enhance bathroom experience",
+        "Increase photo count beyond 25 to showcase all features",
+        "Add 360° virtual tour to boost bookings"
+      ]
+    },
+    "financial": {
+      "score": 8.0,
+      "reasoning": "Strong revenue potential with base price of €150/night (weekend €180), positioning above the area average of €145. The property shows healthy occupancy with 18 nights booked in next 30 days (60%), and 45 in next 90 days (50%). Estimated annual revenue of €35,000 is attractive. The 10% weekly and 20% monthly discounts are competitive. Cleaning fee of €50 and security deposit of €200 are reasonable. With an estimated 70% occupancy rate and €105 revenue per available night, the property demonstrates solid earning potential. The area has 45 competing listings, indicating a competitive but proven market.",
+      "red_flags": [
+        "Occupancy rate (70%) is above area average (65%) but leaves room for optimization",
+        "High competition with 45 similar listings in area",
+        "2-night minimum stay may limit spontaneous bookings"
+      ],
+      "recommendations": [
+        "Implement dynamic pricing to capture peak demand periods",
+        "Consider reducing minimum stay to 1 night for off-peak periods",
+        "Calculate exact ROI including: mortgage/purchase costs, utilities (€150/month estimated), platform fees (15-20%), cleaning costs per turnover (€50 x 15/month = €750), maintenance reserve, insurance",
+        "Track seasonal patterns to optimize pricing strategy",
+        "Consider professional revenue management tools like PriceLabs or Beyond Pricing"
+      ]
+    },
+    "legal": {
+      "score": 8.0,
+      "reasoning": "The property demonstrates good legal compliance with a verified registration number (0363A12345678) and business license. Amsterdam has strict short-stay regulations including a maximum of 60 nights per year for private rentals, which this property acknowledges. Tourist tax is included, simplifying guest experience. The host has verified status and has been operating since 2018, suggesting established legal operation. However, specific permit documentation and current compliance status should be verified independently.",
+      "red_flags": [
+        "60-night annual limit in Amsterdam may restrict revenue potential if applicable",
+        "License status should be verified directly with gemeente Amsterdam",
+        "Historic building may have additional restrictions on modifications",
+        "Need to confirm HOA/VVE regulations on short-stay rentals"
+      ],
+      "recommendations": [
+        "Obtain legal opinion on current Amsterdam short-stay regulations (frequently updated)",
+        "Verify registration number is active: check gemeente Amsterdam database",
+        "Review building association (VVE) bylaws for any short-stay restrictions",
+        "Ensure proper insurance coverage for short-stay rental activity",
+        "Consider joining local short-stay rental association (STRAN) for compliance support",
+        "Budget for potential regulatory changes or increased licensing fees"
+      ]
+    }
+  },
+  "overall_assessment": "This property represents a strong investment opportunity for short-stay rental purposes. The exceptional location in Amsterdam's desirable Jordaan neighborhood, combined with high-quality accommodation and proven performance (4.8 rating, 127 reviews), creates a compelling value proposition. The recent renovation and comprehensive amenities meet modern guest expectations. With estimated annual revenue of €35,000 and 70% occupancy, the financial fundamentals are solid. The experienced superhost with 98% response rate adds operational security. Main considerations are Amsterdam's 60-night annual restriction, competitive market dynamics with 45 similar listings, and accessibility limitations (no elevator). Legal compliance appears in order but requires independent verification. Overall, this property demonstrates strong potential for investors with appropriate risk management and competitive positioning.",
+  "top_strengths": [
+    "Prime Jordaan location with canal views - top tourist area",
+    "Recently renovated (2023) with modern amenities and excellent condition",
+    "Proven track record: 4.8 rating across 127 reviews with experienced superhost",
+    "Strong financials: €35k annual revenue potential at 70% occupancy above area average",
+    "Comprehensive amenities meeting modern guest expectations (WiFi, full kitchen, washer/dryer)"
+  ],
+  "top_concerns": [
+    "Amsterdam's 60-night annual limit may restrict revenue if applicable to this property",
+    "No elevator access to 2nd floor limits accessibility and guest pool",
+    "High competition with 45 similar listings requires strong differentiation",
+    "Legal/regulatory landscape in Amsterdam is evolving - ongoing compliance costs expected",
+    "Occupancy at 50% over next 90 days indicates seasonal variance requiring active management"
+  ],
+  "investment_recommendation": "CONSIDER - This property shows strong fundamentals with excellent location, quality accommodation, and solid revenue potential. However, due diligence is essential: (1) Verify exact applicability of Amsterdam's 60-night rule to this specific property type and license, (2) Conduct full financial analysis including all costs (utilities, platform fees, cleaning, maintenance, insurance), (3) Confirm legal compliance and license validity with gemeente Amsterdam, (4) Assess competitive positioning and develop differentiation strategy for 45 competing listings, (5) Create operational plan addressing accessibility limitations and seasonal occupancy patterns. If due diligence confirms favorable conditions, this represents a compelling investment in a proven market with an experienced operator.",
+  "metadata": {
+    "processing_time_seconds": 45.3,
+    "llm_model": "claude",
+    "apify_dataset_id": "dataset_xyz123"
+  }
+}
