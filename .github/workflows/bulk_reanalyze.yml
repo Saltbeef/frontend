@@ -50,7 +50,6 @@ jobs:
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: |
-          cd house-analysis
           python -c "
           import json
           import sys
