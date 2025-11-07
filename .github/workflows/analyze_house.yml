@@ -50,7 +50,6 @@ jobs:
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: |
-          cd house-analysis
           python -c "
           import sys
           import json
@@ -74,7 +73,6 @@ jobs:
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: |
-          cd house-analysis
           python -c "
           from src.apify_client import ApifyClient
 
@@ -92,7 +90,6 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          cd house-analysis
           python -c "
           import json
           from src.agent import HouseAnalysisAgent
@@ -159,7 +156,6 @@ jobs:
 
       - name: Generate HTML report
         run: |
-          cd house-analysis
           python -c "
           import json
           from pathlib import Path
@@ -205,7 +201,6 @@ jobs:
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: |
-          cd house-analysis
           python -c "
           from src.apify_client import ApifyClient
 
@@ -229,7 +224,6 @@ jobs:
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: |
-          cd house-analysis
           python -c "
           from src.apify_client import ApifyClient
 
