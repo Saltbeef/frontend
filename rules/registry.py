@@ -4,6 +4,7 @@ from typing import Dict, Type, Optional
 from .base import BaseRules
 from .v1_0_0 import RulesV1_0_0
 from .v1_1_0 import RulesV1_1_0
+from .v2_0_0 import RulesV2_0_0
 
 
 class RulesRegistry:
@@ -12,6 +13,7 @@ class RulesRegistry:
     _rules: Dict[str, Type[BaseRules]] = {
         "v1.0.0": RulesV1_0_0,
         "v1.1.0": RulesV1_1_0,
+        "v2.0.0": RulesV2_0_0,
     }
 
     @classmethod
