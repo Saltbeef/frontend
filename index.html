@@ -1444,8 +1444,8 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
             const visibleHouseIds = currentResults.slice(0, 50).map(p => p.Identifiers?.TinyId).filter(Boolean);
 
             for (const houseId of visibleHouseIds) {
-                if (!analysisStatuses.has(houseId)) {
-                    // Check if analysis exists
+                // Always check for existing analyses, unless we're already polling
+                if (!analysisPolling.has(houseId)) {
                     const status = await getAnalysisStatus(houseId);
                     if (status) {
                         updateAnalysisBadge(houseId, status.status, status.score);
