@@ -1,0 +1,503 @@
+{
+  "Identifiers": {
+    "GlobalId": 7662010,
+    "TinyId": "43017473"
+  },
+  "Price": {
+    "SellingPrice": "\u20ac 155.000 k.k.",
+    "NumericSellingPrice": 155000,
+    "IsAuction": false
+  },
+  "KenmerkSections": [
+    {
+      "Index": 1,
+      "Id": "overdracht",
+      "Title": "Overdracht",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "overdracht-vraagprijs",
+          "Label": "Vraagprijs",
+          "Value": "\u20ac 155.000 kosten koper",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Id": "overdracht-aangeboden-sinds",
+          "Label": "Aangeboden sinds",
+          "Value": "6 weken",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 5,
+          "Id": "overdracht-status",
+          "Label": "Status",
+          "Value": "Beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Aanvaarding",
+          "Value": "In overleg",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 7,
+          "Id": "overdracht-permanentebewoning",
+          "Label": "Permanente bewoning",
+          "Value": "Permanente bewoning is niet toegestaan",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 2,
+      "Id": "bouw",
+      "Title": "Bouw",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "bouw-soortobject",
+          "Label": "Soort woonhuis",
+          "Value": "Bungalow, vrijstaande woning",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "bouw-soortbouw",
+          "Label": "Soort bouw",
+          "Value": "Bestaande bouw",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "bouw-bouwjaar",
+          "Label": "Bouwjaar",
+          "Value": "1974",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 3,
+      "Id": "afmetingen",
+      "Title": "Oppervlakten en inhoud",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Label": "Gebruiksoppervlakten",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 1,
+              "Id": "afmetingen-gebruiksoppervlakten-wonen",
+              "Label": "Wonen",
+              "Value": "52 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 2,
+              "Id": "afmetingen-gebruiksoppervlakte-overigeinpandigeruimte",
+              "Label": "Overige inpandige ruimte",
+              "Value": "4 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "afmetingen-gebruiksoppervlakte-gebouwgebondenbuitenruimte",
+              "Label": "Gebouwgebonden buitenruimte",
+              "Value": "10 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        },
+        {
+          "Index": 2,
+          "Id": "afmetingen-perceel",
+          "Label": "Perceel",
+          "Value": "260 m\u00b2",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "afmetingen-inhoud",
+          "Label": "Inhoud",
+          "Value": "172 m\u00b3",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 4,
+      "Id": "indeling",
+      "Title": "Indeling",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "indeling-totalrooms",
+          "Label": "Aantal kamers",
+          "Value": "4 kamers (3 slaapkamers)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "indeling-totalbathroom",
+          "Label": "Aantal badkamers",
+          "Value": "1 badkamer",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "indeling-bathroom",
+          "Label": "Badkamervoorzieningen",
+          "Value": "Inloopdouche, toilet, en wastafelmeubel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "indeling-totalstories",
+          "Label": "Aantal woonlagen",
+          "Value": "2 woonlagen",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 5,
+      "Id": "energie",
+      "Title": "Energie",
+      "KenmerkenList": [
+        {
+          "EnergyData": {
+            "EnergyLabel": "E"
+          },
+          "EnergyLabel": "E",
+          "Index": 1,
+          "Id": "energie-energielabel",
+          "Label": "Energielabel",
+          "Value": "Wat betekent dit?",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "energie-verwarming",
+          "Label": "Verwarming",
+          "Value": "Cv-ketel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "energie-warmwater",
+          "Label": "Warm water",
+          "Value": "Cv-ketel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 5,
+          "Id": "energie-cv",
+          "Label": "Cv-ketel",
+          "Value": "Intergas ( combiketel uit 2019, eigendom)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 6,
+      "Id": "cadastral",
+      "Title": "Kadastrale gegevens",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "cadastral-parcel",
+          "Label": "BEEKBERGEN F 5666",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 2,
+              "Id": "cadastral-area",
+              "Label": "Oppervlakte",
+              "Value": "260 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "cadastral-ownershipsituation",
+              "Label": "Eigendomssituatie",
+              "Value": "Volle eigendom",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 7,
+      "Id": "buitenruimte",
+      "Title": "Buitenruimte",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "buitenruimte-ligging",
+          "Label": "Ligging",
+          "Value": "Aan rustige weg, buiten bebouwde kom, in bosrijke omgeving en in recreatiepark",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "buitenruimte-tuin",
+          "Label": "Tuin",
+          "Value": "Tuin rondom",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 8,
+      "Id": "bergruimte",
+      "Title": "Bergruimte",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Schuur/berging",
+          "Value": "Aangebouwde houten berging",
+          "LabelStyle": "None"
+        }
+      ]
+    },
+    {
+      "Index": 10,
+      "Id": "parkeergelegenheid",
+      "Title": "Parkeergelegenheid",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Soort parkeergelegenheid",
+          "Value": "Openbaar parkeren",
+          "LabelStyle": "None"
+        }
+      ]
+    }
+  ],
+  "Labels": [],
+  "Urls": {
+    "FriendlyUrl": {
+      "FullUrl": "https://www.funda.nl/detail/recreatie/hoenderloo-gem-apeldoorn/huis-krimweg-140-a65/43017473/",
+      "RelativeUrl": "/detail/recreatie/hoenderloo-gem-apeldoorn/huis-krimweg-140-a65/43017473/"
+    },
+    "ReportErrorUrl": "https://help.funda.nl:443/s/mef?globalID=7662010&returnURL=https%3a%2f%2fwww.funda.nl%2fdetail%2frecreatie%2fhoenderloo-gem-apeldoorn%2fhuis-krimweg-140-a65%2f43017473%2f&brokerID=1205"
+  },
+  "ListingDescription": {
+    "Title": "Omschrijving",
+    "Description": "Instapklare recreatiewoning PEPER (type VELUWEVILLA) op eigen grond \u2013 sfeervol, goed ge\u00efsoleerd en klaar voor de verhuur!\n\nOp het geliefde en autoluwe Bungalowpark Hoenderloo staat deze goed onderhouden recreatiewoning (Peper), type VELUWEVILLA. De woning ligt op een ruim perceel van 260 m\u00b2 eigen grond \u2013 dus g\u00e9\u00e9n erfpacht! \u2013 en beschikt over 3 slaapkamers, waarvan \u00e9\u00e9n op de begane grond, een lichte woon-/eetkamer met houtkachel en openslaande deuren naar het zonnige terras, een moderne open keuken en een volledig betegelde badkamer.\n\nDeze recreatiewoning wordt aangeboden inclusief de aanwezige meubilering, stoffering en inventaris, dus u kunt er direct in of verhuren zonder zorgen.\n\nWat deze recreatiewoning extra aantrekkelijk maakt:\n\u2022\tEigen grond \u2013 geen erfpachtkosten\n\u2022\tVolledig verhuurklaar volgens de actuele normen van het park\n\u2022\tUitstekende isolatie: nieuw dak met dakisolatie, spouw- \u00e9n vloerisolatie\n\u2022\tKindveilige stopcontacten en volledige LED-verlichting in de hele woning\n\u2022\tExtra radiator in de woonkamer voor comfortabel en gelijkmatig verwarmd binnenklimaat\n\u2022\tVernieuwde meterkast\n\u2022\tCV-ketel slechts ca. 7 jaar oud \n\u2022\tPriv\u00e9terras met weinig inkijk, gunstig gelegen op de zon.\n\u2022\tMakkelijk bereikbaar vanaf de ingang van het park\n\nBegane grond:\nOverdekte entree. Hal met meterkast en bergkast. Woon-/eetkamer met houtkachel en openslaande deuren naar het beschutte terras. Open keuken met diverse inbouwapparatuur: gaskookplaat, afzuigkap, oven, koelkast en vaatwasser. Slaapkamer op de begane grond. Moderne, geheel betegelde badkamer met inloopdouche, wandcloset en wastafel.\n\n1e Verdieping:\nOverloop met opstelling van de CV-combiketel en inbouwkast. Twee volwaardige slaapkamers.\n\nGebruiksoppervlakte: 52 m\u00b2\nPerceeloppervlakte: 260 m\u00b2\n\nPark:  \nHet ruim opgezette, autoluwe Bungalowpark Hoenderloo is gelegen aan de rand van het Nationale Park de Hoge Veluwe en is geschikt voor zowel gezinnen als rustzoekers. Een prachtige omgeving met leuke wandel- en fietspaden, talrijke attracties en gezellige winkelsteden bevinden zich in de directe nabijheid van het bungalowpark. Het park beschikt over een restaurant, een wasserette, 2 all seasons tennisbanen, midgetgolfbaan, indoor speeltuin, verwarmd zwembad voorzien van een geheel te openen of te sluiten overkapping, houten speeltoestellen, trapveldje, tafeltennistafel, animatieteam, verhuur van fietsen en nog veel meer!    \n\nVerhuur:\nVerhuur is bij deze recreatiewoning niet verplicht maar wel mogelijk. U kunt ervoor kiezen de recreatiewoning het gehele jaar te verhuren (via het park/Roompot) zodat uw investering optimaal rendeert. \n\nIn combinatie met eigen gebruik zijn er de volgende mogelijkheden:\n- 45 dagen eigen gebruik zonder restricties\n- 90 + 14 dagen eigen gebruik, waarvan 90 dagen in het laagseizoen en 14 dagen in het hoogseizoen, hierdoor kunt u zelf optimaal genieten van de uw recreatiewoning maar ook nog rendement maken.\n\nKostenoverzicht:\nParkkosten 2025: \u20ac 1.179,75 per kwartaal. Dit bedrag is inclusief het tuinonderhoud, de bijdrage voor de vereniging van eigenaren en het verbruik van gas, water en elektra.\n\nInteresse in deze recreatiewoning? Schakel direct uw NVM aankoopmakelaar in. Uw NVM aankoopmakelaar komt op voor uw belang en bespaart u tijd."
+  },
+  "AddressDetails": {
+    "Title": "Krimweg 140-A65",
+    "SubTitle": "7351 TM Hoenderloo (Gem. Apeldoorn)",
+    "IsInternational": false,
+    "NeighborhoodName": "Bosgebied Hoenderloo",
+    "NeighborhoodIdentifier": "hoenderloo-gem-apeldoorn/bosgebied-hoenderloo",
+    "City": "Hoenderloo (Gem. Apeldoorn)",
+    "Province": "Gelderland",
+    "Country": "Nederland",
+    "HouseNumber": "140",
+    "HouseNumberExtension": "A65",
+    "PostCode": "7351TM"
+  },
+  "Coordinates": {
+    "Latitude": 52.118546,
+    "Longitude": 5.9120483
+  },
+  "KadastraleKaartBaseUrl": "https://service.pdok.nl/kadaster/kadastralekaart/wms/v5_0",
+  "Media": {
+    "Layout": {
+      "MediaViewerIsVisible": true,
+      "MainPhotoThumbnailIsVisible": false
+    },
+    "Photos": {
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "MediaBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "Items": [
+        {
+          "Id": "214/512/998"
+        },
+        {
+          "Id": "214/513/000"
+        },
+        {
+          "Id": "214/513/002"
+        },
+        {
+          "Id": "214/513/005"
+        },
+        {
+          "Id": "214/513/007"
+        },
+        {
+          "Id": "214/513/010"
+        },
+        {
+          "Id": "214/513/013"
+        },
+        {
+          "Id": "214/513/014"
+        },
+        {
+          "Id": "214/513/018"
+        },
+        {
+          "Id": "214/513/021"
+        },
+        {
+          "Id": "214/513/024"
+        },
+        {
+          "Id": "214/513/026"
+        },
+        {
+          "Id": "214/513/028"
+        },
+        {
+          "Id": "214/513/031"
+        },
+        {
+          "Id": "214/513/033"
+        },
+        {
+          "Id": "214/513/036"
+        },
+        {
+          "Id": "214/513/038"
+        },
+        {
+          "Id": "214/513/041"
+        },
+        {
+          "Id": "214/513/044"
+        },
+        {
+          "Id": "214/513/047"
+        },
+        {
+          "Id": "214/513/049"
+        },
+        {
+          "Id": "214/513/051"
+        },
+        {
+          "Id": "214/513/052"
+        },
+        {
+          "Id": "214/513/054"
+        },
+        {
+          "Id": "214/513/056"
+        },
+        {
+          "Id": "214/513/058"
+        },
+        {
+          "Id": "214/513/060"
+        },
+        {
+          "Id": "214/513/062"
+        },
+        {
+          "Id": "214/513/063"
+        },
+        {
+          "Id": "214/513/066"
+        },
+        {
+          "Id": "214/513/068"
+        },
+        {
+          "Id": "214/513/072"
+        },
+        {
+          "Id": "214/514/252"
+        },
+        {
+          "Id": "214/513/074"
+        },
+        {
+          "Id": "214/513/075"
+        }
+      ]
+    },
+    "Videos": {
+      "ThumbnailBaseUrl": "https://customer-vzk8jgcsaz84e8sb.cloudflarestream.com/{id}/thumbnails/thumbnail.jpg",
+      "MediaBaseUrl": "https://customer-vzk8jgcsaz84e8sb.cloudflarestream.com/{id}/manifest/video.m3u8",
+      "Items": [
+        {
+          "Id": "22f290e1862cbd3b11270fd97fb2b6ae"
+        }
+      ]
+    },
+    "LegacyFloorPlan": {
+      "ProjectId": "175328242",
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.png",
+      "MediaBaseUrl": "https://www.funda.nl/detail/43017473/floorplan/{index}/",
+      "Items": [
+        {
+          "DisplayName": "Begane grond",
+          "Id": "268989892",
+          "ThumbnailId": "214/514/169"
+        },
+        {
+          "DisplayName": "1e verdieping",
+          "Id": "268989895",
+          "ThumbnailId": "214/514/170"
+        }
+      ]
+    },
+    "Brochure": {
+      "ProxyUrl": "https://www.funda.nl/recreatie/hoenderloo-gem-apeldoorn/huis-43017473-krimweg-140-a65/brochure/download/",
+      "CdnUrl": "https://cloud.funda.nl/valentina_media/214/514/294.pdf"
+    }
+  },
+  "FastView": {
+    "LivingArea": "52 m\u00b2",
+    "PlotArea": "260 m\u00b2",
+    "NumberOfBedrooms": "3",
+    "EnergyLabel": "E"
+  },
+  "IsSoldOrRented": false,
+  "ObjectType": "House",
+  "OfferingType": "Sale",
+  "ConstructionType": "ExistingConstruction",
+  "PublicationDate": "2025-07-30T00:00:00",
+  "ObjectInsights": {
+    "Views": "724",
+    "Saves": "26"
+  },
+  "sitemapData": {
+    "originalUrl": "https://www.funda.nl/detail/recreatie/hoenderloo-gem-apeldoorn/huis-krimweg-140-a65/43017473/",
+    "propertyId": "43017473",
+    "lastmod": "2025-07-30T15:34:11+02:00",
+    "processedAt": "2025-09-15T19:50:14.597Z",
+    "apiUrl": "https://listing-detail-page.funda.io/api/v4/listing/nl/tinyId/43017473"
+  }
+}
