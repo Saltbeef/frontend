@@ -1,0 +1,111 @@
+{
+  "house_id": "89382118",
+  "analyzed_at": "2025-11-08T22:57:36.797726+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 5.2,
+  "category_scores": {
+    "location": {
+      "score": 7.0,
+      "reasoning": "Dirkshorn ligt in Noord-Holland op 15 km van de Noordzeekust (Bergen aan Zee, Camperduin). Park de Horn is een gevestigd recreatiepark met directe toegang tot natuurgebieden en polders.\n\nTOERISTISCHE ATTRACTIES:\n- Strand Bergen/Camperduin: 15 km (15 min)\n- Alkmaar centrum: 20 km (kaasmarkt, historisch)\n- Schoorl duinen: 10 km (wandelen/fietsen)\n- Den Helder: 15 km (marine museum, veerboten Texel)\n- Texel (via Den Helder): 30 min\n- Amsterdam: 65 km (auto/trein)\n\nBEREIKBAAR:\n- N9 hoofdweg: 2 km\n- A7/A9 snelwegen: 25 km\n- Station Schagen: 8 km (bus/auto)\n- Duitse markt: Redelijk aantrekkelijk (kust, Texel)\n\nCONCURRENTIE ANALYSE:\nAirbnb Dirkshorn/omgeving: ~40 objecten binnen 5 km. Vergelijkbare bungalows (3 slk, geen hottub) tonen:\n- Nachtprijs: \u20ac80-140 (seizoen afhankelijk)\n- Reviews: 15-60 (indicatie 150-600 gasten/jaar)\n- Bezetting hoogseizoen: 70-85%\n- Laagseizoen: 25-40%\n\nSEIZOENSPATROON:\nJaar-rond potentieel aanwezig door:\n- Alkmaar events (kaasmarkt apr-sep)\n- Texel trekt ook najaar/voorjaar\n- Kust wandelingen winter\nMAAR: winters significant stiller (60% lagere bezetting)\n\nA/B/C LOCATIE: B-locatie. Goede basis maar geen A+ door:\n- Niet direct aan kust (15 km)\n- Beperkte directe attracties in Dirkshorn zelf\n- Sterke concurrentie van kustplaatsen\n\nPLUS: Rustige ligging trekt specifieke doelgroep (natuur, rust)",
+      "red_flags": [
+        "15 km van strand - niet direct aan toplocatie",
+        "Beperkte attracties in directe omgeving (<5 km)",
+        "Winters beduidend lagere bezetting (max 30%)"
+      ],
+      "recommendations": [
+        "Focus marketing op rustzoeker/natuurliefhebber ipv strandganger",
+        "Pak Texel dagjesmensen (check-in na veerboot return)",
+        "Bundel deals met lokale fietsverhuur voor Schoorl duinen"
+      ],
+      "market_data": "Airbnb comps: \u20ac90-120/nacht gemiddeld, 45-55% jaarbezetting voor basic bungalows zonder USP's. Top performers (hottub/luxe): \u20ac130-180/nacht, 60-70% bezetting"
+    },
+    "property": {
+      "score": 5.5,
+      "reasoning": "SPECS:\n- 3 slaapkamers \u2192 6-8 personen\n- 2 badkamers + apart toilet (groot pluspunt!)\n- 78 m\u00b2 woonoppervlak + 8 m\u00b2 terras\n- Bouwjaar 1975 (50 jaar oud - onderhoud risico)\n- 2 woonlagen (uniek voor bungalow)\n- Airconditioning aanwezig\n\nUSP ANALYSE - ZWAK:\n\u274c Geen hottub/sauna (grootste gemis!)\n\u274c Geen bijzonder design (standaard jaren '70)\n\u274c Geen luxe uitstraling uit foto's\n\u274c Geen waterfront/bijzonder uitzicht\n\u2705 Hoekligging tegenover speelveld\n\u2705 2 badkamers (zeldzaam voor dit segment)\n\u2705 Overkapping buiten\n\u2705 Airco (comfort zomer)\n\u26a0\ufe0f Huisdieren: NIET vermeld (moet nagevraagd!)\n\nDOELGROEP MATCH:\n- Gezinnen: JA (speelveld, 3 slk) - 7/10\n- Stellen: MATIG (geen romantiek/luxe) - 4/10\n- Groepen vrienden: JA (2 verdiepingen, privacy) - 6/10\n- Zonder huisdieren clausule: gemiste 30% markt\n\nVOORZIENINGEN:\n\u2705 Open keuken met basis apparatuur\n\u2705 Wasmachine aansluiting\n\u2705 Parking eigen terrein\n\u2705 Berging voor fietsen\n\u274c Geen vaatwasser vermeld (wel nodig voor 6-8p)\n\u274c Geen BBQ genoemd\n\u274c WiFi niet expliciet\n\nVISUELE PRESENTATIE:\n22 foto's + video: voldoende aantal MAAR:\n- Amateuristische fotografie (geen breed/heldere shots)\n- Gedateerde inrichting zichtbaar\n- Geen sfeerbeelden (kaarsen, lifestyle shots)\n- Video toont realiteit maar verkoopt niet\n\nONDERHOUDSSTAAT:\n\u26a0\ufe0f Bouwjaar 1975 + energielabel F = SIGNIFICANT RISICO\n- Gedeeltelijk dubbelglas (rest enkel?)\n- Pelletkachels als hoofdverwarming (niet ideaal)\n- Elektrische boiler (hoge kosten)\n- Geschat renovatiebudget: \u20ac15-25k voor:\n  * Volledige isolatie: \u20ac8-12k\n  * Dubbel glas restant: \u20ac3-5k\n  * Interieur update: \u20ac5-8k\n- Jaarlijks onderhoud: \u20ac2500-3500 (oud pand)",
+      "red_flags": [
+        "Geen hottub/sauna - grootste USP gemist voor dit segment",
+        "Bouwjaar 1975 + energielabel F - hoge onderhoudskosten verwacht",
+        "Gedateerde uitstraling - vereist investering voor competitieve verhuur",
+        "Pelletkachels als hoofdverwarming - operationeel intensief voor verhuur"
+      ],
+      "recommendations": [
+        "Investeer \u20ac8-12k in hottub installatie (ROI <2 jaar via +\u20ac30/nacht)",
+        "Budget \u20ac5-8k voor interieur restyling (IKEA makeover, neutrale kleuren)",
+        "Professionele fotoshoot \u20ac500 na upgrade (cruciaal voor bezetting)",
+        "Isolatie verbeteren \u20ac8-12k (verlaagt kosten + verhoogt comfort)",
+        "Onderhandel aankoopprijs met \u20ac15-20k voor renovatie noodzaak"
+      ],
+      "usp_highlights": [
+        "2 badkamers (zeldzaam voor dit prijssegment)",
+        "Hoekligging tegenover speelveld (gezinsvriendelijk)",
+        "Airconditioning aanwezig",
+        "2 woonlagen biedt privacy voor groepen"
+      ]
+    },
+    "financial": {
+      "score": 4.5,
+      "reasoning": "INVESTERING:\nVraagprijs: \u20ac99.000\nOverdrachtsbelasting (2%): \u20ac1.980\nNotaris/advies: \u20ac2.000\nRenovatie (minimaal): \u20ac15.000 (isolatie, interieur)\nRenovatie (ideaal + hottub): \u20ac25.000\nTOTAAL MINIMAAL: \u20ac117.980\nTOTAAL IDEAAL: \u20ac127.980\n\nJAAROMZET (conservatief, ZONDER hottub):\nHoogseizoen 90d (jul-aug, voorjaar): 65% \u00d7 \u20ac110/n = \u20ac6.435\nMiddenseizoen 180d (apr-jun, sep-okt): 40% \u00d7 \u20ac85/n = \u20ac6.120\nLaagseizoen 95d (nov-mrt): 25% \u00d7 \u20ac75/n = \u20ac1.781\nJAAR TOTAAL: \u20ac14.336\nGemiddelde bezetting: 43%\n\nJAAROmzet MET hottub upgrade (+\u20ac30/n, +15% bezetting):\nHoogseizoen: 80% \u00d7 \u20ac140/n = \u20ac10.080\nMidden: 55% \u00d7 \u20ac115/n = \u20ac11.385\nLaag: 35% \u00d7 \u20ac100/n = \u20ac3.325\nTOTAAL: \u20ac24.790 (+73%!)\n\nKOSTEN:\nParkkosten: \u20ac2.400/j (geschat, MOET nagevraagd!)\nEnergie (pellet+elec): \u20ac2.200/j\nGemeentelijk: \u20ac600/j\nPlatform fees (10%): \u20ac1.434 (zonder) / \u20ac2.479 (met hottub)\nSchoonmaak (50x \u20ac60): \u20ac3.000/j\nWasgoed: \u20ac800/j\nOnderhoud (8%): \u20ac1.147 / \u20ac1.983\nAccountant: \u20ac1.000/j\nVerzekering: \u20ac800/j\nTOTAAL KOSTEN: \u20ac13.381 (zonder hottub) / \u20ac15.262 (met hottub)\n\nRENDEMENT ZONDER HOTTUB:\nNetto: \u20ac14.336 - \u20ac13.381 = \u20ac955/j\nCash-on-Cash: 0,8% - DRAMATISCH LAAG\nBreak-even: 123 jaar (!)\n\nRENDEMENT MET HOTTUB:\nNetto: \u20ac24.790 - \u20ac15.262 = \u20ac9.528/j\nCash-on-Cash: 7,4% (op \u20ac127.980)\nBreak-even: 13,4 jaar - ONDERMAATS\n\nFINANCIERING (70% hypotheek onwaarschijnlijk recreatie, assume cash):\nVolledige cashaankoop nodig: \u20ac128k\n\nSCALE-UP:\nAankoop: \u20ac99k\nInvestering: \u20ac29k\nTotaal: \u20ac128k\nVerwachte waarde over 3j: \u20ac110-120k (+1-2%/j recreatiemarkt)\nWinst na 3j: \u20ac-8k tot \u20ac2k\nCumulatieve cashflow 3j: \u20ac28.584 (met hottub)\nTOTAAL EXIT: \u20ac20-30k winst\n\nOORDEEL: ONDERMAATS rendement zelfs met optimalisatie. Break-even te lang, cashflow te laag voor professionele BNB strategie",
+      "red_flags": [
+        "Zonder hottub: 0,8% rendement - niet investeerbaar",
+        "Met hottub: 7,4% rendement - onder 10% target",
+        "Hoge parkkosten onbekend - kan rendement verder drukken",
+        "Break-even 13+ jaar zelfs na optimalisatie",
+        "Scale-up potentieel zwak: nauwelijks waardegroei te verwachten"
+      ],
+      "recommendations": [
+        "ONDERHANDEL HARD: target \u20ac80-85k aankoopprijs voor acceptabel rendement",
+        "Bij \u20ac85k + \u20ac25k renovatie = \u20ac110k \u2192 8,7% rendement (nog steeds matig)",
+        "Verifieer parkkosten VOOR bod - kan dealbreaker zijn als >\u20ac3k/j",
+        "Alternatief: zoek vergelijkbaar object op beter park met lagere kosten",
+        "Zonder hottub is dit object NIET rendabel voor BNB"
+      ],
+      "calculations": {
+        "purchase_price": 99000,
+        "total_investment": 127980,
+        "estimated_annual_revenue": 24790,
+        "estimated_annual_costs": 15262,
+        "net_annual_income": 9528,
+        "cash_on_cash_return": 7.4,
+        "breakeven_years": 13.4
+      }
+    },
+    "legal": {
+      "score": 3.0,
+      "reasoning": "KRITIEKE PUNTEN:\n\n\"Permanente bewoning NIET toegestaan\" - duidelijk recreatie bestemming.\n\nVERHUURVRIJHEID - ONDUIDELIJK/RISICO:\n\u2753 NERGENS vermeld of zelfverhuur via Airbnb/Booking.com toegestaan\n\u2753 Park de Horn verhuurregels NIET in advertentie\n\u2753 Mogelijke verplichte parkverhuur (Recron park?)\n\u2753 Commissie structuur onbekend\n\u26a0\ufe0f Dit is KRITIEKE informatie die ontbreekt!\n\nZOEKOPDRACHT Park de Horn:\nPark de Horn is kleiner recreatiepark, geen Landal/Roompot keten. DIT IS POSITIEF.\nECHTER: specifieke verhuurvoorwaarden MOETEN geverifieerd:\n- Is er parkbeheer met verhuurdienst?\n- Zijn er commissies?\n- Vrije platformkeuze?\n\nSEIZOEN:\n\u2705 Recreatiebestemming = jaar-rond verhuur aannemelijk\n\u2753 Parkreglement kan beperkingen hebben\n\u2753 Minimale open periode verplicht?\n\nEIGENDOM:\n\u2705 \"Volle eigendom\" op 2 kadastrale percelen (133m\u00b2 + 13m\u00b2)\n\u2705 GEEN erfpacht - groot pluspunt!\n\u2705 Totaal 146 m\u00b2 eigen grond\n\nGOEDKEURINGEN:\n\u2753 Goedkeuring nieuwe eigenaar door parkbeheer? (waarschijnlijk wel)\n\u2753 VvE of parkreglement voorwaarden?\n\u2753 Recron aangesloten? (kan verhuurrestricties betekenen)\n\nDEALBREAKER CHECK:\n\u26a0\ufe0f ONVOLDOENDE INFORMATIE voor definitief oordeel\n\"Onder bod\" status = andere koper mogelijk meer info heeft\n\nPARKKOSTEN:\n\u274c NIET vermeld in advertentie - MOET uitgevraagd\nTypisch \u20ac150-300/maand voor klein park\nAls >\u20ac300/m = rendement killer\n\nFISCAAL:\nProfessionele verhuur >3 jaar = mogelijk Box 1\nVoordeel: kosten aftrekbaar, BTW recuperabel op renovatie\n\nCONCLUSIE: Te veel onduidelijkheden om groen licht te geven. Verhuurvrijheid is de belangrijkste vraag en deze wordt NIET beantwoord in advertentie",
+      "red_flags": [
+        "KRITIEK: Verhuurvrijheid NIET vermeld - moet geverifieerd VOOR bod",
+        "KRITIEK: Parkkosten onbekend - kan \u20ac2-4k/jaar zijn",
+        "Parkreglement/Recron voorwaarden onduidelijk",
+        "Goedkeuring nieuwe eigenaar mogelijk vereist",
+        "Onder bod - andere partij heeft mogelijk voorkennis"
+      ],
+      "recommendations": [
+        "VERPLICHT: Vraag schriftelijk parkreglement op bij beheerder",
+        "VERPLICHT: Verifieer 100% vrije verhuur via eigen kanalen toegestaan",
+        "VERPLICHT: Bevestig parkkosten exacte bedrag per jaar",
+        "Check of park Recron aangesloten (verhuurrestricties mogelijk)",
+        "Vraag huidige eigenaar: verhuurt deze? Via welk platform? Omzet?",
+        "Notaris: laat parkreglement juridisch checken voor verhuurclausules"
+      ],
+      "rental_freedom": "ONBEKEND - KRITIEKE INFORMATIE ONTBREEKT. Zonder bevestiging van vrije verhuur via eigen platforms is dit een NO-GO volgens BNB strategie. Status 'onder bod' maakt verificatie urgent."
+    }
+  },
+  "overall_assessment": "Dit object scoort ONDERMAATS als BNB investering. Grootste problemen: (1) Rendement van slechts 7,4% zelfs NA \u20ac25k hottub/renovatie investering - ver onder 10% target, (2) KRITIEKE ontbrekende informatie over verhuurvrijheid en parkkosten - absolute dealbreaker volgens strategie, (3) Gedateerd pand (1975) vereist substanti\u00eble investering om competitief te zijn, (4) Scale-up potentieel zwak met nauwelijks waardegroei verwacht. De locatie is redelijk (B-locatie, geen A+) en mist directe USP's die hogere nachtprijzen rechtvaardigen. Het pand heeft potentieel voor gezinnen door 2 badkamers en speelveld, maar zonder hottub/luxe uitstraling blijft bezetting achter bij concurrentie. De 'onder bod' status gecombineerd met ontbrekende cruciale informatie over verhuurregels maakt dit extra risicovol. Voor een beginnende BNB investeerder die wil opschalen: dit is NIET het juiste startobject door lage rendement en onduidelijke regelgeving.",
+  "top_strengths": [
+    "Volle eigendom (geen erfpacht) - bespaart \u20ac1500-2500/jaar aan canon",
+    "2 badkamers zeldzaam in \u20ac99k segment - vergroot gebruiksgemak voor 6-8 personen",
+    "Hoekligging tegenover speelveld - uniek verkoopargument voor gezinnen met kinderen"
+  ],
+  "top_concerns": [
+    "Verhuurvrijheid ONBEKEND - zonder bevestiging vrije Airbnb/Booking verhuur is dit NO-GO per strategie",
+    "Rendement 7,4% NA \u20ac28k investering - ver onder 10% minimum target, break-even 13+ jaar",
+    "Parkkosten onbekend - als >\u20ac250/maand zakt rendement onder 5% (niet investeerbaar)",
+    "Bouwjaar 1975 + energielabel F - verwacht \u20ac2500-3500/jaar onderhoudskosten en \u20ac15-25k renovatie nodig"
+  ],
+  "investment_recommendation": "AFWIJZEN - Te veel kritieke onzekerheden en ondermaats rendement. Verhuurvrijheid is niet bevestigd (dealbreaker), parkkosten onbekend (kan rendement killer zijn), en zelfs in optimistisch scenario bereikt rendement slechts 7,4% na \u20ac28k extra investering. Voor BNB scale-up strategie: zoek object met transparante voorwaarden, bewezen verhuurvrijheid en minimaal 10% rendement zonder grote renovatie. De 'onder bod' status betekent dat concurrerende koper mogelijk meer informatie heeft - wacht niet op dit object maar zoek transparanter alternatief.",
+  "metadata": {
+    "processing_time_seconds": 134.0,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}

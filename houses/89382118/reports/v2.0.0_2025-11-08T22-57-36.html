@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 89382118</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 89382118<br>
+                <strong>Analyzed:</strong> 2025-11-08T22:57:36.797726+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">5.2/10</div>
+            <div class="recommendation consider">
+                AFWIJZEN - Te veel kritieke onzekerheden en ondermaats rendement. Verhuurvrijheid is niet bevestigd (dealbreaker), parkkosten onbekend (kan rendement killer zijn), en zelfs in optimistisch scenario bereikt rendement slechts 7,4% na €28k extra investering. Voor BNB scale-up strategie: zoek object met transparante voorwaarden, bewezen verhuurvrijheid en minimaal 10% rendement zonder grote renovatie. De 'onder bod' status betekent dat concurrerende koper mogelijk meer informatie heeft - wacht niet op dit object maar zoek transparanter alternatief.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Dit object scoort ONDERMAATS als BNB investering. Grootste problemen: (1) Rendement van slechts 7,4% zelfs NA €25k hottub/renovatie investering - ver onder 10% target, (2) KRITIEKE ontbrekende informatie over verhuurvrijheid en parkkosten - absolute dealbreaker volgens strategie, (3) Gedateerd pand (1975) vereist substantiële investering om competitief te zijn, (4) Scale-up potentieel zwak met nauwelijks waardegroei verwacht. De locatie is redelijk (B-locatie, geen A+) en mist directe USP's die hogere nachtprijzen rechtvaardigen. Het pand heeft potentieel voor gezinnen door 2 badkamers en speelveld, maar zonder hottub/luxe uitstraling blijft bezetting achter bij concurrentie. De 'onder bod' status gecombineerd met ontbrekende cruciale informatie over verhuurregels maakt dit extra risicovol. Voor een beginnende BNB investeerder die wil opschalen: dit is NIET het juiste startobject door lage rendement en onduidelijke regelgeving.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Volle eigendom (geen erfpacht) - bespaart €1500-2500/jaar aan canon</li><li>2 badkamers zeldzaam in €99k segment - vergroot gebruiksgemak voor 6-8 personen</li><li>Hoekligging tegenover speelveld - uniek verkoopargument voor gezinnen met kinderen</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Verhuurvrijheid ONBEKEND - zonder bevestiging vrije Airbnb/Booking verhuur is dit NO-GO per strategie</li><li>Rendement 7,4% NA €28k investering - ver onder 10% minimum target, break-even 13+ jaar</li><li>Parkkosten onbekend - als >€250/maand zakt rendement onder 5% (niet investeerbaar)</li><li>Bouwjaar 1975 + energielabel F - verwacht €2500-3500/jaar onderhoudskosten en €15-25k renovatie nodig</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">7.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Dirkshorn ligt in Noord-Holland op 15 km van de Noordzeekust (Bergen aan Zee, Camperduin). Park de Horn is een gevestigd recreatiepark met directe toegang tot natuurgebieden en polders.
+
+TOERISTISCHE ATTRACTIES:
+- Strand Bergen/Camperduin: 15 km (15 min)
+- Alkmaar centrum: 20 km (kaasmarkt, historisch)
+- Schoorl duinen: 10 km (wandelen/fietsen)
+- Den Helder: 15 km (marine museum, veerboten Texel)
+- Texel (via Den Helder): 30 min
+- Amsterdam: 65 km (auto/trein)
+
+BEREIKBAAR:
+- N9 hoofdweg: 2 km
+- A7/A9 snelwegen: 25 km
+- Station Schagen: 8 km (bus/auto)
+- Duitse markt: Redelijk aantrekkelijk (kust, Texel)
+
+CONCURRENTIE ANALYSE:
+Airbnb Dirkshorn/omgeving: ~40 objecten binnen 5 km. Vergelijkbare bungalows (3 slk, geen hottub) tonen:
+- Nachtprijs: €80-140 (seizoen afhankelijk)
+- Reviews: 15-60 (indicatie 150-600 gasten/jaar)
+- Bezetting hoogseizoen: 70-85%
+- Laagseizoen: 25-40%
+
+SEIZOENSPATROON:
+Jaar-rond potentieel aanwezig door:
+- Alkmaar events (kaasmarkt apr-sep)
+- Texel trekt ook najaar/voorjaar
+- Kust wandelingen winter
+MAAR: winters significant stiller (60% lagere bezetting)
+
+A/B/C LOCATIE: B-locatie. Goede basis maar geen A+ door:
+- Niet direct aan kust (15 km)
+- Beperkte directe attracties in Dirkshorn zelf
+- Sterke concurrentie van kustplaatsen
+
+PLUS: Rustige ligging trekt specifieke doelgroep (natuur, rust)
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">15 km van strand - niet direct aan toplocatie</div><div class="flag-item">Beperkte attracties in directe omgeving (<5 km)</div><div class="flag-item">Winters beduidend lagere bezetting (max 30%)</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Focus marketing op rustzoeker/natuurliefhebber ipv strandganger</div><div class="rec-item">Pak Texel dagjesmensen (check-in na veerboot return)</div><div class="rec-item">Bundel deals met lokale fietsverhuur voor Schoorl duinen</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">5.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    SPECS:
+- 3 slaapkamers → 6-8 personen
+- 2 badkamers + apart toilet (groot pluspunt!)
+- 78 m² woonoppervlak + 8 m² terras
+- Bouwjaar 1975 (50 jaar oud - onderhoud risico)
+- 2 woonlagen (uniek voor bungalow)
+- Airconditioning aanwezig
+
+USP ANALYSE - ZWAK:
+❌ Geen hottub/sauna (grootste gemis!)
+❌ Geen bijzonder design (standaard jaren '70)
+❌ Geen luxe uitstraling uit foto's
+❌ Geen waterfront/bijzonder uitzicht
+✅ Hoekligging tegenover speelveld
+✅ 2 badkamers (zeldzaam voor dit segment)
+✅ Overkapping buiten
+✅ Airco (comfort zomer)
+⚠️ Huisdieren: NIET vermeld (moet nagevraagd!)
+
+DOELGROEP MATCH:
+- Gezinnen: JA (speelveld, 3 slk) - 7/10
+- Stellen: MATIG (geen romantiek/luxe) - 4/10
+- Groepen vrienden: JA (2 verdiepingen, privacy) - 6/10
+- Zonder huisdieren clausule: gemiste 30% markt
+
+VOORZIENINGEN:
+✅ Open keuken met basis apparatuur
+✅ Wasmachine aansluiting
+✅ Parking eigen terrein
+✅ Berging voor fietsen
+❌ Geen vaatwasser vermeld (wel nodig voor 6-8p)
+❌ Geen BBQ genoemd
+❌ WiFi niet expliciet
+
+VISUELE PRESENTATIE:
+22 foto's + video: voldoende aantal MAAR:
+- Amateuristische fotografie (geen breed/heldere shots)
+- Gedateerde inrichting zichtbaar
+- Geen sfeerbeelden (kaarsen, lifestyle shots)
+- Video toont realiteit maar verkoopt niet
+
+ONDERHOUDSSTAAT:
+⚠️ Bouwjaar 1975 + energielabel F = SIGNIFICANT RISICO
+- Gedeeltelijk dubbelglas (rest enkel?)
+- Pelletkachels als hoofdverwarming (niet ideaal)
+- Elektrische boiler (hoge kosten)
+- Geschat renovatiebudget: €15-25k voor:
+  * Volledige isolatie: €8-12k
+  * Dubbel glas restant: €3-5k
+  * Interieur update: €5-8k
+- Jaarlijks onderhoud: €2500-3500 (oud pand)
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Geen hottub/sauna - grootste USP gemist voor dit segment</div><div class="flag-item">Bouwjaar 1975 + energielabel F - hoge onderhoudskosten verwacht</div><div class="flag-item">Gedateerde uitstraling - vereist investering voor competitieve verhuur</div><div class="flag-item">Pelletkachels als hoofdverwarming - operationeel intensief voor verhuur</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Investeer €8-12k in hottub installatie (ROI <2 jaar via +€30/nacht)</div><div class="rec-item">Budget €5-8k voor interieur restyling (IKEA makeover, neutrale kleuren)</div><div class="rec-item">Professionele fotoshoot €500 na upgrade (cruciaal voor bezetting)</div><div class="rec-item">Isolatie verbeteren €8-12k (verlaagt kosten + verhoogt comfort)</div><div class="rec-item">Onderhandel aankoopprijs met €15-20k voor renovatie noodzaak</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">4.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    INVESTERING:
+Vraagprijs: €99.000
+Overdrachtsbelasting (2%): €1.980
+Notaris/advies: €2.000
+Renovatie (minimaal): €15.000 (isolatie, interieur)
+Renovatie (ideaal + hottub): €25.000
+TOTAAL MINIMAAL: €117.980
+TOTAAL IDEAAL: €127.980
+
+JAAROMZET (conservatief, ZONDER hottub):
+Hoogseizoen 90d (jul-aug, voorjaar): 65% × €110/n = €6.435
+Middenseizoen 180d (apr-jun, sep-okt): 40% × €85/n = €6.120
+Laagseizoen 95d (nov-mrt): 25% × €75/n = €1.781
+JAAR TOTAAL: €14.336
+Gemiddelde bezetting: 43%
+
+JAAROmzet MET hottub upgrade (+€30/n, +15% bezetting):
+Hoogseizoen: 80% × €140/n = €10.080
+Midden: 55% × €115/n = €11.385
+Laag: 35% × €100/n = €3.325
+TOTAAL: €24.790 (+73%!)
+
+KOSTEN:
+Parkkosten: €2.400/j (geschat, MOET nagevraagd!)
+Energie (pellet+elec): €2.200/j
+Gemeentelijk: €600/j
+Platform fees (10%): €1.434 (zonder) / €2.479 (met hottub)
+Schoonmaak (50x €60): €3.000/j
+Wasgoed: €800/j
+Onderhoud (8%): €1.147 / €1.983
+Accountant: €1.000/j
+Verzekering: €800/j
+TOTAAL KOSTEN: €13.381 (zonder hottub) / €15.262 (met hottub)
+
+RENDEMENT ZONDER HOTTUB:
+Netto: €14.336 - €13.381 = €955/j
+Cash-on-Cash: 0,8% - DRAMATISCH LAAG
+Break-even: 123 jaar (!)
+
+RENDEMENT MET HOTTUB:
+Netto: €24.790 - €15.262 = €9.528/j
+Cash-on-Cash: 7,4% (op €127.980)
+Break-even: 13,4 jaar - ONDERMAATS
+
+FINANCIERING (70% hypotheek onwaarschijnlijk recreatie, assume cash):
+Volledige cashaankoop nodig: €128k
+
+SCALE-UP:
+Aankoop: €99k
+Investering: €29k
+Totaal: €128k
+Verwachte waarde over 3j: €110-120k (+1-2%/j recreatiemarkt)
+Winst na 3j: €-8k tot €2k
+Cumulatieve cashflow 3j: €28.584 (met hottub)
+TOTAAL EXIT: €20-30k winst
+
+OORDEEL: ONDERMAATS rendement zelfs met optimalisatie. Break-even te lang, cashflow te laag voor professionele BNB strategie
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Zonder hottub: 0,8% rendement - niet investeerbaar</div><div class="flag-item">Met hottub: 7,4% rendement - onder 10% target</div><div class="flag-item">Hoge parkkosten onbekend - kan rendement verder drukken</div><div class="flag-item">Break-even 13+ jaar zelfs na optimalisatie</div><div class="flag-item">Scale-up potentieel zwak: nauwelijks waardegroei te verwachten</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">ONDERHANDEL HARD: target €80-85k aankoopprijs voor acceptabel rendement</div><div class="rec-item">Bij €85k + €25k renovatie = €110k → 8,7% rendement (nog steeds matig)</div><div class="rec-item">Verifieer parkkosten VOOR bod - kan dealbreaker zijn als >€3k/j</div><div class="rec-item">Alternatief: zoek vergelijkbaar object op beter park met lagere kosten</div><div class="rec-item">Zonder hottub is dit object NIET rendabel voor BNB</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">3.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    KRITIEKE PUNTEN:
+
+"Permanente bewoning NIET toegestaan" - duidelijk recreatie bestemming.
+
+VERHUURVRIJHEID - ONDUIDELIJK/RISICO:
+❓ NERGENS vermeld of zelfverhuur via Airbnb/Booking.com toegestaan
+❓ Park de Horn verhuurregels NIET in advertentie
+❓ Mogelijke verplichte parkverhuur (Recron park?)
+❓ Commissie structuur onbekend
+⚠️ Dit is KRITIEKE informatie die ontbreekt!
+
+ZOEKOPDRACHT Park de Horn:
+Park de Horn is kleiner recreatiepark, geen Landal/Roompot keten. DIT IS POSITIEF.
+ECHTER: specifieke verhuurvoorwaarden MOETEN geverifieerd:
+- Is er parkbeheer met verhuurdienst?
+- Zijn er commissies?
+- Vrije platformkeuze?
+
+SEIZOEN:
+✅ Recreatiebestemming = jaar-rond verhuur aannemelijk
+❓ Parkreglement kan beperkingen hebben
+❓ Minimale open periode verplicht?
+
+EIGENDOM:
+✅ "Volle eigendom" op 2 kadastrale percelen (133m² + 13m²)
+✅ GEEN erfpacht - groot pluspunt!
+✅ Totaal 146 m² eigen grond
+
+GOEDKEURINGEN:
+❓ Goedkeuring nieuwe eigenaar door parkbeheer? (waarschijnlijk wel)
+❓ VvE of parkreglement voorwaarden?
+❓ Recron aangesloten? (kan verhuurrestricties betekenen)
+
+DEALBREAKER CHECK:
+⚠️ ONVOLDOENDE INFORMATIE voor definitief oordeel
+"Onder bod" status = andere koper mogelijk meer info heeft
+
+PARKKOSTEN:
+❌ NIET vermeld in advertentie - MOET uitgevraagd
+Typisch €150-300/maand voor klein park
+Als >€300/m = rendement killer
+
+FISCAAL:
+Professionele verhuur >3 jaar = mogelijk Box 1
+Voordeel: kosten aftrekbaar, BTW recuperabel op renovatie
+
+CONCLUSIE: Te veel onduidelijkheden om groen licht te geven. Verhuurvrijheid is de belangrijkste vraag en deze wordt NIET beantwoord in advertentie
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">KRITIEK: Verhuurvrijheid NIET vermeld - moet geverifieerd VOOR bod</div><div class="flag-item">KRITIEK: Parkkosten onbekend - kan €2-4k/jaar zijn</div><div class="flag-item">Parkreglement/Recron voorwaarden onduidelijk</div><div class="flag-item">Goedkeuring nieuwe eigenaar mogelijk vereist</div><div class="flag-item">Onder bod - andere partij heeft mogelijk voorkennis</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">VERPLICHT: Vraag schriftelijk parkreglement op bij beheerder</div><div class="rec-item">VERPLICHT: Verifieer 100% vrije verhuur via eigen kanalen toegestaan</div><div class="rec-item">VERPLICHT: Bevestig parkkosten exacte bedrag per jaar</div><div class="rec-item">Check of park Recron aangesloten (verhuurrestricties mogelijk)</div><div class="rec-item">Vraag huidige eigenaar: verhuurt deze? Via welk platform? Omzet?</div><div class="rec-item">Notaris: laat parkreglement juridisch checken voor verhuurclausules</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Verhuurvrijheid ONBEKEND - zonder bevestiging vrije Airbnb/Booking verhuur is dit NO-GO per strategie</li><li>Rendement 7,4% NA €28k investering - ver onder 10% minimum target, break-even 13+ jaar</li><li>Parkkosten onbekend - als >€250/maand zakt rendement onder 5% (niet investeerbaar)</li><li>Bouwjaar 1975 + energielabel F - verwacht €2500-3500/jaar onderhoudskosten en €15-25k renovatie nodig</li></li>
+                
