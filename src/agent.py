@@ -103,7 +103,7 @@ class ClaudeLLM:
 
         body = {
             "model": self.model,
-            "max_tokens": 4096,
+            "max_tokens": 8000,  # Increased for detailed v2.0.0 analyses with financial calculations
             "messages": [{
                 "role": "user",
                 "content": prompt
