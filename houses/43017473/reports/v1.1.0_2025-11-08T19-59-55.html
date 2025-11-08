@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 43017473</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 43017473<br>
+                <strong>Analyzed:</strong> 2025-11-08T19:59:55.818954+00:00<br>
+                <strong>Rules Version:</strong> v1.1.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">7.34/10</div>
+            <div class="recommendation consider">
+                OVERWEGEN - Deze woning is geschikt voor kopers die primair een eigen vakantieverblijf zoeken met mogelijkheid tot bijverdienen via verhuur, niet voor pure beleggers die maximaal rendement nastreven. ACTIE: Onderhandel de prijs naar €145.000-€148.000 (5-7% korting is reëel na 6 weken), vraag concrete verhuurcijfers van Roompot op, laat energielabel upgraden naar minimaal C budgetteer €5.000-€8.000 voor zonnepanelen en verdere isolatie, en laat juridisch onderzoek doen naar parkreglement en verhuurcontract. Bij succesvolle onderhandeling en goede verhuurcijfers kan dit een prettige lifestyle-investering zijn met bescheiden maar stabiel rendement. Puur financieel gezien zijn er betere alternatieven in de markt.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Deze recreatiewoning op Bungalowpark Hoenderloo is een solide, instapklare investering met beperkt maar stabiel rendement. De locatie op de Veluwe is uitstekend voor vakantieverhuur, het park biedt goede faciliteiten, en eigen grond (geen erfpacht) is een belangrijk voordeel. De woning is goed onderhouden met recente isolatieverbeteringen en moderne voorzieningen. Het financiële rendement van circa 1,7% (zonder eigen gebruik) is bescheiden maar realistisch voor deze sector, vooral als je de intrinsieke waarde van eigen vakantie-gebruik mee rekent. Grootste zorgen zijn het energielabel E (toekomstige kosten/regelgeving), de beperkte woonoppervlakte, en het relatief lage directe rendement. Voor een koper die vooral eigen gebruik nastreeft met enige verhuurinkomsten als bonus is dit interessant. Voor pure ROI-gerichte beleggers zijn er betere alternatieven. De prijs ligt marktconform maar er is onderhandelingsruimte gezien de 6 weken op de markt.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Eigen grond (260m²) zonder erfpacht - geen doorlopende grondkosten en meer zekerheid</li><li>Uitstekende locatie op populair park aan Nationaal Park de Hoge Veluwe met uitgebreide faciliteiten</li><li>Instapklaar en volledig gemeubileerd volgens parkverhuurnormen, directe inkomsten mogelijk</li><li>Goede isolatie-investeringen gedaan (dak, spouw, vloer) en relatief nieuwe CV-ketel (2019)</li><li>All-inclusive parkkosten van €4.719/jaar (incl. nutsvoorzieningen) zijn transparant en behapbaar</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Energielabel E - hoge energiekosten voor gasten en risico op toekomstige strengere verhuureisen, upgrade noodzakelijk</li><li>Laag direct financieel rendement (1,7% bruto) - vooral problematisch bij eigen gebruik scenario's</li><li>Beperkte woonoppervlakte (52m²) voor 3 slaapkamers - mogelijk krap voor grotere gezinnen, beperkt huurpotentieel</li><li>Geen permanente bewoning toegestaan - beperkt flexibiliteit in gebruik en mogelijk exit-strategie</li><li>Afhankelijkheid van parkbeheer en Roompot voor verhuur - beperkte eigen controle over tarieven en marketing</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">8.2/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Uitstekende locatie op Bungalowpark Hoenderloo aan de rand van Nationaal Park de Hoge Veluwe. Het park is autoluw, kinderen kunnen veilig spelen. Zeer aantrekkelijk voor gezinnen en natuurliefhebbers. Ligging aan rustige weg in bosrijke omgeving biedt rust en privacy. Het park beschikt over uitgebreide faciliteiten: restaurant, verwarmd zwembad, tennisbanen, midgetgolf, speeltuinen, en fietsverhuur. Directe toegang tot wandel- en fietspaden. Nabijheid tot attracties zoals Julianatoren, Apenheul, en Kröller-Müller Museum. Gelderland is een populaire vakantiebestemming voor Nederlandse en Duitse toeristen. Afstand tot grote steden zoals Apeldoorn (±15km) en Arnhem (±30km) is goed. De woning is makkelijk bereikbaar vanaf de ingang van het park.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Afhankelijkheid van parkfaciliteiten - als het park deterioreert, daalt de waarde</div><div class="flag-item">Seizoensgebondenheid typisch voor Veluwe-regio (hoogseizoen voorjaar/zomer)</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Onderzoek de bezettingsgraden van vergelijkbare woningen op het park</div><div class="rec-item">Verifieer de staat en onderhoudsplanning van de parkfaciliteiten</div><div class="rec-item">Check reviews van het park op boekingsplatformen</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">6.8/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    De recreatiewoning biedt een redelijke oppervlakte van 52m² woonoppervlak op 260m² eigen grond. Positieve aspecten: 3 slaapkamers (waarvan 1 op begane grond, goed voor toegankelijkheid), moderne badkamer met inloopdouche, open keuken met inbouwapparatuur, houtkachel voor sfeer, openslaande deuren naar terras, CV-ketel uit 2019 (relatief nieuw). Belangrijke pluspunten qua isolatie: nieuw dak met dakisolatie, spouw- én vloerisolatie, LED-verlichting, extra radiator. Volledig gemeubileerd en verhuurklaar volgens parknormen. ECHTER: energielabel E is ondermaats (kosten voor gasten, minder aantrekkelijk voor milieubewuste huurders). Woonoppervlak van 52m² is aan de kleine kant voor 3 slaapkamers - slaapkamers zijn waarschijnlijk compact. Bouwjaar 1974, ondanks renovaties blijft het een oudere constructie. Inhoud van slechts 172m³ bevestigt beperkte ruimte. Openbaar parkeren (geen eigen parkeerplaats) is minder ideaal. Foto's zijn essentieel om definitief oordeel te vellen over staat en inrichting.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Energielabel E - hoge energiekosten, mogelijk toekomstige nalevingseisen</div><div class="flag-item">Beperkte woonoppervlakte (52m²) voor 3 slaapkamers suggereert kleine kamers</div><div class="flag-item">Geen eigen parkeerplaats, alleen openbaar parkeren</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Plan energetische verbeteringen om naar minimaal label C te komen (zonnepanelen, extra isolatie)</div><div class="rec-item">Investeer in hoogwaardige meubilering en sfeerverlichting om beperkte ruimte te compenseren</div><div class="rec-item">Voeg slimme opbergoplossingen toe om ruimtegevoel te vergroten</div><div class="rec-item">Creëer aantrekkelijke buitenruimte met tuinmeubelen en eventueel hot tub voor USP</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">7.1/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    AANKOOPKOSTEN: Vraagprijs €155.000 k.k. + circa 6% overdrachtskosten (notaris, advies, taxatie) = €164.300 totale investering. PARKKOSTEN: €1.179,75/kwartaal = €4.719/jaar (incl. gas, water, elektra, tuin, VvE - dit is aantrekkelijk all-in). GESCHATTE VERHUURINKOMSTEN: Vergelijkbare recreatiewoningen op de Veluwe met 3 slaapkamers genereren €8.000-€12.000/jaar via parkexploitatie (Roompot). Conservatieve schatting: €9.500/jaar. AANVULLENDE KOSTEN: Verzekering €400/jaar, klein onderhoud €800/jaar, accountant/administratie €300/jaar, vervanging inventaris €500/jaar = €2.000/jaar extra. TOTALE KOSTEN: €6.719/jaar. NETTO RENDEMENT (verhuur zonder eigen gebruik): €9.500 - €6.719 = €2.781/jaar = 1,7% op investering. MAAR: bij 45 dagen eigen gebruik daalt verhuurinkomen naar circa €7.500, netto €781 = 0,5% rendement. KAPITAALGROEI: Recreatiemarkt Veluwe is stabiel, verwachte waardestijging 1-2%/jaar. EIGEN GROND is groot voordeel (geen erfpacht). Prijs van €155.000 ligt in de markt voor deze regio en type. ROI is bescheiden maar acceptabel voor recreatie-eigendom met gebruiksmogelijkheden.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Laag directe rendement (1,7% bruto, praktisch lager door onvoorziene kosten)</div><div class="flag-item">Bij eigen gebruik wordt financieel rendement minimaal</div><div class="flag-item">Afhankelijkheid van Roompot voor verhuur en tariefstelling</div><div class="flag-item">Parkkosten kunnen stijgen (buiten eigen controle)</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Vraag Roompot om concrete bezettingsgraden en omzetcijfers van vergelijkbare woningen</div><div class="rec-item">Onderhandel over vraagprijs - 6 weken op markt biedt ruimte, probeer €145.000-€148.000</div><div class="rec-item">Bereken scenario's: 100% verhuur vs. 45 dagen eigen gebruik vs. 90+14 dagen</div><div class="rec-item">Overweeg aanvullende inkomsten: fietsverhuur, welkomstpakketten, late checkout fees</div><div class="rec-item">Investeer in energiebesparing om parkkosten te drukken bij toekomstige tariefstijgingen</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">7.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    EIGENDOMSSITUATIE: Volle eigendom op eigen grond (260m²) - zeer positief, geen erfpachtperikelen. PERMANENTE BEWONING: Expliciet NIET toegestaan - dit is standaard voor recreatieparken en goed gedocumenteerd. Betekent wel dat het puur als recreatie/verhuur gebruikt kan worden. VERHUURBEPERKINGEN: Verhuur is niet verplicht maar wel mogelijk via Roompot/park. Het park heeft kennelijk verhuurnormen waaraan de woning voldoet ('verhuurklaar volgens actuele normen'). Er zijn duidelijke regelingen voor eigen gebruik (45 dagen, of 90+14 dagen). VERGUNNINGEN: Op recreatieparken is vakantieverhuur doorgaans toegestaan binnen parkreglement. Geen indicatie van vergunningsproblemen. RISICO'S: Gemeente Apeldoorn heeft geen strenge beperkingen voor recreatieparken. Wel kan regelgeving veranderen (bijv. toekomstige energielabel-eisen voor verhuur). VvE/PARK: Parkbeheer via VvE, kosten zijn transparant. FISCAAL: Recreatiewoning zonder permanente bewoning valt onder Box 3 (vermogen), verhuurinkomsten zijn belast. BTW-vraagstukken bij verhuur via Roompot (wordt meestal geregeld door exploitant).
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Geen permanente bewoning toegestaan - beperkt toekomstige gebruiksmogelijkheden</div><div class="flag-item">Afhankelijkheid van parkreglement en VvE-beslissingen</div><div class="flag-item">Mogelijk toekomstige aanscherping energielabel-eisen voor verhuur (huidige label E)</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Laat advocaat parkreglement en VvE-statuten grondig controleren</div><div class="rec-item">Verifieer verhuurcontract met Roompot: commissies, verplichtingen, opzegtermijnen</div><div class="rec-item">Check of er lopende of geplande juridische wijzigingen zijn bij gemeente Apeldoorn</div><div class="rec-item">Vraag recente VvE-notulen op voor inzicht in parkbeheer en toekomstige kosten</div><div class="rec-item">Overleg met fiscalist over optimale constructie (privé vs. BV) voor belastingoptimalisatie</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Energielabel E - hoge energiekosten voor gasten en risico op toekomstige strengere verhuureisen, upgrade noodzakelijk</li><li>Laag direct financieel rendement (1,7% bruto) - vooral problematisch bij eigen gebruik scenario's</li><li>Beperkte woonoppervlakte (52m²) voor 3 slaapkamers - mogelijk krap voor grotere gezinnen, beperkt huurpotentieel</li><li>Geen permanente bewoning toegestaan - beperkt flexibiliteit in gebruik en mogelijk exit-strategie</li><li>Afhankelijkheid van parkbeheer en Roompot voor verhuur - beperkte eigen controle over tarieven en marketing</li></li>
+                

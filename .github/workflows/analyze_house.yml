@@ -30,10 +30,15 @@ jobs:
   analyze:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write  # Required to push to main branch
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main  # Always work on main branch
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -182,7 +187,7 @@ jobs:
           print(f'Report generated: {report_path}')
           "
 
-      - name: Commit analysis results
+      - name: Commit and push analysis results to main
         run: |
           git config user.name "House Analysis Bot"
           git config user.email "bot@github-actions"
@@ -193,7 +198,8 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Analysis: ${{ inputs.house_id }} using ${{ inputs.rules_version }} (score: ${{ steps.analyze.outputs.score }})"
-            git push
+            git push origin main
+            echo "✅ Analysis results pushed to main branch"
           fi
 
       - name: Update Apify status - Completed
@@ -204,9 +210,9 @@ jobs:
           python -c "
           from src.apify_client import ApifyClient
 
-          # Generate GitHub URL to report
+          # Generate GitHub URL to report (always points to main branch)
           repo_url = 'https://github.com/${{ github.repository }}'
-          report_url = f\"{repo_url}/blob/${{ github.ref_name }}/houses/${{ inputs.house_id }}/reports/\"
+          report_url = f\"{repo_url}/blob/main/houses/${{ inputs.house_id }}/reports/\"
 
           client = ApifyClient()
           client.update_analysis_status(

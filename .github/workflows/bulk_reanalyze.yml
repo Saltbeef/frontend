@@ -102,7 +102,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'analyze_house.yml',
-              ref: context.ref,
+              ref: 'main',  // Always trigger on main branch
               inputs: {
                 house_id: '${{ matrix.house_id }}',
                 apify_dataset_id: '${{ inputs.apify_dataset_id }}',

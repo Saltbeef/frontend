@@ -1,0 +1,90 @@
+{
+  "house_id": "43017473",
+  "analyzed_at": "2025-11-08T19:59:55.818954+00:00",
+  "rules_version": "v1.1.0",
+  "overall_score": 7.34,
+  "category_scores": {
+    "location": {
+      "score": 8.2,
+      "reasoning": "Uitstekende locatie op Bungalowpark Hoenderloo aan de rand van Nationaal Park de Hoge Veluwe. Het park is autoluw, kinderen kunnen veilig spelen. Zeer aantrekkelijk voor gezinnen en natuurliefhebbers. Ligging aan rustige weg in bosrijke omgeving biedt rust en privacy. Het park beschikt over uitgebreide faciliteiten: restaurant, verwarmd zwembad, tennisbanen, midgetgolf, speeltuinen, en fietsverhuur. Directe toegang tot wandel- en fietspaden. Nabijheid tot attracties zoals Julianatoren, Apenheul, en Kr\u00f6ller-M\u00fcller Museum. Gelderland is een populaire vakantiebestemming voor Nederlandse en Duitse toeristen. Afstand tot grote steden zoals Apeldoorn (\u00b115km) en Arnhem (\u00b130km) is goed. De woning is makkelijk bereikbaar vanaf de ingang van het park.",
+      "red_flags": [
+        "Afhankelijkheid van parkfaciliteiten - als het park deterioreert, daalt de waarde",
+        "Seizoensgebondenheid typisch voor Veluwe-regio (hoogseizoen voorjaar/zomer)"
+      ],
+      "recommendations": [
+        "Onderzoek de bezettingsgraden van vergelijkbare woningen op het park",
+        "Verifieer de staat en onderhoudsplanning van de parkfaciliteiten",
+        "Check reviews van het park op boekingsplatformen"
+      ]
+    },
+    "property": {
+      "score": 6.8,
+      "reasoning": "De recreatiewoning biedt een redelijke oppervlakte van 52m\u00b2 woonoppervlak op 260m\u00b2 eigen grond. Positieve aspecten: 3 slaapkamers (waarvan 1 op begane grond, goed voor toegankelijkheid), moderne badkamer met inloopdouche, open keuken met inbouwapparatuur, houtkachel voor sfeer, openslaande deuren naar terras, CV-ketel uit 2019 (relatief nieuw). Belangrijke pluspunten qua isolatie: nieuw dak met dakisolatie, spouw- \u00e9n vloerisolatie, LED-verlichting, extra radiator. Volledig gemeubileerd en verhuurklaar volgens parknormen. ECHTER: energielabel E is ondermaats (kosten voor gasten, minder aantrekkelijk voor milieubewuste huurders). Woonoppervlak van 52m\u00b2 is aan de kleine kant voor 3 slaapkamers - slaapkamers zijn waarschijnlijk compact. Bouwjaar 1974, ondanks renovaties blijft het een oudere constructie. Inhoud van slechts 172m\u00b3 bevestigt beperkte ruimte. Openbaar parkeren (geen eigen parkeerplaats) is minder ideaal. Foto's zijn essentieel om definitief oordeel te vellen over staat en inrichting.",
+      "red_flags": [
+        "Energielabel E - hoge energiekosten, mogelijk toekomstige nalevingseisen",
+        "Beperkte woonoppervlakte (52m\u00b2) voor 3 slaapkamers suggereert kleine kamers",
+        "Geen eigen parkeerplaats, alleen openbaar parkeren"
+      ],
+      "recommendations": [
+        "Plan energetische verbeteringen om naar minimaal label C te komen (zonnepanelen, extra isolatie)",
+        "Investeer in hoogwaardige meubilering en sfeerverlichting om beperkte ruimte te compenseren",
+        "Voeg slimme opbergoplossingen toe om ruimtegevoel te vergroten",
+        "Cre\u00eber aantrekkelijke buitenruimte met tuinmeubelen en eventueel hot tub voor USP"
+      ]
+    },
+    "financial": {
+      "score": 7.1,
+      "reasoning": "AANKOOPKOSTEN: Vraagprijs \u20ac155.000 k.k. + circa 6% overdrachtskosten (notaris, advies, taxatie) = \u20ac164.300 totale investering. PARKKOSTEN: \u20ac1.179,75/kwartaal = \u20ac4.719/jaar (incl. gas, water, elektra, tuin, VvE - dit is aantrekkelijk all-in). GESCHATTE VERHUURINKOMSTEN: Vergelijkbare recreatiewoningen op de Veluwe met 3 slaapkamers genereren \u20ac8.000-\u20ac12.000/jaar via parkexploitatie (Roompot). Conservatieve schatting: \u20ac9.500/jaar. AANVULLENDE KOSTEN: Verzekering \u20ac400/jaar, klein onderhoud \u20ac800/jaar, accountant/administratie \u20ac300/jaar, vervanging inventaris \u20ac500/jaar = \u20ac2.000/jaar extra. TOTALE KOSTEN: \u20ac6.719/jaar. NETTO RENDEMENT (verhuur zonder eigen gebruik): \u20ac9.500 - \u20ac6.719 = \u20ac2.781/jaar = 1,7% op investering. MAAR: bij 45 dagen eigen gebruik daalt verhuurinkomen naar circa \u20ac7.500, netto \u20ac781 = 0,5% rendement. KAPITAALGROEI: Recreatiemarkt Veluwe is stabiel, verwachte waardestijging 1-2%/jaar. EIGEN GROND is groot voordeel (geen erfpacht). Prijs van \u20ac155.000 ligt in de markt voor deze regio en type. ROI is bescheiden maar acceptabel voor recreatie-eigendom met gebruiksmogelijkheden.",
+      "red_flags": [
+        "Laag directe rendement (1,7% bruto, praktisch lager door onvoorziene kosten)",
+        "Bij eigen gebruik wordt financieel rendement minimaal",
+        "Afhankelijkheid van Roompot voor verhuur en tariefstelling",
+        "Parkkosten kunnen stijgen (buiten eigen controle)"
+      ],
+      "recommendations": [
+        "Vraag Roompot om concrete bezettingsgraden en omzetcijfers van vergelijkbare woningen",
+        "Onderhandel over vraagprijs - 6 weken op markt biedt ruimte, probeer \u20ac145.000-\u20ac148.000",
+        "Bereken scenario's: 100% verhuur vs. 45 dagen eigen gebruik vs. 90+14 dagen",
+        "Overweeg aanvullende inkomsten: fietsverhuur, welkomstpakketten, late checkout fees",
+        "Investeer in energiebesparing om parkkosten te drukken bij toekomstige tariefstijgingen"
+      ]
+    },
+    "legal": {
+      "score": 7.5,
+      "reasoning": "EIGENDOMSSITUATIE: Volle eigendom op eigen grond (260m\u00b2) - zeer positief, geen erfpachtperikelen. PERMANENTE BEWONING: Expliciet NIET toegestaan - dit is standaard voor recreatieparken en goed gedocumenteerd. Betekent wel dat het puur als recreatie/verhuur gebruikt kan worden. VERHUURBEPERKINGEN: Verhuur is niet verplicht maar wel mogelijk via Roompot/park. Het park heeft kennelijk verhuurnormen waaraan de woning voldoet ('verhuurklaar volgens actuele normen'). Er zijn duidelijke regelingen voor eigen gebruik (45 dagen, of 90+14 dagen). VERGUNNINGEN: Op recreatieparken is vakantieverhuur doorgaans toegestaan binnen parkreglement. Geen indicatie van vergunningsproblemen. RISICO'S: Gemeente Apeldoorn heeft geen strenge beperkingen voor recreatieparken. Wel kan regelgeving veranderen (bijv. toekomstige energielabel-eisen voor verhuur). VvE/PARK: Parkbeheer via VvE, kosten zijn transparant. FISCAAL: Recreatiewoning zonder permanente bewoning valt onder Box 3 (vermogen), verhuurinkomsten zijn belast. BTW-vraagstukken bij verhuur via Roompot (wordt meestal geregeld door exploitant).",
+      "red_flags": [
+        "Geen permanente bewoning toegestaan - beperkt toekomstige gebruiksmogelijkheden",
+        "Afhankelijkheid van parkreglement en VvE-beslissingen",
+        "Mogelijk toekomstige aanscherping energielabel-eisen voor verhuur (huidige label E)"
+      ],
+      "recommendations": [
+        "Laat advocaat parkreglement en VvE-statuten grondig controleren",
+        "Verifieer verhuurcontract met Roompot: commissies, verplichtingen, opzegtermijnen",
+        "Check of er lopende of geplande juridische wijzigingen zijn bij gemeente Apeldoorn",
+        "Vraag recente VvE-notulen op voor inzicht in parkbeheer en toekomstige kosten",
+        "Overleg met fiscalist over optimale constructie (priv\u00e9 vs. BV) voor belastingoptimalisatie"
+      ]
+    }
+  },
+  "overall_assessment": "Deze recreatiewoning op Bungalowpark Hoenderloo is een solide, instapklare investering met beperkt maar stabiel rendement. De locatie op de Veluwe is uitstekend voor vakantieverhuur, het park biedt goede faciliteiten, en eigen grond (geen erfpacht) is een belangrijk voordeel. De woning is goed onderhouden met recente isolatieverbeteringen en moderne voorzieningen. Het financi\u00eble rendement van circa 1,7% (zonder eigen gebruik) is bescheiden maar realistisch voor deze sector, vooral als je de intrinsieke waarde van eigen vakantie-gebruik mee rekent. Grootste zorgen zijn het energielabel E (toekomstige kosten/regelgeving), de beperkte woonoppervlakte, en het relatief lage directe rendement. Voor een koper die vooral eigen gebruik nastreeft met enige verhuurinkomsten als bonus is dit interessant. Voor pure ROI-gerichte beleggers zijn er betere alternatieven. De prijs ligt marktconform maar er is onderhandelingsruimte gezien de 6 weken op de markt.",
+  "top_strengths": [
+    "Eigen grond (260m\u00b2) zonder erfpacht - geen doorlopende grondkosten en meer zekerheid",
+    "Uitstekende locatie op populair park aan Nationaal Park de Hoge Veluwe met uitgebreide faciliteiten",
+    "Instapklaar en volledig gemeubileerd volgens parkverhuurnormen, directe inkomsten mogelijk",
+    "Goede isolatie-investeringen gedaan (dak, spouw, vloer) en relatief nieuwe CV-ketel (2019)",
+    "All-inclusive parkkosten van \u20ac4.719/jaar (incl. nutsvoorzieningen) zijn transparant en behapbaar"
+  ],
+  "top_concerns": [
+    "Energielabel E - hoge energiekosten voor gasten en risico op toekomstige strengere verhuureisen, upgrade noodzakelijk",
+    "Laag direct financieel rendement (1,7% bruto) - vooral problematisch bij eigen gebruik scenario's",
+    "Beperkte woonoppervlakte (52m\u00b2) voor 3 slaapkamers - mogelijk krap voor grotere gezinnen, beperkt huurpotentieel",
+    "Geen permanente bewoning toegestaan - beperkt flexibiliteit in gebruik en mogelijk exit-strategie",
+    "Afhankelijkheid van parkbeheer en Roompot voor verhuur - beperkte eigen controle over tarieven en marketing"
+  ],
+  "investment_recommendation": "OVERWEGEN - Deze woning is geschikt voor kopers die primair een eigen vakantieverblijf zoeken met mogelijkheid tot bijverdienen via verhuur, niet voor pure beleggers die maximaal rendement nastreven. ACTIE: Onderhandel de prijs naar \u20ac145.000-\u20ac148.000 (5-7% korting is re\u00ebel na 6 weken), vraag concrete verhuurcijfers van Roompot op, laat energielabel upgraden naar minimaal C budgetteer \u20ac5.000-\u20ac8.000 voor zonnepanelen en verdere isolatie, en laat juridisch onderzoek doen naar parkreglement en verhuurcontract. Bij succesvolle onderhandeling en goede verhuurcijfers kan dit een prettige lifestyle-investering zijn met bescheiden maar stabiel rendement. Puur financieel gezien zijn er betere alternatieven in de markt.",
+  "metadata": {
+    "processing_time_seconds": 75.48,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
