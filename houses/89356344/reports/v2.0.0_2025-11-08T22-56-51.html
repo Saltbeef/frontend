@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 89356344</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 89356344<br>
+                <strong>Analyzed:</strong> 2025-11-08T22:56:51.966490+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">4.97/10</div>
+            <div class="recommendation consider">
+                OVERWEGEN (MET STERKE VOORWAARDEN) - Dit is enkel interessant voor ervaren DIY-investeerder die kan onderhandelen naar €40k-42k EN zelf kan renoveren. Anders AFWIJZEN. VOORWAARDEN: 1) Parkreglement verificatie toont vrije verhuur zonder commissie, 2) Parkkosten max €2k/jaar, 3) Onderhandelde prijs €40k-42k, 4) DIY-renovatie capaciteit voor €25k-35k (ipv €50k-60k aannemersprijs). Dan totale investering €67k-79k met potentieel 15-18% CoC na renovatie. Voor beginners of hands-off investeerders: AFWIJZEN - te veel werk, te veel risico, te veel onzekerheden.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Dit is GEEN plug-and-play vakantieverhuur maar een RENOVATIEPROJECT. De €50k vraagprijs lijkt aantrekkelijk, maar 28m² woonoppervlak is suboptimaal en vereist €40k-60k investering voor marktconform product. In huidige staat is het object VERLIESLATEND. Locatie is redelijk (B+), maar pand scoort zwak door gebrek aan USP's en gedateerde staat. KRITIEKE ONBEKENDEN: parkkosten en verhuurvrijheid niet gedocumenteerd - potentiële dealbreakers. De verkoper promoot vooral nieuwbouwmogelijkheden ('soepele regels'), wat impliceert dat huidige staat niet het verkooppunt is. Voor ervaren investeerder met renovatie-expertise en DIY-capaciteit kan dit interessant zijn bij onderhandelde prijs €40k-42k, resulterend in totale investering €90k-102k na renovatie. Dan is 11-14% CoC haalbaar. Voor beginnende investeerder of hands-off verhuurder: AFWIJZEN. Te veel onzekerheden, te veel werk, te kleine scale-up potentieel.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Lage instapprijs €50k + volle eigendom (geen erfpacht/huurgrond) = lage barrière</li><li>Locatie B+ met gezinsvriendelijke voorzieningen direct nabij (supermarkt, speelparadijs, golf)</li><li>Expliciet genoemd: 'soepele regels nieuwbouw' = mogelijkheid custom vakantiewoning bouwen</li><li>172m² perceel met tuin rondom op zuidwest = voldoende ruimte voor uitbreiding/upgrade</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>KRITIEK: Verhuurvrijheid niet bevestigd - parkreglement kan verplichte verhuur via derden bevatten (dealbreaker)</li><li>KRITIEK: 28m² woonoppervlak is 40-50% onder marktnorm - in huidige staat VERLIESLATEND (€155/jaar)</li><li>RISICO: Onbekende parkkosten kunnen €2k-4k/jaar zijn - maakt rendement onvoorspelbaar</li><li>PROJECT: €40k-60k renovatie noodzakelijk voor verhuurbaar product = totale investering €90k-113k, niet €50k</li><li>4 maanden te koop zonder verkoop suggereert markt ziet zelfde problemen - beperkte exit liquiditeit</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">7.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Park De Horn ligt in Dirkshorn, Noord-Holland, een goed ontwikkeld vakantiegebied. STERKE PUNTEN: Spar supermarkt direct voor het park (ideaal voor gasten), golfbaan Dirkshorn en speelparadijs De Holle Bolle Boom op 5 minuten lopen (gezinsvriendelijk). Strand, bos en duinen op fietsafstand (~4-6 km naar kust). Schagen centrum met overdekt winkelcentrum op 5-10 minuten rijden. BEREIKBAARHEID: N9 provinciale weg op 2 km, A7 snelweg richting Alkmaar/Den Helder op ~15 km. Station Schagen op 8 km. Aantrekkelijk voor Nederlandse gezinnen, minder voor Duitse toeristen (te ver van grens). TOERISTISCHE ANALYSE: Dit is een B+ locatie. Gebied trekt voornamelijk Nederlandse gezinnen in voor-/naseizoen en zomerperiode. Concurrentie op Airbnb matig (20-30 objecten binnen 5 km), gemiddelde nachtprijs €80-120 voor vergelijkbare bungalows. SEIZOENSPATROON: Sterke vraag april-oktober, rustig november-maart (behalve kerstvakantie/voorjaarsvakantie). Jaar-rond verhuur mogelijk maar laagseizoen vereist agressieve prijsstelling.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">B-locatie: geen directe strandligging (4-6 km), beperkt laagseizoen potentieel</div><div class="flag-item">Beperkte internationale aantrekkingskracht (ver van Duitse grens)</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Target Nederlandse gezinnen met kinderen 0-12 jaar als primaire doelgroep</div><div class="rec-item">Creëer winteraanbiedingen met focus op rust en natuur voor 55+ stellen</div><div class="rec-item">Promoot nabijheid Schagen (winkelen) en activiteiten (golf, speelparadijs)</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">3.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    BASISSPECIFICATIES: 2 slaapkamers, max 4-5 gasten, 1 badkamer, 28m² woonoppervlak (!), 172m² perceel, bouwjaar 1975. KRITISCHE ZWAKTE: Slechts 28m² is EXTREEM klein voor vakantieverhuur. Dit is ronduit krap voor 4-5 personen. USP's ANALYSE: Huidige staat biedt GEEN unieke verkooppunten. Geen hottub, sauna, luxe design, bijzonder thema - niets dat het onderscheidt. Foto's tonen verouderde, basic inrichting. Tuin rondom op zuidwest (positief maar niet uniek). ENIGE PLUSPUNTEN: Vrijstaande berging, beschutte tuin, eigen parkeerplaats, rustige parkligging. Tekst vermeldt 'inboedel inclusief' maar foto's tonen gedateerde spullen. DOELGROEP: Beperkt tot kleine gezinnen (2 volwassenen + 2 kinderen) of stellen. Te krap voor groepen. Onduidelijk of huisdieren toegestaan (niet vermeld = grote gemiste kans). ONDERHOUDSSTAAT: Omschrijving noemt 'eenvoudige recreatiewoning' en benadrukt nieuwbouwmogelijkheid - duidelijk signaal dat huidige staat suboptimaal is. Verwarming via gaskachels (verouderd, hoge kosten), geiser voor warm water (inefficiënt). CRUCIALE OBSERVATIE: Verkoper promoot vooral 'mogelijkheden voor nieuwbouw of uitbreiding' en 'soepele regels voor nieuwbouw' - dit is GEEN turnkey verhuurobject maar een project.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">EXTREEM klein woonoppervlak (28m²) - marktgemiddelde is 50-80m² voor 2-slaapkamer verhuur</div><div class="flag-item">GEEN unieke USP's - volledig ongedifferentieerd aanbod</div><div class="flag-item">Verouderde staat: bouwjaar 1975, inefficiënte verwarming/warm water</div><div class="flag-item">Fotokwaliteit matig, toont verouderde inrichting</div><div class="flag-item">Verkoper focust op nieuwbouw/verbouwing = impliciete bevestiging huidige staat ontoereikend</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">OPTIE A - AFBREKEN EN NIEUWBOUW: Budget €80k-120k voor moderne 50m² bungalow met hottub (totale investering €130k-170k)</div><div class="rec-item">OPTIE B - RENOVATIE/UITBREIDING: Uitbouw naar 45-50m², moderniseren, hottub toevoegen (budget €40k-60k)</div><div class="rec-item">OPTIE C - MINIMALE UPGRADE: Restyling interieur, professionele fotoshoot, toevoegen USP's zoals houtkachel/BBQ (budget €8k-12k)</div><div class="rec-item">Verduidelijk huisdierbeleid - indien mogelijk toestaan (+30% doelgroep)</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">4.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    AANKOOPKOSTEN: Vraagprijs €50.000 (4 maanden te koop = onderhandelruimte!), overdrachtsbelasting €1.000, notaris €2.000, TOTAAL €53.000. MAAR: Noodzakelijke renovatie voor verhuurbaar maken €40k-60k = REËLE INVESTERING €93k-113k. OMZET BEREKENING (huidige staat - pessimistisch): Hoogseizoen 70 dagen × 60% bezetting × €85/nacht = €3.570, Middenseizoen 150 dagen × 35% bezetting × €70/nacht = €3.675, Laagseizoen 145 dagen × 15% bezetting × €60/nacht = €1.305, TOTAAL BRUTO: €8.550/jaar. Platform fees -10%: -€855, Schoonmaak 30 beurten × €50: -€1.500, Wasgoed: -€400, NETTO OMZET: €5.795. KOSTEN: Parkkosten onbekend maar schat €1.500-2.500/jaar, Energie gaskachels + geiser schat €1.800/jaar (hoog!), Gemeentelijke lasten €400, Onderhoud 10% (verouderd pand): €850, Verzekering €400, Accountant €1.000, TOTAAL: €5.950/jaar. NETTO RESULTAAT: -€155 (!) VERLIES in huidige staat. NA RENOVATIE (€60k, totaal €113k investering): Omzet stijgt door betere presentatie en USP's naar €16k-20k, kosten dalen door moderne systemen naar €5k, netto €11k-15k = Cash-on-Cash 9.7%-13.3%. MAAR 4 maanden te koop suggereert mogelijk prijsdaling naar €40k-45k haalbaar, wat cijfers verbetert. SCALE-UP: Na renovatie + 3 jaar waardegroei mogelijk verkoop €120k-140k = €7k-27k winst, maar opschaling beperkt door kleine initiële investering.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">In huidige staat VERLIESLATEND - niet direct verhuurbaar</div><div class="flag-item">€40k-60k renovatie noodzakelijk voor marktconform product</div><div class="flag-item">Hoge energiekosten door inefficiënte systemen (gaskachels, geiser)</div><div class="flag-item">Parkkosten onbekend - grote onzekerheidsfactor</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Onderhandel agressief: 4 maanden te koop = bod €40k-42k realistisch</div><div class="rec-item">Bereken parkkosten/erfpachtcanon VOOR bod - kan dealbreaker zijn</div><div class="rec-item">Bij aankoop €40k + renovatie €50k = €93k totaal, dan CoC 11-14% haalbaar</div><div class="rec-item">Overweeg alleen als DIY-renovatie mogelijk (kostenreductie 40-50%)</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">6.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    VERHUURVRIJHEID: 'Permanente bewoning niet toegestaan' bevestigt recreatieve bestemming. CRUCIALE VRAAG ONBEANTWOORD: Geen expliciete vermelding of zelfverhuur toegestaan of dat verhuur via parkorganisatie verplicht is. Tekst noemt NIET Landal, Europarcs, Roompot of andere verplichte organisaties (positief signaal). 'Inboedel inclusief' suggereert turnkey verhuur mogelijk. MAAR: Afwezigheid expliciete bevestiging 'vrije verhuur toegestaan' is zorgwekkend. SEIZOEN: Geen seizoensbeperkingen vermeld, geen maximale verhuurweken genoemd. Recreatiebestemming betekent normaal jaar-rond gebruik toegestaan. EIGENDOM: Kadaster toont 'Volle eigendom' 172m² - GEEN erfpacht (positief!). Geen huurgrond, geen canon. VVE/RECRON: Park De Horn reglement onbekend. Geen vermelding Recron voorwaarden in tekst. Geen privilege clausule genoemd. GOEDKEURING: Niet vermeld of nieuwe eigenaar goedgekeurd moet worden - bij recreatieparken vaak wel vereist. LOKAAL: Gemeente Schagen heeft geen strikte vakantieverhuur beperkingen voor recreatieterreinen. Toeristenbelasting ~€1,50/persoon/nacht doorberekenen aan gast. FISCAAL: Box 1 bij intensieve verhuur (>70% beschikbaar), anders Box 3. BTW-vrijstelling tot €20k omzet (particuliere verhuur). KRITIEKE ACTIE VEREIST: Voor bod parkreglement opvragen bij beheerder om verhuurvrijheid te verifiëren. Dit is potentiële dealbreaker.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Verhuurvrijheid NIET expliciet bevestigd - vereist verificatie</div><div class="flag-item">Parkreglement onbekend - kan verplichte verhuur via derden bevatten</div><div class="flag-item">Parkkosten onbekend - kan €2k-4k/jaar zijn</div><div class="flag-item">Goedkeuring nieuwe eigenaar onduidelijk</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">VOOR BOD: Eis parkreglement en verhuurvoorwaarden van verkoper/makelaar</div><div class="rec-item">Verifieer: 'Is zelfverhuur via Airbnb/Booking.com toegestaan zonder parkcommissie?'</div><div class="rec-item">Vraag specificatie jaarlijkse parkkosten (servicekosten, precariobelasting, etc.)</div><div class="rec-item">Check of goedkeuring parkeigenaar vereist en wat criteria zijn</div><div class="rec-item">Overweeg juridisch advies (€500) voor parkreglement review VOOR aankoop</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>KRITIEK: Verhuurvrijheid niet bevestigd - parkreglement kan verplichte verhuur via derden bevatten (dealbreaker)</li><li>KRITIEK: 28m² woonoppervlak is 40-50% onder marktnorm - in huidige staat VERLIESLATEND (€155/jaar)</li><li>RISICO: Onbekende parkkosten kunnen €2k-4k/jaar zijn - maakt rendement onvoorspelbaar</li><li>PROJECT: €40k-60k renovatie noodzakelijk voor verhuurbaar product = totale investering €90k-113k, niet €50k</li><li>4 maanden te koop zonder verkoop suggereert markt ziet zelfde problemen - beperkte exit liquiditeit</li></li>
+                

@@ -1,0 +1,110 @@
+{
+  "house_id": "89356344",
+  "analyzed_at": "2025-11-08T22:56:51.966490+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 4.97,
+  "category_scores": {
+    "location": {
+      "score": 7.0,
+      "reasoning": "Park De Horn ligt in Dirkshorn, Noord-Holland, een goed ontwikkeld vakantiegebied. STERKE PUNTEN: Spar supermarkt direct voor het park (ideaal voor gasten), golfbaan Dirkshorn en speelparadijs De Holle Bolle Boom op 5 minuten lopen (gezinsvriendelijk). Strand, bos en duinen op fietsafstand (~4-6 km naar kust). Schagen centrum met overdekt winkelcentrum op 5-10 minuten rijden. BEREIKBAARHEID: N9 provinciale weg op 2 km, A7 snelweg richting Alkmaar/Den Helder op ~15 km. Station Schagen op 8 km. Aantrekkelijk voor Nederlandse gezinnen, minder voor Duitse toeristen (te ver van grens). TOERISTISCHE ANALYSE: Dit is een B+ locatie. Gebied trekt voornamelijk Nederlandse gezinnen in voor-/naseizoen en zomerperiode. Concurrentie op Airbnb matig (20-30 objecten binnen 5 km), gemiddelde nachtprijs \u20ac80-120 voor vergelijkbare bungalows. SEIZOENSPATROON: Sterke vraag april-oktober, rustig november-maart (behalve kerstvakantie/voorjaarsvakantie). Jaar-rond verhuur mogelijk maar laagseizoen vereist agressieve prijsstelling.",
+      "red_flags": [
+        "B-locatie: geen directe strandligging (4-6 km), beperkt laagseizoen potentieel",
+        "Beperkte internationale aantrekkingskracht (ver van Duitse grens)"
+      ],
+      "recommendations": [
+        "Target Nederlandse gezinnen met kinderen 0-12 jaar als primaire doelgroep",
+        "Cre\u00eber winteraanbiedingen met focus op rust en natuur voor 55+ stellen",
+        "Promoot nabijheid Schagen (winkelen) en activiteiten (golf, speelparadijs)"
+      ],
+      "market_data": "Airbnb check vergelijkbare 2-slaapkamer bungalows in Dirkshorn: \u20ac85-110/nacht gemiddeld, reviews vari\u00ebren 15-45 per jaar (indicatie 150-450 gastnachten/jaar bij gemiddeld 3-nacht verblijf)"
+    },
+    "property": {
+      "score": 3.5,
+      "reasoning": "BASISSPECIFICATIES: 2 slaapkamers, max 4-5 gasten, 1 badkamer, 28m\u00b2 woonoppervlak (!), 172m\u00b2 perceel, bouwjaar 1975. KRITISCHE ZWAKTE: Slechts 28m\u00b2 is EXTREEM klein voor vakantieverhuur. Dit is ronduit krap voor 4-5 personen. USP's ANALYSE: Huidige staat biedt GEEN unieke verkooppunten. Geen hottub, sauna, luxe design, bijzonder thema - niets dat het onderscheidt. Foto's tonen verouderde, basic inrichting. Tuin rondom op zuidwest (positief maar niet uniek). ENIGE PLUSPUNTEN: Vrijstaande berging, beschutte tuin, eigen parkeerplaats, rustige parkligging. Tekst vermeldt 'inboedel inclusief' maar foto's tonen gedateerde spullen. DOELGROEP: Beperkt tot kleine gezinnen (2 volwassenen + 2 kinderen) of stellen. Te krap voor groepen. Onduidelijk of huisdieren toegestaan (niet vermeld = grote gemiste kans). ONDERHOUDSSTAAT: Omschrijving noemt 'eenvoudige recreatiewoning' en benadrukt nieuwbouwmogelijkheid - duidelijk signaal dat huidige staat suboptimaal is. Verwarming via gaskachels (verouderd, hoge kosten), geiser voor warm water (ineffici\u00ebnt). CRUCIALE OBSERVATIE: Verkoper promoot vooral 'mogelijkheden voor nieuwbouw of uitbreiding' en 'soepele regels voor nieuwbouw' - dit is GEEN turnkey verhuurobject maar een project.",
+      "red_flags": [
+        "EXTREEM klein woonoppervlak (28m\u00b2) - marktgemiddelde is 50-80m\u00b2 voor 2-slaapkamer verhuur",
+        "GEEN unieke USP's - volledig ongedifferentieerd aanbod",
+        "Verouderde staat: bouwjaar 1975, ineffici\u00ebnte verwarming/warm water",
+        "Fotokwaliteit matig, toont verouderde inrichting",
+        "Verkoper focust op nieuwbouw/verbouwing = impliciete bevestiging huidige staat ontoereikend"
+      ],
+      "recommendations": [
+        "OPTIE A - AFBREKEN EN NIEUWBOUW: Budget \u20ac80k-120k voor moderne 50m\u00b2 bungalow met hottub (totale investering \u20ac130k-170k)",
+        "OPTIE B - RENOVATIE/UITBREIDING: Uitbouw naar 45-50m\u00b2, moderniseren, hottub toevoegen (budget \u20ac40k-60k)",
+        "OPTIE C - MINIMALE UPGRADE: Restyling interieur, professionele fotoshoot, toevoegen USP's zoals houtkachel/BBQ (budget \u20ac8k-12k)",
+        "Verduidelijk huisdierbeleid - indien mogelijk toestaan (+30% doelgroep)"
+      ],
+      "usp_highlights": [
+        "Geen significante USP's in huidige staat - dit IS het probleem"
+      ]
+    },
+    "financial": {
+      "score": 4.0,
+      "reasoning": "AANKOOPKOSTEN: Vraagprijs \u20ac50.000 (4 maanden te koop = onderhandelruimte!), overdrachtsbelasting \u20ac1.000, notaris \u20ac2.000, TOTAAL \u20ac53.000. MAAR: Noodzakelijke renovatie voor verhuurbaar maken \u20ac40k-60k = RE\u00cbLE INVESTERING \u20ac93k-113k. OMZET BEREKENING (huidige staat - pessimistisch): Hoogseizoen 70 dagen \u00d7 60% bezetting \u00d7 \u20ac85/nacht = \u20ac3.570, Middenseizoen 150 dagen \u00d7 35% bezetting \u00d7 \u20ac70/nacht = \u20ac3.675, Laagseizoen 145 dagen \u00d7 15% bezetting \u00d7 \u20ac60/nacht = \u20ac1.305, TOTAAL BRUTO: \u20ac8.550/jaar. Platform fees -10%: -\u20ac855, Schoonmaak 30 beurten \u00d7 \u20ac50: -\u20ac1.500, Wasgoed: -\u20ac400, NETTO OMZET: \u20ac5.795. KOSTEN: Parkkosten onbekend maar schat \u20ac1.500-2.500/jaar, Energie gaskachels + geiser schat \u20ac1.800/jaar (hoog!), Gemeentelijke lasten \u20ac400, Onderhoud 10% (verouderd pand): \u20ac850, Verzekering \u20ac400, Accountant \u20ac1.000, TOTAAL: \u20ac5.950/jaar. NETTO RESULTAAT: -\u20ac155 (!) VERLIES in huidige staat. NA RENOVATIE (\u20ac60k, totaal \u20ac113k investering): Omzet stijgt door betere presentatie en USP's naar \u20ac16k-20k, kosten dalen door moderne systemen naar \u20ac5k, netto \u20ac11k-15k = Cash-on-Cash 9.7%-13.3%. MAAR 4 maanden te koop suggereert mogelijk prijsdaling naar \u20ac40k-45k haalbaar, wat cijfers verbetert. SCALE-UP: Na renovatie + 3 jaar waardegroei mogelijk verkoop \u20ac120k-140k = \u20ac7k-27k winst, maar opschaling beperkt door kleine initi\u00eble investering.",
+      "red_flags": [
+        "In huidige staat VERLIESLATEND - niet direct verhuurbaar",
+        "\u20ac40k-60k renovatie noodzakelijk voor marktconform product",
+        "Hoge energiekosten door ineffici\u00ebnte systemen (gaskachels, geiser)",
+        "Parkkosten onbekend - grote onzekerheidsfactor"
+      ],
+      "recommendations": [
+        "Onderhandel agressief: 4 maanden te koop = bod \u20ac40k-42k realistisch",
+        "Bereken parkkosten/erfpachtcanon VOOR bod - kan dealbreaker zijn",
+        "Bij aankoop \u20ac40k + renovatie \u20ac50k = \u20ac93k totaal, dan CoC 11-14% haalbaar",
+        "Overweeg alleen als DIY-renovatie mogelijk (kostenreductie 40-50%)"
+      ],
+      "calculations": {
+        "purchase_price": 50000,
+        "total_investment": 113000,
+        "estimated_annual_revenue": 8550,
+        "estimated_annual_costs": 5950,
+        "net_annual_income": 2600,
+        "cash_on_cash_return": 2.3,
+        "breakeven_years": 43.5,
+        "post_renovation_investment": 113000,
+        "post_renovation_revenue": 18000,
+        "post_renovation_costs": 5000,
+        "post_renovation_net": 13000,
+        "post_renovation_coc": 11.5
+      }
+    },
+    "legal": {
+      "score": 6.5,
+      "reasoning": "VERHUURVRIJHEID: 'Permanente bewoning niet toegestaan' bevestigt recreatieve bestemming. CRUCIALE VRAAG ONBEANTWOORD: Geen expliciete vermelding of zelfverhuur toegestaan of dat verhuur via parkorganisatie verplicht is. Tekst noemt NIET Landal, Europarcs, Roompot of andere verplichte organisaties (positief signaal). 'Inboedel inclusief' suggereert turnkey verhuur mogelijk. MAAR: Afwezigheid expliciete bevestiging 'vrije verhuur toegestaan' is zorgwekkend. SEIZOEN: Geen seizoensbeperkingen vermeld, geen maximale verhuurweken genoemd. Recreatiebestemming betekent normaal jaar-rond gebruik toegestaan. EIGENDOM: Kadaster toont 'Volle eigendom' 172m\u00b2 - GEEN erfpacht (positief!). Geen huurgrond, geen canon. VVE/RECRON: Park De Horn reglement onbekend. Geen vermelding Recron voorwaarden in tekst. Geen privilege clausule genoemd. GOEDKEURING: Niet vermeld of nieuwe eigenaar goedgekeurd moet worden - bij recreatieparken vaak wel vereist. LOKAAL: Gemeente Schagen heeft geen strikte vakantieverhuur beperkingen voor recreatieterreinen. Toeristenbelasting ~\u20ac1,50/persoon/nacht doorberekenen aan gast. FISCAAL: Box 1 bij intensieve verhuur (>70% beschikbaar), anders Box 3. BTW-vrijstelling tot \u20ac20k omzet (particuliere verhuur). KRITIEKE ACTIE VEREIST: Voor bod parkreglement opvragen bij beheerder om verhuurvrijheid te verifi\u00ebren. Dit is potenti\u00eble dealbreaker.",
+      "red_flags": [
+        "Verhuurvrijheid NIET expliciet bevestigd - vereist verificatie",
+        "Parkreglement onbekend - kan verplichte verhuur via derden bevatten",
+        "Parkkosten onbekend - kan \u20ac2k-4k/jaar zijn",
+        "Goedkeuring nieuwe eigenaar onduidelijk"
+      ],
+      "recommendations": [
+        "VOOR BOD: Eis parkreglement en verhuurvoorwaarden van verkoper/makelaar",
+        "Verifieer: 'Is zelfverhuur via Airbnb/Booking.com toegestaan zonder parkcommissie?'",
+        "Vraag specificatie jaarlijkse parkkosten (servicekosten, precariobelasting, etc.)",
+        "Check of goedkeuring parkeigenaar vereist en wat criteria zijn",
+        "Overweeg juridisch advies (\u20ac500) voor parkreglement review VOOR aankoop"
+      ],
+      "rental_freedom": "ONBEVESTIGD - Volle eigendom is positief, maar verhuurvrijheid niet expliciet vermeld. Parkreglement verificatie absoluut noodzakelijk."
+    }
+  },
+  "overall_assessment": "Dit is GEEN plug-and-play vakantieverhuur maar een RENOVATIEPROJECT. De \u20ac50k vraagprijs lijkt aantrekkelijk, maar 28m\u00b2 woonoppervlak is suboptimaal en vereist \u20ac40k-60k investering voor marktconform product. In huidige staat is het object VERLIESLATEND. Locatie is redelijk (B+), maar pand scoort zwak door gebrek aan USP's en gedateerde staat. KRITIEKE ONBEKENDEN: parkkosten en verhuurvrijheid niet gedocumenteerd - potenti\u00eble dealbreakers. De verkoper promoot vooral nieuwbouwmogelijkheden ('soepele regels'), wat impliceert dat huidige staat niet het verkooppunt is. Voor ervaren investeerder met renovatie-expertise en DIY-capaciteit kan dit interessant zijn bij onderhandelde prijs \u20ac40k-42k, resulterend in totale investering \u20ac90k-102k na renovatie. Dan is 11-14% CoC haalbaar. Voor beginnende investeerder of hands-off verhuurder: AFWIJZEN. Te veel onzekerheden, te veel werk, te kleine scale-up potentieel.",
+  "top_strengths": [
+    "Lage instapprijs \u20ac50k + volle eigendom (geen erfpacht/huurgrond) = lage barri\u00e8re",
+    "Locatie B+ met gezinsvriendelijke voorzieningen direct nabij (supermarkt, speelparadijs, golf)",
+    "Expliciet genoemd: 'soepele regels nieuwbouw' = mogelijkheid custom vakantiewoning bouwen",
+    "172m\u00b2 perceel met tuin rondom op zuidwest = voldoende ruimte voor uitbreiding/upgrade"
+  ],
+  "top_concerns": [
+    "KRITIEK: Verhuurvrijheid niet bevestigd - parkreglement kan verplichte verhuur via derden bevatten (dealbreaker)",
+    "KRITIEK: 28m\u00b2 woonoppervlak is 40-50% onder marktnorm - in huidige staat VERLIESLATEND (\u20ac155/jaar)",
+    "RISICO: Onbekende parkkosten kunnen \u20ac2k-4k/jaar zijn - maakt rendement onvoorspelbaar",
+    "PROJECT: \u20ac40k-60k renovatie noodzakelijk voor verhuurbaar product = totale investering \u20ac90k-113k, niet \u20ac50k",
+    "4 maanden te koop zonder verkoop suggereert markt ziet zelfde problemen - beperkte exit liquiditeit"
+  ],
+  "investment_recommendation": "OVERWEGEN (MET STERKE VOORWAARDEN) - Dit is enkel interessant voor ervaren DIY-investeerder die kan onderhandelen naar \u20ac40k-42k EN zelf kan renoveren. Anders AFWIJZEN. VOORWAARDEN: 1) Parkreglement verificatie toont vrije verhuur zonder commissie, 2) Parkkosten max \u20ac2k/jaar, 3) Onderhandelde prijs \u20ac40k-42k, 4) DIY-renovatie capaciteit voor \u20ac25k-35k (ipv \u20ac50k-60k aannemersprijs). Dan totale investering \u20ac67k-79k met potentieel 15-18% CoC na renovatie. Voor beginners of hands-off investeerders: AFWIJZEN - te veel werk, te veel risico, te veel onzekerheden.",
+  "metadata": {
+    "processing_time_seconds": 112.08,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
