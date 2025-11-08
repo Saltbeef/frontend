@@ -112,6 +112,7 @@ $lastmod - Date added
 
 Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                 <button onclick="shareState()" class="px-5 py-3 bg-green-600 text-white border-none rounded-md cursor-pointer hover:bg-green-700" title="Share current state including query, ratings, and data source via URL">Share</button>
+                <button onclick="showAnalysisConfigModal()" class="px-5 py-3 bg-purple-600 text-white border-none rounded-md cursor-pointer hover:bg-purple-700" title="Configure GitHub and Apify tokens for house analysis">🔑 Analysis Config</button>
             </div>
             <div class="bg-gray-50 p-2 rounded mt-2 font-mono text-xs border hidden" id="currentQuery">
                 <strong>Active filters:</strong> <span id="currentQueryText"></span>
@@ -349,6 +350,52 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
         </div>
     </div>
 
+    <!-- Analysis Configuration Modal -->
+    <div id="analysisConfigModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50">
+        <div class="bg-white my-20 mx-auto p-5 rounded-lg w-11/12 max-w-2xl">
+            <h3 class="mb-4 text-lg font-semibold text-blue-600">🔑 Analysis Configuration</h3>
+            <p class="mb-4 text-sm text-gray-600">Configure API tokens to enable house analysis functionality. Your tokens are stored locally in your browser.</p>
+
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">GitHub Personal Access Token</label>
+                    <input type="password" id="githubTokenInput" placeholder="ghp_..." class="w-full px-3 py-2 border border-gray-300 rounded">
+                    <p class="mt-1 text-xs text-gray-500">Required permissions: repo, workflow</p>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Apify API Token</label>
+                    <input type="password" id="apifyTokenInput" placeholder="apify_api_..." class="w-full px-3 py-2 border border-gray-300 rounded">
+                    <p class="mt-1 text-xs text-gray-500">Required for status tracking</p>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Apify Dataset ID</label>
+                    <input type="text" id="apifyDatasetInput" placeholder="Yb4fTMJ9wQsuyZf3L" class="w-full px-3 py-2 border border-gray-300 rounded">
+                </div>
+            </div>
+
+            <div class="flex gap-2.5 justify-end mt-5">
+                <button onclick="hideAnalysisConfigModal()" class="px-3 py-2 bg-gray-600 text-white rounded hover:bg-gray-700">Cancel</button>
+                <button onclick="saveAnalysisConfig()" class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Save Configuration</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analysis Results Modal -->
+    <div id="analysisModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50 overflow-y-auto">
+        <div class="bg-white my-8 mx-auto p-6 rounded-lg w-11/12 max-w-4xl">
+            <div class="flex justify-between items-start mb-4">
+                <h3 class="text-xl font-semibold text-gray-900">🏠 Analysis Results</h3>
+                <button onclick="hideAnalysisModal()" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+            </div>
+
+            <div id="analysisContent" class="space-y-4">
+                <!-- Content loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
     <script>
         let properties = [];
         let currentResults = [];
@@ -356,6 +403,22 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
         let currentSchema = 'funda';
         let activeFilters = new Set();
         let propertyRatings = new Map(); // 0=neutral, 1=saved, 2=blacklisted
+
+        // House Analysis Configuration
+        let analysisConfig = {
+            github: {
+                owner: 'Saltbeef',
+                repo: 'frontend',
+                token: localStorage.getItem('github_token') || ''
+            },
+            apify: {
+                token: localStorage.getItem('apify_token') || '',
+                datasetId: localStorage.getItem('apify_dataset_id') || 'Yb4fTMJ9wQsuyZf3L'
+            }
+        };
+
+        let analysisStatuses = new Map(); // houseId -> {status, score, updated_at}
+        let analysisPolling = new Map(); // houseId -> interval
 
         // Performance: Property indexes for fast filtering
         let propertyIndexes = {
@@ -1000,6 +1063,309 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
 
             console.log(`Bulk blacklisted ${blacklistedCount} properties`);
         }
+
+        // ========================================
+        // HOUSE ANALYSIS FUNCTIONS
+        // ========================================
+
+        // Show/hide analysis configuration modal
+        function showAnalysisConfigModal() {
+            document.getElementById('githubTokenInput').value = analysisConfig.github.token;
+            document.getElementById('apifyTokenInput').value = analysisConfig.apify.token;
+            document.getElementById('apifyDatasetInput').value = analysisConfig.apify.datasetId;
+            document.getElementById('analysisConfigModal').classList.remove('hidden');
+        }
+
+        function hideAnalysisConfigModal() {
+            document.getElementById('analysisConfigModal').classList.add('hidden');
+        }
+
+        function saveAnalysisConfig() {
+            analysisConfig.github.token = document.getElementById('githubTokenInput').value;
+            analysisConfig.apify.token = document.getElementById('apifyTokenInput').value;
+            analysisConfig.apify.datasetId = document.getElementById('apifyDatasetInput').value;
+
+            localStorage.setItem('github_token', analysisConfig.github.token);
+            localStorage.setItem('apify_token', analysisConfig.apify.token);
+            localStorage.setItem('apify_dataset_id', analysisConfig.apify.datasetId);
+
+            hideAnalysisConfigModal();
+            showSuccess('Configuration saved successfully!');
+        }
+
+        // Trigger house analysis
+        async function triggerAnalysis(houseId) {
+            if (!analysisConfig.github.token) {
+                showError('Please configure GitHub token first');
+                showAnalysisConfigModal();
+                return;
+            }
+
+            try {
+                updateAnalysisBadge(houseId, 'pending');
+
+                const response = await fetch(
+                    `https://api.github.com/repos/${analysisConfig.github.owner}/${analysisConfig.github.repo}/actions/workflows/analyze_house.yml/dispatches`,
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${analysisConfig.github.token}`,
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/vnd.github+json'
+                        },
+                        body: JSON.stringify({
+                            ref: 'main',
+                            inputs: {
+                                house_id: String(houseId),
+                                apify_dataset_id: analysisConfig.apify.datasetId,
+                                rules_version: 'latest',
+                                llm_provider: 'claude'
+                            }
+                        })
+                    }
+                );
+
+                if (response.ok || response.status === 204) {
+                    showSuccess(`Analysis started for house ${houseId}`);
+                    analysisStatuses.set(houseId, {status: 'pending', updated_at: new Date().toISOString()});
+                    startPolling(houseId);
+                } else {
+                    const error = await response.text();
+                    throw new Error(`GitHub API error: ${response.status} ${error}`);
+                }
+            } catch (error) {
+                console.error('Failed to trigger analysis:', error);
+                showError('Failed to trigger analysis: ' + error.message);
+                updateAnalysisBadge(houseId, 'error');
+            }
+        }
+
+        // Get analysis status
+        async function getAnalysisStatus(houseId) {
+            if (!analysisConfig.apify.token) {
+                // Try checking GitHub directly
+                return await getAnalysisFromGitHub(houseId);
+            }
+
+            try {
+                const response = await fetch(
+                    `https://api.apify.com/v2/key-value-stores/default/records/analysis_${houseId}?token=${analysisConfig.apify.token}`
+                );
+
+                if (response.ok) {
+                    const data = await response.json();
+                    return data;
+                }
+            } catch (error) {
+                console.log('Apify check failed, trying GitHub:', error.message);
+            }
+
+            // Fallback to GitHub
+            return await getAnalysisFromGitHub(houseId);
+        }
+
+        // Get analysis from GitHub repository
+        async function getAnalysisFromGitHub(houseId) {
+            try {
+                const response = await fetch(
+                    `https://raw.githubusercontent.com/${analysisConfig.github.owner}/${analysisConfig.github.repo}/main/houses/${houseId}/latest_analysis.json`
+                );
+
+                if (response.ok) {
+                    const latest = await response.json();
+                    return {
+                        status: 'completed',
+                        score: latest.overall_score,
+                        updated_at: latest.analyzed_at,
+                        rules_version: latest.rules_version
+                    };
+                }
+            } catch (error) {
+                console.log('GitHub check failed:', error.message);
+            }
+
+            return null;
+        }
+
+        // Get full analysis
+        async function getFullAnalysis(houseId) {
+            try {
+                const latestResponse = await fetch(
+                    `https://raw.githubusercontent.com/${analysisConfig.github.owner}/${analysisConfig.github.repo}/main/houses/${houseId}/latest_analysis.json`
+                );
+
+                if (!latestResponse.ok) return null;
+
+                const latest = await latestResponse.json();
+                const analysisFile = latest.analysis_file;
+
+                const analysisResponse = await fetch(
+                    `https://raw.githubusercontent.com/${analysisConfig.github.owner}/${analysisConfig.github.repo}/main/houses/${houseId}/${analysisFile}`
+                );
+
+                if (analysisResponse.ok) {
+                    return await analysisResponse.json();
+                }
+            } catch (error) {
+                console.error('Failed to get full analysis:', error);
+            }
+
+            return null;
+        }
+
+        // Show analysis modal
+        async function showAnalysisDetails(houseId) {
+            document.getElementById('analysisModal').classList.remove('hidden');
+            document.getElementById('analysisContent').innerHTML = '<div class="text-center py-8"><div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div><p class="mt-2 text-gray-600">Loading analysis...</p></div>';
+
+            const analysis = await getFullAnalysis(houseId);
+
+            if (!analysis) {
+                document.getElementById('analysisContent').innerHTML = '<div class="text-center py-8 text-red-600">Analysis not found. Please trigger an analysis first.</div>';
+                return;
+            }
+
+            const reportUrl = `https://github.com/${analysisConfig.github.owner}/${analysisConfig.github.repo}/blob/main/houses/${houseId}/reports/`;
+
+            document.getElementById('analysisContent').innerHTML = `
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border border-blue-200">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <div class="text-4xl font-bold text-gray-900">${analysis.overall_score.toFixed(2)}/10</div>
+                            <div class="text-sm text-gray-600 mt-1">Overall Score</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-lg font-semibold ${analysis.investment_recommendation.includes('KOPEN') ? 'text-green-600' : analysis.investment_recommendation.includes('AFWIJZEN') ? 'text-red-600' : 'text-yellow-600'}">
+                                ${analysis.investment_recommendation.split('-')[0].trim()}
+                            </div>
+                            <div class="text-xs text-gray-500 mt-1">Version ${analysis.rules_version}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 mt-4">
+                    ${Object.entries(analysis.category_scores).map(([key, cat]) => `
+                        <div class="bg-gray-50 p-4 rounded border border-gray-200">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm font-medium text-gray-700">${cat.name || key}</span>
+                                <span class="text-lg font-bold text-blue-600">${cat.score.toFixed(1)}</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: ${(cat.score / 10 * 100).toFixed(0)}%"></div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-gray-900 mb-2">💪 Sterke Punten</h4>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-gray-700">
+                        ${analysis.top_strengths.map(s => `<li>${s}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-gray-900 mb-2">⚠️ Zorgen</h4>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-gray-700">
+                        ${analysis.top_concerns.map(c => `<li>${c}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="mt-4 p-4 bg-blue-50 rounded border border-blue-200">
+                    <h4 class="font-semibold text-gray-900 mb-2">📋 Overall Assessment</h4>
+                    <p class="text-sm text-gray-700 leading-relaxed">${analysis.overall_assessment}</p>
+                </div>
+
+                <div class="mt-4 flex gap-2 justify-end">
+                    <a href="${reportUrl}" target="_blank" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                        View Full Report →
+                    </a>
+                </div>
+            `;
+        }
+
+        function hideAnalysisModal() {
+            document.getElementById('analysisModal').classList.add('hidden');
+        }
+
+        // Update analysis badge
+        function updateAnalysisBadge(houseId, status, score = null) {
+            const badge = document.querySelector(`[data-analysis-house="${houseId}"]`);
+            if (!badge) return;
+
+            const badges = {
+                'not_analyzed': { text: '🤖 Analyze', class: 'bg-gray-100 text-gray-700 hover:bg-gray-200' },
+                'pending': { text: '⏳ Pending', class: 'bg-yellow-100 text-yellow-700' },
+                'processing': { text: '⚙️ Processing', class: 'bg-blue-100 text-blue-700' },
+                'completed': { text: `✅ ${score ? score.toFixed(1) : '?'}/10`, class: 'bg-green-100 text-green-700 hover:bg-green-200 cursor-pointer' },
+                'failed': { text: '❌ Failed', class: 'bg-red-100 text-red-700' },
+                'error': { text: '❌ Error', class: 'bg-red-100 text-red-700' }
+            };
+
+            const badgeInfo = badges[status] || badges['not_analyzed'];
+            badge.textContent = badgeInfo.text;
+            badge.className = `px-2 py-1 rounded text-xs font-medium ${badgeInfo.class}`;
+
+            if (status === 'completed') {
+                badge.onclick = (e) => {
+                    e.stopPropagation();
+                    showAnalysisDetails(houseId);
+                };
+            } else if (status === 'not_analyzed') {
+                badge.onclick = (e) => {
+                    e.stopPropagation();
+                    triggerAnalysis(houseId);
+                };
+            } else {
+                badge.onclick = null;
+            }
+
+            analysisStatuses.set(houseId, { status, score, updated_at: new Date().toISOString() });
+        }
+
+        // Start polling for analysis status
+        function startPolling(houseId) {
+            if (analysisPolling.has(houseId)) return;
+
+            const interval = setInterval(async () => {
+                const status = await getAnalysisStatus(houseId);
+
+                if (status?.status === 'completed') {
+                    clearInterval(interval);
+                    analysisPolling.delete(houseId);
+                    updateAnalysisBadge(houseId, 'completed', status.score);
+                } else if (status?.status === 'processing') {
+                    updateAnalysisBadge(houseId, 'processing');
+                } else if (status?.status === 'failed') {
+                    clearInterval(interval);
+                    analysisPolling.delete(houseId);
+                    updateAnalysisBadge(houseId, 'failed');
+                }
+            }, 5000); // Poll every 5 seconds
+
+            analysisPolling.set(houseId, interval);
+        }
+
+        // Check analysis status for all visible properties
+        async function checkAnalysisStatuses() {
+            if (!currentResults || currentResults.length === 0) return;
+
+            const visibleHouseIds = currentResults.slice(0, 50).map(p => p.Identifiers?.TinyId).filter(Boolean);
+
+            for (const houseId of visibleHouseIds) {
+                if (!analysisStatuses.has(houseId)) {
+                    // Check if analysis exists
+                    const status = await getAnalysisStatus(houseId);
+                    if (status) {
+                        updateAnalysisBadge(houseId, status.status, status.score);
+                    }
+                }
+            }
+        }
+
+        // ========================================
+        // END HOUSE ANALYSIS FUNCTIONS
+        // ========================================
 
         // Filter by province from map click
         function filterByProvince(provinceName) {
@@ -1698,10 +2064,13 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                     '</div>',
                     shortDescription ? '<div class="text-sm text-gray-700 leading-relaxed mt-2.5">' + shortDescription + '</div>' : '',
                     '</div>',
-                    '<div class="flex flex-col gap-2 items-center justify-start pt-2.5 flex-shrink-0" style="min-width: 40px; min-height: 50px;">',
+                    '<div class="flex flex-col gap-2 items-center justify-start pt-2.5 flex-shrink-0" style="min-width: 90px;">',
                     '<button class="rating-btn ', ratingClass, '" onclick="event.stopPropagation(); cyclePropertyRating(', propertyId, ')" title="', ratingTitle, '">',
                     ratingIcon,
                     '</button>',
+                    '<span class="px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 cursor-pointer" data-analysis-house="', propertyId, '" onclick="event.stopPropagation(); triggerAnalysis(', propertyId, ')">',
+                    '🤖 Analyze',
+                    '</span>',
                     '</div>',
                     '</div>'
                 );
@@ -1720,6 +2089,9 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
             const renderEnd = performance.now();
             const renderTime = (renderEnd - renderStart).toFixed(2);
             console.log(`UI rendered ${displayResults.length} cards in ${renderTime}ms (total: ${results.length} results)`);
+
+            // Check analysis statuses for visible properties
+            checkAnalysisStatuses();
         }
 
         function showPropertyDetails(propertyId) {
