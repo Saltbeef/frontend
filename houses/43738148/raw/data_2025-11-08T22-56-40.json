@@ -1,0 +1,468 @@
+{
+  "Identifiers": {
+    "GlobalId": 7383785,
+    "TinyId": "43738148"
+  },
+  "Price": {
+    "SellingPrice": "\u20ac 89.500 k.k.",
+    "NumericSellingPrice": 89500,
+    "IsAuction": false
+  },
+  "KenmerkSections": [
+    {
+      "Index": 1,
+      "Id": "overdracht",
+      "Title": "Overdracht",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "overdracht-vraagprijs",
+          "Label": "Vraagprijs",
+          "Value": "\u20ac 89.500 kosten koper",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Id": "overdracht-aangeboden-sinds",
+          "Label": "Aangeboden sinds",
+          "Value": "2 maanden",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 5,
+          "Id": "overdracht-status",
+          "Label": "Status",
+          "Value": "Beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Aanvaarding",
+          "Value": "In overleg",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 7,
+          "Id": "overdracht-permanentebewoning",
+          "Label": "Permanente bewoning",
+          "Value": "Permanente bewoning is niet toegestaan",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 2,
+      "Id": "bouw",
+      "Title": "Bouw",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "bouw-soortobject",
+          "Label": "Soort woonhuis",
+          "Value": "Bungalow, vrijstaande woning",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "bouw-soortbouw",
+          "Label": "Soort bouw",
+          "Value": "Bestaande bouw",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "bouw-bouwjaar",
+          "Label": "Bouwjaar",
+          "Value": "1975",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 6,
+          "Id": "bouw-dak",
+          "Label": "Soort dak",
+          "Value": "Zadeldak bedekt met overig",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 3,
+      "Id": "afmetingen",
+      "Title": "Oppervlakten en inhoud",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Label": "Gebruiksoppervlakten",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 1,
+              "Id": "afmetingen-gebruiksoppervlakten-wonen",
+              "Label": "Wonen",
+              "Value": "33 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 4,
+              "Id": "afmetingen-gebruiksoppervlakte-externebergruimte",
+              "Label": "Externe bergruimte",
+              "Value": "2 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        },
+        {
+          "Index": 2,
+          "Id": "afmetingen-perceel",
+          "Label": "Perceel",
+          "Value": "116 m\u00b2",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "afmetingen-inhoud",
+          "Label": "Inhoud",
+          "Value": "105 m\u00b3",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 4,
+      "Id": "indeling",
+      "Title": "Indeling",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "indeling-totalrooms",
+          "Label": "Aantal kamers",
+          "Value": "3 kamers (2 slaapkamers)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "indeling-totalbathroom",
+          "Label": "Aantal badkamers",
+          "Value": "1 badkamer",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "indeling-bathroom",
+          "Label": "Badkamervoorzieningen",
+          "Value": "Douche, toilet, en wastafel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "indeling-totalstories",
+          "Label": "Aantal woonlagen",
+          "Value": "1 woonlaag",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 5,
+      "Id": "energie",
+      "Title": "Energie",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "energie-energielabel",
+          "Label": "Energielabel",
+          "Value": "Niet verplicht",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "energie-isolatie",
+          "Label": "Isolatie",
+          "Value": "Gedeeltelijk dubbel glas",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "energie-verwarming",
+          "Label": "Verwarming",
+          "Value": "Cv-ketel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "energie-warmwater",
+          "Label": "Warm water",
+          "Value": "Cv-ketel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 5,
+          "Id": "energie-cv",
+          "Label": "Cv-ketel",
+          "Value": "Intergas (gas gestookt combiketel uit 2023, eigendom)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 6,
+      "Id": "cadastral",
+      "Title": "Kadastrale gegevens",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "cadastral-parcel",
+          "Label": "HARENKARSPEL I 3962",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 2,
+              "Id": "cadastral-area",
+              "Label": "Oppervlakte",
+              "Value": "103 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "cadastral-ownershipsituation",
+              "Label": "Eigendomssituatie",
+              "Value": "Volle eigendom",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        },
+        {
+          "Index": 1,
+          "Id": "cadastral-parcel",
+          "Label": "HARENKARSPEL I 3889",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 2,
+              "Id": "cadastral-area",
+              "Label": "Oppervlakte",
+              "Value": "13 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "cadastral-ownershipsituation",
+              "Label": "Eigendomssituatie",
+              "Value": "Volle eigendom",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 7,
+      "Id": "buitenruimte",
+      "Title": "Buitenruimte",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "buitenruimte-ligging",
+          "Label": "Ligging",
+          "Value": "Aan park, in woonwijk en in recreatiepark",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "buitenruimte-tuin",
+          "Label": "Tuin",
+          "Value": "Tuin rondom",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 8,
+      "Id": "bergruimte",
+      "Title": "Bergruimte",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Schuur/berging",
+          "Value": "Aangebouwde houten berging",
+          "LabelStyle": "None"
+        }
+      ]
+    },
+    {
+      "Index": 9,
+      "Id": "garage",
+      "Title": "Garage",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Soort garage",
+          "Value": "Parkeerplaats",
+          "LabelStyle": "None"
+        }
+      ]
+    },
+    {
+      "Index": 10,
+      "Id": "parkeergelegenheid",
+      "Title": "Parkeergelegenheid",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Soort parkeergelegenheid",
+          "Value": "Op eigen terrein",
+          "LabelStyle": "None"
+        }
+      ]
+    }
+  ],
+  "Labels": [],
+  "Urls": {
+    "FriendlyUrl": {
+      "FullUrl": "https://www.funda.nl/detail/recreatie/dirkshorn/huis-park-de-horn-603/43738148/",
+      "RelativeUrl": "/detail/recreatie/dirkshorn/huis-park-de-horn-603/43738148/"
+    },
+    "ReportErrorUrl": "https://help.funda.nl:443/s/mef?globalID=7383785&returnURL=https%3a%2f%2fwww.funda.nl%2fdetail%2frecreatie%2fdirkshorn%2fhuis-park-de-horn-603%2f43738148%2f&brokerID=12189"
+  },
+  "ListingDescription": {
+    "Title": "Omschrijving",
+    "Description": "Wij bieden je deze unieke vakantiewoning aan, compleet met eigen parkeerplaats, gelegen op 103m\u00b2 eigen grond in het kleinschalige recreatiepark \u2018De Horn\u2019. Met een zeldzaam mooi uitzicht en een landelijke ligging in een rustige omgeving, bevindt deze woning zich slechts enkele autominuten van de duinen en het strand. Een heerlijke plek om tot rust te komen, te werken of gewoon even te verstillen.\n\nOp slechts enkele autominuten afstand liggen de brede stranden van Sint Maartenszee, Bergen en Callantsoog. In de zomer kun je hier genieten van zon en zee, terwijl je in de herfst en winter heerlijk kunt uitwaaien en daarna kunt neerstrijken bij een van de gezellige strandtenten voor een hapje en een drankje. In het nabijgelegen stadje Schagen haal je verse producten op de markt en geniet je van de vele restaurants en caf\u00e9s.\n\nIn de omgeving bieden boeren in het seizoen verse asperges, aardbeien en andere producten aan. Bergen staat bekend om zijn culinaire aanbod en Alkmaar bruist, vooral tijdens de kaasmarktmaanden. Dirkshorn zelf heeft een buitenzwembad op slechts vijf minuten lopen, ideaal voor de zonnige dagen. Ook De Holle Bolle Boom, met zijn spetterbad en overdekte speeltuin, ligt op vijf minuten fietsen. Binnen tien minuten rijd je naar de dierentuin Van Blanckendaell Park in Tuitjenhorn.\n\nEen park met veel groen en rust\nHet ruim opgezette park biedt volop mogelijkheden om te recre\u00ebren. Er zijn 92 stenen en 249 houten recreatiewoningen. Je kunt wandelen in het bos, spelen op de speelweiden, of genieten van de grote vijver. Daarnaast beschikt het park over een tennisbaan en een voetbalveld. Hier kun je in alle rust ontspannen en genieten van het vele groen om je heen.\n\nIndeling van de woning\nBegane grond: je komt binnen via de entree van de bungalow. Vanuit hier heb je toegang tot de woonkamer, de badkamer met douche, wastafel en toilet, en twee slaapkamers. De open keuken maakt het geheel compleet. Naast de woning bevindt zich een berging met de opstelling van de cv-ketel.\n\nBIJZONDERHEDEN;\n- Oplevering in overleg,\n- Inclusief parkeerplaats,\n- 365 dagen per jaar recre\u00ebren,\n- Interessante verhuurmogelijkheden,\n- Jaarlijkse beheerderskosten: \u20ac 1.838,04 incl. btw (2024),\n- Inventaris kan achterblijven.\n\nMeer informatie over het park: Park De Horn.\nEen prachtige kans om te genieten van rust, natuur en veelzijdige recreatiemogelijkheden!"
+  },
+  "AddressDetails": {
+    "Title": "Park De Horn 603",
+    "SubTitle": "1746 AX Dirkshorn",
+    "IsInternational": false,
+    "NeighborhoodName": "Dirkshorn (woonkern)",
+    "NeighborhoodIdentifier": "dirkshorn/dirkshorn-woonkern",
+    "City": "Dirkshorn",
+    "Province": "Noord-Holland",
+    "Country": "Nederland",
+    "HouseNumber": "603",
+    "HouseNumberExtension": "",
+    "PostCode": "1746AX"
+  },
+  "Coordinates": {
+    "Latitude": 52.74786,
+    "Longitude": 4.777284
+  },
+  "KadastraleKaartBaseUrl": "https://service.pdok.nl/kadaster/kadastralekaart/wms/v5_0",
+  "Media": {
+    "Layout": {
+      "MediaViewerIsVisible": true,
+      "MainPhotoThumbnailIsVisible": false
+    },
+    "Photos": {
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "MediaBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "Items": [
+        {
+          "Id": "201/728/612"
+        },
+        {
+          "Id": "201/728/613"
+        },
+        {
+          "Id": "201/728/614"
+        },
+        {
+          "Id": "201/728/615"
+        },
+        {
+          "Id": "201/728/616"
+        },
+        {
+          "Id": "201/728/617"
+        },
+        {
+          "Id": "201/728/618"
+        },
+        {
+          "Id": "201/728/619"
+        },
+        {
+          "Id": "201/728/620"
+        },
+        {
+          "Id": "201/728/621"
+        },
+        {
+          "Id": "201/728/622"
+        },
+        {
+          "Id": "201/728/623"
+        },
+        {
+          "Id": "201/728/624"
+        },
+        {
+          "Id": "201/728/627"
+        },
+        {
+          "Id": "201/728/625"
+        },
+        {
+          "Id": "201/728/626"
+        },
+        {
+          "Id": "201/728/628"
+        },
+        {
+          "Id": "201/728/629"
+        },
+        {
+          "Id": "201/728/630"
+        },
+        {
+          "Id": "201/728/631"
+        }
+      ]
+    }
+  },
+  "FastView": {
+    "LivingArea": "33 m\u00b2",
+    "PlotArea": "116 m\u00b2",
+    "NumberOfBedrooms": "2"
+  },
+  "IsSoldOrRented": false,
+  "ObjectType": "House",
+  "OfferingType": "Sale",
+  "ConstructionType": "ExistingConstruction",
+  "PublicationDate": "2025-07-15T00:00:00",
+  "ObjectInsights": {
+    "Views": "2.631",
+    "Saves": "38"
+  },
+  "sitemapData": {
+    "originalUrl": "https://www.funda.nl/detail/recreatie/dirkshorn/huis-park-de-horn-603/43738148/",
+    "propertyId": "43738148",
+    "lastmod": "2025-07-31T16:29:29+02:00",
+    "processedAt": "2025-09-15T19:59:13.367Z",
+    "apiUrl": "https://listing-detail-page.funda.io/api/v4/listing/nl/tinyId/43738148"
+  }
+}
