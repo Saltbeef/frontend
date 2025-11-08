@@ -163,6 +163,7 @@ jobs:
         run: |
           python -c "
           import json
+          import os
           from pathlib import Path
           from src.report_generator import ReportGenerator
           from src.markdown_generator import MarkdownGenerator
@@ -193,6 +194,22 @@ jobs:
           md_path = reports_dir / f'{base_filename}.md'
           md_generator.save(analysis, md_path)
           print(f'Markdown report generated: {md_path}')
+
+          # Create symlinks to latest reports
+          latest_html = reports_dir / 'latest.html'
+          latest_md = reports_dir / 'latest.md'
+
+          # Remove old symlinks if they exist
+          if latest_html.exists() or latest_html.is_symlink():
+              latest_html.unlink()
+          if latest_md.exists() or latest_md.is_symlink():
+              latest_md.unlink()
+
+          # Create new symlinks (relative paths for git)
+          os.symlink(f'{base_filename}.html', latest_html)
+          os.symlink(f'{base_filename}.md', latest_md)
+          print(f'Symlinks created: latest.html -> {base_filename}.html')
+          print(f'Symlinks created: latest.md -> {base_filename}.md')
           "
 
       - name: Commit and push analysis results to main
