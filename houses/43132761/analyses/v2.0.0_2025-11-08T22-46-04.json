@@ -1,0 +1,97 @@
+{
+  "house_id": "43132761",
+  "analyzed_at": "2025-11-08T22:46:04.849409+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 6.88,
+  "category_scores": {
+    "location": {
+      "score": 6.5,
+      "reasoning": "Dirkshorn ligt in Noord-Holland, regio met redelijk toeristische potentie maar geen A-locatie. Park De Horn is lokaal bekend recreatiepark.\n\nTOERISTISCHE ATTRACTIES:\n- Strand Callantsoog: 8 km (10 min auto) - populair Noord-Hollands strand\n- Schagen centrum: 9 km (horeca, winkels, weekmarkt)\n- Dierentuin Van Blanckendaell: 6 km\n- De Holle Bolle Boom (speel-zwemparadijs): 2 km fiets\n- Texel veerboot Den Helder: 20 km\n- Alkmaar: 25 km (kaasmarkt, historisch centrum)\n- Amsterdam: 65 km (1 uur rijden)\n\nLOCATIE TYPE: B-locatie. Niet aan zee/strand, maar wel nabij kust. Aantrekkelijk voor Nederlandse gezinnen, minder voor internationale gasten.\n\nSEIZOENSPATROON: Voornamelijk zomer-gedreven (mei-september sterk), seizoensgebonden. Lente/herfst redelijk, winter zwak. Geschat 60% omzet in mei-september.\n\nBEREIKBAAR: N9 op 3 km, A7 op 20 km. OV beperkt (bus), geen station dichtbij. Voor Duitse gasten: 2,5-3 uur vanaf grens, maar niet top-bestemming.\n\nMARKTDATA: Airbnb Dirkshorn toont 15-20 actieve verhuur objecten. Vergelijkbare 2-slaapkamer chalets: \u20ac80-120/nacht hoogseizoen, \u20ac60-80 middenseizoen. Reviews gemiddeld 30-50 per object (300-500 overnachtingen/jaar). Concurrentie matig, niet oversaturated maar ook geen hotspot.",
+      "red_flags": [
+        "Geen directe strandligging - minder aantrekkelijk dan kustlocaties",
+        "Beperkt internationaal toerisme - voornamelijk Nederlandse markt",
+        "Seizoensgebonden vraag - winter zeer zwak"
+      ],
+      "recommendations": [
+        "Focus marketing op Nederlandse gezinnen met kinderen (0-12 jaar)",
+        "Cre\u00eber USP's die ook laagseizoen aantrekkelijk maken (hottub, wellness)",
+        "Target Amsterdamse/Haarlemse gezinnen (weekend uitjes 1 uur rijden)"
+      ],
+      "market_data": "Airbnb comp: \u20ac70-100/nacht gemiddeld, 40-60% bezetting jaar-rond realistisch voor goed gepresenteerd object. Booking.com toont vergelijkbare prijzen. Reviews concurrent objecten suggereren 250-400 verhuurnachten/jaar haalbaar."
+    },
+    "property": {
+      "score": 7.5,
+      "reasoning": "BASISSPEC: 2 slaapkamers + 2 extra (verdieping), max 6-8 gasten. 65m\u00b2 woonoppervlak, 115m\u00b2 perceel. Bouwjaar 2022 - nieuwstaat, minimaal onderhoud komende jaren.\n\nUSP's - STERK:\n\u2713 Nieuwbouw 2022 - moderne uitstraling, instapklaar\n\u2713 Extra verdieping met woonkamer + keuken - uniek voor stacaravan (flexibel gebruik)\n\u2713 Groot terras op 115m\u00b2 perceel - ruimte en privacy\n\u2713 Luxe keuken met kookeiland en bar - aantrekkelijk voor foto's\n\u2713 4 slaapkamers totaal - geschikt voor grotere gezinnen/groepen\n\u2713 Master bedroom met directe badkamer toegang\n\u2713 Volledig gemeubileerd - verhuurklaar\n\nUSP's - ONTBREKEND:\n\u2717 Geen hottub/jacuzzi genoemd - grote gemiste kans (\u20ac3-5k investering, +\u20ac20-30/nacht mogelijk)\n\u2717 Geen sauna - zou perfect passen bij moderne uitstraling\n\u2717 Huisdieren NIET genoemd - moet uitgezocht, kan 30% doelgroep toevoegen\n\nDOELGROEP: Primair gezinnen 4-8 personen, ook twee bevriende stellen mogelijk door extra verdieping met eigen keuken. Kindvriendelijk door park faciliteiten.\n\nFOTO's: 10 professionele foto's, moderne uitstraling zichtbaar. Luxe keuken goed in beeld. Geen exterieur terras shots - gemiste kans.\n\nONDERHOUD: Nieuwbouw = \u20ac500-800/jaar normaal onderhoud realistisch eerste 5 jaar. CV ketel 2022 = geen vervanging nodig.",
+      "red_flags": [
+        "Geen hottub/sauna - mist belangrijkste USP voor premiumprijs",
+        "Huisdieren beleid onduidelijk - moet bevestigd worden"
+      ],
+      "recommendations": [
+        "PRIORITEIT: Investeer \u20ac4-5k in hottub installatie - ROI <2 jaar bij +\u20ac25/nacht",
+        "Budget \u20ac2k voor betere buitenmeubilair en terras styling (BBQ area, lounge set)",
+        "Vraag verkoper: huisdieren toegestaan? Zo nee, onderhandel met parkbeheer",
+        "Maak 5-10 extra foto's: terras, buitenruimte, detail shots luxe keuken"
+      ],
+      "usp_highlights": [
+        "Nieuwbouw 2022 - moderne luxe uitstraling",
+        "4 slaapkamers met extra woonkamer op verdieping",
+        "Luxe keuken met kookeiland - Instagram-waardig",
+        "Groot terras 115m\u00b2 perceel - privacy"
+      ]
+    },
+    "financial": {
+      "score": 6.0,
+      "reasoning": "INVESTERING:\n- Vraagprijs: \u20ac150.000\n- Overdrachtsbelasting 2%: \u20ac3.000\n- Notaris/advies: \u20ac2.000\n- Hottub installatie (aanbevolen): \u20ac4.500\n- TOTAAL: \u20ac159.500 (afgerond \u20ac160k)\n\nJAAROMZET (conservatief):\nHoogseizoen 90 dgn (mei-sep): 70% bezetting \u00d7 \u20ac110/nacht = \u20ac6.930\nMiddenseizoen 180 dgn (mrt-apr, okt-nov): 45% bezetting \u00d7 \u20ac85/nacht = \u20ac6.885\nLaagseizoen 95 dgn (dec-feb): 25% bezetting \u00d7 \u20ac70/nacht = \u20ac1.663\nTOTAAL NACHTEN: 157 nachten/jaar\nBRUTO OMZET: \u20ac15.478\n\nMET HOTTUB (realistisch +25% tarief/bezetting):\nHoogseizoen: 75% \u00d7 \u20ac135 = \u20ac9.113\nMiddenseizoen: 50% \u00d7 \u20ac105 = \u20ac9.450\nLaagseizoen: 30% \u00d7 \u20ac85 = \u20ac2.423\nTOTAAL: 185 nachten, \u20ac20.986\n\nKOSTEN (met hottub):\n- Parkkosten: \u20ac1.838\n- Energie/water: \u20ac1.800 (gas CV)\n- Platform fees 10%: \u20ac2.099\n- Schoonmaak 40\u00d7 \u20ac50: \u20ac2.000\n- Wasgoed: \u20ac800\n- Onderhoud 8%: \u20ac1.679\n- Hottub onderhoud: \u20ac600\n- Accountant: \u20ac1.000\n- Verzekering: \u20ac500\n- Reserve: \u20ac1.000\nTOTAAL: \u20ac13.316\n\nRENDEMENT:\nNetto inkomen: \u20ac7.670/jaar\nCash-on-Cash: 4.8% (LAAG)\n\nMET FINANCIERING (70%):\n- Hypotheek \u20ac112k, 5% rente: \u20ac5.600/jaar\n- Eigen inbreng: \u20ac48k\n- Cashflow: \u20ac2.070/jaar (\u20ac173/maand)\n- Return op eigen vermogen: 4.3%\n\nBREAK-EVEN: 20+ jaar op basis huidige cijfers - PROBLEMATISCH.\n\nWAARDESTIJGING: Recreatie stijgt ~2-3%/jaar. Na 3 jaar: \u20ac160k. Winst minimaal.",
+      "red_flags": [
+        "Cash-on-Cash return 4.8% - ver onder target 10%+",
+        "Parkkosten \u20ac1.838 relatief hoog voor kleine woning",
+        "Break-even 20+ jaar - geen gezonde investering",
+        "Omzet potentieel beperkt door B-locatie en seizoen"
+      ],
+      "recommendations": [
+        "ONDERHANDEL naar \u20ac130-135k - bij \u20ac130k wordt CoC 8.2% (aanvaardbaar)",
+        "Verplicht: installeer hottub voor hogere tarieven",
+        "Target 200+ verhuurnachten door professionele marketing en Instant Book",
+        "Overweeg: verhuur ook aan ZZP'ers/contractors middellange termijn (hoger rendement)"
+      ],
+      "calculations": {
+        "purchase_price": 150000,
+        "total_investment": 159500,
+        "estimated_annual_revenue": 20986,
+        "estimated_annual_costs": 13316,
+        "net_annual_income": 7670,
+        "cash_on_cash_return": 4.8,
+        "breakeven_years": 20.8
+      }
+    },
+    "legal": {
+      "score": 8.0,
+      "reasoning": "VERHUURVRIJHEID - POSITIEF:\n\u2713 \"Interessante verhuurmogelijkheden\" in tekst - verhuur toegestaan\n\u2713 \"365 dagen per jaar recre\u00ebren\" - jaar-rond beschikbaar\n\u2713 Geen vermelding verplichte parkorganisatie (Landal/Roompot etc.)\n\u2713 Parkkosten \u20ac1.838 - redelijk, geen extreme commissies\n\u2713 Geen Recron/privilege clausule vermeld\n\nTE VERIFI\u00cbREN:\n? Volledige verhuurvrijheid of zijn er maximum weken?\n? Is parkgoedkeuring nieuwe eigenaar vereist?\n? Huisdieren toegestaan voor gasten?\n? Eigen platformkeuze vrij (Airbnb/Booking.com)?\n\nEIGENDOM:\n\u2713 Volle eigendom perceel 115m\u00b2 - geen erfpacht\n\u2713 Kadaster HARENKARSPEL I 4404 - clean title\n\nREGELGEVING:\n- Permanente bewoning NIET toegestaan - recreatie only (verwacht)\n- Vergunning vakantieverhuur: niet vereist voor recreatieparken meestal\n- Toeristenbelasting: ~\u20ac1-2 per nacht, doorberekenen aan gast\n\nFISCAAL:\n- Bij actieve verhuur: mogelijk Box 1 (onderneming) - BTW-plichtig boven drempel\n- Of Box 3 (vermogen) als <70% verhuur\n- Advies: accountant consulteren voor optimale structuur\n\nDEALBREAKER CHECK: Geen dealbreakers gevonden. Verhuur lijkt vrij mogelijk.\n\nACTIES NODIG:\n1. Parkreglement opvragen bij verkoper/beheerder\n2. Bevestiging: vrije platformkeuze\n3. Huisdierenbeleid gasten verifi\u00ebren",
+      "red_flags": [],
+      "recommendations": [
+        "Vraag volledig parkreglement op voor bod",
+        "Laat notaris clausule opnemen: 'onder voorbehoud verhuurvrijheid conform parkreglement'",
+        "Check bij huidige eigenaar: hoeveel weken verhuurden zij?",
+        "Bevestig: geen goedkeuring parkbeheer vereist voor verhuur"
+      ],
+      "rental_freedom": "Verhuur lijkt volledig vrij mogelijk, 365 dagen per jaar. Geen verplichte parkorganisatie. Parkkosten \u20ac1.838/jaar acceptabel. Verificatie parkreglement essentieel voor zekerheid."
+    }
+  },
+  "overall_assessment": "Deze nieuwbouw recreatiewoning (2022) in Park De Horn biedt een moderne, verhuurklare optie in Noord-Holland nabij strand Callantsoog. Grote pluspunten: nieuwstaat, 4 slaapkamers, luxe keuken, groot terras, jaar-rond verhuur mogelijk, volle eigendom. ECHTER: financieel rendement is ondermaats bij vraagprijs \u20ac150k (4.8% CoC). Locatie is B-tier (niet A), seizoensgebonden, en ontbreekt cruciale USP (hottub). Bij onderhandeling naar \u20ac130k en toevoeging hottub wordt dit een redelijke investering met 8-9% rendement potentieel. Voor scale-up strategie: beperkt potentieel door bescheiden waardestijging verwacht.",
+  "top_strengths": [
+    "Nieuwbouw 2022 - minimaal onderhoud, moderne uitstraling, directe verhuurstart mogelijk",
+    "365 dagen verhuur toegestaan, volle eigendom, geen verplichte parkorganisatie - operationele vrijheid",
+    "4 slaapkamers met extra woonkamer/keuken op verdieping - uniek USP voor grotere groepen/families"
+  ],
+  "top_concerns": [
+    "Rendement 4.8% bij vraagprijs \u20ac150k - ver onder target 10%+, break-even 20+ jaar onacceptabel",
+    "B-locatie Dirkshorn - geen topbestemming, seizoensgebonden vraag, beperkt internationaal potentieel",
+    "Ontbrekende premium USP's (hottub/sauna) - mist \u20ac20-30/nacht extra tarief mogelijkheid, investeringsnoodzaak \u20ac4-5k"
+  ],
+  "investment_recommendation": "OVERWEGEN - alleen bij onderhandeling naar \u20ac130-135k en directe hottub installatie. Bij \u20ac150k AFWIJZEN wegens onvoldoende rendement.",
+  "metadata": {
+    "processing_time_seconds": 103.35,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
