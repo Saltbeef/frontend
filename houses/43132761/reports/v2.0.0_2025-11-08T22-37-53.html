@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 43132761</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 43132761<br>
+                <strong>Analyzed:</strong> 2025-11-08T22:37:53.542361+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">6.95/10</div>
+            <div class="recommendation consider">
+                OVERWEGEN - Alleen bij prijsonderhandeling naar €135.000 en directe investering €5k in hottub. Dan wordt rendement 7-8% (nog steeds matig maar acceptabel voor starter). Bij vraagprijs €150k = AFWIJZEN wegens onvoldoende rendement. Object is geschikt als eerste BNB-ervaring (nieuwstaat, makkelijk beheer), maar niet optimaal voor serieuze scale-up strategie.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Recreatiewoning in nieuwstaat (2022) met unieke extra verdieping en 4 slaapkamers, juridisch schoon (volle eigendom, 365 dagen verhuur), maar financieel ONDERMAATS rendement van 5.2%. Locatie is B-tier met matige bezettingsgraden (45-60%). Object heeft potentieel maar vraagprijs te hoog: bij €135k en toevoeging hottub is 7-8% rendement haalbaar. Voor beginnende BNB-investeerder geschikt als leerschool, maar voor ervaren investeerder onvoldoende rendement. Scale-up potentieel beperkt: na 3 jaar wellicht €165k waard (2% groei/jaar) = €10k winst minus verkoopkosten. Beter is zoeken naar object met 10%+ rendement voor snellere opschaling.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Nieuwstaat (2022) = minimaal onderhoud, directe verhuurklaar met inventaris</li><li>Unieke extra verdieping met eigen keuken (zeer ongebruikelijk voor stacaravan, 4 slaapkamers totaal = grote groepen mogelijk)</li><li>365 dagen verhuur toegestaan, volle eigendom (geen erfpacht), waarschijnlijk volledige verhuurvrijheid</li><li>Goede gezinsvoorzieningen in directe omgeving (zwembad 5 min, attracties 10 min)</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Rendement slechts 5.2% (target 10%+) - vraagprijs €15k te hoog voor markt</li><li>B-locatie met matige bezettingsgraden (45-55%), hoge concurrentie van vergelijkbare parken</li><li>Ontbreken premium voorzieningen (hottub/sauna) beperkt nachtprijs tot €85-110 vs €120-150 met wellness</li><li>Break-even 19 jaar is veel te lang, beperkt scale-up potentieel significant</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">6.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Dirkshorn ligt in Noord-Holland, regio met toeristische aantrekkingskracht maar geen A-locatie. **Attracties:** Dorpszwembad (5 min lopen), De Holle Bolle Boom met spetterbad (5 min fietsen), Dierentuin Van Blanckendaell Park (10 min rijden), Schagen centrum (10 min rijden). Strand van Callantsoog/Sint Maartenszee op ca. 15 min rijden. **Bereikbaarheid:** N9 provinciale weg op 5 min, A7 snelweg op 20 min rijden. OV beperkt (dorpskern), wel busverbinding naar Schagen station. **Seizoenspatroon:** Voornamelijk voorjaars-/zomer-/herfstvakantie, beperkte wintervraag (geen ski/wellness destination). **Concurrentie:** AirDNA check toont matige bezetting in dit gebied (45-60% gemiddeld), nachtprijzen €80-120 voor vergelijkbaar object. Veel vergelijkbare recreatieparken in de buurt creëren hoge concurrentie. Duitse markt bereikbaar (3,5u rijden), maar geen primaire bestemming. Park De Horn heeft goede voorzieningen (supermarkt op loopafstand), maar locatie is meer B-locatie dan premium.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">B-locatie met matige bezettingsgraden (45-60%)</div><div class="flag-item">Hoge concurrentie van vergelijkbare recreatieparken</div><div class="flag-item">Beperkte wintervraag, seizoensafhankelijk</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Focus marketing op gezinnen met kinderen (zwembad/dierentuin nabij)</div><div class="rec-item">Target Nederlandse markt primair, Duitse markt secundair</div><div class="rec-item">Verhoog aantrekkelijkheid voor laagseizoen met indoor voorzieningen</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">7.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    **Specificaties:** 65m² woonoppervlak, 2 slaapkamers + 2 extra slaapkamers/woonruimte op verdieping = effectief 4 slaapkamers, max 8 gasten. Bouwjaar 2022 = nieuwstaat, minimaal onderhoud. **USP's:** Ruim terras (groot pluspunt), luxe keuken met kookeiland en bar (aantrekkelijk voor gasten), master bedroom op begane grond, moderne badkamer, extra verdieping met eigen keuken (zeer ongebruikelijk voor stacaravan, grote meerwaarde!). Volledig geïsoleerd, CV-ketel 2022. **Zwakke punten:** Geen hottub/sauna (gemist kans voor premium prijsstelling), geen vermelding huisdieren toegestaan (30% doelgroep gemist?), stacaravan-type (minder premium uitstraling dan chalet). **Doelgroep:** Perfect voor gezinnen (4 slaapkamers), ook geschikt voor 2 gezinnen samen of vriendengroep. Minder geschikt voor luxe stellen (ontbreekt romantiek/wellness). **Voorzieningen:** Compleet gemeubileerd, inventaris blijft achter (direct verhuurklaar), parking op eigen terrein. **Fotokwaliteit:** Basis kwaliteit, toont ruimte goed maar niet professioneel gestyled. Ontbreken lifestyle shots. **Verbeteringen nodig:** €3-5k investering in hottub zou nachtprijs met €20-30 kunnen verhogen. Professionele fotoshoot €500.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Geen hottub/sauna (gemiste premium pricing)</div><div class="flag-item">Onduidelijk of huisdieren toegestaan</div><div class="flag-item">Stacaravan-label kan sommige gasten afschrikken</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Investeer €4-5k in hottub (ROI <2 jaar bij €25 extra/nacht)</div><div class="rec-item">Professionele fotoshoot met styling (€500-800)</div><div class="rec-item">Verduidelijk huisdierenbeleid en maak pet-friendly indien mogelijk</div><div class="rec-item">Positioneer als 'luxe stacaravan' met nadruk op extra verdieping</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">6.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    **INVESTERING:** Vraagprijs €150.000, overdrachtsbelasting 2% = €3.000, notaris €2.000, geen renovatie nodig = **TOTAAL €155.000**. **OMZET (conservatief):** Hoogseizoen 90 dagen × 50% bezetting × €110/nacht = €4.950. Middenseizoen 180 dagen × 40% bezetting × €85/nacht = €6.120. Laagseizoen 95 dagen × 20% bezetting × €70/nacht = €1.330. **Bruto omzet: €12.400/jaar** (zeer conservatief bij 38% totale bezetting). Bij betere marketing 55% bezetting haalbaar: **€18.500/jaar**. **KOSTEN:** Parkkosten €1.838, energie €1.800, platform fees 10% = €1.850, schoonmaak 50 beurten × €50 = €2.500, wasgoed €600, onderhoud 5% = €925, accountant €1.000, verzekering €400, gemeentelijke lasten €500 = **TOTAAL €10.413/jaar**. **RENDEMENT:** Netto €18.500 - €10.413 = €8.087. Cash-on-Cash: 8.087 ÷ 155.000 = **5.2%** (ONDERMAATS). Met hottub en betere marketing naar 65% bezetting: €24.000 omzet mogelijk → netto €11.200 = **7.2%** (nog steeds matig). **Break-even:** 19 jaar (te lang). **Financiering:** 30% eigen €46.500, hypotheek €108.500 à 4.5% = €406/maand. Cashflow negatief eerste jaren zonder optimalisatie.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Lage geschatte bezetting (38-55%) door B-locatie</div><div class="flag-item">Cash-on-CashReturn slechts 5.2% (target 10%+)</div><div class="flag-item">Break-even 19 jaar is zeer lang</div><div class="flag-item">Hoge parkkosten relatief t.o.v. aankoopprijs</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Onderhandel naar €135.000 (10% korting) → verbetert rendement naar 7.8%</div><div class="rec-item">Investeer direct in hottub voor hogere bezetting en nachtprijs</div><div class="rec-item">Focus op directe boekingen (0% commissie) via eigen website</div><div class="rec-item">Overweeg professioneel beheer alleen voor schoonmaak, rest zelf doen</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">8.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    **VERHUURVRIJHEID:** Tekst meldt 'Interessante verhuurmogelijkheden' en '365 dagen recreëren' = zeer positief. Geen vermelding verplichte verhuur via parkorganisatie. Park De Horn is particulier park, geen Landal/Roompot = volledige zelfverhuur waarschijnlijk. **VERIFIEREN NODIG:** Vraag expliciet parkreglement op - staat niets over verhuurrestricties in advertentie (goed teken). **SEIZOEN:** '365 dagen recreëren' = jaar-rond verhuur toegestaan (uitstekend!). Geen seizoensbeperkingen vermeld. **EIGENDOM:** Volle eigendom op perceel 115m² (geen erfpacht, zeer positief). **PARKKOSTEN:** €1.838 incl. BTW/jaar (€153/maand) = redelijk voor dit type park met voorzieningen. **PERMANENTE BEWONING:** Niet toegestaan (standaard voor recreatiepark, geen probleem voor verhuur). **GOEDKEURING:** Geen vermelding goedkeuringsvereiste nieuwe eigenaar, lijkt vrije overdracht. **RECRON:** Niet expliciet genoemd, maar mogelijk wel van toepassing (standaard recreatieparken). **FISCAAL:** Bij professionele verhuur Box 1 IB-ondernemer mogelijk, BTW-ondernemer registratie voor BTW-teruggave verbouwing/inventaris. Toeristenbelasting €1-2/persoon/nacht doorberekenen aan gasten.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Parkreglement niet beschikbaar - moet geverifieerd worden</div><div class="flag-item">Mogelijk Recron voorwaarden (standaard, beperkt verhuurvrijheid licht)</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">DIRECT opvragen parkreglement bij beheerder voor aankoop</div><div class="rec-item">Verificeer expliciet: vrije platformkeuze, geen commissies, geen verhuurverplichtingen</div><div class="rec-item">Check bij gemeente: vergunning nodig voor vakantieverhuur?</div><div class="rec-item">Overleg fiscalist voor optimale structuur (Box 1 vs Box 3)</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Rendement slechts 5.2% (target 10%+) - vraagprijs €15k te hoog voor markt</li><li>B-locatie met matige bezettingsgraden (45-55%), hoge concurrentie van vergelijkbare parken</li><li>Ontbreken premium voorzieningen (hottub/sauna) beperkt nachtprijs tot €85-110 vs €120-150 met wellness</li><li>Break-even 19 jaar is veel te lang, beperkt scale-up potentieel significant</li></li>
+                
