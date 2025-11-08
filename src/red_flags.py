@@ -27,9 +27,13 @@ class RedFlag:
         self.regex = self._compile_pattern()
 
     def _compile_pattern(self):
-        """Flexible matching: woorden kunnen uit elkaar staan"""
+        """
+        Flexible matching: woorden kunnen uit elkaar staan, maar niet te ver.
+        Maximum 50 characters between words to prevent false positives.
+        """
         words = self.pattern.split()
-        pattern = r'.*'.join(map(re.escape, words))
+        # Use .{0,50}? for non-greedy matching with max 50 chars between words
+        pattern = r'.{0,50}?'.join(map(re.escape, words))
         return re.compile(pattern, re.IGNORECASE | re.DOTALL)
 
     def matches(self, text: str) -> bool:
