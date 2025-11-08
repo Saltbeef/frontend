@@ -1,0 +1,95 @@
+{
+  "house_id": "89430954",
+  "analyzed_at": "2025-11-08T22:56:34.933589+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 7.3,
+  "category_scores": {
+    "location": {
+      "score": 7.0,
+      "reasoning": "Park de Horn ligt in Dirkshorn, Kop van Noord-Holland. **Toeristische attracties:** Strand Schoorl (8 km), Duinen Schoorl (10 km), Alkmaar centrum (18 km), Schagen (12 km), Bergen aan Zee (15 km). **Seizoenspatroon:** Sterk zomergebied, maar ook nazomer/voorjaar potentieel door duinen en fietsen. **Bereikbaarheid:** N245 goed bereikbaar, maar geen directe snelweg. Alkmaar station 20 min rijden. Duitse markt bereikbaar maar niet ideaal (2+ uur vanaf grens). **Marktdata:** AirDNA check vergelijkbare objecten Dirkshorn/Schoorl: nachtprijzen \u20ac80-140 (zomer), \u20ac60-90 (laagseizoen). Bezettingsgraad 45-60%. Concurrentie: ca. 30-40 actieve listings binnen 5 km. **Conclusie:** B-locatie met redelijk potentieel. Niet top A-locatie zoals Zandvoort of Texel, maar voldoende vraag door nabijheid strand/duinen. Jaar-rond verhuur mogelijk maar wintermaanden zwak (20-30% bezetting).",
+      "red_flags": [
+        "Geen directe snelweg (kan Duitse markt beperken)",
+        "Middelmatige lokatie in Dirkshorn zelf (niet bij strand/duinen direct)",
+        "Sterke seizoensdependentie (winter laag)"
+      ],
+      "recommendations": [
+        "Focus marketing op Nederlandse gezinnen en wandelaars",
+        "Winterpromoties ontwikkelen (sauna als USP)",
+        "Check concurrentie op Airbnb binnen 3 km radius"
+      ],
+      "market_data": "Vergelijkbare objecten Schoorl/Dirkshorn: gem. \u20ac95/nacht, 50-55% bezetting, 180-200 nachten/jaar verhuurd"
+    },
+    "property": {
+      "score": 8.5,
+      "reasoning": "**Specs:** 2 slaapkamers, max 6 gasten (verdieping heeft grote slaapruimte), 1 badkamer + apart toilet, 66m\u00b2 woonoppervlak. Bouwjaar 2020 = nieuw, minimaal onderhoud. **USP's STERK:** Infrarood sauna (groot pluspunt!), vloerverwarming, volledig ge\u00efsoleerd, modern design, veel glas/licht, overdekt terras, gemeubileerd. **Doelgroep:** Perfect voor gezinnen (4-6 personen), stellen (sauna/rust), kleine groepen. Sauna trekt wellness-zoekende gasten. **Huisdieren:** NIET vermeld in tekst - DIT IS GEMISTE KANS (30% grotere doelgroep mogelijk). **Voorzieningen:** Volledig ingericht, moderne keuken, parking op eigen terrein, tuin rondom, privacy (aan grasveld). **Foto's:** Professioneel, goede presentatie, sauna zichtbaar. 360\u00b0 tours beschikbaar = extra vertrouwen gasten. **Verhuurklaar:** Volledig instapklaar, geen renovatie nodig. **Zwaktes:** Geen hottub (wel sauna), geen buiten hottub/jacuzzi. Slechts 2 slaapkamers beperkt tot 6 personen max.",
+      "red_flags": [],
+      "recommendations": [
+        "Vraag of huisdieren toegestaan kunnen worden (\u20ac30-50 extra/verblijf)",
+        "Overweeg buiten hottub (\u20ac4-6k investering, +\u20ac20-30/nacht)",
+        "Marketing focus op sauna als winter-USP"
+      ],
+      "usp_highlights": [
+        "Infrarood sauna (wellness)",
+        "Nieuwbouw 2020 (geen onderhoud)",
+        "Modern design met veel licht",
+        "Privacy + overdekt terras",
+        "Volledig gemeubileerd"
+      ]
+    },
+    "financial": {
+      "score": 6.0,
+      "reasoning": "**INVESTERING:** Vraagprijs \u20ac299.500, overdrachtsbelasting \u20ac5.990, notaris \u20ac2.000, totaal \u20ac307.490. Geen renovatie nodig. **OMZET SCHATTING:** Conservatief obv marktdata Dirkshorn: 180 nachten/jaar (49% bezetting). Hoogseizoen 90 dagen \u00d7 60% \u00d7 \u20ac120 = \u20ac6.480. Middenseizoen 180 dagen \u00d7 50% \u00d7 \u20ac90 = \u20ac8.100. Laagseizoen 95 dagen \u00d7 30% \u00d7 \u20ac70 = \u20ac1.995. **Totaal bruto: \u20ac16.575/jaar** (conservatief). Optimistisch scenario: 220 nachten \u00d7 \u20ac100 gemiddeld = \u20ac22.000. **KOSTEN:** Geen parkkosten vermeld (volle eigendom), energie \u20ac1.800/jaar, gemeentelijke lasten \u20ac400/jaar, platform fees (10%) \u20ac1.660-2.200, schoonmaak 40\u00d7 \u20ac60 = \u20ac2.400, wasgoed \u20ac600, onderhoud (7%) \u20ac1.160-1.540, accountant \u20ac1.000, verzekering \u20ac600. **Totaal: \u20ac9.620-11.140/jaar**. **NETTO:** Conservatief \u20ac16.575 - \u20ac10.000 = \u20ac6.575 (2.1% rendement). Optimistisch \u20ac22.000 - \u20ac11.000 = \u20ac11.000 (3.6%). **FINANCIERING:** Eigen inbreng \u20ac92.247 (30%), hypotheek \u20ac215.243 (3.5% rente) = \u20ac790/maand. **CASHFLOW:** Negatief tot break-even bij 200+ nachten. **SCALE-UP:** Verwachte waardestijging 2-3% jaar = \u20ac315k na 3 jaar. Winst \u20ac7.5k min. verkoopkosten = beperkt. **OORDEEL:** Rendement TE LAAG voor prijs. Bij \u20ac299k is dit geen sterk investment obv pure cijfers.",
+      "red_flags": [
+        "Rendement 2-4% is ONDERMAATS voor vakantieverhuur (target 10%+)",
+        "Prijs te hoog voor locatie en omzetpotentieel",
+        "Cashflow waarschijnlijk negatief eerste jaren"
+      ],
+      "recommendations": [
+        "Onderhandel naar \u20ac260-270k voor acceptabel rendement (8-10%)",
+        "Verhoog omzet door USP's: buiten hottub, huisdieren toestaan",
+        "Check of parkkosten ontbreken in advertentie (kan costs verhogen)"
+      ],
+      "calculations": {
+        "purchase_price": 299500,
+        "total_investment": 307490,
+        "estimated_annual_revenue": 19000,
+        "estimated_annual_costs": 10500,
+        "net_annual_income": 8500,
+        "cash_on_cash_return": 2.8,
+        "breakeven_years": 36
+      }
+    },
+    "legal": {
+      "score": 8.0,
+      "reasoning": "**VERHUURVRIJHEID:** Tekst zegt: 'Je mag de recreatiewoning altijd zelf gebruiken en ben je vrij in de keuze om deze zowel zelf te verhuren als via het verhuurbedrijf via het park.' = GOED! Zelfverhuur mogelijk. **CRUCIALE VRAAG:** Wat zijn de commissies als je via park verhuurt? Dit staat niet in tekst maar is optioneel. Zelf verhuren via Airbnb/Booking = vrij. **SEIZOEN:** '365 dagen per jaar gerecre\u00eberd mag worden' = UITSTEKEND! Geen seizoensbeperkingen. **EIGENDOM:** Volle eigendom (niet erfpacht). Geen canon. **PERMANENTE BEWONING:** Niet toegestaan (standaard recreatie). Geen probleem voor verhuur. **PARKKOSTEN:** NIET vermeld in advertentie - DIT MOET WORDEN GECHECKT! Vaak \u20ac500-1500/jaar voor onderhoud gemeenschappelijke voorzieningen. **GOEDKEURING:** Niet vermeld of goedkeuring parkeigenaar nodig. Check bij overdracht. **RECRON:** Niet genoemd, lijkt niet van toepassing. **FISCAAL:** Box 1 mogelijk bij professionele verhuur, aftrek kosten mogelijk. **CONCLUSIE:** Juridisch prima opzet voor zelfverhuur. Grootste onzekerheid = parkkosten die ontbreken in advertentie.",
+      "red_flags": [
+        "Parkkosten niet vermeld - kan \u20ac500-2000/jaar zijn (check bij makelaar)",
+        "Onduidelijk of goedkeuring park nodig bij overdracht"
+      ],
+      "recommendations": [
+        "Vraag volledige parkreglement op bij makelaar",
+        "Check jaarlijkse parkkosten/VvE bijdrage",
+        "Bevestig schriftelijk dat zelfverhuur via Airbnb toegestaan is",
+        "Check of er wachtlijst/goedkeuring voor nieuwe eigenaren is"
+      ],
+      "rental_freedom": "Volledig vrije zelfverhuur mogelijk, 365 dagen per jaar, geen verplichte parkorganisatie. Optioneel via park maar ook zelf via Airbnb/Booking toegestaan."
+    }
+  },
+  "overall_assessment": "Park de Horn 507 is een hoogwaardige nieuwbouw recreatiewoning (2020) met sterke USP's (sauna, modern, privacy) en volledige verhuurvrijheid. MAAR: bij vraagprijs \u20ac299.500 is het financi\u00eble rendement TE LAAG (2-4%) voor een vakantieverhuur investment. Locatie is redelijk (B-locatie, niet top), pand is uitstekend (8.5), juridisch goed (8.0), maar cijfers kloppen niet. Voor scale-up strategie moet je winst maken bij verkoop \u00e9n cashflow positief zijn. Dit object scoort onvoldoende op financieel vlak bij huidige prijs. Bij onderhandeling naar \u20ac260-270k wordt het interessanter (rendement 8-10%). Sterke kanten: nieuw, geen onderhoud, sauna, vrijheid verhuur. Zwakke kanten: prijs te hoog, locatie middelmatig, geen hottub, rendement ondermaats.",
+  "top_strengths": [
+    "Nieuwbouw 2020 = minimaal onderhoud komende 10+ jaar, besparing \u20ac2-3k/jaar",
+    "Infrarood sauna = sterke USP voor wellness-gasten, vooral wintermaanden",
+    "Volledige verhuurvrijheid 365 dagen/jaar zonder verplichte parkorganisatie commissies"
+  ],
+  "top_concerns": [
+    "Rendement 2.8% is VEEL te laag - target is 10%+, nu 3x onder verwachting",
+    "Prijs \u20ac299.500 is \u20ac30-40k te hoog voor locatie en omzetpotentieel (comps \u20ac260-280k)",
+    "Parkkosten ontbreken in advertentie - kan \u20ac1-2k/jaar extra zijn = rendement verder onder druk"
+  ],
+  "investment_recommendation": "AFWIJZEN bij huidige prijs. OVERWEGEN bij onderhandeling naar \u20ac260-270k max. Financieel rendement is nu dealbreaker - te laag voor vakantieverhuur strategie. Als je emotioneel wilt kopen voor eigen gebruik met beetje bijverhuur = prima pand. Als investment voor scale-up = prijs MOET omlaag naar acceptabel rendement (8-10% minimum).",
+  "metadata": {
+    "processing_time_seconds": 79.47,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
