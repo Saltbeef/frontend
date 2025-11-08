@@ -159,12 +159,13 @@ jobs:
           print(f'::set-output name=analysis_path::{analysis_path}')
           "
 
-      - name: Generate HTML report
+      - name: Generate HTML and Markdown reports
         run: |
           python -c "
           import json
           from pathlib import Path
           from src.report_generator import ReportGenerator
+          from src.markdown_generator import MarkdownGenerator
 
           # Load latest analysis
           house_dir = Path('houses') / '${{ inputs.house_id }}'
@@ -175,16 +176,23 @@ jobs:
           with open(analysis_file, 'r') as f:
               analysis = json.load(f)
 
-          # Generate report
-          generator = ReportGenerator()
           reports_dir = house_dir / 'reports'
           reports_dir.mkdir(exist_ok=True)
 
           timestamp = analysis['analyzed_at'].replace(':', '-').split('.')[0]
-          report_path = reports_dir / f\"{analysis['rules_version']}_{timestamp}.html\"
+          base_filename = f\"{analysis['rules_version']}_{timestamp}\"
 
-          generator.save(analysis, report_path)
-          print(f'Report generated: {report_path}')
+          # Generate HTML report
+          html_generator = ReportGenerator()
+          html_path = reports_dir / f'{base_filename}.html'
+          html_generator.save(analysis, html_path)
+          print(f'HTML report generated: {html_path}')
+
+          # Generate Markdown report
+          md_generator = MarkdownGenerator()
+          md_path = reports_dir / f'{base_filename}.md'
+          md_generator.save(analysis, md_path)
+          print(f'Markdown report generated: {md_path}')
           "
 
       - name: Commit and push analysis results to main
