@@ -1,0 +1,112 @@
+{
+  "house_id": "89213252",
+  "analyzed_at": "2025-11-08T22:57:00.413177+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 5.52,
+  "category_scores": {
+    "location": {
+      "score": 6.5,
+      "reasoning": "Park De Horn ligt in Dirkshorn, Noord-Holland. BEREIKBAARHEID: 15 min naar Schagen (NS station), 30 min naar Alkmaar, 60 min naar Amsterdam. A9 snelweg goed bereikbaar. ATTRACTIES: Schoorlse Duinen (breedste duingebied NL) op 15 min, Strand Petten 20 min, Alkmaar kaasmarkt 30 min, Bergen aan Zee 25 min. MARKTPOSITIE: Dit is een B-locatie - niet top kust/strand locatie maar goede natuur/rust positie. Dirkshorn zelf is klein dorp, geen grote trekpleister. SEIZOEN: Vooral voorjaar/zomer/herfst vraag, winter laag. Noord-Holland kust trekt jaar-rond toeristen maar minder dan bijv. Zeeland. CONCURRENTIE: Veel vakantiehuizen in deze regio (Bergen, Schoorl, Callantsoog). AirDNA check nodig maar verwacht \u20ac70-90/nacht gemiddeld voor 4-persoons object zonder luxe USP's. DUITSE MARKT: Redelijk bereikbaar (2,5-3u rijden) maar niet primaire bestemming. VOORDEEL: Rustige omgeving, natuur, wielrenen/wandelen populair. NADEEL: Geen directe strand/water ligging, geen unique destination factor.",
+      "red_flags": [
+        "Geen A-locatie, beperkte USP in omgeving",
+        "Seizoensgebonden vraag, winter laag potentieel",
+        "Veel concurrentie in regio zonder onderscheidend vermogen"
+      ],
+      "recommendations": [
+        "Focus marketing op rust, natuur en actieve vakanties (fietsen/wandelen)",
+        "Target Nederlandse gezinnen en senioren voor middenseizoen",
+        "Bundel met lokale attracties (fietsverhuur, duinwandeling gids)"
+      ],
+      "market_data": "Schatting \u20ac70-90/nacht voor basic 4-persoons object. Vergelijkbare objecten in Park De Horn hebben beperkte reviews, indicatie lage bezetting. Check AirDNA voor Dirkshorn/Schagen/Bergen gebied nodig."
+    },
+    "property": {
+      "score": 5.0,
+      "reasoning": "SPECS: 40m\u00b2 woonoppervlak, 2 slaapkamers, 1 badkamer (douche/toilet), max 4 gasten. Bouwjaar 1990 (34 jaar). Open woon/keuken, berging achter (aandacht nodig). Perceel 166m\u00b2, tuin rondom. USP ANALYSE - KRITISCH TEKORT: Geen hottub/sauna/jacuzzi, geen bijzonder design, geen luxe uitstraling zichtbaar. FOTO'S: 12 foto's, basic kwaliteit, tonen eenvoudige inrichting jaren '80-'90 stijl. Geen wow-factor. POSITIEF: 8 zonnepanelen (energieneutraal), elektrische vloerverwarming, internet, tuin rondom. DOELGROEP: Budget gezinnen of senioren stellen. Niet voor luxury seekers. HUISDIEREN: Niet vermeld - BELANGRIJKE GEMISTE KANS (30% grotere markt). STAAT: Lijkt basic maar redelijk onderhouden. Berging 'aandacht nodig' = onderhoudskosten. Interieur gedateerd, modernisering nodig voor competitieve verhuur. COMPETITIE: In huidige staat onderscheidt object zich NIET van concurrentie. Zonder unieke features moeilijk hogere prijzen/bezetting te behalen. VERBETERPOTENTIEEL: \u20ac10-15k investering (hottub \u20ac4k, interieur update \u20ac6k, tuin upgrade \u20ac3k) kan nachtprijs \u20ac20-30 verhogen en bezetting 15-20%.",
+      "red_flags": [
+        "Geen unieke USP's - moeilijk te onderscheiden van concurrentie",
+        "Gedateerd interieur (jaren '90), beperkte luxury appeal",
+        "Klein oppervlak 40m\u00b2 - beperkt tot max 4 gasten",
+        "Berging 'aandacht nodig' = onvoorziene kosten",
+        "Huisdieren beleid onduidelijk - gemiste kans"
+      ],
+      "recommendations": [
+        "Investeer \u20ac4k in hottub - ROI <2 jaar via hogere nachtprijs",
+        "Moderniseer interieur (schilderen, nieuwe meubels) - budget \u20ac6k",
+        "Professionele fotografie \u20ac500 - essentieel voor online conversie",
+        "Maak huisdieren welkom - vergroot doelgroep 30%",
+        "Upgrade berging of converteer naar extra buitenruimte"
+      ],
+      "usp_highlights": [
+        "8 zonnepanelen (energieneutraal)",
+        "Elektrische vloerverwarming",
+        "Tuin rondom (privacy)"
+      ]
+    },
+    "financial": {
+      "score": 4.5,
+      "reasoning": "INVESTERING: Vraagprijs \u20ac90k, overdracht 2% \u20ac1.800, notaris \u20ac2k, totaal \u20ac93.800. Berging renovatie inschat \u20ac2k, minimale updates \u20ac3k = TOTAAL \u20ac98.800 (afgerond \u20ac99k). OMZET SCENARIO CONSERVATIEF: Hoogseizoen 12 weken \u00d7 70% bezet \u00d7 \u20ac85/nacht \u00d7 2,5 dagen = \u20ac1.785 \u00d7 12 = \u20ac21.420. Middenseizoen 20 weken \u00d7 40% bezet \u00d7 \u20ac70/nacht \u00d7 2,5 dagen = \u20ac1.400 \u00d7 20 = \u20ac28.000. Laagseizoen 20 weken \u00d7 15% bezet \u00d7 \u20ac60/nacht \u00d7 2,5 dagen = \u20ac450 \u00d7 20 = \u20ac9.000. TOTAAL BRUTO: \u20ac58.420. REALISTISCHER (object zonder USP): Hoogseizoen \u20ac15k, midden \u20ac18k, laag \u20ac5k = \u20ac38.000. KOSTEN: Parkkosten onbekend (\u20ac1.500-3.000?), energie \u20ac1.200 (zonnepanelen helpen), OZB \u20ac400, platform fees 10% \u20ac3.800, schoonmaak 40\u00d7 \u20ac50 = \u20ac2.000, wasgoed \u20ac600, onderhoud 8% \u20ac3.040, accountant \u20ac1.000, verzekering \u20ac500, TOTAAL \u20ac13.040 + parkkosten \u20ac2k = \u20ac15.040. NETTO: \u20ac38k - \u20ac15k = \u20ac22.960. CoC Return: 22.960/99.000 = 23,2%. DIT LIJKT TE OPTIMISTISCH. REALISTISCH SCENARIO (lagere bezetting): Bruto \u20ac28k, kosten \u20ac14k, netto \u20ac14k = 14% CoC. Bij \u20ac35k bruto, \u20ac15k kosten = \u20ac20k netto = 20% CoC. FINANCIERING 70%: Hypotheek \u20ac69k \u00d7 5,5% = \u20ac3.795/jaar (\u20ac316/mnd). Bij \u20ac20k netto - \u20ac3.795 rente = \u20ac16.205 cashflow = 54% return op \u20ac30k eigen geld. PROBLEEM: Omzet zeer onzeker zonder USP's, parkkosten onbekend, bezetting risico hoog.",
+      "red_flags": [
+        "Parkkosten NIET vermeld - kan \u20ac2.000-4.000/jaar zijn (rendement killer)",
+        "Zeer onzekere bezettingsgraad zonder unieke USP's",
+        "Hoge concurrentie + basis object = lage prijsstelling noodzakelijk",
+        "6+ maanden te koop = mogelijk verborgen problemen of te duur",
+        "Bouwjaar 1990 + berging aandacht = hogere onderhoudskosten verwacht"
+      ],
+      "recommendations": [
+        "ONDERHANDEL HARD: Vraag \u20ac75-80k (15-20% korting) - lang te koop geeft leverage",
+        "ESSENTIEEL: Vraag exacte parkkosten/verbruikskosten vooraf - kan deal breken",
+        "Budget \u20ac10-15k voor USP verbeteringen (hottub/interieur) in business case",
+        "Start conservatief: reken op \u20ac25-30k bruto jaar 1, opbouwen naar \u20ac40k jaar 3",
+        "Overweeg alleen bij <\u20ac80k aankoop + duidelijke parkkosten + commitment USP investering"
+      ],
+      "calculations": {
+        "purchase_price": 90000,
+        "total_investment": 99000,
+        "estimated_annual_revenue": 30000,
+        "estimated_annual_costs": 15000,
+        "net_annual_income": 15000,
+        "cash_on_cash_return": 15.2,
+        "breakeven_years": 3.3
+      }
+    },
+    "legal": {
+      "score": 7.0,
+      "reasoning": "VERHUURVRIJHEID: Omschrijving vermeldt GEEN verplichte verhuur via parkorganisatie - dit is POSITIEF. Geen Landal/Roompot/Europarcs vermeld. Aanname: vrije verhuur mogelijk maar VERIFICATIE NOODZAKELIJK via parkreglement. BEWONING: 'Permanente bewoning niet toegestaan' - standaard voor recreatiepark, geen probleem voor verhuur. EIGENDOM: Volle eigendom 166m\u00b2 kavel - GEEN erfpacht/huurgrond - ZEER POSITIEF. SEIZOEN: Geen seizoensbeperkingen vermeld. Park lijkt jaar-rond operationeel (internet, riolering, propaan), maar lokale regels checken. RECRON: Niet vermeld, maar veel recreatieparken hanteren dit. Check of Recron voorwaarden gelden (kan verhuurperiodes/regels beperken). PARKKOSTEN: 'Zie pagina tarieven' - KRITISCH: deze info ontbreekt in document. Kan \u20ac100-300/maand zijn (\u20ac1.200-3.600/jaar). GOEDKEURING: Geen melding van goedkeuringsplicht nieuwe eigenaar - goed teken. VVE: Parkbeheer aanwezig, regels onbekend. LOKAAL: Gemeente Schagen - check vergunningsplicht vakantieverhuur, toeristenbelasting (ca 5-8% van nachtprijs). FISCAAL: Bij professionele verhuur Box 1 mogelijk - BTW aftrek op aankoop/verbouwing voordelig. RISICO: Zonder exacte parkreglement/tarieven blijft onzekerheid over verhuurvrijheid en kostenstructuur.",
+      "red_flags": [
+        "Parkkosten/tarieven NIET in document - kan rendement significant be\u00efnvloeden",
+        "Parkreglement niet beschikbaar - verhuurvrijheid niet 100% bevestigd",
+        "Mogelijke Recron voorwaarden onbekend (kan restricties opleggen)",
+        "Verbruikskosten onduidelijk (elektra, propaan, water)"
+      ],
+      "recommendations": [
+        "VERPLICHT: Vraag volledig parkreglement + tarieven bij verkoper/beheerder",
+        "Bevestig schriftelijk: vrije verhuur via eigen kanalen toegestaan, geen commissies",
+        "Check bij gemeente Schagen: vergunning nodig? Toeristenbelasting regels?",
+        "Laat notaris parkbepalingen expliciet checken voor ondertekening",
+        "Vraag historische verbruikskosten aan huidige eigenaar"
+      ],
+      "rental_freedom": "Waarschijnlijk vrije verhuur mogelijk (geen parkorganisatie vermeld), maar verificatie via parkreglement ESSENTIEEL voor definitief oordeel. Geen duidelijke dealbreakers, wel informatielacunes."
+    }
+  },
+  "overall_assessment": "Dit is een MARGINALE investering met significant risico. Vraagprijs \u20ac90k lijkt betaalbaar maar object mist cruciale USP's voor competitieve BNB verhuur. Zonnepanelen zijn pluspunt maar compenseren niet voor gedateerd interieur en gebrek aan luxury features. Locatie is B-categorie (niet top bestemming), wat druk zet op bezettingsgraad. Grootste zorgen: (1) Parkkosten onbekend - kan \u20ac2-4k/jaar zijn en rendement vernietigen, (2) Object onderscheidt zich niet van concurrentie zonder \u20ac10-15k extra investering, (3) 6+ maanden te koop suggereert markt ziet beperkt potentieel. POSITIEF: Volle eigendom, waarschijnlijk vrije verhuur, lage aankoopprijs geeft onderhandelruimte. Bij aankoop \u20ac75-80k + commitment voor USP upgrades + lage parkkosten (<\u20ac2k/jaar) kan dit 12-15% CoC Return opleveren. Zonder deze voorwaarden: AFWIJZEN. Scale-up potentieel beperkt - waarschijnlijk 2-3% waardestijging/jaar, exit na 3 jaar \u20ac105-110k, winst \u20ac10-15k na kosten (te weinig voor significante opschaling).",
+  "top_strengths": [
+    "Lage aankoopprijs \u20ac90k + 6 maanden te koop = onderhandelruimte naar \u20ac75-80k mogelijk",
+    "Volle eigendom 166m\u00b2 (geen erfpacht/huurgrond) - geen toekomstige canonverhogingen",
+    "8 zonnepanelen energieneutraal - bespaart \u20ac1.000-1.500/jaar energiekosten",
+    "Waarschijnlijk vrije verhuur mogelijk (geen verplichte parkorganisatie vermeld)",
+    "Locatie toegankelijk voor breed publiek (natuur, strand 20 min, NS station 15 min)"
+  ],
+  "top_concerns": [
+    "Parkkosten/verbruikskosten ONBEKEND - kan \u20ac3.000-5.000/jaar zijn en rendement decimeren tot <5%",
+    "Geen unieke USP's (hottub/sauna/design) - moeilijk te onderscheiden in competitieve markt, verwachte bezetting <45%",
+    "Gedateerd interieur + 'berging aandacht nodig' - extra \u20ac5-8k kosten nodig om verhuurklaar/competitief te maken",
+    "B-locatie zonder unique destination factor - beperkte mogelijkheid voor premium pricing (\u20ac70-85/nacht max)",
+    "6+ maanden te koop - markt ziet beperkt potentieel, mogelijk verborgen gebreken of overprijsd"
+  ],
+  "investment_recommendation": "OVERWEGEN - ALLEEN bij strikte voorwaarden: (1) Onderhandel naar \u20ac75-80k max, (2) Verifieer parkkosten <\u20ac2.000/jaar, (3) Bevestig vrije verhuur schriftelijk, (4) Budget \u20ac12-15k voor USP upgrades (hottub \u20ac4k, interieur \u20ac6k, foto's \u20ac0,5k, tuin \u20ac2k). Zonder deze voorwaarden AFWIJZEN. Bij huidige vraagprijs \u20ac90k + onbekende parkkosten + basic staat = te hoog risico voor <10% rendement. Dit is GEEN plug-and-play investering maar vergt actieve verbetering voor acceptabel rendement.",
+  "metadata": {
+    "processing_time_seconds": 109.54,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}

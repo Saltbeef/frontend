@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 89213252</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 89213252<br>
+                <strong>Analyzed:</strong> 2025-11-08T22:57:00.413177+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">5.52/10</div>
+            <div class="recommendation consider">
+                OVERWEGEN - ALLEEN bij strikte voorwaarden: (1) Onderhandel naar €75-80k max, (2) Verifieer parkkosten <€2.000/jaar, (3) Bevestig vrije verhuur schriftelijk, (4) Budget €12-15k voor USP upgrades (hottub €4k, interieur €6k, foto's €0,5k, tuin €2k). Zonder deze voorwaarden AFWIJZEN. Bij huidige vraagprijs €90k + onbekende parkkosten + basic staat = te hoog risico voor <10% rendement. Dit is GEEN plug-and-play investering maar vergt actieve verbetering voor acceptabel rendement.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Dit is een MARGINALE investering met significant risico. Vraagprijs €90k lijkt betaalbaar maar object mist cruciale USP's voor competitieve BNB verhuur. Zonnepanelen zijn pluspunt maar compenseren niet voor gedateerd interieur en gebrek aan luxury features. Locatie is B-categorie (niet top bestemming), wat druk zet op bezettingsgraad. Grootste zorgen: (1) Parkkosten onbekend - kan €2-4k/jaar zijn en rendement vernietigen, (2) Object onderscheidt zich niet van concurrentie zonder €10-15k extra investering, (3) 6+ maanden te koop suggereert markt ziet beperkt potentieel. POSITIEF: Volle eigendom, waarschijnlijk vrije verhuur, lage aankoopprijs geeft onderhandelruimte. Bij aankoop €75-80k + commitment voor USP upgrades + lage parkkosten (<€2k/jaar) kan dit 12-15% CoC Return opleveren. Zonder deze voorwaarden: AFWIJZEN. Scale-up potentieel beperkt - waarschijnlijk 2-3% waardestijging/jaar, exit na 3 jaar €105-110k, winst €10-15k na kosten (te weinig voor significante opschaling).</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Lage aankoopprijs €90k + 6 maanden te koop = onderhandelruimte naar €75-80k mogelijk</li><li>Volle eigendom 166m² (geen erfpacht/huurgrond) - geen toekomstige canonverhogingen</li><li>8 zonnepanelen energieneutraal - bespaart €1.000-1.500/jaar energiekosten</li><li>Waarschijnlijk vrije verhuur mogelijk (geen verplichte parkorganisatie vermeld)</li><li>Locatie toegankelijk voor breed publiek (natuur, strand 20 min, NS station 15 min)</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Parkkosten/verbruikskosten ONBEKEND - kan €3.000-5.000/jaar zijn en rendement decimeren tot <5%</li><li>Geen unieke USP's (hottub/sauna/design) - moeilijk te onderscheiden in competitieve markt, verwachte bezetting <45%</li><li>Gedateerd interieur + 'berging aandacht nodig' - extra €5-8k kosten nodig om verhuurklaar/competitief te maken</li><li>B-locatie zonder unique destination factor - beperkte mogelijkheid voor premium pricing (€70-85/nacht max)</li><li>6+ maanden te koop - markt ziet beperkt potentieel, mogelijk verborgen gebreken of overprijsd</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">6.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Park De Horn ligt in Dirkshorn, Noord-Holland. BEREIKBAARHEID: 15 min naar Schagen (NS station), 30 min naar Alkmaar, 60 min naar Amsterdam. A9 snelweg goed bereikbaar. ATTRACTIES: Schoorlse Duinen (breedste duingebied NL) op 15 min, Strand Petten 20 min, Alkmaar kaasmarkt 30 min, Bergen aan Zee 25 min. MARKTPOSITIE: Dit is een B-locatie - niet top kust/strand locatie maar goede natuur/rust positie. Dirkshorn zelf is klein dorp, geen grote trekpleister. SEIZOEN: Vooral voorjaar/zomer/herfst vraag, winter laag. Noord-Holland kust trekt jaar-rond toeristen maar minder dan bijv. Zeeland. CONCURRENTIE: Veel vakantiehuizen in deze regio (Bergen, Schoorl, Callantsoog). AirDNA check nodig maar verwacht €70-90/nacht gemiddeld voor 4-persoons object zonder luxe USP's. DUITSE MARKT: Redelijk bereikbaar (2,5-3u rijden) maar niet primaire bestemming. VOORDEEL: Rustige omgeving, natuur, wielrenen/wandelen populair. NADEEL: Geen directe strand/water ligging, geen unique destination factor.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Geen A-locatie, beperkte USP in omgeving</div><div class="flag-item">Seizoensgebonden vraag, winter laag potentieel</div><div class="flag-item">Veel concurrentie in regio zonder onderscheidend vermogen</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Focus marketing op rust, natuur en actieve vakanties (fietsen/wandelen)</div><div class="rec-item">Target Nederlandse gezinnen en senioren voor middenseizoen</div><div class="rec-item">Bundel met lokale attracties (fietsverhuur, duinwandeling gids)</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">5.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    SPECS: 40m² woonoppervlak, 2 slaapkamers, 1 badkamer (douche/toilet), max 4 gasten. Bouwjaar 1990 (34 jaar). Open woon/keuken, berging achter (aandacht nodig). Perceel 166m², tuin rondom. USP ANALYSE - KRITISCH TEKORT: Geen hottub/sauna/jacuzzi, geen bijzonder design, geen luxe uitstraling zichtbaar. FOTO'S: 12 foto's, basic kwaliteit, tonen eenvoudige inrichting jaren '80-'90 stijl. Geen wow-factor. POSITIEF: 8 zonnepanelen (energieneutraal), elektrische vloerverwarming, internet, tuin rondom. DOELGROEP: Budget gezinnen of senioren stellen. Niet voor luxury seekers. HUISDIEREN: Niet vermeld - BELANGRIJKE GEMISTE KANS (30% grotere markt). STAAT: Lijkt basic maar redelijk onderhouden. Berging 'aandacht nodig' = onderhoudskosten. Interieur gedateerd, modernisering nodig voor competitieve verhuur. COMPETITIE: In huidige staat onderscheidt object zich NIET van concurrentie. Zonder unieke features moeilijk hogere prijzen/bezetting te behalen. VERBETERPOTENTIEEL: €10-15k investering (hottub €4k, interieur update €6k, tuin upgrade €3k) kan nachtprijs €20-30 verhogen en bezetting 15-20%.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Geen unieke USP's - moeilijk te onderscheiden van concurrentie</div><div class="flag-item">Gedateerd interieur (jaren '90), beperkte luxury appeal</div><div class="flag-item">Klein oppervlak 40m² - beperkt tot max 4 gasten</div><div class="flag-item">Berging 'aandacht nodig' = onvoorziene kosten</div><div class="flag-item">Huisdieren beleid onduidelijk - gemiste kans</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Investeer €4k in hottub - ROI <2 jaar via hogere nachtprijs</div><div class="rec-item">Moderniseer interieur (schilderen, nieuwe meubels) - budget €6k</div><div class="rec-item">Professionele fotografie €500 - essentieel voor online conversie</div><div class="rec-item">Maak huisdieren welkom - vergroot doelgroep 30%</div><div class="rec-item">Upgrade berging of converteer naar extra buitenruimte</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">4.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    INVESTERING: Vraagprijs €90k, overdracht 2% €1.800, notaris €2k, totaal €93.800. Berging renovatie inschat €2k, minimale updates €3k = TOTAAL €98.800 (afgerond €99k). OMZET SCENARIO CONSERVATIEF: Hoogseizoen 12 weken × 70% bezet × €85/nacht × 2,5 dagen = €1.785 × 12 = €21.420. Middenseizoen 20 weken × 40% bezet × €70/nacht × 2,5 dagen = €1.400 × 20 = €28.000. Laagseizoen 20 weken × 15% bezet × €60/nacht × 2,5 dagen = €450 × 20 = €9.000. TOTAAL BRUTO: €58.420. REALISTISCHER (object zonder USP): Hoogseizoen €15k, midden €18k, laag €5k = €38.000. KOSTEN: Parkkosten onbekend (€1.500-3.000?), energie €1.200 (zonnepanelen helpen), OZB €400, platform fees 10% €3.800, schoonmaak 40× €50 = €2.000, wasgoed €600, onderhoud 8% €3.040, accountant €1.000, verzekering €500, TOTAAL €13.040 + parkkosten €2k = €15.040. NETTO: €38k - €15k = €22.960. CoC Return: 22.960/99.000 = 23,2%. DIT LIJKT TE OPTIMISTISCH. REALISTISCH SCENARIO (lagere bezetting): Bruto €28k, kosten €14k, netto €14k = 14% CoC. Bij €35k bruto, €15k kosten = €20k netto = 20% CoC. FINANCIERING 70%: Hypotheek €69k × 5,5% = €3.795/jaar (€316/mnd). Bij €20k netto - €3.795 rente = €16.205 cashflow = 54% return op €30k eigen geld. PROBLEEM: Omzet zeer onzeker zonder USP's, parkkosten onbekend, bezetting risico hoog.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Parkkosten NIET vermeld - kan €2.000-4.000/jaar zijn (rendement killer)</div><div class="flag-item">Zeer onzekere bezettingsgraad zonder unieke USP's</div><div class="flag-item">Hoge concurrentie + basis object = lage prijsstelling noodzakelijk</div><div class="flag-item">6+ maanden te koop = mogelijk verborgen problemen of te duur</div><div class="flag-item">Bouwjaar 1990 + berging aandacht = hogere onderhoudskosten verwacht</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">ONDERHANDEL HARD: Vraag €75-80k (15-20% korting) - lang te koop geeft leverage</div><div class="rec-item">ESSENTIEEL: Vraag exacte parkkosten/verbruikskosten vooraf - kan deal breken</div><div class="rec-item">Budget €10-15k voor USP verbeteringen (hottub/interieur) in business case</div><div class="rec-item">Start conservatief: reken op €25-30k bruto jaar 1, opbouwen naar €40k jaar 3</div><div class="rec-item">Overweeg alleen bij <€80k aankoop + duidelijke parkkosten + commitment USP investering</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">7.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    VERHUURVRIJHEID: Omschrijving vermeldt GEEN verplichte verhuur via parkorganisatie - dit is POSITIEF. Geen Landal/Roompot/Europarcs vermeld. Aanname: vrije verhuur mogelijk maar VERIFICATIE NOODZAKELIJK via parkreglement. BEWONING: 'Permanente bewoning niet toegestaan' - standaard voor recreatiepark, geen probleem voor verhuur. EIGENDOM: Volle eigendom 166m² kavel - GEEN erfpacht/huurgrond - ZEER POSITIEF. SEIZOEN: Geen seizoensbeperkingen vermeld. Park lijkt jaar-rond operationeel (internet, riolering, propaan), maar lokale regels checken. RECRON: Niet vermeld, maar veel recreatieparken hanteren dit. Check of Recron voorwaarden gelden (kan verhuurperiodes/regels beperken). PARKKOSTEN: 'Zie pagina tarieven' - KRITISCH: deze info ontbreekt in document. Kan €100-300/maand zijn (€1.200-3.600/jaar). GOEDKEURING: Geen melding van goedkeuringsplicht nieuwe eigenaar - goed teken. VVE: Parkbeheer aanwezig, regels onbekend. LOKAAL: Gemeente Schagen - check vergunningsplicht vakantieverhuur, toeristenbelasting (ca 5-8% van nachtprijs). FISCAAL: Bij professionele verhuur Box 1 mogelijk - BTW aftrek op aankoop/verbouwing voordelig. RISICO: Zonder exacte parkreglement/tarieven blijft onzekerheid over verhuurvrijheid en kostenstructuur.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Parkkosten/tarieven NIET in document - kan rendement significant beïnvloeden</div><div class="flag-item">Parkreglement niet beschikbaar - verhuurvrijheid niet 100% bevestigd</div><div class="flag-item">Mogelijke Recron voorwaarden onbekend (kan restricties opleggen)</div><div class="flag-item">Verbruikskosten onduidelijk (elektra, propaan, water)</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">VERPLICHT: Vraag volledig parkreglement + tarieven bij verkoper/beheerder</div><div class="rec-item">Bevestig schriftelijk: vrije verhuur via eigen kanalen toegestaan, geen commissies</div><div class="rec-item">Check bij gemeente Schagen: vergunning nodig? Toeristenbelasting regels?</div><div class="rec-item">Laat notaris parkbepalingen expliciet checken voor ondertekening</div><div class="rec-item">Vraag historische verbruikskosten aan huidige eigenaar</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Parkkosten/verbruikskosten ONBEKEND - kan €3.000-5.000/jaar zijn en rendement decimeren tot <5%</li><li>Geen unieke USP's (hottub/sauna/design) - moeilijk te onderscheiden in competitieve markt, verwachte bezetting <45%</li><li>Gedateerd interieur + 'berging aandacht nodig' - extra €5-8k kosten nodig om verhuurklaar/competitief te maken</li><li>B-locatie zonder unique destination factor - beperkte mogelijkheid voor premium pricing (€70-85/nacht max)</li><li>6+ maanden te koop - markt ziet beperkt potentieel, mogelijk verborgen gebreken of overprijsd</li></li>
+                
