@@ -118,7 +118,7 @@ class ClaudeLLM:
         )
 
         try:
-            with urllib.request.urlopen(req, timeout=120) as response:
+            with urllib.request.urlopen(req, timeout=180) as response:  # Increased from 120s to 180s for 8000 token responses
                 response_data = json.loads(response.read().decode('utf-8'))
                 # Extract text from response
                 content = response_data.get("content", [])
@@ -176,7 +176,7 @@ class OpenAILLM:
         )
 
         try:
-            with urllib.request.urlopen(req, timeout=120) as response:
+            with urllib.request.urlopen(req, timeout=180) as response:  # Increased from 120s to 180s for 8000 token responses
                 response_data = json.loads(response.read().decode('utf-8'))
                 choices = response_data.get("choices", [])
                 if choices and len(choices) > 0:
