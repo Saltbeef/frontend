@@ -1227,6 +1227,96 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
 
             const reportUrl = `https://github.com/${analysisConfig.github.owner}/${analysisConfig.github.repo}/blob/main/houses/${houseId}/reports/`;
 
+            // Build red flags sections (for v2.0.0 BNB analysis)
+            let redFlagsHtml = '';
+            const financialCategory = analysis.category_scores?.financial;
+
+            // Check if this is v2.0.0+ with red flag data
+            if (analysis.category_scores) {
+                const allRedFlags = [];
+                Object.entries(analysis.category_scores).forEach(([key, cat]) => {
+                    if (cat.red_flags && cat.red_flags.length > 0) {
+                        allRedFlags.push(...cat.red_flags);
+                    }
+                });
+
+                if (allRedFlags.length > 0) {
+                    redFlagsHtml = `
+                        <div class="mt-4 p-4 bg-red-50 rounded border border-red-200">
+                            <h4 class="font-semibold text-red-900 mb-2">🚨 Red Flags Gedetecteerd</h4>
+                            <ul class="list-disc list-inside space-y-1 text-sm text-red-700">
+                                ${allRedFlags.map(f => `<li>${f}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `;
+                }
+            }
+
+            // Build financial breakdown (for v2.0.0 BNB analysis)
+            let financialBreakdownHtml = '';
+            if (financialCategory?.calculations) {
+                const calc = financialCategory.calculations;
+                financialBreakdownHtml = `
+                    <div class="mt-4 p-4 bg-green-50 rounded border border-green-200">
+                        <h4 class="font-semibold text-gray-900 mb-3">💰 Financiële Berekening</h4>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            ${calc.purchase_price ? `
+                                <div class="text-gray-600">Aankoopprijs:</div>
+                                <div class="font-semibold text-right">€${calc.purchase_price.toLocaleString()}</div>
+                            ` : ''}
+                            ${calc.total_investment ? `
+                                <div class="text-gray-600">Totale investering:</div>
+                                <div class="font-semibold text-right">€${calc.total_investment.toLocaleString()}</div>
+                            ` : ''}
+                            ${calc.estimated_annual_revenue ? `
+                                <div class="text-gray-600">Geschatte jaaromzet:</div>
+                                <div class="font-semibold text-right text-green-700">€${calc.estimated_annual_revenue.toLocaleString()}</div>
+                            ` : ''}
+                            ${calc.estimated_annual_costs ? `
+                                <div class="text-gray-600">Geschatte jaarkosten:</div>
+                                <div class="font-semibold text-right text-red-700">€${calc.estimated_annual_costs.toLocaleString()}</div>
+                            ` : ''}
+                            ${calc.net_annual_income ? `
+                                <div class="text-gray-600">Netto jaarinkomen:</div>
+                                <div class="font-semibold text-right text-blue-700">€${calc.net_annual_income.toLocaleString()}</div>
+                            ` : ''}
+                            ${calc.cash_on_cash_return ? `
+                                <div class="text-gray-600 font-bold">Cash-on-Cash Return:</div>
+                                <div class="font-bold text-right text-lg ${calc.cash_on_cash_return >= 15 ? 'text-green-600' : calc.cash_on_cash_return >= 10 ? 'text-blue-600' : 'text-orange-600'}">${calc.cash_on_cash_return.toFixed(1)}%</div>
+                            ` : ''}
+                            ${calc.breakeven_years ? `
+                                <div class="text-gray-600">Break-even periode:</div>
+                                <div class="font-semibold text-right">${calc.breakeven_years.toFixed(1)} jaar</div>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Build action plan (for v2.0.0 BNB analysis)
+            let actionPlanHtml = '';
+            if (analysis.action_plan && analysis.action_plan.length > 0) {
+                actionPlanHtml = `
+                    <div class="mt-4 p-4 bg-purple-50 rounded border border-purple-200">
+                        <h4 class="font-semibold text-gray-900 mb-2">🎯 Actieplan</h4>
+                        <ul class="list-decimal list-inside space-y-1 text-sm text-gray-700">
+                            ${analysis.action_plan.map(a => `<li>${a}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            // Build scale-up potential (for v2.0.0 BNB analysis)
+            let scaleUpHtml = '';
+            if (analysis.scale_up_potential) {
+                scaleUpHtml = `
+                    <div class="mt-4 p-4 bg-indigo-50 rounded border border-indigo-200">
+                        <h4 class="font-semibold text-gray-900 mb-2">📈 Scale-up Potentieel</h4>
+                        <p class="text-sm text-gray-700 leading-relaxed">${analysis.scale_up_potential}</p>
+                    </div>
+                `;
+            }
+
             document.getElementById('analysisContent').innerHTML = `
                 <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border border-blue-200">
                     <div class="flex justify-between items-start">
@@ -1243,6 +1333,8 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                     </div>
                 </div>
 
+                ${redFlagsHtml}
+
                 <div class="grid grid-cols-2 gap-3 mt-4">
                     ${Object.entries(analysis.category_scores).map(([key, cat]) => `
                         <div class="bg-gray-50 p-4 rounded border border-gray-200">
@@ -1256,6 +1348,8 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                         </div>
                     `).join('')}
                 </div>
+
+                ${financialBreakdownHtml}
 
                 <div class="mt-4">
                     <h4 class="font-semibold text-gray-900 mb-2">💪 Sterke Punten</h4>
@@ -1275,6 +1369,9 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                     <h4 class="font-semibold text-gray-900 mb-2">📋 Overall Assessment</h4>
                     <p class="text-sm text-gray-700 leading-relaxed">${analysis.overall_assessment}</p>
                 </div>
+
+                ${actionPlanHtml}
+                ${scaleUpHtml}
 
                 <div class="mt-4 flex gap-2 justify-end">
                     <a href="${reportUrl}" target="_blank" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
