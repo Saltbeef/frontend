@@ -1,0 +1,317 @@
+{
+  "Identifiers": {
+    "GlobalId": 7404253,
+    "TinyId": "89213252"
+  },
+  "Price": {
+    "SellingPrice": "\u20ac 90.000 k.k.",
+    "NumericSellingPrice": 90000,
+    "IsAuction": false
+  },
+  "KenmerkSections": [
+    {
+      "Index": 1,
+      "Id": "overdracht",
+      "Title": "Overdracht",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "overdracht-vraagprijs",
+          "Label": "Vraagprijs",
+          "Value": "\u20ac 90.000 kosten koper",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Id": "overdracht-aangeboden-sinds",
+          "Label": "Aangeboden sinds",
+          "Value": "6+ maanden",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 5,
+          "Id": "overdracht-status",
+          "Label": "Status",
+          "Value": "Beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Aanvaarding",
+          "Value": "In overleg",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 7,
+          "Id": "overdracht-permanentebewoning",
+          "Label": "Permanente bewoning",
+          "Value": "Permanente bewoning is niet toegestaan",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 2,
+      "Id": "bouw",
+      "Title": "Bouw",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "bouw-soortobject",
+          "Label": "Soort woonhuis",
+          "Value": "Bungalow, vrijstaande woning",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "bouw-soortbouw",
+          "Label": "Soort bouw",
+          "Value": "Bestaande bouw",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "bouw-bouwjaar",
+          "Label": "Bouwjaar",
+          "Value": "1990",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 3,
+      "Id": "afmetingen",
+      "Title": "Oppervlakten en inhoud",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Label": "Gebruiksoppervlakten",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 1,
+              "Id": "afmetingen-gebruiksoppervlakten-wonen",
+              "Label": "Wonen",
+              "Value": "40 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        },
+        {
+          "Index": 2,
+          "Id": "afmetingen-perceel",
+          "Label": "Perceel",
+          "Value": "166 m\u00b2",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "afmetingen-inhoud",
+          "Label": "Inhoud",
+          "Value": "84 m\u00b3",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 4,
+      "Id": "indeling",
+      "Title": "Indeling",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "indeling-totalrooms",
+          "Label": "Aantal kamers",
+          "Value": "3 kamers (2 slaapkamers)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "indeling-totalstories",
+          "Label": "Aantal woonlagen",
+          "Value": "1 woonlaag",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 5,
+      "Id": "energie",
+      "Title": "Energie",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "energie-energielabel",
+          "Label": "Energielabel",
+          "Value": "Niet verplicht",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 6,
+      "Id": "cadastral",
+      "Title": "Kadastrale gegevens",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "cadastral-parcel",
+          "Label": "HARENKARPSEL I 4349",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 2,
+              "Id": "cadastral-area",
+              "Label": "Oppervlakte",
+              "Value": "166 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "cadastral-ownershipsituation",
+              "Label": "Eigendomssituatie",
+              "Value": "Volle eigendom",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 7,
+      "Id": "buitenruimte",
+      "Title": "Buitenruimte",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "buitenruimte-ligging",
+          "Label": "Ligging",
+          "Value": "In recreatiepark",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "buitenruimte-tuin",
+          "Label": "Tuin",
+          "Value": "Tuin rondom",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    }
+  ],
+  "Labels": [],
+  "Urls": {
+    "FriendlyUrl": {
+      "FullUrl": "https://www.funda.nl/detail/recreatie/dirkshorn/huis-park-de-horn-305/89213252/",
+      "RelativeUrl": "/detail/recreatie/dirkshorn/huis-park-de-horn-305/89213252/"
+    },
+    "ReportErrorUrl": "https://help.funda.nl:443/s/mef?globalID=7404253&returnURL=https%3a%2f%2fwww.funda.nl%2fdetail%2frecreatie%2fdirkshorn%2fhuis-park-de-horn-305%2f89213252%2f&brokerID=82249"
+  },
+  "ListingDescription": {
+    "Title": "Omschrijving",
+    "Description": "Beleef het ultieme woongenot in deze gezellige houten bungalow, gelegen op een ruime kavel van 166 m\u00b2. Met 8 zonnepanelen bent u volledig energieneutraal (op het gas koken na, maar ook dit kan eenvoudig vervangen worden door elektrisch koken) en bent u voorbereid op een duurzame toekomst. Deze woning combineert milieuvriendelijkheid met comfort en biedt een ideale plek om tot rust te komen.\n\nINDELING\nDe bungalow beschikt over twee gezellige slaapkamers en een moderne badkamer, voorzien van douche en toilet. De woonkamer en keuken zijn gecombineerd aan de voorzijde van de woning, wat zorgt voor een sfeervolle en functionele leefruimte. Aan de achterzijde bevindt zich een aangebouwde berging, die wat aandacht nodig heeft, maar een uitstekende ruimte biedt voor opslag of hobby\u2019s.\n\nKENMERKEN\nWoonoppervlakte: ca. 40 m\u00b2\nPerceeloppervlakte: 166 m\u00b2\nVerwarming: Elektrische vloerverwarming\nWarm water: Elektrische boiler\nInternet: Ja\nPropaangas: Ja\nRiolering: Ja\nHuur parkeerplaats: Op 50 meter afstand\nVerbruikskosten: Zie pagina belangrijke documenten/tarieven.\nZonnepanelen: 8 stuks\n\nOVER PARK DE HORN\nPark de Horn is een sfeervol en goed onderhouden vakantiepark gelegen in het schilderachtige dorp Dirkshorn, in de provincie Noord-Holland. Het park staat bekend om zijn rustige en natuurrijke omgeving, waar rustzoekers en natuurliefhebbers volop kunnen genieten. Het park beschikt over diverse faciliteiten, zoals speeltuinen, sportvelden en een gezellige recreatieruimte. Bovendien zijn er veel wandel- en fietspaden in de omgeving, ideaal om de prachtige natuur van Noord-Holland te ontdekken.\n\nLIGGING EN BEREIKBAARHEID\nPark de Horn is uitstekend bereikbaar, zowel met de auto als met het openbaar vervoer. Het park ligt op slechts 15 minuten rijden van Schagen, waar u een treinstation vindt met verbindingen naar steden zoals Alkmaar en Amsterdam. Met de auto bent u in ongeveer 30 minuten in Alkmaar en in een uur in Amsterdam. Het park biedt voldoende parkeerfaciliteiten, waaronder een huurparkeerplaats op slechts 50 meter van de bungalow.\n\nWAT IS ER TE DOEN?\nOp het park zelf kunt u genieten van een ontspannen sfeer, maar ook de omgeving biedt tal van activiteiten en bezienswaardigheden:\n\nTOERISTISCHE TREKPLEISTER:\nDe Schoorlse Duinen: Een van de breedste duingebieden van Nederland, perfect voor wandelingen en fietstochten.\nKaasmuseum in Alkmaar: Ontdek de rijke geschiedenis van de kaasproductie in de regio.\nStrand van Petten: Slechts 20 minuten rijden, ideaal voor een dagje aan zee.\n\nACTIVITEITEN\nBezoek de gezellige markten in Schagen en Alkmaar.\nMaak een boottocht over het Amstelmeer of het IJsselmeer.\nOntdek de vele fietsroutes door pittoreske dorpen en landschappen.\n\nVOORZIENINGEN\nHet park biedt basisvoorzieningen zoals een receptie, speeltuin, sportvelden en een recreatieruimte. Daarnaast zijn er diverse eetgelegenheden in de buurt waar u kunt genieten van lokale specialiteiten.\n\nWAAROM PARK DE HORN?\nDeze charmante houten bungalow biedt niet alleen een fijne plek om vakantie te vieren, maar ook een investering in duurzaamheid dankzij de 8 zonnepanelen. Met een uitstekende ligging, goede bereikbaarheid en een scala aan activiteiten op het park en in de omgeving, is dit de perfecte locatie voor zowel ontspanning als avontuur. \n\nVoor vragen over de verkoop kunt u contact opnemen met Tanja Limmen op 0626588180."
+  },
+  "AddressDetails": {
+    "Title": "Park De Horn 305",
+    "SubTitle": "1746 AX Dirkshorn",
+    "IsInternational": false,
+    "NeighborhoodName": "Dirkshorn (woonkern)",
+    "NeighborhoodIdentifier": "dirkshorn/dirkshorn-woonkern",
+    "City": "Dirkshorn",
+    "Province": "Noord-Holland",
+    "Country": "Nederland",
+    "HouseNumber": "305",
+    "HouseNumberExtension": "",
+    "PostCode": "1746AX"
+  },
+  "Coordinates": {
+    "Latitude": 52.74659,
+    "Longitude": 4.7742643
+  },
+  "KadastraleKaartBaseUrl": "https://service.pdok.nl/kadaster/kadastralekaart/wms/v5_0",
+  "Media": {
+    "Layout": {
+      "MediaViewerIsVisible": true,
+      "MainPhotoThumbnailIsVisible": false
+    },
+    "Photos": {
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "MediaBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "Items": [
+        {
+          "Id": "202/636/510"
+        },
+        {
+          "Id": "202/636/509"
+        },
+        {
+          "Id": "202/636/511"
+        },
+        {
+          "Id": "202/636/512"
+        },
+        {
+          "Id": "202/636/513"
+        },
+        {
+          "Id": "202/636/514"
+        },
+        {
+          "Id": "202/636/515"
+        },
+        {
+          "Id": "202/636/516"
+        },
+        {
+          "Id": "202/636/517"
+        },
+        {
+          "Id": "202/636/518"
+        },
+        {
+          "Id": "202/636/519"
+        },
+        {
+          "Id": "202/636/520"
+        }
+      ]
+    }
+  },
+  "FastView": {
+    "LivingArea": "40 m\u00b2",
+    "PlotArea": "166 m\u00b2",
+    "NumberOfBedrooms": "2"
+  },
+  "IsSoldOrRented": false,
+  "ObjectType": "House",
+  "OfferingType": "Sale",
+  "ConstructionType": "ExistingConstruction",
+  "PublicationDate": "2024-12-25T00:00:00",
+  "ObjectInsights": {
+    "Views": "4.713",
+    "Saves": "76"
+  },
+  "sitemapData": {
+    "originalUrl": "https://www.funda.nl/detail/recreatie/dirkshorn/huis-park-de-horn-305/89213252/",
+    "propertyId": "89213252",
+    "lastmod": "2025-08-26T12:23:11+02:00",
+    "processedAt": "2025-09-15T20:10:00.478Z",
+    "apiUrl": "https://listing-detail-page.funda.io/api/v4/listing/nl/tinyId/89213252"
+  }
+}

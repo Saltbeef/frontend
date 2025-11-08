@@ -1,0 +1,113 @@
+{
+  "house_id": "89213252",
+  "analyzed_at": "2025-11-08T22:48:14.120731+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 5.3,
+  "category_scores": {
+    "location": {
+      "score": 6.5,
+      "reasoning": "Park De Horn ligt in Dirkshorn, Noord-Holland, een rustige locatie met beperkte toeristische trekpleisters. BEREIKBAARHEID: 15 min naar Schagen (treinstation), 30 min naar Alkmaar, 60 min naar Amsterdam. Adequate autobereikbaarheid via N9. ATTRACTIES: Schoorlse Duinen (15 km, breed duingebied), Strand van Petten (20 km/20 min), Kaasmuseum Alkmaar (25 km). MARKTPOSITIE: B-locatie - geen A-attracties direct in de buurt. Dirkshorn zelf heeft weinig voorzieningen. SEIZOEN: Primair zomer-bestemming (mei-september sterk), najaar/winter zwakker. Duitse markt beperkt interessant - te ver van grens, ze prefereren Veluwe/Limburg. CONCURRENTIE: Op Airbnb 15-20 vergelijkbare bungalows Park De Horn, prijzen \u20ac60-95/nacht. Reviews zijn schaars (5-15 reviews gemiddeld), wat duidt op lage bezetting. PROBLEEM: Locatie mist jaar-rond aantrekkingskracht. Geen pretparken, grote steden of unieke attracties binnen 15km. Voor strand zijn er betere alternatieven (Texel, Zandvoort). Wel rustig en natuurrijk, maar dat trekt beperkte doelgroep.",
+      "red_flags": [
+        "B-locatie zonder A-attracties nabij",
+        "Sterke seizoensafhankelijkheid (alleen zomer)",
+        "Beperkte concurrentie-reviews duiden op lage bezetting in gebied",
+        "Dirkshorn heeft minimale voorzieningen"
+      ],
+      "recommendations": [
+        "Focus marketing op 'rust & natuur' doelgroep",
+        "Target Nederlandse gezinnen voor weekendjes",
+        "Promoot fiets/wandelroutes actief",
+        "Overweeg off-season kortingen om bezetting te verhogen"
+      ],
+      "market_data": "Airbnb analyse Park De Horn: 15-20 listings, \u20ac60-95/nacht, gemiddeld 8 reviews (\u224880 overnachtingen/jaar). Booking.com: vergelijkbare objecten \u20ac70-110/nacht. Bezetting geschat 35-45% jaarbasis."
+    },
+    "property": {
+      "score": 5.0,
+      "reasoning": "SPECIFICATIES: 40m\u00b2 woonoppervlak, 2 slaapkamers, 1 badkamer, max 4 gasten. Bouwjaar 1990 (35 jaar oud). KRITIEK GEBREK AAN USP's: Dit is een standaard houten bungalow ZONDER differenti\u00ebrende kenmerken. Geen hottub, sauna, jacuzzi of luxe elementen. Geen bijzonder design, geen thema. POSITIEF: 8 zonnepanelen (energieneutraal), elektrische vloerverwarming, tuin rondom, rustige ligging. DOELGROEP: Gezinnen met max 2 kinderen of 2 stellen. HUISDIEREN: Niet vermeld - MOET onderzocht worden (30% markt!). VOORZIENINGEN: Basis compleet (keuken, WiFi, gas, riolering), parking op 50m. Berging heeft onderhoud nodig. FOTO's: Amateuristisch, geen sfeervolle shots, geen lifestyle beelden. PROBLEEM: In een markt met lage bezetting moet je OPVALLEN. Deze bungalow is te generiek. Concurrenten met hottub/luxe scoren \u20ac15-25/nacht meer. ONDERHOUD: Bouwjaar 1990 + berging aandacht nodig = \u20ac3000-5000 direct + \u20ac2000/jaar structureel. CONCLUSIE: Gemiddeld recreatiewoning zonder WOW-factor die nodig is voor goede verhuur.",
+      "red_flags": [
+        "Geen unieke selling points (hottub/sauna/luxe)",
+        "Klein oppervlak (40m\u00b2) beperkt doelgroep",
+        "Bouwjaar 1990 - hogere onderhoudskosten",
+        "Berging heeft aandacht nodig - onbekende kosten",
+        "Amateuristische foto's schaden verhuurpotentieel"
+      ],
+      "recommendations": [
+        "Budget \u20ac4000-6000 voor hottub installatie (ROI <2 jaar)",
+        "Professionele fotografie \u20ac300-500 essentieel",
+        "Moderniseer interieur \u20ac2000-3000 voor hogere nachtprijs",
+        "Check en communiceer huisdiervriendelijk beleid",
+        "Repareer berging direct voor opslag"
+      ],
+      "usp_highlights": [
+        "8 zonnepanelen - energieneutraal (kostenbesparend)",
+        "Tuin rondom - privacy",
+        "Elektrische vloerverwarming - comfort"
+      ]
+    },
+    "financial": {
+      "score": 3.5,
+      "reasoning": "INVESTERING: Vraagprijs \u20ac90k + 2% overdracht \u20ac1.8k + notaris \u20ac2k + renovatie \u20ac5k (berging/foto's/kleine upgrades) = \u20ac98.8k totaal. 6+ maanden te koop = onderhandelruimte naar \u20ac85k mogelijk \u2192 \u20ac92.8k investering. OMZET SCHATTING (conservatief op basis marktdata): Hoogseizoen 12 weken: 60% \u00d7 84 nachten \u00d7 \u20ac85 = \u20ac4.280. Middenseizoen 24 weken: 35% \u00d7 168 nachten \u00d7 \u20ac70 = \u20ac4.116. Laagseizoen 16 weken: 15% \u00d7 112 nachten \u00d7 \u20ac60 = \u20ac1.008. TOTAAL: \u20ac9.404/jaar bruto (slechts 42% bezetting - realistisch voor deze locatie/pand). KOSTEN: Parkkosten \u20ac1.800/jaar (schatting), energie \u20ac600 (zonnepanelen!), gemeentelijke lasten \u20ac400, platform fees 10% \u20ac940, schoonmaak 35\u00d7 \u20ac50 = \u20ac1.750, wasgoed \u20ac400, onderhoud 10% \u20ac940, accountant \u20ac1.000, verzekering \u20ac300 = \u20ac8.130/jaar. NETTO: \u20ac9.404 - \u20ac8.130 = \u20ac1.274/jaar. Cash-on-Cash: 1.274 \u00f7 92.800 = 1.4% (EXTREEM LAAG). FINANCIERING: 70% hypotheek \u20ac65k @ 5% = \u20ac3.250/jaar rente. Cashflow: \u20ac1.274 - \u20ac3.250 = -\u20ac1.976/jaar NEGATIEF. CONCLUSIE: Financieel een RAMP. Zelfs met optimistische 60% bezetting (\u20ac16k omzet) kom je op 5-6% rendement. Prijspunt \u20ac90k is te hoog voor dit generieke object in B-locatie.",
+      "red_flags": [
+        "Cash-on-Cash return 1.4% - ver onder 10% minimum",
+        "Negatieve cashflow bij financiering",
+        "Zeer lage geschatte bezetting 42% door gebrek aan USP's",
+        "6+ maanden te koop - marktsignaal overpriced",
+        "Break-even 73 jaar bij huidig rendement"
+      ],
+      "recommendations": [
+        "Onderhandel MINIMAAL naar \u20ac75k (\u20ac82.8k totaal investering)",
+        "Bij \u20ac75k en 55% bezetting: 8% rendement - acceptabel maar niet goed",
+        "Investeer \u20ac5k in hottub - kan bezetting naar 55%+ en nachtprijs +\u20ac15 tillen",
+        "Overweeg NIET te kopen zonder stevige prijsreductie \u00e9n upgrades",
+        "Als kopen: cashkoop zonder financiering voor positieve cashflow"
+      ],
+      "calculations": {
+        "purchase_price": 90000,
+        "total_investment": 98800,
+        "estimated_annual_revenue": 9404,
+        "estimated_annual_costs": 8130,
+        "net_annual_income": 1274,
+        "cash_on_cash_return": 1.4,
+        "breakeven_years": 77.5
+      }
+    },
+    "legal": {
+      "score": 7.5,
+      "reasoning": "VERHUURVRIJHEID: Advertentie vermeldt GEEN verplichte parkorganisatie of commissies - lijkt vrije verhuur mogelijk. MAAR dit MOET geverifieerd bij Park De Horn beheer (gebrek aan info is risico). Permanente bewoning niet toegestaan (logisch voor recreatiepark). SEIZOEN: Geen expliciete seizoensbeperkingen vermeld - lijkt jaar-rond verhuur toegestaan. EIGENDOM: Volle eigendom 166m\u00b2 (POSITIEF - geen erfpacht/canon). GOEDKEURING: Niet vermeld of parkeigenaar nieuwe eigenaar moet goedkeuren - check parkreglement. VVE/RECRON: Niet vermeld maar recreatieparken hebben vaak parkreglement met regels. KOSTEN: Verbruikskosten via park, tarieven op documentenpagina (niet zichtbaar in deze data). VERGUNNING: Gemeente Schagen heeft geen vergunningsplicht voor vakantieverhuur (<4 maanden achtereen). Toeristenbelasting \u20ac1.50-2.00 p.p.p.n. FISCAAL: Box 1 onderneming bij actieve verhuur (BTW plichtig boven \u20ac20k omzet, hier net onder). KRITIEK PUNT: Te weinig juridische informatie beschikbaar. Voor \u20ac90k investering MOET je volledig parkreglement zien voor aankoop. Risico dat alsnog beperkingen blijken.",
+      "red_flags": [
+        "Onvoldoende informatie over parkreglement en verhuurvoorwaarden",
+        "Goedkeuringsrecht parkeigenaar niet uitgesloten",
+        "Parkkosten onduidelijk (verbruikskosten 'zie documenten')",
+        "Mogelijke onvoorziene beperkingen in klein lettergedrukte"
+      ],
+      "recommendations": [
+        "ESSENTIEEL: Vraag volledig parkreglement op bij beheerder VOOR bod",
+        "Verificeer: vrije verhuur via eigen kanalen toegestaan?",
+        "Verificeer: geen verplichte commissies naar park?",
+        "Verificeer: jaar-rond verhuur expliciet toegestaan?",
+        "Check met huidige eigenaar: waarom 6+ maanden te koop?",
+        "Laat notaris parkvoorwaarden grondig checken"
+      ],
+      "rental_freedom": "ONBEKEND - lijkt vrij maar onvoldoende informatie. Vereist verificatie voor definitief oordeel. GEEN expliciete dealbreakers gedetecteerd maar gebrek aan transparantie is risicofactor."
+    }
+  },
+  "overall_assessment": "Park De Horn 305 is een financieel ZWAKKE investering die AFGERADEN wordt tegen huidige vraagprijs. Het fatale combinatie: B-locatie zonder A-attracties (score 6.5), generiek pand zonder USP's (score 5.0), en dramatisch rendement van 1.4% (score 3.5). De 40m\u00b2 bungalow uit 1990 mist differenti\u00ebrende elementen in een gebied met lage bezetting (35-45%). Geschatte jaaromzet \u20ac9.400 tegen kosten \u20ac8.130 levert slechts \u20ac1.274 netto - bij 70% financiering zelfs negatieve cashflow. Object staat 6+ maanden te koop (marktsignaal overpriced). Juridische score 7.5 alleen omdat geen expliciete dealbreakers, maar KRITISCH gebrek aan informatie over parkreglement. Voor zelfverhuur scale-up strategie is dit object ongeschikt: te laag rendement, geen kapitaalgroei verwacht in B-locatie, kan niet winstgevend verkocht worden binnen 2-3 jaar.",
+  "top_strengths": [
+    "Volle eigendom zonder erfpacht (\u20ac0 canon structureel)",
+    "8 zonnepanelen zorgen voor energieneutraliteit (\u20ac600-800/jaar besparing)",
+    "Juridisch geen expliciete verhuurverboden gedetecteerd"
+  ],
+  "top_concerns": [
+    "Cash-on-Cash return 1.4% - 7-10x ONDER acceptabel minimum van 10-15%",
+    "6+ maanden te koop + B-locatie + geen USP's = structureel problematisch object",
+    "Geschatte bezetting 42% door gebrek differentiatie in competitieve markt",
+    "Negatieve cashflow bij financiering - verlies \u20ac2.000/jaar verwacht",
+    "Onvoldoende juridische transparantie over parkvoorwaarden (risicofactor)"
+  ],
+  "investment_recommendation": "AFWIJZEN - Dit object voldoet NIET aan criteria voor succesvolle zelfverhuur scale-up strategie. Rendement 1.4% is onacceptabel laag (target 10%+). Zelfs met optimistische scenario's en \u20ac15k onderhandeling kom je niet boven 6-7% rendement. Gebrek aan USP's in combinatie met B-locatie maakt structureel hoge bezetting onhaalbaar. Voor scale-up strategie heb je objecten nodig die binnen 2-3 jaar met 20-30% waardestijging verkocht kunnen worden - dit object zal waarschijnlijk in waarde dalen of stagneren. 6+ maanden verkooptijd huidige eigenaar bevestigt dit. ENIGE scenario om te overwegen: bod \u20ac75k + investering \u20ac6k hottub + professionele marketing = \u20ac81k all-in. Dan bij 55% bezetting mogelijk 8-9% rendement, maar nog steeds ondermaats. Advies: ZOEK VERDER naar object met A-locatie en natuurlijke USP's die 12-15% rendement kunnen leveren.",
+  "metadata": {
+    "processing_time_seconds": 98.99,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}

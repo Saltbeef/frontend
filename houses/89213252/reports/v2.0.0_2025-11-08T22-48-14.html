@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 89213252</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 89213252<br>
+                <strong>Analyzed:</strong> 2025-11-08T22:48:14.120731+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">5.3/10</div>
+            <div class="recommendation consider">
+                AFWIJZEN - Dit object voldoet NIET aan criteria voor succesvolle zelfverhuur scale-up strategie. Rendement 1.4% is onacceptabel laag (target 10%+). Zelfs met optimistische scenario's en €15k onderhandeling kom je niet boven 6-7% rendement. Gebrek aan USP's in combinatie met B-locatie maakt structureel hoge bezetting onhaalbaar. Voor scale-up strategie heb je objecten nodig die binnen 2-3 jaar met 20-30% waardestijging verkocht kunnen worden - dit object zal waarschijnlijk in waarde dalen of stagneren. 6+ maanden verkooptijd huidige eigenaar bevestigt dit. ENIGE scenario om te overwegen: bod €75k + investering €6k hottub + professionele marketing = €81k all-in. Dan bij 55% bezetting mogelijk 8-9% rendement, maar nog steeds ondermaats. Advies: ZOEK VERDER naar object met A-locatie en natuurlijke USP's die 12-15% rendement kunnen leveren.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Park De Horn 305 is een financieel ZWAKKE investering die AFGERADEN wordt tegen huidige vraagprijs. Het fatale combinatie: B-locatie zonder A-attracties (score 6.5), generiek pand zonder USP's (score 5.0), en dramatisch rendement van 1.4% (score 3.5). De 40m² bungalow uit 1990 mist differentiërende elementen in een gebied met lage bezetting (35-45%). Geschatte jaaromzet €9.400 tegen kosten €8.130 levert slechts €1.274 netto - bij 70% financiering zelfs negatieve cashflow. Object staat 6+ maanden te koop (marktsignaal overpriced). Juridische score 7.5 alleen omdat geen expliciete dealbreakers, maar KRITISCH gebrek aan informatie over parkreglement. Voor zelfverhuur scale-up strategie is dit object ongeschikt: te laag rendement, geen kapitaalgroei verwacht in B-locatie, kan niet winstgevend verkocht worden binnen 2-3 jaar.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Volle eigendom zonder erfpacht (€0 canon structureel)</li><li>8 zonnepanelen zorgen voor energieneutraliteit (€600-800/jaar besparing)</li><li>Juridisch geen expliciete verhuurverboden gedetecteerd</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Cash-on-Cash return 1.4% - 7-10x ONDER acceptabel minimum van 10-15%</li><li>6+ maanden te koop + B-locatie + geen USP's = structureel problematisch object</li><li>Geschatte bezetting 42% door gebrek differentiatie in competitieve markt</li><li>Negatieve cashflow bij financiering - verlies €2.000/jaar verwacht</li><li>Onvoldoende juridische transparantie over parkvoorwaarden (risicofactor)</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">6.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Park De Horn ligt in Dirkshorn, Noord-Holland, een rustige locatie met beperkte toeristische trekpleisters. BEREIKBAARHEID: 15 min naar Schagen (treinstation), 30 min naar Alkmaar, 60 min naar Amsterdam. Adequate autobereikbaarheid via N9. ATTRACTIES: Schoorlse Duinen (15 km, breed duingebied), Strand van Petten (20 km/20 min), Kaasmuseum Alkmaar (25 km). MARKTPOSITIE: B-locatie - geen A-attracties direct in de buurt. Dirkshorn zelf heeft weinig voorzieningen. SEIZOEN: Primair zomer-bestemming (mei-september sterk), najaar/winter zwakker. Duitse markt beperkt interessant - te ver van grens, ze prefereren Veluwe/Limburg. CONCURRENTIE: Op Airbnb 15-20 vergelijkbare bungalows Park De Horn, prijzen €60-95/nacht. Reviews zijn schaars (5-15 reviews gemiddeld), wat duidt op lage bezetting. PROBLEEM: Locatie mist jaar-rond aantrekkingskracht. Geen pretparken, grote steden of unieke attracties binnen 15km. Voor strand zijn er betere alternatieven (Texel, Zandvoort). Wel rustig en natuurrijk, maar dat trekt beperkte doelgroep.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">B-locatie zonder A-attracties nabij</div><div class="flag-item">Sterke seizoensafhankelijkheid (alleen zomer)</div><div class="flag-item">Beperkte concurrentie-reviews duiden op lage bezetting in gebied</div><div class="flag-item">Dirkshorn heeft minimale voorzieningen</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Focus marketing op 'rust & natuur' doelgroep</div><div class="rec-item">Target Nederlandse gezinnen voor weekendjes</div><div class="rec-item">Promoot fiets/wandelroutes actief</div><div class="rec-item">Overweeg off-season kortingen om bezetting te verhogen</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">5.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    SPECIFICATIES: 40m² woonoppervlak, 2 slaapkamers, 1 badkamer, max 4 gasten. Bouwjaar 1990 (35 jaar oud). KRITIEK GEBREK AAN USP's: Dit is een standaard houten bungalow ZONDER differentiërende kenmerken. Geen hottub, sauna, jacuzzi of luxe elementen. Geen bijzonder design, geen thema. POSITIEF: 8 zonnepanelen (energieneutraal), elektrische vloerverwarming, tuin rondom, rustige ligging. DOELGROEP: Gezinnen met max 2 kinderen of 2 stellen. HUISDIEREN: Niet vermeld - MOET onderzocht worden (30% markt!). VOORZIENINGEN: Basis compleet (keuken, WiFi, gas, riolering), parking op 50m. Berging heeft onderhoud nodig. FOTO's: Amateuristisch, geen sfeervolle shots, geen lifestyle beelden. PROBLEEM: In een markt met lage bezetting moet je OPVALLEN. Deze bungalow is te generiek. Concurrenten met hottub/luxe scoren €15-25/nacht meer. ONDERHOUD: Bouwjaar 1990 + berging aandacht nodig = €3000-5000 direct + €2000/jaar structureel. CONCLUSIE: Gemiddeld recreatiewoning zonder WOW-factor die nodig is voor goede verhuur.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Geen unieke selling points (hottub/sauna/luxe)</div><div class="flag-item">Klein oppervlak (40m²) beperkt doelgroep</div><div class="flag-item">Bouwjaar 1990 - hogere onderhoudskosten</div><div class="flag-item">Berging heeft aandacht nodig - onbekende kosten</div><div class="flag-item">Amateuristische foto's schaden verhuurpotentieel</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Budget €4000-6000 voor hottub installatie (ROI <2 jaar)</div><div class="rec-item">Professionele fotografie €300-500 essentieel</div><div class="rec-item">Moderniseer interieur €2000-3000 voor hogere nachtprijs</div><div class="rec-item">Check en communiceer huisdiervriendelijk beleid</div><div class="rec-item">Repareer berging direct voor opslag</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">3.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    INVESTERING: Vraagprijs €90k + 2% overdracht €1.8k + notaris €2k + renovatie €5k (berging/foto's/kleine upgrades) = €98.8k totaal. 6+ maanden te koop = onderhandelruimte naar €85k mogelijk → €92.8k investering. OMZET SCHATTING (conservatief op basis marktdata): Hoogseizoen 12 weken: 60% × 84 nachten × €85 = €4.280. Middenseizoen 24 weken: 35% × 168 nachten × €70 = €4.116. Laagseizoen 16 weken: 15% × 112 nachten × €60 = €1.008. TOTAAL: €9.404/jaar bruto (slechts 42% bezetting - realistisch voor deze locatie/pand). KOSTEN: Parkkosten €1.800/jaar (schatting), energie €600 (zonnepanelen!), gemeentelijke lasten €400, platform fees 10% €940, schoonmaak 35× €50 = €1.750, wasgoed €400, onderhoud 10% €940, accountant €1.000, verzekering €300 = €8.130/jaar. NETTO: €9.404 - €8.130 = €1.274/jaar. Cash-on-Cash: 1.274 ÷ 92.800 = 1.4% (EXTREEM LAAG). FINANCIERING: 70% hypotheek €65k @ 5% = €3.250/jaar rente. Cashflow: €1.274 - €3.250 = -€1.976/jaar NEGATIEF. CONCLUSIE: Financieel een RAMP. Zelfs met optimistische 60% bezetting (€16k omzet) kom je op 5-6% rendement. Prijspunt €90k is te hoog voor dit generieke object in B-locatie.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Cash-on-Cash return 1.4% - ver onder 10% minimum</div><div class="flag-item">Negatieve cashflow bij financiering</div><div class="flag-item">Zeer lage geschatte bezetting 42% door gebrek aan USP's</div><div class="flag-item">6+ maanden te koop - marktsignaal overpriced</div><div class="flag-item">Break-even 73 jaar bij huidig rendement</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Onderhandel MINIMAAL naar €75k (€82.8k totaal investering)</div><div class="rec-item">Bij €75k en 55% bezetting: 8% rendement - acceptabel maar niet goed</div><div class="rec-item">Investeer €5k in hottub - kan bezetting naar 55%+ en nachtprijs +€15 tillen</div><div class="rec-item">Overweeg NIET te kopen zonder stevige prijsreductie én upgrades</div><div class="rec-item">Als kopen: cashkoop zonder financiering voor positieve cashflow</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">7.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    VERHUURVRIJHEID: Advertentie vermeldt GEEN verplichte parkorganisatie of commissies - lijkt vrije verhuur mogelijk. MAAR dit MOET geverifieerd bij Park De Horn beheer (gebrek aan info is risico). Permanente bewoning niet toegestaan (logisch voor recreatiepark). SEIZOEN: Geen expliciete seizoensbeperkingen vermeld - lijkt jaar-rond verhuur toegestaan. EIGENDOM: Volle eigendom 166m² (POSITIEF - geen erfpacht/canon). GOEDKEURING: Niet vermeld of parkeigenaar nieuwe eigenaar moet goedkeuren - check parkreglement. VVE/RECRON: Niet vermeld maar recreatieparken hebben vaak parkreglement met regels. KOSTEN: Verbruikskosten via park, tarieven op documentenpagina (niet zichtbaar in deze data). VERGUNNING: Gemeente Schagen heeft geen vergunningsplicht voor vakantieverhuur (<4 maanden achtereen). Toeristenbelasting €1.50-2.00 p.p.p.n. FISCAAL: Box 1 onderneming bij actieve verhuur (BTW plichtig boven €20k omzet, hier net onder). KRITIEK PUNT: Te weinig juridische informatie beschikbaar. Voor €90k investering MOET je volledig parkreglement zien voor aankoop. Risico dat alsnog beperkingen blijken.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Onvoldoende informatie over parkreglement en verhuurvoorwaarden</div><div class="flag-item">Goedkeuringsrecht parkeigenaar niet uitgesloten</div><div class="flag-item">Parkkosten onduidelijk (verbruikskosten 'zie documenten')</div><div class="flag-item">Mogelijke onvoorziene beperkingen in klein lettergedrukte</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">ESSENTIEEL: Vraag volledig parkreglement op bij beheerder VOOR bod</div><div class="rec-item">Verificeer: vrije verhuur via eigen kanalen toegestaan?</div><div class="rec-item">Verificeer: geen verplichte commissies naar park?</div><div class="rec-item">Verificeer: jaar-rond verhuur expliciet toegestaan?</div><div class="rec-item">Check met huidige eigenaar: waarom 6+ maanden te koop?</div><div class="rec-item">Laat notaris parkvoorwaarden grondig checken</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Cash-on-Cash return 1.4% - 7-10x ONDER acceptabel minimum van 10-15%</li><li>6+ maanden te koop + B-locatie + geen USP's = structureel problematisch object</li><li>Geschatte bezetting 42% door gebrek differentiatie in competitieve markt</li><li>Negatieve cashflow bij financiering - verlies €2.000/jaar verwacht</li><li>Onvoldoende juridische transparantie over parkvoorwaarden (risicofactor)</li></li>
+                
