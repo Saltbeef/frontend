@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 89045721</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 89045721<br>
+                <strong>Analyzed:</strong> 2025-11-08T22:56:54.016144+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">6.22/10</div>
+            <div class="recommendation consider">
+                AFWIJZEN - Financieel rendement is onacceptabel laag (2% CoC vs 10%+ target). De combinatie van 1 slaapkamer (beperkte doelgroep), onduidelijke parkkosten (hoog risico), en ontbrekende premium USP's maakt dit geen viable BNB-investering voor zelfverhuur strategie. Met hypotheekfinanciering zelfs negatieve cashflow. Voor scale-up strategie volstrekt ongeschikt: te weinig cashflow voor snelle groei, te lang tot break-even (50+ jaar). Zelfs met €7k upgrades max 6% rendement haalbaar.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Dit chalet in Dirkshorn scoort ONVOLDOENDE als BNB-investering vanwege zwakke financiële cijfers. Het 2% rendement is ver onder de 10%+ target. De grootste bottleneck: slechts 1 slaapkamer limiteert de doelgroep tot stellen, wat bezetting en omzet drastisch beperkt. Positieve punten zijn volle eigendom, moderne bouw (2013), en energielabel A. De locatie is redelijk (B-locatie, 10km van strand). KRITIEK: parkkosten zijn volledig onduidelijk - dit kan het marginale rendement volledig vernietigen. Zonder hottub en met basic inrichting ontbreken premium USP's voor hogere nachtprijzen. Voor scale-up strategie is dit object te zwak: lage cashflow maakt snelle opschaling onmogelijk. Zelfs met upgrades (€7k) blijft rendement ondermaats (max 6%). Voor €90k zijn er betere BNB-investeringen met 2+ slaapkamers en duidelijkere kostenstructuur.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Volle eigendom (geen erfpacht/canon) - stabiele kostenstructuur</li><li>Moderne bouw 2013 + Energielabel A - lage onderhouds- en energiekosten</li><li>Privacy & vrij uitzicht - aantrekkelijk voor rustzoekende stellen</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Cash-on-Cash slechts 2% (target 10%+) - rendement 80% onder minimum</li><li>1 slaapkamer = 60% kleinere doelgroep - gezinnen uitgesloten, omzet beperkt tot €11.540/jaar</li><li>Parkkosten volledig onduidelijk - kan €1500-3500/jaar zijn, vernietigt mogelijk al het marginale rendement</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">7.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Dirkshorn ligt in Noord-Holland op circa 10 km van de Noordzeekust (Bergen aan Zee, Camperduin). Het gebied is populair bij toeristen vanwege:
+
+**Toeristische attracties:**
+- Strand & duinen: 10 km (15 min auto)
+- Alkmaar (kaasmarkt): 20 km
+- Bergen (kunstenaarsplaats): 8 km
+- Schoorl (duinen, klimduin): 12 km
+- Den Helder (ferry Texel): 15 km
+- Texel bereikbaar binnen 45 min
+
+**Bereikbaarheid:**
+- A9 afslag Schagen: 8 km (goed bereikbaar)
+- Station Schagen: 9 km
+- Amsterdam: 65 km (1 uur)
+- Duitse grens: 200+ km (minder aantrekkelijk voor Duitsers)
+
+**Marktanalyse Noord-Holland recreatie:**
+Vergelijkbare chalets in deze regio op Airbnb:
+- Nachtprijzen: €75-110 (gemiddeld €90)
+- Reviews vergelijkbare objecten: 20-40/jaar → 200-400 overnachtingen
+- Bezetting: 50-65% afhankelijk van USP's
+- Hoogseizoen: mei-september zeer populair
+- Laagseizoen: wintermaanden rustig maar wel vraag rond feestdagen
+
+**Locatietype:** B-locatie. Niet direct aan strand (A-locatie), maar binnen acceptabele afstand. Polderlandschap is rustgevend maar minder spectaculair dan kustnabij.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Niet direct aan strand/zee (10 km afstand)</div><div class="flag-item">Winterseizoen minder vraag verwacht</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Focus marketing op 'rustzoekende gezinnen' en 'centrale uitvalsbasis'</div><div class="rec-item">Benadruk nabijheid Texel, Alkmaar, stranden</div><div class="rec-item">Winterpromoties voor feestdagen en weekenden</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">6.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    **Basis specificaties:**
+- 1 slaapkamer, max 2 personen (BEPERKTE doelgroep!)
+- 1 badkamer + apart toilet
+- 40m² woonoppervlak (compact)
+- Bouwjaar 2013 (modern, laag onderhoud)
+- Energielabel A (lage energiekosten)
+
+**USP's AANWEZIG:**
+✅ Vrij uitzicht
+✅ Volledige privacy (vrijstaand)
+✅ Vloerverwarming (comfort)
+✅ Tuin rondom 90m² (hond vriendelijk)
+✅ Terras met schuur/overkapping
+✅ Camera's (remote monitoring)
+✅ Rolluiken (verduistering)
+
+**USP's ONTBREKEND:**
+❌ Geen hottub/sauna (belangrijke BNB trekker!)
+❌ Geen tweede slaapkamer (beperkt tot stellen)
+❌ Geen luxe uitstraling (basic inrichting)
+❌ Geen airco (warme zomers)
+
+**Doelgroep beperking:**
+Door 1 slaapkamer ALLEEN geschikt voor:
+- Stellen (romantisch weekend)
+- Individuele reizigers
+NIET geschikt voor:
+- Gezinnen met kinderen
+- Groepen vrienden
+→ Dit beperkt markt met circa 60%!
+
+**Voorzieningen:**
+✅ Compleet ingerichte keuken (vaatwasser, afzuigkap)
+✅ Parking op eigen terrein
+✅ Witgoed (wasruimte)
+✅ BBQ mogelijk (tuin)
+❓ WiFi niet vermeld (MOET toegevoegd)
+
+**Visuele presentatie:**
+Foto's zijn redelijk maar niet professioneel. Basisinrichting zichtbaar, geen 'wow-factor'. Voor optimale verhuur: professional fotografie + styling nodig.
+
+**Onderhoud:**
+2013 bouw = verhuurklaar. Budget €1500-2000/jaar onderhoud voldoende.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Slechts 1 slaapkamer = 60% kleinere doelgroep</div><div class="flag-item">Geen hottub/sauna voor premium prijzen</div><div class="flag-item">Basic inrichting zonder luxe uitstraling</div><div class="flag-item">Foto's niet professioneel</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Investeer €4000-6000 in hottub (ROI: +€30-40/nacht = +€3600/jaar)</div><div class="rec-item">Professional fotografie: €500 (verbetert conversie 30%+)</div><div class="rec-item">Upgrade interieur styling: €2000 (kussens, verlichting, kunst)</div><div class="rec-item">Expliciteer 'huisdieren welkom' in advertentie (+30% doelgroep)</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">5.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    **AANKOOPKOSTEN:**
+- Vraagprijs: €90.000 (gedaald van €99.000 = onderhandelruimte!)
+- Overdrachtsbelasting 2%: €1.800
+- Notaris/advies: €2.000
+- Renovatie/upgrades: €7.000 (hottub, styling, foto's)
+- **TOTAAL INVESTERING: €100.800**
+
+**JAAROMZET CONSERVATIEF (1 slaapkamer = beperkt):**
+
+*Hoogseizoen (mei-sept, 150 dgn):*
+50% bezetting × €95/nacht = 75 nachten × €95 = €7.125
+
+*Middenseizoen (mrt-apr, okt, 90 dgn):*
+35% bezetting × €75/nacht = 32 nachten × €75 = €2.400
+
+*Laagseizoen (nov-feb, 125 dgn):*
+25% bezetting × €65/nacht = 31 nachten × €65 = €2.015
+
+**Totaal: 138 nachten, €11.540/jaar** (LAAG!)
+
+**JAARKOSTEN (OPGELET parkkosten!):**
+- Parkkosten: €1.800/jaar (geschat, MOET geverifieerd!)
+- Parkeerplaats huur: €111/jaar
+- Energie/water: €1.400/jaar
+- Gemeentelijke lasten: €400/jaar
+- Platform fees 10%: €1.154
+- Schoonmaak (€50 × 35 beurten): €1.750
+- Wasgoed: €600/jaar
+- Onderhoud 8%: €920
+- Accountant: €1.000
+- Verzekering: €400
+- **TOTALE KOSTEN: €9.535/jaar**
+
+**RENDEMENT:**
+- Bruto omzet: €11.540
+- Netto (na kosten): €2.005/jaar
+- **Cash-on-Cash: 2.0%** (ZEER LAAG!)
+- Break-even: 50+ jaar (ONACCEPTABEL)
+
+**GEVOELIGHEID:**
+Met hottub + betere marketing → €110/nacht gemiddeld mogelijk:
+- Omzet: +35% → €15.580
+- Netto: €6.045
+- CoC: 6.0% (nog steeds MATIG)
+
+**WAARSCHUWING:** Parkkosten onbekend! Als dit €3000+/jaar is, wordt rendement negatief!
+
+**FINANCIERING (70% hypotheek):**
+- Eigen inbreng: €30.240
+- Hypotheek: €70.560 @ 5% = €3.528/jaar rente
+- Netto cashflow: -€1.523/jaar (NEGATIEF!)
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Cash-on-Cash slechts 2% (target: 10%+)</div><div class="flag-item">Parkkosten onbekend - kan rendement vernietigen</div><div class="flag-item">1 slaapkamer beperkt omzetpotentieel sterk</div><div class="flag-item">Met financiering negatieve cashflow</div><div class="flag-item">Break-even 50+ jaar</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Onderhandel naar €75.000 maximaal</div><div class="rec-item">Verifieer EXACTE parkkosten voor bod</div><div class="rec-item">Budget €7000 upgrades (hottub essentieel)</div><div class="rec-item">Overweeg alleen contante aankoop (geen hypotheek)</div><div class="rec-item">Bereken scenario met 2e slaapkamer aanbouw (indien mogelijk)</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">7.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    **VERHUURVRIJHEID:**
+✅ Geen verplichte parkverhuur genoemd
+✅ Tekst suggereert vrije verhuur mogelijk ("geschikt voor verhuur")
+✅ Geen commissies/fees op verhuur zichtbaar
+⚠️ Parkreglement NIET beschikbaar - MOET opgevraagd!
+
+**KRITISCHE PUNTEN:**
+❌ "Permanente bewoning NIET toegestaan" (verwacht)
+✅ Gemeente overweegt toekomst permanente bewoning toestaan (positief)
+⚠️ Seizoensbeperkingen NIET vermeld → waarschijnlijk jaar-rond OK
+⚠️ VvE/parkeigenaar goedkeuring nieuwe eigenaar: ONBEKEND
+
+**EIGENDOM:**
+✅ **VOLLE EIGENDOM** (geen erfpacht!) - GROOT PLUSPUNT
+✅ Geen canon/erfpachtkosten
+✅ Kadaster: HARENKARSPEL I 4052, 173 m²
+
+**PARKKOSTEN ONDUIDELIJK:**
+⚠️ "ZIE WEBSITE PARK" - bedrag niet gespecificeerd
+⚠️ Gas/water/elektra included? ONBEKEND
+⚠️ Dit is RED FLAG uit pre-screening!
+→ Kan €1500-3500/jaar zijn, essentieel voor rendement
+
+**FISCAAL:**
+- Box 1 mogelijk bij actieve verhuur (>70% bezetting)
+- BTW-plicht waarschijnlijk bij professionele verhuur
+- Toeristenbelasting: gemeente Schagen €1-2/nacht
+
+**RESTRICTIES TE VERIFIËREN:**
+1. Maximaal aantal verhuurweken/jaar
+2. Minimale/maximale verhuurperiode
+3. Recron voorwaarden van toepassing?
+4. Goedkeuring parkeigenaar verplicht?
+5. Huisdieren toegestaan (voor verhuur)?
+
+**JURIDISCH RISICO:** MIDDEL
+Volle eigendom is sterk punt, maar parkkosten en verhuurregels onvoldoende transparant.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Parkkosten volledig onduidelijk (potentieel €3000+/jaar)</div><div class="flag-item">Parkreglement niet beschikbaar</div><div class="flag-item">Goedkeuring parkeigenaar onbekend</div><div class="flag-item">Verhuurrestricties niet gespecificeerd</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Vraag EXACTE parkkosten specificatie op (breakdown kosten)</div><div class="rec-item">Verkrijg volledige parkreglement voor bod</div><div class="rec-item">Check bij parkeigenaar: vrije verhuur toegestaan zonder commissie?</div><div class="rec-item">Verifieer huisdierenbeleid (verhuur met hond = USP)</div><div class="rec-item">Laat notaris VvE/parkregels controleren voor handtekening</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Cash-on-Cash slechts 2% (target 10%+) - rendement 80% onder minimum</li><li>1 slaapkamer = 60% kleinere doelgroep - gezinnen uitgesloten, omzet beperkt tot €11.540/jaar</li><li>Parkkosten volledig onduidelijk - kan €1500-3500/jaar zijn, vernietigt mogelijk al het marginale rendement</li></li>
+                

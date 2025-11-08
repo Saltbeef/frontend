@@ -1,0 +1,516 @@
+{
+  "Identifiers": {
+    "GlobalId": 7236722,
+    "TinyId": "89045721"
+  },
+  "Price": {
+    "SellingPrice": "\u20ac 90.000 k.k.",
+    "NumericSellingPrice": 90000,
+    "IsAuction": false
+  },
+  "KenmerkSections": [
+    {
+      "Index": 1,
+      "Id": "overdracht",
+      "Title": "Overdracht",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "overdracht-vraagprijs",
+          "Label": "Vraagprijs",
+          "Value": "\u20ac 90.000 kosten koper",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Oorspronkelijke vraagprijs",
+          "Value": "\u20ac 99.000 kosten koper",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 0,
+          "Id": "overdracht-aangeboden-sinds",
+          "Label": "Aangeboden sinds",
+          "Value": "6+ maanden",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 5,
+          "Id": "overdracht-status",
+          "Label": "Status",
+          "Value": "Beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Aanvaarding",
+          "Value": "Per direct beschikbaar",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 7,
+          "Id": "overdracht-permanentebewoning",
+          "Label": "Permanente bewoning",
+          "Value": "Permanente bewoning is niet toegestaan",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 2,
+      "Id": "bouw",
+      "Title": "Bouw",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "bouw-soortobject",
+          "Label": "Soort woonhuis",
+          "Value": "Bungalow, vrijstaande woning",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "bouw-soortbouw",
+          "Label": "Soort bouw",
+          "Value": "Bestaande bouw",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "bouw-bouwjaar",
+          "Label": "Bouwjaar",
+          "Value": "2013",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 6,
+          "Id": "bouw-dak",
+          "Label": "Soort dak",
+          "Value": "Plat dak bedekt met bitumineuze dakbedekking",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 3,
+      "Id": "afmetingen",
+      "Title": "Oppervlakten en inhoud",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Label": "Gebruiksoppervlakten",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 1,
+              "Id": "afmetingen-gebruiksoppervlakten-wonen",
+              "Label": "Wonen",
+              "Value": "40 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "afmetingen-gebruiksoppervlakte-gebouwgebondenbuitenruimte",
+              "Label": "Gebouwgebonden buitenruimte",
+              "Value": "5 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 4,
+              "Id": "afmetingen-gebruiksoppervlakte-externebergruimte",
+              "Label": "Externe bergruimte",
+              "Value": "4 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        },
+        {
+          "Index": 2,
+          "Id": "afmetingen-perceel",
+          "Label": "Perceel",
+          "Value": "173 m\u00b2",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "afmetingen-inhoud",
+          "Label": "Inhoud",
+          "Value": "182 m\u00b3",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 4,
+      "Id": "indeling",
+      "Title": "Indeling",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "indeling-totalrooms",
+          "Label": "Aantal kamers",
+          "Value": "2 kamers (1 slaapkamer)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "indeling-totalbathroom",
+          "Label": "Aantal badkamers",
+          "Value": "1 badkamer en 1 apart toilet",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "indeling-bathroom",
+          "Label": "Badkamervoorzieningen",
+          "Value": "Douche en wastafel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "indeling-totalstories",
+          "Label": "Aantal woonlagen",
+          "Value": "1 woonlaag",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 5,
+          "Id": "indeling-generalfacilities",
+          "Label": "Voorzieningen",
+          "Value": "Natuurlijke ventilatie",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 5,
+      "Id": "energie",
+      "Title": "Energie",
+      "KenmerkenList": [
+        {
+          "EnergyData": {
+            "EnergyLabel": "A"
+          },
+          "EnergyLabel": "A",
+          "Index": 1,
+          "Id": "energie-energielabel",
+          "Label": "Energielabel",
+          "Value": "Wat betekent dit?",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "energie-verwarming",
+          "Label": "Verwarming",
+          "Value": "Gehele vloerverwarming",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "energie-warmwater",
+          "Label": "Warm water",
+          "Value": "Cv-ketel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 6,
+      "Id": "cadastral",
+      "Title": "Kadastrale gegevens",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "cadastral-parcel",
+          "Label": "HARENKARSPEL I 4052",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 2,
+              "Id": "cadastral-area",
+              "Label": "Oppervlakte",
+              "Value": "173 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "cadastral-ownershipsituation",
+              "Label": "Eigendomssituatie",
+              "Value": "Volle eigendom",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 7,
+      "Id": "buitenruimte",
+      "Title": "Buitenruimte",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "buitenruimte-ligging",
+          "Label": "Ligging",
+          "Value": "Aan park, vrij uitzicht en in recreatiepark",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "buitenruimte-tuin",
+          "Label": "Tuin",
+          "Value": "Zijtuin",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "buitenruimte-hoofdtuin",
+          "Label": "Zijtuin",
+          "Value": "90 m\u00b2 (9,00 meter diep en 10,00 meter breed)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 8,
+      "Id": "bergruimte",
+      "Title": "Bergruimte",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Schuur/berging",
+          "Value": "Vrijstaande houten berging",
+          "LabelStyle": "None"
+        }
+      ]
+    },
+    {
+      "Index": 10,
+      "Id": "parkeergelegenheid",
+      "Title": "Parkeergelegenheid",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Soort parkeergelegenheid",
+          "Value": "Op eigen terrein",
+          "LabelStyle": "None"
+        }
+      ]
+    }
+  ],
+  "Labels": [],
+  "Urls": {
+    "FriendlyUrl": {
+      "FullUrl": "https://www.funda.nl/detail/recreatie/dirkshorn/huis-park-de-horn-759/89045721/",
+      "RelativeUrl": "/detail/recreatie/dirkshorn/huis-park-de-horn-759/89045721/"
+    },
+    "ReportErrorUrl": "https://help.funda.nl:443/s/mef?globalID=7236722&returnURL=https%3a%2f%2fwww.funda.nl%2fdetail%2frecreatie%2fdirkshorn%2fhuis-park-de-horn-759%2f89045721%2f&brokerID=66056"
+  },
+  "ListingDescription": {
+    "Title": "Omschrijving",
+    "Description": "Gelegen in Dirkshorn ligt deze prachtige CHALET aan de Park De Horn met vrij uitzicht. DE WONING HEEFT EEN GEBRUIKSOPPERVLAKTE VAN 49 M2, IS GEBOUWD IN 2013 EN HEEFT EEN ENERGIELABEL A.\n\nVRAAGPRIJS \u20ac 90.000 K.K.\n\nGeschikt om zelf heerlijk te recre\u00ebren of voor de verhuur.\n\nTevens kunststof kozijnen.\n\nPermanente bewoning is NIET toestaan, Gemeente wil dit waarschijnlijk wel toestaan in de toekomst: beijk op de site van de Gemeente\n\nDE PARKKOSTEN : ZIE VOOR DE JUISTE TARIEVEN OP DE WEBSITE VAN HET PARK.\n\nHUUR GERESERVEERDE PARKEERPLAATS \u20ac 111,- PER JAAR.\n\nIndeling:\n\nTuin rondom de woning.\n\nEntree, toilet.\n\nWoonkamer voorzien van een laminaat vloer en opbergkast. Tevens openslaande deuren.\n\n1 slaapkamer geschikt voor 2 personen.\n\nHal met witgoed opstelling.\n\nBadkamer met douche en wastafel.\n\nWoonkamer met keuken voorzien van vaatwasser, koelkast , afzuigkap en gaskookplaat.\n\nRondom rolluiken en vloerverwarming.\n\nVrijstaande schuur met afdak om heerlijk onder te vertoeven in de schaduw.\n\nDe dakplaten boven het zitgedeelte bij de schuur zijn gemaakt van cellulose vezels, bitumen en thermo hardende harsen. (Soortgelijk aan de Aquaplan topline platen van de Gamma).\n\nDe woning is voorzien van kunststof kozijnen en kiepkantelramen.\n\nAan de buitenkant twee camera\u2019s hangen die via een app gemonitord kunnen worden. Dit is vooral handig als je op afstand woont maar toch het een en ander in de gaten wil houden zo nu en dan.\n\nVOOR DE AFMETINGEN VERWIJZEN WIJ NAAR DE PLATTEGRONDEN.\n\nLeuk recreatiepark met een tennisveld, supermarkt , speeltuin en wasserette.\n\n*Alle moeite is genomen om de informatie hierboven omtrent het aangebodene zo accuraat en actueel mogelijk weer te geven. Fouten zijn echter nooit uit te sluiten. Vertrouw daarom nooit alleen op deze informatie, maar controleer daarom bij aankoop grondig de zaken die uw beslissing zouden kunnen be\u00efnvloeden. Voorts heeft alle informatie een indicatief karakter, waaronder doch niet uitsluitend maatvoering; er kunnen geen rechten aan worden ontleend. Verrekening wegens over- of ondermaat is uitgesloten. Tevens is het schriftelijkheidsvereiste op alle via ons aangeboden objecten van toepassing, een aanbieding is altijd vrijblijvend en verkoper behoudt zich te allen tijde het recht van gunning voor alsook het recht om zonder mogelijke bieders of ge\u00efnteresseerden te verwittigen van het wijzigen van de verkoopwijze, ook al hebben zij bijvoorbeeld geboden middels inschrijving (verkoopwijze is bijvoorbeeld via onderhandeling, op inschrijving, transparant bieden of veiling.\\*\n\nBungalowpark De Horn ligt midden in het hart van het Noord-Hollandse polderlandschap in het centrum van het dorpje Dirkshorn. Het ruim opgezette park met veel groen is een ideale omgeving om te recre\u00ebren. Het park heeft 92 stenen en 249 houten recreatiewoningen. Er is een wandelbos, speelweiden, een grote vijver, een tennisbaan en een voetbalveld op het park aanwezig. kunt in alle rust genieten, ontspannen en ontwaken tussen het vele groen die op het park te vinden is. Tevens een Spar winkel en wasserette aanwezig.\n\nBungalowpark De Horn is door haar centrale ligging, ideaal voor de vele uitstapjes, bezoeken aan diverse steden en nostalgisch dorpjes, evenementen en natuurlijk voor het strand met zijn duinen, bossen en zee. Ook is Bungalowpark De Horn uitermate geschikt om in een gezonde frisse omgeving van uw ontspanning en rust te genieten.\n\nHet bungalowpark ligt te midden van het Noord-Hollandse landschap, waar u de uitgestrekte polderlandschappen met de vele kleurrijke bollenvelden kunt vinden. Voor fietsers, wandelaars, (sport)vissers en rustzoekers is het in deze omgeving een weelde.\n\nOp een aantal kilometers van het bungalowpark vindt u al de duinen, het strand en de zee, waar u heerlijk kunt zonnebaden, spelen en natuurlijk zwemmen.\n\nHet schijnt zelfs zo te zijn, dat deze streek de minste neerslag en de meeste zonuren heeft. In de zomer is de zee erg aantrekkelijk door de vele zonnige dagen en in het voor- en najaar kunt u genieten van de imponerende hoge golven."
+  },
+  "AddressDetails": {
+    "Title": "Park De Horn 759",
+    "SubTitle": "1746 AX Dirkshorn",
+    "IsInternational": false,
+    "NeighborhoodName": "Dirkshorn (woonkern)",
+    "NeighborhoodIdentifier": "dirkshorn/dirkshorn-woonkern",
+    "City": "Dirkshorn",
+    "Province": "Noord-Holland",
+    "Country": "Nederland",
+    "HouseNumber": "759",
+    "HouseNumberExtension": "",
+    "PostCode": "1746AX"
+  },
+  "Coordinates": {
+    "Latitude": 52.746983,
+    "Longitude": 4.7763443
+  },
+  "KadastraleKaartBaseUrl": "https://service.pdok.nl/kadaster/kadastralekaart/wms/v5_0",
+  "Media": {
+    "Layout": {
+      "MediaViewerIsVisible": true,
+      "MainPhotoThumbnailIsVisible": false
+    },
+    "Photos": {
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "MediaBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "Items": [
+        {
+          "Id": "194/783/570"
+        },
+        {
+          "Id": "194/783/586"
+        },
+        {
+          "Id": "194/783/591"
+        },
+        {
+          "Id": "194/783/565"
+        },
+        {
+          "Id": "194/783/573"
+        },
+        {
+          "Id": "194/783/561"
+        },
+        {
+          "Id": "194/783/554"
+        },
+        {
+          "Id": "194/783/555"
+        },
+        {
+          "Id": "194/783/559"
+        },
+        {
+          "Id": "194/783/579"
+        },
+        {
+          "Id": "194/783/564"
+        },
+        {
+          "Id": "194/783/587"
+        },
+        {
+          "Id": "194/783/590"
+        },
+        {
+          "Id": "194/783/566"
+        },
+        {
+          "Id": "194/783/577"
+        },
+        {
+          "Id": "194/783/562"
+        },
+        {
+          "Id": "194/783/572"
+        },
+        {
+          "Id": "194/783/568"
+        },
+        {
+          "Id": "194/783/574"
+        },
+        {
+          "Id": "194/783/553"
+        },
+        {
+          "Id": "194/783/563"
+        },
+        {
+          "Id": "194/783/552"
+        },
+        {
+          "Id": "194/783/588"
+        },
+        {
+          "Id": "194/783/585"
+        },
+        {
+          "Id": "194/783/576"
+        },
+        {
+          "Id": "194/783/567"
+        },
+        {
+          "Id": "194/783/557"
+        },
+        {
+          "Id": "194/783/556"
+        },
+        {
+          "Id": "194/783/580"
+        },
+        {
+          "Id": "194/783/578"
+        },
+        {
+          "Id": "194/783/560"
+        },
+        {
+          "Id": "194/783/589"
+        },
+        {
+          "Id": "194/783/582"
+        },
+        {
+          "Id": "194/783/551"
+        },
+        {
+          "Id": "194/783/583"
+        },
+        {
+          "Id": "194/783/575"
+        },
+        {
+          "Id": "194/783/558"
+        },
+        {
+          "Id": "194/783/550"
+        },
+        {
+          "Id": "194/783/571"
+        },
+        {
+          "Id": "194/783/569"
+        },
+        {
+          "Id": "194/783/581"
+        },
+        {
+          "Id": "194/783/584"
+        }
+      ]
+    }
+  },
+  "FastView": {
+    "LivingArea": "40 m\u00b2",
+    "PlotArea": "173 m\u00b2",
+    "NumberOfBedrooms": "1",
+    "EnergyLabel": "A"
+  },
+  "IsSoldOrRented": false,
+  "ObjectType": "House",
+  "OfferingType": "Sale",
+  "ConstructionType": "ExistingConstruction",
+  "PublicationDate": "2024-08-05T00:00:00",
+  "ObjectInsights": {
+    "Views": "3.872",
+    "Saves": "59"
+  },
+  "sitemapData": {
+    "originalUrl": "https://www.funda.nl/detail/recreatie/dirkshorn/huis-park-de-horn-759/89045721/",
+    "propertyId": "89045721",
+    "lastmod": "2025-09-11T09:50:10+02:00",
+    "processedAt": "2025-09-15T20:14:12.815Z",
+    "apiUrl": "https://listing-detail-page.funda.io/api/v4/listing/nl/tinyId/89045721"
+  }
+}

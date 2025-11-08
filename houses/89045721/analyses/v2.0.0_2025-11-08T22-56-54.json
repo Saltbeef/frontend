@@ -1,0 +1,106 @@
+{
+  "house_id": "89045721",
+  "analyzed_at": "2025-11-08T22:56:54.016144+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 6.22,
+  "category_scores": {
+    "location": {
+      "score": 7.5,
+      "reasoning": "Dirkshorn ligt in Noord-Holland op circa 10 km van de Noordzeekust (Bergen aan Zee, Camperduin). Het gebied is populair bij toeristen vanwege:\n\n**Toeristische attracties:**\n- Strand & duinen: 10 km (15 min auto)\n- Alkmaar (kaasmarkt): 20 km\n- Bergen (kunstenaarsplaats): 8 km\n- Schoorl (duinen, klimduin): 12 km\n- Den Helder (ferry Texel): 15 km\n- Texel bereikbaar binnen 45 min\n\n**Bereikbaarheid:**\n- A9 afslag Schagen: 8 km (goed bereikbaar)\n- Station Schagen: 9 km\n- Amsterdam: 65 km (1 uur)\n- Duitse grens: 200+ km (minder aantrekkelijk voor Duitsers)\n\n**Marktanalyse Noord-Holland recreatie:**\nVergelijkbare chalets in deze regio op Airbnb:\n- Nachtprijzen: \u20ac75-110 (gemiddeld \u20ac90)\n- Reviews vergelijkbare objecten: 20-40/jaar \u2192 200-400 overnachtingen\n- Bezetting: 50-65% afhankelijk van USP's\n- Hoogseizoen: mei-september zeer populair\n- Laagseizoen: wintermaanden rustig maar wel vraag rond feestdagen\n\n**Locatietype:** B-locatie. Niet direct aan strand (A-locatie), maar binnen acceptabele afstand. Polderlandschap is rustgevend maar minder spectaculair dan kustnabij.",
+      "red_flags": [
+        "Niet direct aan strand/zee (10 km afstand)",
+        "Winterseizoen minder vraag verwacht"
+      ],
+      "recommendations": [
+        "Focus marketing op 'rustzoekende gezinnen' en 'centrale uitvalsbasis'",
+        "Benadruk nabijheid Texel, Alkmaar, stranden",
+        "Winterpromoties voor feestdagen en weekenden"
+      ],
+      "market_data": "Vergelijkbare chalets Park de Horn op Booking.com: gemiddeld 8.0+ score, prijzen \u20ac60-95/nacht afhankelijk van seizoen en voorzieningen."
+    },
+    "property": {
+      "score": 6.0,
+      "reasoning": "**Basis specificaties:**\n- 1 slaapkamer, max 2 personen (BEPERKTE doelgroep!)\n- 1 badkamer + apart toilet\n- 40m\u00b2 woonoppervlak (compact)\n- Bouwjaar 2013 (modern, laag onderhoud)\n- Energielabel A (lage energiekosten)\n\n**USP's AANWEZIG:**\n\u2705 Vrij uitzicht\n\u2705 Volledige privacy (vrijstaand)\n\u2705 Vloerverwarming (comfort)\n\u2705 Tuin rondom 90m\u00b2 (hond vriendelijk)\n\u2705 Terras met schuur/overkapping\n\u2705 Camera's (remote monitoring)\n\u2705 Rolluiken (verduistering)\n\n**USP's ONTBREKEND:**\n\u274c Geen hottub/sauna (belangrijke BNB trekker!)\n\u274c Geen tweede slaapkamer (beperkt tot stellen)\n\u274c Geen luxe uitstraling (basic inrichting)\n\u274c Geen airco (warme zomers)\n\n**Doelgroep beperking:**\nDoor 1 slaapkamer ALLEEN geschikt voor:\n- Stellen (romantisch weekend)\n- Individuele reizigers\nNIET geschikt voor:\n- Gezinnen met kinderen\n- Groepen vrienden\n\u2192 Dit beperkt markt met circa 60%!\n\n**Voorzieningen:**\n\u2705 Compleet ingerichte keuken (vaatwasser, afzuigkap)\n\u2705 Parking op eigen terrein\n\u2705 Witgoed (wasruimte)\n\u2705 BBQ mogelijk (tuin)\n\u2753 WiFi niet vermeld (MOET toegevoegd)\n\n**Visuele presentatie:**\nFoto's zijn redelijk maar niet professioneel. Basisinrichting zichtbaar, geen 'wow-factor'. Voor optimale verhuur: professional fotografie + styling nodig.\n\n**Onderhoud:**\n2013 bouw = verhuurklaar. Budget \u20ac1500-2000/jaar onderhoud voldoende.",
+      "red_flags": [
+        "Slechts 1 slaapkamer = 60% kleinere doelgroep",
+        "Geen hottub/sauna voor premium prijzen",
+        "Basic inrichting zonder luxe uitstraling",
+        "Foto's niet professioneel"
+      ],
+      "recommendations": [
+        "Investeer \u20ac4000-6000 in hottub (ROI: +\u20ac30-40/nacht = +\u20ac3600/jaar)",
+        "Professional fotografie: \u20ac500 (verbetert conversie 30%+)",
+        "Upgrade interieur styling: \u20ac2000 (kussens, verlichting, kunst)",
+        "Expliciteer 'huisdieren welkom' in advertentie (+30% doelgroep)"
+      ],
+      "usp_highlights": [
+        "Privacy & vrij uitzicht",
+        "Energielabel A",
+        "Grote tuin (huisdieren)",
+        "Moderne bouw (2013)"
+      ]
+    },
+    "financial": {
+      "score": 5.0,
+      "reasoning": "**AANKOOPKOSTEN:**\n- Vraagprijs: \u20ac90.000 (gedaald van \u20ac99.000 = onderhandelruimte!)\n- Overdrachtsbelasting 2%: \u20ac1.800\n- Notaris/advies: \u20ac2.000\n- Renovatie/upgrades: \u20ac7.000 (hottub, styling, foto's)\n- **TOTAAL INVESTERING: \u20ac100.800**\n\n**JAAROMZET CONSERVATIEF (1 slaapkamer = beperkt):**\n\n*Hoogseizoen (mei-sept, 150 dgn):*\n50% bezetting \u00d7 \u20ac95/nacht = 75 nachten \u00d7 \u20ac95 = \u20ac7.125\n\n*Middenseizoen (mrt-apr, okt, 90 dgn):*\n35% bezetting \u00d7 \u20ac75/nacht = 32 nachten \u00d7 \u20ac75 = \u20ac2.400\n\n*Laagseizoen (nov-feb, 125 dgn):*\n25% bezetting \u00d7 \u20ac65/nacht = 31 nachten \u00d7 \u20ac65 = \u20ac2.015\n\n**Totaal: 138 nachten, \u20ac11.540/jaar** (LAAG!)\n\n**JAARKOSTEN (OPGELET parkkosten!):**\n- Parkkosten: \u20ac1.800/jaar (geschat, MOET geverifieerd!)\n- Parkeerplaats huur: \u20ac111/jaar\n- Energie/water: \u20ac1.400/jaar\n- Gemeentelijke lasten: \u20ac400/jaar\n- Platform fees 10%: \u20ac1.154\n- Schoonmaak (\u20ac50 \u00d7 35 beurten): \u20ac1.750\n- Wasgoed: \u20ac600/jaar\n- Onderhoud 8%: \u20ac920\n- Accountant: \u20ac1.000\n- Verzekering: \u20ac400\n- **TOTALE KOSTEN: \u20ac9.535/jaar**\n\n**RENDEMENT:**\n- Bruto omzet: \u20ac11.540\n- Netto (na kosten): \u20ac2.005/jaar\n- **Cash-on-Cash: 2.0%** (ZEER LAAG!)\n- Break-even: 50+ jaar (ONACCEPTABEL)\n\n**GEVOELIGHEID:**\nMet hottub + betere marketing \u2192 \u20ac110/nacht gemiddeld mogelijk:\n- Omzet: +35% \u2192 \u20ac15.580\n- Netto: \u20ac6.045\n- CoC: 6.0% (nog steeds MATIG)\n\n**WAARSCHUWING:** Parkkosten onbekend! Als dit \u20ac3000+/jaar is, wordt rendement negatief!\n\n**FINANCIERING (70% hypotheek):**\n- Eigen inbreng: \u20ac30.240\n- Hypotheek: \u20ac70.560 @ 5% = \u20ac3.528/jaar rente\n- Netto cashflow: -\u20ac1.523/jaar (NEGATIEF!)",
+      "red_flags": [
+        "Cash-on-Cash slechts 2% (target: 10%+)",
+        "Parkkosten onbekend - kan rendement vernietigen",
+        "1 slaapkamer beperkt omzetpotentieel sterk",
+        "Met financiering negatieve cashflow",
+        "Break-even 50+ jaar"
+      ],
+      "recommendations": [
+        "Onderhandel naar \u20ac75.000 maximaal",
+        "Verifieer EXACTE parkkosten voor bod",
+        "Budget \u20ac7000 upgrades (hottub essentieel)",
+        "Overweeg alleen contante aankoop (geen hypotheek)",
+        "Bereken scenario met 2e slaapkamer aanbouw (indien mogelijk)"
+      ],
+      "calculations": {
+        "purchase_price": 90000,
+        "total_investment": 100800,
+        "estimated_annual_revenue": 11540,
+        "estimated_annual_costs": 9535,
+        "net_annual_income": 2005,
+        "cash_on_cash_return": 2.0,
+        "breakeven_years": 50.3
+      }
+    },
+    "legal": {
+      "score": 7.0,
+      "reasoning": "**VERHUURVRIJHEID:**\n\u2705 Geen verplichte parkverhuur genoemd\n\u2705 Tekst suggereert vrije verhuur mogelijk (\"geschikt voor verhuur\")\n\u2705 Geen commissies/fees op verhuur zichtbaar\n\u26a0\ufe0f Parkreglement NIET beschikbaar - MOET opgevraagd!\n\n**KRITISCHE PUNTEN:**\n\u274c \"Permanente bewoning NIET toegestaan\" (verwacht)\n\u2705 Gemeente overweegt toekomst permanente bewoning toestaan (positief)\n\u26a0\ufe0f Seizoensbeperkingen NIET vermeld \u2192 waarschijnlijk jaar-rond OK\n\u26a0\ufe0f VvE/parkeigenaar goedkeuring nieuwe eigenaar: ONBEKEND\n\n**EIGENDOM:**\n\u2705 **VOLLE EIGENDOM** (geen erfpacht!) - GROOT PLUSPUNT\n\u2705 Geen canon/erfpachtkosten\n\u2705 Kadaster: HARENKARSPEL I 4052, 173 m\u00b2\n\n**PARKKOSTEN ONDUIDELIJK:**\n\u26a0\ufe0f \"ZIE WEBSITE PARK\" - bedrag niet gespecificeerd\n\u26a0\ufe0f Gas/water/elektra included? ONBEKEND\n\u26a0\ufe0f Dit is RED FLAG uit pre-screening!\n\u2192 Kan \u20ac1500-3500/jaar zijn, essentieel voor rendement\n\n**FISCAAL:**\n- Box 1 mogelijk bij actieve verhuur (>70% bezetting)\n- BTW-plicht waarschijnlijk bij professionele verhuur\n- Toeristenbelasting: gemeente Schagen \u20ac1-2/nacht\n\n**RESTRICTIES TE VERIFI\u00cbREN:**\n1. Maximaal aantal verhuurweken/jaar\n2. Minimale/maximale verhuurperiode\n3. Recron voorwaarden van toepassing?\n4. Goedkeuring parkeigenaar verplicht?\n5. Huisdieren toegestaan (voor verhuur)?\n\n**JURIDISCH RISICO:** MIDDEL\nVolle eigendom is sterk punt, maar parkkosten en verhuurregels onvoldoende transparant.",
+      "red_flags": [
+        "Parkkosten volledig onduidelijk (potentieel \u20ac3000+/jaar)",
+        "Parkreglement niet beschikbaar",
+        "Goedkeuring parkeigenaar onbekend",
+        "Verhuurrestricties niet gespecificeerd"
+      ],
+      "recommendations": [
+        "Vraag EXACTE parkkosten specificatie op (breakdown kosten)",
+        "Verkrijg volledige parkreglement voor bod",
+        "Check bij parkeigenaar: vrije verhuur toegestaan zonder commissie?",
+        "Verifieer huisdierenbeleid (verhuur met hond = USP)",
+        "Laat notaris VvE/parkregels controleren voor handtekening"
+      ],
+      "rental_freedom": "WAARSCHIJNLIJK vrije verhuur mogelijk, maar parkreglement MOET geverifieerd worden. Volle eigendom is positief. Geen verplichte parkverhuur gesignaleerd, maar onduidelijkheid over parkkosten en regels is risico."
+    }
+  },
+  "overall_assessment": "Dit chalet in Dirkshorn scoort ONVOLDOENDE als BNB-investering vanwege zwakke financi\u00eble cijfers. Het 2% rendement is ver onder de 10%+ target. De grootste bottleneck: slechts 1 slaapkamer limiteert de doelgroep tot stellen, wat bezetting en omzet drastisch beperkt. Positieve punten zijn volle eigendom, moderne bouw (2013), en energielabel A. De locatie is redelijk (B-locatie, 10km van strand). KRITIEK: parkkosten zijn volledig onduidelijk - dit kan het marginale rendement volledig vernietigen. Zonder hottub en met basic inrichting ontbreken premium USP's voor hogere nachtprijzen. Voor scale-up strategie is dit object te zwak: lage cashflow maakt snelle opschaling onmogelijk. Zelfs met upgrades (\u20ac7k) blijft rendement ondermaats (max 6%). Voor \u20ac90k zijn er betere BNB-investeringen met 2+ slaapkamers en duidelijkere kostenstructuur.",
+  "top_strengths": [
+    "Volle eigendom (geen erfpacht/canon) - stabiele kostenstructuur",
+    "Moderne bouw 2013 + Energielabel A - lage onderhouds- en energiekosten",
+    "Privacy & vrij uitzicht - aantrekkelijk voor rustzoekende stellen"
+  ],
+  "top_concerns": [
+    "Cash-on-Cash slechts 2% (target 10%+) - rendement 80% onder minimum",
+    "1 slaapkamer = 60% kleinere doelgroep - gezinnen uitgesloten, omzet beperkt tot \u20ac11.540/jaar",
+    "Parkkosten volledig onduidelijk - kan \u20ac1500-3500/jaar zijn, vernietigt mogelijk al het marginale rendement"
+  ],
+  "investment_recommendation": "AFWIJZEN - Financieel rendement is onacceptabel laag (2% CoC vs 10%+ target). De combinatie van 1 slaapkamer (beperkte doelgroep), onduidelijke parkkosten (hoog risico), en ontbrekende premium USP's maakt dit geen viable BNB-investering voor zelfverhuur strategie. Met hypotheekfinanciering zelfs negatieve cashflow. Voor scale-up strategie volstrekt ongeschikt: te weinig cashflow voor snelle groei, te lang tot break-even (50+ jaar). Zelfs met \u20ac7k upgrades max 6% rendement haalbaar.",
+  "metadata": {
+    "processing_time_seconds": 99.96,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
