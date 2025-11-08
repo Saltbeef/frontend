@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 89213477</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 89213477<br>
+                <strong>Analyzed:</strong> 2025-11-08T22:56:30.170677+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">7.25/10</div>
+            <div class="recommendation consider">
+                OVERWEGEN - Alleen bij agressieve onderhandeling. Target €220.000 VON (€167.500 netto na BTW) + verplichte hottub investering. Bij huidige €250k: AFWIJZEN wegens ondermaats rendement (<5% CoC). Locatie B-tier en seizoensafhankelijkheid vereisen scherpe prijs voor acceptabel rendement. Geschikt voor investeerder die wil professionaliseren (marketing, USP's toevoegen) en 3-5 jaar horizon heeft.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Nieuwbouw recreatiewoning met sterke duurzaamheids-USP (24 zonnepanelen) op redelijke Noord-Hollandse locatie. Pand kwaliteit goed (7.5) en juridisch grotendeels vrij (8.5), MAAR financieel rendement teleurstellend (3.4% CoC). Hoofdprobleem: aankoopprijs €250k te hoog voor verhuurpotentieel B-locatie. Seizoensgebonden vraag beperkt jaarrond omzet. BTW teruggave €52.5k helpt (netto €197.5k), maar zelfs dan ondermaats rendement zonder premium USP's. Potentieel verbeterbaar met hottub (+€3000 jaaromzet) en professionele marketing, maar blijft onder target 10% CoC. Scale-up potentieel beperkt: waardevast maar geen snelle winst voor doorverkoop. Voor serieuze BNB investeerder alleen interessant bij forse prijsonderhandeling (€220k VON = €167.5k netto) gecombineerd met actieve rendement optimalisatie.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Nieuwbouw 2023 met 24 zonnepanelen: €0 energiekosten + sterke duurzaamheids-USP voor marketing</li><li>BTW teruggave €52.500 verlaagt netto investering naar €197.500 (21% voordeel bij professionele verhuur)</li><li>Juridisch vrij: geen expliciete verhuurrestricties, waarschijnlijk zelfverhuur volledig mogelijk via eigen kanalen</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Cash-on-Cash rendement 3.4% zeer laag (target 10%+): prijspunt €250k niet marktconform voor verhuurpotentieel</li><li>Seizoensgebonden vraag Dirkshorn: 70% omzet mei-september, winter bezetting <20% beperkt jaarrond rendement sterk</li><li>Ontbreken premium USP's (hottub/sauna): concurrerende objecten met wellness scoren €20-40/nacht hoger</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">6.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Dirkshorn ligt in Noord-Holland, 15 km van de kust (Bergen aan Zee, Callantsoog). Locatie is redelijk voor strand/natuur toerisme, maar geen A-locatie. Attracties: Strand (15 km), Den Helder (20 km), Alkmaar (25 km), Texel veerboot (20 km). Bereikbaarheid matig: geen direct station, bus aanwezig. N9 op 5 km, A7 op 25 km. Duitse markt minder aantrekkelijk door grotere afstand versus Zuid-Limburg/Veluwe. AirDNA check Dirkshorn/Park De Horn: beperkt aanbod (5-10 objecten), nachtprijzen €80-140, voornamelijk zomervraag. Concurrentie laag maar vraag ook beperkt. Seizoenspatroon sterk: 70% omzet mei-september. Winterverhuur lastig. B-locatie classificatie: potentieel aanwezig maar geen toplocatie.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Seizoensgebonden vraag (winter bezetting <20%)</div><div class="flag-item">Geen directe strand/water ligging</div><div class="flag-item">Beperkte bereikbaarheid OV</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Focus marketing op strand/natuur combivakantie</div><div class="rec-item">Target Nederlandse gezinnen (Duitse markt minder relevant)</div><div class="rec-item">Winterpromoties noodzakelijk voor off-season bezetting</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">7.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Sterke basis: nieuwbouw 2023, 70m², 3 slaapkamers, max 6 gasten. Energiezuinig met 24 zonnepanelen (€0 energiekosten = USP!). Moderne uitstraling, volledig elektrisch. Tuin rondom 250m² met robotmaaier (onderhoudsvriendelijk). USP's: Zonnepanelen/duurzaamheid, nieuwbouwstaat, robotmaaier. Missende USP's: GEEN hottub/sauna/jacuzzi (grote gemiste kans!), geen foto's hottub/luxe elementen. Doelgroep: gezinnen 4-6 personen, jonge stellen. Huisdieren: NIET vermeld (moet uitgezocht). Voorzieningen: moderne keuken, 2 douches, WiFi, parkeerplaats. Fotokwaliteit redelijk maar niet professioneel, mist wow-factor. Direct verhuurklaar, geen renovatie nodig. Jaarlijks onderhoud laag door nieuwbouw (€800-1200/jaar). Verbeterpotentieel: Hottub toevoegen (€4000-6000) kan nachtprijs verhogen met €20-30.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Geen premium USP's (hottub/sauna ontbreekt)</div><div class="flag-item">Fotografie niet professioneel/marketing minded</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Investeer €5000 in hottub installatie (ROI <2 jaar)</div><div class="rec-item">Professionele fotoshoot €500 (cruciaal voor conversie)</div><div class="rec-item">Verduidelijk huisdierenbeleid (kan doelgroep +30% vergroten)</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">7.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Vraagprijs €250.000 VON (bizar: oorspronkelijk €206k KK = €210k, nu €250k VON = prijsstijging €40k tijdens verkoop?! Check notitie: BTW teruggave 21% mogelijk bij verhuur = €52.500 terug → netto €197.500). INVESTERING: €250k - €52.5k BTW + €5k notaris - €5k BTW = €197.500 all-in. OMZET conservatief: Hoogseizoen 90d × 65% × €110 = €6.435, Middenseizoen 180d × 35% × €85 = €5.355, Laagseizoen 95d × 15% × €70 = €997. Totaal: €12.787. MET hottub: +€25/nacht = €15.700. KOSTEN: Parkkosten €1800 (schatting), energie €600 (zonnepanelen!), GWL €400, platform 10% €1.570, schoonmaak 40× €50 = €2000, onderhoud €1000, accountant €1000, verzekering €600. Totaal: €8.970. NETTO: €15.700 - €8.970 = €6.730. Cash-on-Cash: 3.4% (LAAG!). MET hottub én betere marketing €18.500 omzet: netto €9.530 = 4.8% (NOG STEEDS LAAG). Probleem: Prijs te hoog voor rendement. Bij €197.5k netto + hottub: 4.8%. Break-even >20 jaar. Scale-up: Waardevast maar geen snelle winst.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Cash-on-Cash rendement <5% (target 10%+)</div><div class="flag-item">Seizoensgebonden omzet beperkt jaarrond potentieel</div><div class="flag-item">Hoge aankoopprijs versus verhuurpotentieel</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Onderhandel agressief: target €220k VON (€167.5k na BTW)</div><div class="rec-item">Verplicht hottub investering voor rendement verbetering</div><div class="rec-item">Budget €3000 marketing/professionalisering jaar 1</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">8.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    POSITIEF: 'Permanente bewoning niet toegestaan' betekent recreatie/verhuur WEL toegestaan (standaard recreatiepark). Geen expliciete verhuurrestricties vermeld. Park De Horn geen verplichte parkorganisatie genoemd (Landal/Europarcs). 'Eigendomssituatie: Zie akte' = waarschijnlijk erfpacht, MOET uitgezocht! Erfpachtcanon niet vermeld (schatting €500-1500/jaar, zit in parkkosten). Geen seizoensbeperkingen zichtbaar, jaar-rond verhuur waarschijnlijk toegestaan. BTW teruggave mogelijk bij verhuur = commercieel verhuur juridisch mogelijk. RISICO'S: Parkreglement onbekend, moet opgevraagd. Mogelijke goedkeuring nieuwe eigenaar door park. VvE/eigenaren vereniging kosten onduidelijk. Recron voorwaarden mogelijkerwijs van toepassing (CHECK!). FISCAAL: Box 1 bij professionele verhuur (beste optie), BTW aftrek voordeel €52.500. Toeristenbelasting Noord-Holland €1-2/persoon/nacht (doorberekenen). Geen dealbreakers gedetecteerd, maar due diligence essentieel.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Eigendomssituatie onduidelijk (erfpacht vermoedelijk)</div><div class="flag-item">Parkreglement niet beschikbaar (verhuurvoorwaarden?)</div><div class="flag-item">Recron voorwaarden mogelijk van toepassing</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">VERPLICHT: Vraag parkreglement + erfpachtvoorwaarden op</div><div class="rec-item">Check verhuurrestricties expliciet bij beheerder Park De Horn</div><div class="rec-item">Laat notaris erfpachtduur en voorwaarden verifiëren</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Cash-on-Cash rendement 3.4% zeer laag (target 10%+): prijspunt €250k niet marktconform voor verhuurpotentieel</li><li>Seizoensgebonden vraag Dirkshorn: 70% omzet mei-september, winter bezetting <20% beperkt jaarrond rendement sterk</li><li>Ontbreken premium USP's (hottub/sauna): concurrerende objecten met wellness scoren €20-40/nacht hoger</li></li>
+                

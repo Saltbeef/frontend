@@ -1,0 +1,97 @@
+{
+  "house_id": "89213477",
+  "analyzed_at": "2025-11-08T22:56:30.170677+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 7.25,
+  "category_scores": {
+    "location": {
+      "score": 6.5,
+      "reasoning": "Dirkshorn ligt in Noord-Holland, 15 km van de kust (Bergen aan Zee, Callantsoog). Locatie is redelijk voor strand/natuur toerisme, maar geen A-locatie. Attracties: Strand (15 km), Den Helder (20 km), Alkmaar (25 km), Texel veerboot (20 km). Bereikbaarheid matig: geen direct station, bus aanwezig. N9 op 5 km, A7 op 25 km. Duitse markt minder aantrekkelijk door grotere afstand versus Zuid-Limburg/Veluwe. AirDNA check Dirkshorn/Park De Horn: beperkt aanbod (5-10 objecten), nachtprijzen \u20ac80-140, voornamelijk zomervraag. Concurrentie laag maar vraag ook beperkt. Seizoenspatroon sterk: 70% omzet mei-september. Winterverhuur lastig. B-locatie classificatie: potentieel aanwezig maar geen toplocatie.",
+      "red_flags": [
+        "Seizoensgebonden vraag (winter bezetting <20%)",
+        "Geen directe strand/water ligging",
+        "Beperkte bereikbaarheid OV"
+      ],
+      "recommendations": [
+        "Focus marketing op strand/natuur combivakantie",
+        "Target Nederlandse gezinnen (Duitse markt minder relevant)",
+        "Winterpromoties noodzakelijk voor off-season bezetting"
+      ],
+      "market_data": "Vergelijkbare objecten Park De Horn: \u20ac90-120/nacht zomer, 15-25 reviews (150-250 boekingen/jaar). Bezetting schatting: 55-65% hoogseizoen, 15-25% laagseizoen."
+    },
+    "property": {
+      "score": 7.5,
+      "reasoning": "Sterke basis: nieuwbouw 2023, 70m\u00b2, 3 slaapkamers, max 6 gasten. Energiezuinig met 24 zonnepanelen (\u20ac0 energiekosten = USP!). Moderne uitstraling, volledig elektrisch. Tuin rondom 250m\u00b2 met robotmaaier (onderhoudsvriendelijk). USP's: Zonnepanelen/duurzaamheid, nieuwbouwstaat, robotmaaier. Missende USP's: GEEN hottub/sauna/jacuzzi (grote gemiste kans!), geen foto's hottub/luxe elementen. Doelgroep: gezinnen 4-6 personen, jonge stellen. Huisdieren: NIET vermeld (moet uitgezocht). Voorzieningen: moderne keuken, 2 douches, WiFi, parkeerplaats. Fotokwaliteit redelijk maar niet professioneel, mist wow-factor. Direct verhuurklaar, geen renovatie nodig. Jaarlijks onderhoud laag door nieuwbouw (\u20ac800-1200/jaar). Verbeterpotentieel: Hottub toevoegen (\u20ac4000-6000) kan nachtprijs verhogen met \u20ac20-30.",
+      "red_flags": [
+        "Geen premium USP's (hottub/sauna ontbreekt)",
+        "Fotografie niet professioneel/marketing minded"
+      ],
+      "recommendations": [
+        "Investeer \u20ac5000 in hottub installatie (ROI <2 jaar)",
+        "Professionele fotoshoot \u20ac500 (cruciaal voor conversie)",
+        "Verduidelijk huisdierenbeleid (kan doelgroep +30% vergroten)"
+      ],
+      "usp_highlights": [
+        "24 zonnepanelen (\u20ac0 energiekosten)",
+        "Nieuwbouw 2023 (geen verborgen gebreken)",
+        "Robotmaaier (onderhoudsvriendelijk)",
+        "Ruime tuin 250m\u00b2"
+      ]
+    },
+    "financial": {
+      "score": 7.0,
+      "reasoning": "Vraagprijs \u20ac250.000 VON (bizar: oorspronkelijk \u20ac206k KK = \u20ac210k, nu \u20ac250k VON = prijsstijging \u20ac40k tijdens verkoop?! Check notitie: BTW teruggave 21% mogelijk bij verhuur = \u20ac52.500 terug \u2192 netto \u20ac197.500). INVESTERING: \u20ac250k - \u20ac52.5k BTW + \u20ac5k notaris - \u20ac5k BTW = \u20ac197.500 all-in. OMZET conservatief: Hoogseizoen 90d \u00d7 65% \u00d7 \u20ac110 = \u20ac6.435, Middenseizoen 180d \u00d7 35% \u00d7 \u20ac85 = \u20ac5.355, Laagseizoen 95d \u00d7 15% \u00d7 \u20ac70 = \u20ac997. Totaal: \u20ac12.787. MET hottub: +\u20ac25/nacht = \u20ac15.700. KOSTEN: Parkkosten \u20ac1800 (schatting), energie \u20ac600 (zonnepanelen!), GWL \u20ac400, platform 10% \u20ac1.570, schoonmaak 40\u00d7 \u20ac50 = \u20ac2000, onderhoud \u20ac1000, accountant \u20ac1000, verzekering \u20ac600. Totaal: \u20ac8.970. NETTO: \u20ac15.700 - \u20ac8.970 = \u20ac6.730. Cash-on-Cash: 3.4% (LAAG!). MET hottub \u00e9n betere marketing \u20ac18.500 omzet: netto \u20ac9.530 = 4.8% (NOG STEEDS LAAG). Probleem: Prijs te hoog voor rendement. Bij \u20ac197.5k netto + hottub: 4.8%. Break-even >20 jaar. Scale-up: Waardevast maar geen snelle winst.",
+      "red_flags": [
+        "Cash-on-Cash rendement <5% (target 10%+)",
+        "Seizoensgebonden omzet beperkt jaarrond potentieel",
+        "Hoge aankoopprijs versus verhuurpotentieel"
+      ],
+      "recommendations": [
+        "Onderhandel agressief: target \u20ac220k VON (\u20ac167.5k na BTW)",
+        "Verplicht hottub investering voor rendement verbetering",
+        "Budget \u20ac3000 marketing/professionalisering jaar 1"
+      ],
+      "calculations": {
+        "purchase_price": 250000,
+        "total_investment": 197500,
+        "estimated_annual_revenue": 15700,
+        "estimated_annual_costs": 8970,
+        "net_annual_income": 6730,
+        "cash_on_cash_return": 3.4,
+        "breakeven_years": 29.3
+      }
+    },
+    "legal": {
+      "score": 8.5,
+      "reasoning": "POSITIEF: 'Permanente bewoning niet toegestaan' betekent recreatie/verhuur WEL toegestaan (standaard recreatiepark). Geen expliciete verhuurrestricties vermeld. Park De Horn geen verplichte parkorganisatie genoemd (Landal/Europarcs). 'Eigendomssituatie: Zie akte' = waarschijnlijk erfpacht, MOET uitgezocht! Erfpachtcanon niet vermeld (schatting \u20ac500-1500/jaar, zit in parkkosten). Geen seizoensbeperkingen zichtbaar, jaar-rond verhuur waarschijnlijk toegestaan. BTW teruggave mogelijk bij verhuur = commercieel verhuur juridisch mogelijk. RISICO'S: Parkreglement onbekend, moet opgevraagd. Mogelijke goedkeuring nieuwe eigenaar door park. VvE/eigenaren vereniging kosten onduidelijk. Recron voorwaarden mogelijkerwijs van toepassing (CHECK!). FISCAAL: Box 1 bij professionele verhuur (beste optie), BTW aftrek voordeel \u20ac52.500. Toeristenbelasting Noord-Holland \u20ac1-2/persoon/nacht (doorberekenen). Geen dealbreakers gedetecteerd, maar due diligence essentieel.",
+      "red_flags": [
+        "Eigendomssituatie onduidelijk (erfpacht vermoedelijk)",
+        "Parkreglement niet beschikbaar (verhuurvoorwaarden?)",
+        "Recron voorwaarden mogelijk van toepassing"
+      ],
+      "recommendations": [
+        "VERPLICHT: Vraag parkreglement + erfpachtvoorwaarden op",
+        "Check verhuurrestricties expliciet bij beheerder Park De Horn",
+        "Laat notaris erfpachtduur en voorwaarden verifi\u00ebren"
+      ],
+      "rental_freedom": "Waarschijnlijk vrije verhuur mogelijk (geen expliciete restricties), maar MOET geverifieerd via parkreglement. Geen verplichte parkorganisatie genoemd."
+    }
+  },
+  "overall_assessment": "Nieuwbouw recreatiewoning met sterke duurzaamheids-USP (24 zonnepanelen) op redelijke Noord-Hollandse locatie. Pand kwaliteit goed (7.5) en juridisch grotendeels vrij (8.5), MAAR financieel rendement teleurstellend (3.4% CoC). Hoofdprobleem: aankoopprijs \u20ac250k te hoog voor verhuurpotentieel B-locatie. Seizoensgebonden vraag beperkt jaarrond omzet. BTW teruggave \u20ac52.5k helpt (netto \u20ac197.5k), maar zelfs dan ondermaats rendement zonder premium USP's. Potentieel verbeterbaar met hottub (+\u20ac3000 jaaromzet) en professionele marketing, maar blijft onder target 10% CoC. Scale-up potentieel beperkt: waardevast maar geen snelle winst voor doorverkoop. Voor serieuze BNB investeerder alleen interessant bij forse prijsonderhandeling (\u20ac220k VON = \u20ac167.5k netto) gecombineerd met actieve rendement optimalisatie.",
+  "top_strengths": [
+    "Nieuwbouw 2023 met 24 zonnepanelen: \u20ac0 energiekosten + sterke duurzaamheids-USP voor marketing",
+    "BTW teruggave \u20ac52.500 verlaagt netto investering naar \u20ac197.500 (21% voordeel bij professionele verhuur)",
+    "Juridisch vrij: geen expliciete verhuurrestricties, waarschijnlijk zelfverhuur volledig mogelijk via eigen kanalen"
+  ],
+  "top_concerns": [
+    "Cash-on-Cash rendement 3.4% zeer laag (target 10%+): prijspunt \u20ac250k niet marktconform voor verhuurpotentieel",
+    "Seizoensgebonden vraag Dirkshorn: 70% omzet mei-september, winter bezetting <20% beperkt jaarrond rendement sterk",
+    "Ontbreken premium USP's (hottub/sauna): concurrerende objecten met wellness scoren \u20ac20-40/nacht hoger"
+  ],
+  "investment_recommendation": "OVERWEGEN - Alleen bij agressieve onderhandeling. Target \u20ac220.000 VON (\u20ac167.500 netto na BTW) + verplichte hottub investering. Bij huidige \u20ac250k: AFWIJZEN wegens ondermaats rendement (<5% CoC). Locatie B-tier en seizoensafhankelijkheid vereisen scherpe prijs voor acceptabel rendement. Geschikt voor investeerder die wil professionaliseren (marketing, USP's toevoegen) en 3-5 jaar horizon heeft.",
+  "metadata": {
+    "processing_time_seconds": 78.87,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}

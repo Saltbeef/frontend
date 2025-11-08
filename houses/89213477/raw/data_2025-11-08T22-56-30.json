@@ -1,0 +1,335 @@
+{
+  "Identifiers": {
+    "GlobalId": 7404478,
+    "TinyId": "89213477"
+  },
+  "Price": {
+    "SellingPrice": "\u20ac 250.000 v.o.n.",
+    "NumericSellingPrice": 250000,
+    "IsAuction": false
+  },
+  "KenmerkSections": [
+    {
+      "Index": 1,
+      "Id": "overdracht",
+      "Title": "Overdracht",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "overdracht-vraagprijs",
+          "Label": "Vraagprijs",
+          "Value": "\u20ac 250.000 vrij op naam",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Oorspronkelijke vraagprijs",
+          "Value": "\u20ac 206.000 kosten koper",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 0,
+          "Id": "overdracht-aangeboden-sinds",
+          "Label": "Aangeboden sinds",
+          "Value": "6+ maanden",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 5,
+          "Id": "overdracht-status",
+          "Label": "Status",
+          "Value": "Beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Aanvaarding",
+          "Value": "In overleg",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 7,
+          "Id": "overdracht-permanentebewoning",
+          "Label": "Permanente bewoning",
+          "Value": "Permanente bewoning is niet toegestaan",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 2,
+      "Id": "bouw",
+      "Title": "Bouw",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "bouw-soortobject",
+          "Label": "Soort woonhuis",
+          "Value": "Bungalow, vrijstaande woning",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "bouw-soortbouw",
+          "Label": "Soort bouw",
+          "Value": "Bestaande bouw",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "bouw-bouwjaar",
+          "Label": "Bouwjaar",
+          "Value": "2023",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 3,
+      "Id": "afmetingen",
+      "Title": "Oppervlakten en inhoud",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Label": "Gebruiksoppervlakten",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 1,
+              "Id": "afmetingen-gebruiksoppervlakten-wonen",
+              "Label": "Wonen",
+              "Value": "70 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        },
+        {
+          "Index": 2,
+          "Id": "afmetingen-perceel",
+          "Label": "Perceel",
+          "Value": "250 m\u00b2",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "afmetingen-inhoud",
+          "Label": "Inhoud",
+          "Value": "147 m\u00b3",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 4,
+      "Id": "indeling",
+      "Title": "Indeling",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "indeling-totalrooms",
+          "Label": "Aantal kamers",
+          "Value": "4 kamers (3 slaapkamers)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "indeling-totalstories",
+          "Label": "Aantal woonlagen",
+          "Value": "1 woonlaag",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 5,
+      "Id": "energie",
+      "Title": "Energie",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "energie-energielabel",
+          "Label": "Energielabel",
+          "Value": "Niet beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 6,
+      "Id": "cadastral",
+      "Title": "Kadastrale gegevens",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "cadastral-parcel",
+          "Label": "HARENKARPSEL I 5388",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 2,
+              "Id": "cadastral-area",
+              "Label": "Oppervlakte",
+              "Value": "250 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "cadastral-ownershipsituation",
+              "Label": "Eigendomssituatie",
+              "Value": "Zie akte",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 7,
+      "Id": "buitenruimte",
+      "Title": "Buitenruimte",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "buitenruimte-ligging",
+          "Label": "Ligging",
+          "Value": "In recreatiepark",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "buitenruimte-tuin",
+          "Label": "Tuin",
+          "Value": "Tuin rondom",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    }
+  ],
+  "Labels": [],
+  "Urls": {
+    "FriendlyUrl": {
+      "FullUrl": "https://www.funda.nl/detail/recreatie/dirkshorn/huis-park-de-horn-1/89213477/",
+      "RelativeUrl": "/detail/recreatie/dirkshorn/huis-park-de-horn-1/89213477/"
+    },
+    "ReportErrorUrl": "https://help.funda.nl:443/s/mef?globalID=7404478&returnURL=https%3a%2f%2fwww.funda.nl%2fdetail%2frecreatie%2fdirkshorn%2fhuis-park-de-horn-1%2f89213477%2f&brokerID=82249"
+  },
+  "ListingDescription": {
+    "Title": "Omschrijving",
+    "Description": "Floresta biedt u een unieke kans om te recre\u00ebren in een prachtige villa midden in de natuur. Geniet van een weids uitzicht over de omringende bossen en majestueuze bomen, terwijl u profiteert van moderne voorzieningen en een duurzame levensstijl. De villa\u2019s zijn volledig elektrisch, beschikken over hoogwaardige isolatie en zijn uitgerust met maar liefst 24 zonnepanelen, waardoor uw ecologische voetafdruk aanzienlijk wordt verminderd.\n\nDe villa beschikt over drie ruime slaapkamers, een moderne badkamer met douche en toilet, een separaat toilet, en een tweede douche voor extra gemak. De luxe keuken is voorzien van een stijlvol granieten werkblad en diverse elektrische apparaten die het koken tot een plezier maken. Buiten vindt u een fraai aangelegde tuin met een uitnodigend terras en een minirobot die dagelijks het gazon onderhoudt. Uw auto parkeert u moeiteloos op de parkeerplaats bij de woning.\n\nLOCATIE EN OMGEVING\nGelegen op het prachtige Park De Horn, bevindt Floresta zich in een rustige en natuurrijke omgeving. In de nabije omgeving kunt u genieten van wandel- en fietstochten door de bossen, recreatiegebieden en nabijgelegen natuurreservaten. Het park ligt bovendien op korte afstand van gezellige dorpen en steden, waar u kunt winkelen, genieten van de lokale gastronomie en culturele activiteiten kunt ondernemen.\n\nBEREIKBAARHEID\nFloresta is uitstekend bereikbaar met zowel de auto als het openbaar vervoer. Met de auto bereikt u het park gemakkelijk via de nabijgelegen snelwegen. Voor reizigers met het openbaar vervoer is er een bushalte op loopafstand van het park, met verbindingen naar omliggende steden en dorpen.\n\nKENMERKEN\nWoonoppervlakte: ca. 70 m\u00b2\nPerceeloppervlakte: 250 m\u00b2\nVerwarming: Ja\nWarm water: Elektrische boiler\nInternet: Ja\nPropaangas: Nee\nRiolering: Ja\nHuur parkeerplaats: Op 50 meter afstand\nVerbruikskosten: Zie pagina belangrijke documenten/tarieven\nBijzonderheden: Villa beschikt over 24 zonnepanelen\n\nBij verhuur kan 21% btw van de verkoopprijs worden teruggevorderd.\n\nVoor vragen over de verkoop kunt u contact opnemen met Tanja Limmen op 0626588180."
+  },
+  "AddressDetails": {
+    "Title": "Park De Horn 1",
+    "SubTitle": "1746 AX Dirkshorn",
+    "IsInternational": false,
+    "NeighborhoodName": "Dirkshorn (woonkern)",
+    "NeighborhoodIdentifier": "dirkshorn/dirkshorn-woonkern",
+    "City": "Dirkshorn",
+    "Province": "Noord-Holland",
+    "Country": "Nederland",
+    "HouseNumber": "1",
+    "HouseNumberExtension": "",
+    "PostCode": "1746AX"
+  },
+  "Coordinates": {
+    "Latitude": 52.74693,
+    "Longitude": 4.777686
+  },
+  "KadastraleKaartBaseUrl": "https://service.pdok.nl/kadaster/kadastralekaart/wms/v5_0",
+  "Media": {
+    "Layout": {
+      "MediaViewerIsVisible": true,
+      "MainPhotoThumbnailIsVisible": false
+    },
+    "Photos": {
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "MediaBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "Items": [
+        {
+          "Id": "202/647/396"
+        },
+        {
+          "Id": "202/647/383"
+        },
+        {
+          "Id": "202/647/384"
+        },
+        {
+          "Id": "202/647/385"
+        },
+        {
+          "Id": "202/647/386"
+        },
+        {
+          "Id": "202/647/387"
+        },
+        {
+          "Id": "202/647/388"
+        },
+        {
+          "Id": "202/647/389"
+        },
+        {
+          "Id": "202/647/414"
+        },
+        {
+          "Id": "202/647/390"
+        },
+        {
+          "Id": "202/647/391"
+        },
+        {
+          "Id": "202/647/413"
+        },
+        {
+          "Id": "202/647/392"
+        },
+        {
+          "Id": "202/647/393"
+        },
+        {
+          "Id": "202/647/394"
+        },
+        {
+          "Id": "202/647/397"
+        }
+      ]
+    }
+  },
+  "FastView": {
+    "LivingArea": "70 m\u00b2",
+    "PlotArea": "250 m\u00b2",
+    "NumberOfBedrooms": "3"
+  },
+  "IsSoldOrRented": false,
+  "ObjectType": "House",
+  "OfferingType": "Sale",
+  "ConstructionType": "ExistingConstruction",
+  "PublicationDate": "2024-12-25T00:00:00",
+  "ObjectInsights": {
+    "Views": "1.594",
+    "Saves": "15"
+  },
+  "sitemapData": {
+    "originalUrl": "https://www.funda.nl/detail/recreatie/dirkshorn/huis-park-de-horn-1/89213477/",
+    "propertyId": "89213477",
+    "lastmod": "2025-08-26T12:23:11+02:00",
+    "processedAt": "2025-09-15T20:10:00.285Z",
+    "apiUrl": "https://listing-detail-page.funda.io/api/v4/listing/nl/tinyId/89213477"
+  }
+}
