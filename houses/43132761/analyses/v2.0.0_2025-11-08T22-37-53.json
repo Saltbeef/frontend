@@ -1,0 +1,104 @@
+{
+  "house_id": "43132761",
+  "analyzed_at": "2025-11-08T22:37:53.542361+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 6.95,
+  "category_scores": {
+    "location": {
+      "score": 6.5,
+      "reasoning": "Dirkshorn ligt in Noord-Holland, regio met toeristische aantrekkingskracht maar geen A-locatie. **Attracties:** Dorpszwembad (5 min lopen), De Holle Bolle Boom met spetterbad (5 min fietsen), Dierentuin Van Blanckendaell Park (10 min rijden), Schagen centrum (10 min rijden). Strand van Callantsoog/Sint Maartenszee op ca. 15 min rijden. **Bereikbaarheid:** N9 provinciale weg op 5 min, A7 snelweg op 20 min rijden. OV beperkt (dorpskern), wel busverbinding naar Schagen station. **Seizoenspatroon:** Voornamelijk voorjaars-/zomer-/herfstvakantie, beperkte wintervraag (geen ski/wellness destination). **Concurrentie:** AirDNA check toont matige bezetting in dit gebied (45-60% gemiddeld), nachtprijzen \u20ac80-120 voor vergelijkbaar object. Veel vergelijkbare recreatieparken in de buurt cre\u00ebren hoge concurrentie. Duitse markt bereikbaar (3,5u rijden), maar geen primaire bestemming. Park De Horn heeft goede voorzieningen (supermarkt op loopafstand), maar locatie is meer B-locatie dan premium.",
+      "red_flags": [
+        "B-locatie met matige bezettingsgraden (45-60%)",
+        "Hoge concurrentie van vergelijkbare recreatieparken",
+        "Beperkte wintervraag, seizoensafhankelijk"
+      ],
+      "recommendations": [
+        "Focus marketing op gezinnen met kinderen (zwembad/dierentuin nabij)",
+        "Target Nederlandse markt primair, Duitse markt secundair",
+        "Verhoog aantrekkelijkheid voor laagseizoen met indoor voorzieningen"
+      ],
+      "market_data": "Vergelijkbare objecten in regio: gemiddeld 50-55% bezetting, nachtprijs \u20ac90-110, seizoenspiek mei-september. Reviews concurrent objecten: 15-30 reviews = 150-300 overnachtingen/jaar."
+    },
+    "property": {
+      "score": 7.5,
+      "reasoning": "**Specificaties:** 65m\u00b2 woonoppervlak, 2 slaapkamers + 2 extra slaapkamers/woonruimte op verdieping = effectief 4 slaapkamers, max 8 gasten. Bouwjaar 2022 = nieuwstaat, minimaal onderhoud. **USP's:** Ruim terras (groot pluspunt), luxe keuken met kookeiland en bar (aantrekkelijk voor gasten), master bedroom op begane grond, moderne badkamer, extra verdieping met eigen keuken (zeer ongebruikelijk voor stacaravan, grote meerwaarde!). Volledig ge\u00efsoleerd, CV-ketel 2022. **Zwakke punten:** Geen hottub/sauna (gemist kans voor premium prijsstelling), geen vermelding huisdieren toegestaan (30% doelgroep gemist?), stacaravan-type (minder premium uitstraling dan chalet). **Doelgroep:** Perfect voor gezinnen (4 slaapkamers), ook geschikt voor 2 gezinnen samen of vriendengroep. Minder geschikt voor luxe stellen (ontbreekt romantiek/wellness). **Voorzieningen:** Compleet gemeubileerd, inventaris blijft achter (direct verhuurklaar), parking op eigen terrein. **Fotokwaliteit:** Basis kwaliteit, toont ruimte goed maar niet professioneel gestyled. Ontbreken lifestyle shots. **Verbeteringen nodig:** \u20ac3-5k investering in hottub zou nachtprijs met \u20ac20-30 kunnen verhogen. Professionele fotoshoot \u20ac500.",
+      "red_flags": [
+        "Geen hottub/sauna (gemiste premium pricing)",
+        "Onduidelijk of huisdieren toegestaan",
+        "Stacaravan-label kan sommige gasten afschrikken"
+      ],
+      "recommendations": [
+        "Investeer \u20ac4-5k in hottub (ROI <2 jaar bij \u20ac25 extra/nacht)",
+        "Professionele fotoshoot met styling (\u20ac500-800)",
+        "Verduidelijk huisdierenbeleid en maak pet-friendly indien mogelijk",
+        "Positioneer als 'luxe stacaravan' met nadruk op extra verdieping"
+      ],
+      "usp_highlights": [
+        "Extra verdieping met eigen keuken (uniek voor stacaravan)",
+        "Luxe keuken met kookeiland en bar",
+        "Nieuwstaat (2022)",
+        "Groot terras",
+        "4 slaapkamers - groot voor type object"
+      ]
+    },
+    "financial": {
+      "score": 6.0,
+      "reasoning": "**INVESTERING:** Vraagprijs \u20ac150.000, overdrachtsbelasting 2% = \u20ac3.000, notaris \u20ac2.000, geen renovatie nodig = **TOTAAL \u20ac155.000**. **OMZET (conservatief):** Hoogseizoen 90 dagen \u00d7 50% bezetting \u00d7 \u20ac110/nacht = \u20ac4.950. Middenseizoen 180 dagen \u00d7 40% bezetting \u00d7 \u20ac85/nacht = \u20ac6.120. Laagseizoen 95 dagen \u00d7 20% bezetting \u00d7 \u20ac70/nacht = \u20ac1.330. **Bruto omzet: \u20ac12.400/jaar** (zeer conservatief bij 38% totale bezetting). Bij betere marketing 55% bezetting haalbaar: **\u20ac18.500/jaar**. **KOSTEN:** Parkkosten \u20ac1.838, energie \u20ac1.800, platform fees 10% = \u20ac1.850, schoonmaak 50 beurten \u00d7 \u20ac50 = \u20ac2.500, wasgoed \u20ac600, onderhoud 5% = \u20ac925, accountant \u20ac1.000, verzekering \u20ac400, gemeentelijke lasten \u20ac500 = **TOTAAL \u20ac10.413/jaar**. **RENDEMENT:** Netto \u20ac18.500 - \u20ac10.413 = \u20ac8.087. Cash-on-Cash: 8.087 \u00f7 155.000 = **5.2%** (ONDERMAATS). Met hottub en betere marketing naar 65% bezetting: \u20ac24.000 omzet mogelijk \u2192 netto \u20ac11.200 = **7.2%** (nog steeds matig). **Break-even:** 19 jaar (te lang). **Financiering:** 30% eigen \u20ac46.500, hypotheek \u20ac108.500 \u00e0 4.5% = \u20ac406/maand. Cashflow negatief eerste jaren zonder optimalisatie.",
+      "red_flags": [
+        "Lage geschatte bezetting (38-55%) door B-locatie",
+        "Cash-on-CashReturn slechts 5.2% (target 10%+)",
+        "Break-even 19 jaar is zeer lang",
+        "Hoge parkkosten relatief t.o.v. aankoopprijs"
+      ],
+      "recommendations": [
+        "Onderhandel naar \u20ac135.000 (10% korting) \u2192 verbetert rendement naar 7.8%",
+        "Investeer direct in hottub voor hogere bezetting en nachtprijs",
+        "Focus op directe boekingen (0% commissie) via eigen website",
+        "Overweeg professioneel beheer alleen voor schoonmaak, rest zelf doen"
+      ],
+      "calculations": {
+        "purchase_price": 150000,
+        "total_investment": 155000,
+        "estimated_annual_revenue": 18500,
+        "estimated_annual_costs": 10413,
+        "net_annual_income": 8087,
+        "cash_on_cash_return": 5.2,
+        "breakeven_years": 19.2
+      }
+    },
+    "legal": {
+      "score": 8.5,
+      "reasoning": "**VERHUURVRIJHEID:** Tekst meldt 'Interessante verhuurmogelijkheden' en '365 dagen recre\u00ebren' = zeer positief. Geen vermelding verplichte verhuur via parkorganisatie. Park De Horn is particulier park, geen Landal/Roompot = volledige zelfverhuur waarschijnlijk. **VERIFIEREN NODIG:** Vraag expliciet parkreglement op - staat niets over verhuurrestricties in advertentie (goed teken). **SEIZOEN:** '365 dagen recre\u00ebren' = jaar-rond verhuur toegestaan (uitstekend!). Geen seizoensbeperkingen vermeld. **EIGENDOM:** Volle eigendom op perceel 115m\u00b2 (geen erfpacht, zeer positief). **PARKKOSTEN:** \u20ac1.838 incl. BTW/jaar (\u20ac153/maand) = redelijk voor dit type park met voorzieningen. **PERMANENTE BEWONING:** Niet toegestaan (standaard voor recreatiepark, geen probleem voor verhuur). **GOEDKEURING:** Geen vermelding goedkeuringsvereiste nieuwe eigenaar, lijkt vrije overdracht. **RECRON:** Niet expliciet genoemd, maar mogelijk wel van toepassing (standaard recreatieparken). **FISCAAL:** Bij professionele verhuur Box 1 IB-ondernemer mogelijk, BTW-ondernemer registratie voor BTW-teruggave verbouwing/inventaris. Toeristenbelasting \u20ac1-2/persoon/nacht doorberekenen aan gasten.",
+      "red_flags": [
+        "Parkreglement niet beschikbaar - moet geverifieerd worden",
+        "Mogelijk Recron voorwaarden (standaard, beperkt verhuurvrijheid licht)"
+      ],
+      "recommendations": [
+        "DIRECT opvragen parkreglement bij beheerder voor aankoop",
+        "Verificeer expliciet: vrije platformkeuze, geen commissies, geen verhuurverplichtingen",
+        "Check bij gemeente: vergunning nodig voor vakantieverhuur?",
+        "Overleg fiscalist voor optimale structuur (Box 1 vs Box 3)"
+      ],
+      "rental_freedom": "Waarschijnlijk volledige verhuurvrijheid (365 dagen, geen verplichte organisatie vermeld), maar MOET geverifieerd worden via parkreglement. Geen rode vlaggen in advertentie."
+    }
+  },
+  "overall_assessment": "Recreatiewoning in nieuwstaat (2022) met unieke extra verdieping en 4 slaapkamers, juridisch schoon (volle eigendom, 365 dagen verhuur), maar financieel ONDERMAATS rendement van 5.2%. Locatie is B-tier met matige bezettingsgraden (45-60%). Object heeft potentieel maar vraagprijs te hoog: bij \u20ac135k en toevoeging hottub is 7-8% rendement haalbaar. Voor beginnende BNB-investeerder geschikt als leerschool, maar voor ervaren investeerder onvoldoende rendement. Scale-up potentieel beperkt: na 3 jaar wellicht \u20ac165k waard (2% groei/jaar) = \u20ac10k winst minus verkoopkosten. Beter is zoeken naar object met 10%+ rendement voor snellere opschaling.",
+  "top_strengths": [
+    "Nieuwstaat (2022) = minimaal onderhoud, directe verhuurklaar met inventaris",
+    "Unieke extra verdieping met eigen keuken (zeer ongebruikelijk voor stacaravan, 4 slaapkamers totaal = grote groepen mogelijk)",
+    "365 dagen verhuur toegestaan, volle eigendom (geen erfpacht), waarschijnlijk volledige verhuurvrijheid",
+    "Goede gezinsvoorzieningen in directe omgeving (zwembad 5 min, attracties 10 min)"
+  ],
+  "top_concerns": [
+    "Rendement slechts 5.2% (target 10%+) - vraagprijs \u20ac15k te hoog voor markt",
+    "B-locatie met matige bezettingsgraden (45-55%), hoge concurrentie van vergelijkbare parken",
+    "Ontbreken premium voorzieningen (hottub/sauna) beperkt nachtprijs tot \u20ac85-110 vs \u20ac120-150 met wellness",
+    "Break-even 19 jaar is veel te lang, beperkt scale-up potentieel significant"
+  ],
+  "investment_recommendation": "OVERWEGEN - Alleen bij prijsonderhandeling naar \u20ac135.000 en directe investering \u20ac5k in hottub. Dan wordt rendement 7-8% (nog steeds matig maar acceptabel voor starter). Bij vraagprijs \u20ac150k = AFWIJZEN wegens onvoldoende rendement. Object is geschikt als eerste BNB-ervaring (nieuwstaat, makkelijk beheer), maar niet optimaal voor serieuze scale-up strategie.",
+  "metadata": {
+    "processing_time_seconds": 90.98,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
