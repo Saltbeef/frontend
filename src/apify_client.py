@@ -102,14 +102,60 @@ class ApifyClient:
             response = self._make_request("GET", endpoint)
             items = response if isinstance(response, list) else response.get("data", [])
 
-            # Find the house by ID
-            for item in items:
-                # Assuming house data has an 'id' field
-                # Adjust this based on actual Apify data structure
-                if item.get("id") == house_id or item.get("house_id") == house_id:
+            # Possible ID fields to check (common patterns in Funda/property datasets)
+            id_fields = [
+                "id",
+                "house_id",
+                "globalId",
+                "makelaarId",
+                "objectId",
+                "propertyId",
+                "advertentieId",
+                "internalId"
+            ]
+
+            print(f"🔍 Searching for house {house_id} in dataset {dataset_id}")
+            print(f"   Dataset contains {len(items)} items")
+
+            # Find the house by checking multiple possible ID fields
+            for idx, item in enumerate(items):
+                # Check all possible ID fields
+                for field in id_fields:
+                    field_value = item.get(field)
+                    if field_value is not None:
+                        # Try both string and integer comparison
+                        if str(field_value) == str(house_id):
+                            print(f"✅ Found house using field '{field}' = {field_value}")
+                            return item
+
+                # Also check if the ID appears in the URL
+                url = item.get("url", "")
+                if house_id in str(url):
+                    print(f"✅ Found house by URL match: {url}")
                     return item
 
-            print(f"House {house_id} not found in dataset {dataset_id}")
+            # If not found, show debugging information
+            print(f"❌ House {house_id} not found in dataset {dataset_id}")
+            print(f"\n📋 Sample data structure from first item:")
+            if items:
+                sample = items[0]
+                available_fields = list(sample.keys())
+                print(f"   Available fields: {', '.join(available_fields[:20])}")
+
+                # Show ID-like fields and their values
+                print(f"\n   ID-like fields in first item:")
+                for field in available_fields:
+                    if any(keyword in field.lower() for keyword in ['id', 'code', 'number', 'ref']):
+                        value = sample.get(field)
+                        print(f"     - {field}: {value}")
+
+                # Show URL if available
+                if 'url' in sample:
+                    print(f"     - url: {sample.get('url')}")
+
+            print(f"\n💡 Tip: Check Apify Console at:")
+            print(f"   https://console.apify.com/storage/datasets/{dataset_id}")
+
             return None
 
         except Exception as e:
