@@ -1,0 +1,285 @@
+{
+  "Identifiers": {
+    "GlobalId": 7182514,
+    "TinyId": "89991513"
+  },
+  "Price": {
+    "SellingPrice": "\u20ac 81.000 k.k.",
+    "NumericSellingPrice": 81000,
+    "IsAuction": false
+  },
+  "KenmerkSections": [
+    {
+      "Index": 1,
+      "Id": "overdracht",
+      "Title": "Overdracht",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "overdracht-vraagprijs",
+          "Label": "Vraagprijs",
+          "Value": "\u20ac 81.000 kosten koper",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Id": "overdracht-aangeboden-sinds",
+          "Label": "Aangeboden sinds",
+          "Value": "6+ maanden",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 5,
+          "Id": "overdracht-status",
+          "Label": "Status",
+          "Value": "Beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Aanvaarding",
+          "Value": "Per direct beschikbaar",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 7,
+          "Id": "overdracht-permanentebewoning",
+          "Label": "Permanente bewoning",
+          "Value": "Permanente bewoning is niet toegestaan",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 2,
+      "Id": "bouw",
+      "Title": "Bouw",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "bouw-soortobject",
+          "Label": "Soort object",
+          "Value": "Bouwgrond",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 8,
+          "Id": "bouw-isreadyforconstruction",
+          "Label": "Bouwrijp",
+          "Value": "Nee",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 4,
+      "Id": "indeling",
+      "Title": "Indeling",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Perceel",
+          "Value": "482 m\u00b2",
+          "LabelStyle": "None"
+        }
+      ]
+    },
+    {
+      "Index": 6,
+      "Id": "cadastral",
+      "Title": "Kadastrale gegevens",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "cadastral-parcel",
+          "Label": "HARENKARSPEL I 5344",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 2,
+              "Id": "cadastral-area",
+              "Label": "Oppervlakte",
+              "Value": "104 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "cadastral-ownershipsituation",
+              "Label": "Eigendomssituatie",
+              "Value": "Volle eigendom",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        },
+        {
+          "Index": 1,
+          "Id": "cadastral-parcel",
+          "Label": "HARENKARSPEL I 1740",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 2,
+              "Id": "cadastral-area",
+              "Label": "Oppervlakte",
+              "Value": "378 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "cadastral-ownershipsituation",
+              "Label": "Eigendomssituatie",
+              "Value": "Volle eigendom",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 7,
+      "Id": "buitenruimte",
+      "Title": "Buitenruimte",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "buitenruimte-ligging",
+          "Label": "Ligging",
+          "Value": "Beschutte ligging en landelijk gelegen",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    }
+  ],
+  "Labels": [],
+  "Urls": {
+    "FriendlyUrl": {
+      "FullUrl": "https://www.funda.nl/detail/recreatie/dirkshorn/bouwgrond-raadhuisstraat-27-h83/89991513/",
+      "RelativeUrl": "/detail/recreatie/dirkshorn/bouwgrond-raadhuisstraat-27-h83/89991513/"
+    },
+    "ReportErrorUrl": "https://help.funda.nl:443/s/mef?globalID=7182514&returnURL=https%3a%2f%2fwww.funda.nl%2fdetail%2frecreatie%2fdirkshorn%2fbouwgrond-raadhuisstraat-27-h83%2f89991513%2f&brokerID=63330"
+  },
+  "ListingDescription": {
+    "Title": "Omschrijving",
+    "Description": "Deze ruime kavel van ca. 482 m\u00b2 incl. bouwvergunning bestemd voor het bouwen van een ruime recreatiewoning op recreatiepark Dirkshoeve in Dirkshorn. Er mag 100 m\u00b2 bebouwd worden volgens de vergunning. Het park is ruim opgezet en heeft een nette infrastructuur. Er zijn speeltuinen aanwezig, nette wegen aangelegd en voor de afvalinzameling wordt gebruik gemaakt van ondergrondse containers. Dirkshorn is gelegen in de provincie Noord-Holland vlakbij de Noordzee maar ook het recreatiegebied Geestmerambacht is vlakbij. Voor het bezoeken van een stad kunt u terecht in het gezellige Schagen of Alkmaar.\n\nLigging \nDe kavel is gelegen op Bungalowpark Dirkshoeve in Dirkshorn. Het park ademt rust en ruimte, door de landelijke ligging en de aanwezigheid van veel groen. Het centrum van Dirkshorn is op steenworp afstand waardoor voorzieningen als winkels, horeca maar ook een golfbaan en zwemwater (zwembad en meertje) binnen een straal van 500 meter te vinden zijn. In een nabijgelegen meertje wordt veel gevist, gesupt of gezwommen. Heeft u eenmaal een vakantiewoning gerealiseerd, dan leent deze woning zich prima voor verhuurmogelijkheden, het park is het gehele jaar geopend. \n\nU kunt ervoor kiezen om zelf heerlijk te recre\u00ebren of om te verhuren. Dirkshoeve kan in overleg met u bemiddelen in de verhuur, echter kunt u ook zelf de verhuur verzorgen. Inschrijven en permanente bewoning is niet toegestaan op het park. Het park is het gehele jaar voor recreanten geopend.\n\nNieuwbouw/ontwerp vrijstaande recreatievilla: \nDe verkoper heeft al een ontwerp laten maken van een zes persoons recreatiewoning, de bouwvergunning is hiervoor al verleend. Uiteraard kunt u zelf ook een ontwerp van een recreatiewoning laten maken. In dat geval dient u wel een nieuwe bouwvergunning aan te vragen. Hierbij dient u rekening te houden met het bebouwingsoppervlakte van 100 m\u00b2.\n\nIn het ontwerp van de vrijstaande recreatievilla is rekening gehouden met duurzaam bouwen door de aanwezigheid van hoogwaardige isolatie, ventilatie en gasloze warmtevoorziening door middel van warmtepompinstallatie en natuurlijk de aanwezigheid van zonnepanelen op het dak van de villa.\n\nIn het ontwerp wordt uitgegaan van een zes persoons villa met 2 tweepersoons slaapkamers op de begane grond en 1 tweepersoons slaapkamer op de 1e verdieping. \n\nDe reguliere parklasten\nDeze bestaan uit de bijdrage voor het parkbeheer en het onderhoud, de levering van water, afvalverwerking, eventuele optionele onderhoudsdiensten. Overige bijkomende lasten zijn de lokale belastingen (denk aan rioolrecht, onroerende zaak belasting en waterschapslasten).\n\nEigenaar heeft de grond eind 2022 aangekocht en hierdoor vervallen de erfpachtkosten.\n\nProjectnotaris: \nDe eigendomsoverdracht dient te worden opgesteld door en te worden gepasseerd bij Appel Notarissen te Obdam.\n\nVoorwaarden:\nAlle door Pinedo Makelaardij verstrekte informatie moet uitsluitend gezien worden als een uitnodiging tot nader overleg c.q. tot het uitbrengen van een voorstel. Hoewel gestreefd is naar een zo zorgvuldig mogelijke weergave van de beschikbare gegevens, moet er van worden uitgegaan dat bovenstaande slechts indicatief is. De realiteit kan hiervan afwijken of er kan per abuis een onjuiste vermelding zijn gemaakt.\u00a0Een kandidaat koper heeft een eigen onderzoek plicht naar alle zaken die voor hem van belang zijn.\n\nBijzonderheden:\n- Ruime kavel met mogelijkheid tot realisatie van nieuw te bouwen bungalow (kaveloppervlakte: ca. 482 m\u00b2)\n- Bouwvergunning voor huidige ontwerp 6-persoons villa met 3 slaapkamers is al verleend.\n- Verhuur mogelijk zowel op persoonlijke titel als via bemiddeling door parkbeheerder Dirkshoeve.\n- Permanente bewoning is op dit park niet toegestaan. \n- Het park is het gehele jaar geopend voor recreanten.\n- Parklasten: op basis van huidige gebruik alleen perceel circa \u20ac 3.500,- per jaar, afhankelijk van het gebruik. Meer informatie verkrijgbaar op aanvraag.\n- De koopsom is exclusief 21% btw en kosten koper. Er is geen overdrachtsbelasting van toepassing.\n- Aanvaarding: in overleg.\n\nHuisregels Dirkshoeve:\n4.1 Algemeen\na. op een perceel mag minimaal 1 woning en 1 bijgebouw worden opgericht.\nb. van het totale perceeloppervlak mag ten hoogste 25% worden bebouwd.\nc. van het totale perceeloppervlak moet altijd minimaal 65% waterdoorlatend blijven.\nd. bij woningen moet een vrije ruimte van minimaal 2m tot de perceelgrens worden aangehouden.\ne. voor bijgebouwen geldt dat deze op een afstand van minimaal 2 m achter de voorgevelrooilijn van de woning moeten worden gesitueerd en dat een vrije ruimte van minimaal 1m tot de perceelgrens moet worden aangehouden. \nf. tussen opstallen op hetzelfde perceel moet een onderlinge afstand van minimaal 2m worden aangehouden.\ng. tussen woningen op naastgelegen percelen moet een onderlinge afstand van minimaal 6m worden aangehouden. \nh. er mag niet worden gebouwd binnen een afstand van 1m van in de grond aanwezige kabels en leidingen. U kunt voorafgaand aan de planning van bouwwerkzaamheden bij Dirkshoeve een situatietekening met de ligging van kabels en leidingen aanvragen.\ni. voor constructies op of onder het maaiveld mag zonder expliciete schriftelijke toestemming van Dirkshoeve geen gebruik worden gemaakt van gestort beton of van gemetselde opstanden.\n\n4.2 Woning en bijgebouw\na. voor woningen incl. aanbouwen gelden de volgende beperkingen:\n- oppervlak   max 100 m2 (zie echter ook punt 4.1.b)\n- inhoud       max 250 m3 (met omgevingsvergunning max. 350 m3)\n- goothoogte max 3,0 m1 (met omgevingsvergunning max. 4,5 m1)\n- bouwhoogte max 6,0 m1\n- constructie in traditionele bouw of houtskeletbouw\n- fundatie i beton of balklaag uitgevoerd in staal/hout\n- zadeldak met goten die een geheel vormen met de dakconstructie\n- buitenbekleding minimaal 50% hardhout of hardhoutvervanger\n- dakbedekking door middel van dakpannen, dakpanplaten of riet\nb. voor bijgebouwen gelden de volgende beperkingen:\n- oppervlak   max 8,0 m2 (zie echter ook punt 4.1.b)\n- bouwhoogte max 3,0 m1\n- vormgeving, materiaalgebruik en kleur aansluitend bij de woning\n- constructie uitsluitend in houtbouw (geen betonfundatie)\n- bekleding van verduurzaamd hout, hardhout of hardhoutvervanger\n- dakbedekking door middel van shingles, dakpannen/platen of riet\nc. de standaard toegestane kleuren zijn:\n- wanden steen                 roodachtig, geel, grijs\n- wanden hout                  naturel, donkergroen, grijs\n- kozijnen, dakranden etc.  naturel, wit, cr\u00e8me\nbuitenmuren van metselwerk mogen niet worden geschilderd.\nd. schoorstenen moeten zijn voorzien van vonkenvangers.\ne. installatiewerkzaamheden voor gas, water en elektriciteit mogen uitsluitend worden uitgevoerd door een in Nederland erkend installateur."
+  },
+  "AddressDetails": {
+    "Title": "Raadhuisstraat 27-H83",
+    "SubTitle": "1746 BE Dirkshorn",
+    "IsInternational": false,
+    "NeighborhoodName": "Dirkshorn (woonkern)",
+    "NeighborhoodIdentifier": "dirkshorn/dirkshorn-woonkern",
+    "City": "Dirkshorn",
+    "Province": "Noord-Holland",
+    "Country": "Nederland",
+    "HouseNumber": "27",
+    "HouseNumberExtension": "h83",
+    "PostCode": "1746BE"
+  },
+  "Coordinates": {
+    "Latitude": 52.749294,
+    "Longitude": 4.7728777
+  },
+  "KadastraleKaartBaseUrl": "https://service.pdok.nl/kadaster/kadastralekaart/wms/v5_0",
+  "Media": {
+    "Layout": {
+      "MediaViewerIsVisible": true,
+      "MainPhotoThumbnailIsVisible": false
+    },
+    "Photos": {
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "MediaBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "Items": [
+        {
+          "Id": "194/400/247"
+        },
+        {
+          "Id": "194/400/248"
+        },
+        {
+          "Id": "194/400/249"
+        },
+        {
+          "Id": "194/400/250"
+        },
+        {
+          "Id": "194/400/251"
+        },
+        {
+          "Id": "194/400/252"
+        },
+        {
+          "Id": "194/400/253"
+        },
+        {
+          "Id": "194/400/254"
+        },
+        {
+          "Id": "194/400/255"
+        },
+        {
+          "Id": "194/400/256"
+        },
+        {
+          "Id": "194/400/257"
+        },
+        {
+          "Id": "194/400/259"
+        },
+        {
+          "Id": "194/400/260"
+        },
+        {
+          "Id": "194/400/258"
+        },
+        {
+          "Id": "194/400/261"
+        },
+        {
+          "Id": "194/400/272"
+        },
+        {
+          "Id": "194/400/275"
+        },
+        {
+          "Id": "194/400/279"
+        },
+        {
+          "Id": "194/400/283"
+        }
+      ]
+    },
+    "Brochure": {
+      "ProxyUrl": "https://www.funda.nl/recreatie/dirkshorn/bouwgrond-89991513-raadhuisstraat-27-h83/brochure/download/",
+      "CdnUrl": "https://cloud.funda.nl/valentina_media/194/400/266.pdf"
+    }
+  },
+  "FastView": {
+    "LivingArea": "",
+    "PlotArea": "482 m\u00b2"
+  },
+  "IsSoldOrRented": false,
+  "ObjectType": "BuildingPlot",
+  "OfferingType": "Sale",
+  "PublicationDate": "2024-06-13T00:00:00",
+  "ObjectInsights": {
+    "Views": "10.511",
+    "Saves": "88"
+  },
+  "sitemapData": {
+    "originalUrl": "https://www.funda.nl/detail/recreatie/dirkshorn/bouwgrond-raadhuisstraat-27-h83/89991513/",
+    "propertyId": "89991513",
+    "lastmod": "2025-07-31T17:27:16+02:00",
+    "processedAt": "2025-09-15T20:05:18.611Z",
+    "apiUrl": "https://listing-detail-page.funda.io/api/v4/listing/nl/tinyId/89991513"
+  }
+}

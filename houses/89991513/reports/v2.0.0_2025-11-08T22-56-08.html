@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 89991513</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 89991513<br>
+                <strong>Analyzed:</strong> 2025-11-08T22:56:08.353410+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">0.8/10</div>
+            <div class="recommendation consider">
+                AFWIJZEN - Dit pand moet direct worden afgewezen wegens ontbreken van verhuurrecht. De core strategie is gebaseerd op ZELF verhuren voor maximaal rendement. Dit object maakt dat fundamenteel onmogelijk. Zonder verhuurrecht is dit een kostenpost zonder inkomsten. Permanente bewoning is verboden, verhuur is niet expliciet toegestaan - dit is de definitie van een DEALBREAKER. Investeren in dit object zou €250-300k vastleggen zonder enige mogelijkheid tot rendement. Voor BNB strategie volledig ongeschikt.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>DIRECT AFWIJZEN - dit pand is fundamenteel ongeschikt voor BNB/vakantieverhuur strategie. Kernprobleem: verhuur is NIET toegestaan of hooguit juridisch onduidelijk. De beschrijving vermeldt 'permanente bewoning niet toegestaan' en suggereert verhuurmogelijkheden, maar dit is tegenstrijdig en onbetrouwbaar. Pre-screening detecteerde dealbreaker 'verhuur niet toegestaan'. Zonder verhuurrecht genereert dit object €0 inkomsten bij totale investering van €250-300k (kavel + bouw) en jaarlijkse kosten van €3.500+. Dit is een gegarandeerd verliesgevende investering. Bovendien betreft het een lege bouwkavel - betekent 12-18 maanden ontwikkeltijd voordat überhaupt iets mogelijk zou zijn. Voor BNB strategie (kopen-verhuren-verkopen-opschalen) is dit object compleet onbruikbaar. Score 0.8/10 overall (gemiddeld van vier zeer lage categorie scores).</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Volle eigendom sinds 2022 (geen erfpacht) - maar irrelevant bij verhuurverbod</li><li>Bouwvergunning aanwezig voor 6-persoons villa - maar onbruikbaar zonder verhuurrecht</li><li>Redelijke locatie in Noord-Holland nabij kust - maar niet relevant voor niet-verhuurbaar object</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>DEALBREAKER: Verhuur niet toegestaan of juridisch onduidelijk - object kan niet geëxploiteerd worden</li><li>€250-300k totale investering zonder enkele vorm van rendement of inkomsten mogelijk</li><li>Lege bouwkavel met 12-18 maanden ontwikkeltijd + bouwkostenrisico - zelfs als verhuur zou mogen</li><li>Jaarlijkse kosten €3.500+ zonder mogelijkheid deze terug te verdienen</li><li>Fundamenteel strijdig met BNB strategie: geen zelfverhuur = geen rendement = geen scale-up</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">2.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Dirkshorn ligt in Noord-Holland op ca. 10 km van de Noordzeekust en 15 km van Alkmaar. Recreatiegebied Geestmerambacht ligt nabij. Lokale voorzieningen binnen 500m (winkels, horeca, golfbaan, zwembad). Bereikbaarheid via N9 richting A7 (ca. 15 km). Locatie heeft toeristische potentie voor natuurliefhebbers en strandgangers. ECHTER: Dit is enkel een bouwkavel zonder bestaand object - betekent 1-2 jaar ontwikkeltijd voor verhuur kan starten. Concurrentie op park Dirkshoeve aanwezig maar exacte marktdata ontbreekt. Locatie zelf is redelijk (B-locatie), maar onbruikbaar door verhuurverbod.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Bouwgrond zonder object - 1-2 jaar tot verhuurstart</div><div class="flag-item">Verhuur NIET toegestaan volgens beschrijving</div><div class="flag-item">Geen directe strandbereikbaarheid (10km)</div><div class="flag-item">Marktdata/concurrentie-analyse niet uitgevoerd mogelijk door ontbreken object</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Niet relevant - pand moet worden afgewezen</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">1.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Dit betreft een LEGE BOUWKAVEL van 482m², geen bestaand verhuurobject. Bouwvergunning aanwezig voor 100m² villa (6-persoons, 3 slaapkamers). Ontwerp lijkt kwalitatief met duurzame features (warmtepomp, zonnepanelen, goede isolatie). Perceel niet bouwrijp. ECHTER: Cruciaal probleem staat in beschrijving: 'Permanente bewoning is niet toegestaan op het park' EN 'Inschrijven en permanente bewoning is niet toegestaan'. Er staat NERGENS expliciet dat verhuur WEL is toegestaan. De tekst vermeldt verhuurmogelijkheden maar dit is tegenstrijdig met permanente bewoning verbod. Voor BNB strategie is dit een DEALBREAKER - zonder verhuurrecht is dit object waardeloos voor investering. Ontwerp en kavel kwaliteit zijn irrelevant als exploitatie niet mogelijk is.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">DEALBREAKER: Verhuur juridisch onduidelijk/verboden</div><div class="flag-item">Lege kavel - geen directe inkomsten mogelijk</div><div class="flag-item">Bouwkosten ontbreken volledig (geschat €150-200k)</div><div class="flag-item">Niet bouwrijp - extra kosten onbekend</div><div class="flag-item">Minimaal 12-18 maanden tot realisatie</div><div class="flag-item">Risico op tegenvallende bouwkosten</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">AFWIJZEN - geen verhuurrecht betekent geen BNB potentieel</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">0.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    FINANCIËLE ANALYSE NIET RELEVANT - pand moet worden afgewezen wegens verhuurverbod. Voor volledigheid: Kavelprijs €81.000 + BTW (21%) = €98.010. Bouwkosten geschat €150-200k (100m² villa, hoogwaardig) = TOTAAL €250-300k investering. Parklasten €3.500/jaar. Bij theoretische verhuur (NIET MOGELIJK): 6-persoons villa zou €120-180/nacht kunnen opbrengen, bij 60% bezetting = €26-39k bruto. Na kosten (€15k) = €11-24k netto. Return 4-8% op €300k. Break-even 12+ jaar. ECHTER: Dit is allemaal irrelevant omdat verhuur NIET is toegestaan. Object genereert €0 inkomsten en alleen maar kosten (parklasten €3.500/jaar). Negatieve cashflow gegarandeerd. Geen scale-up potentieel want geen verhuur = geen waardegroei op basis van rendement.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">DEALBREAKER: Geen verhuurrecht = €0 inkomsten</div><div class="flag-item">Totale investering €250-300k zonder return</div><div class="flag-item">Jaarlijkse kosten €3.500+ zonder inkomsten</div><div class="flag-item">Bouwkosten risico 20-30% overschrijding</div><div class="flag-item">21% BTW op kavelprijs</div><div class="flag-item">Geen enkele vorm van rendement mogelijk</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">NIET INVESTEREN - fundamenteel onrendabel</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">0.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    KRITIEKE DEALBREAKER AANWEZIG. Beschrijving stelt: 'Permanente bewoning is niet toegestaan'. De tekst suggereert verhuurmogelijkheden ('leent zich prima voor verhuurmogelijkheden', 'park is het gehele jaar geopend') MAAR dit is tegenstrijdig. Pre-screening detecteerde expliciet: 'verhuur niet toegestaan'. Er is geen duidelijke vermelding dat recreatieve verhuur WEL is toegestaan. Dit is onacceptabel voor BNB strategie - zonder verhuurrecht is exploitatie onmogelijk. Volle eigendom (geen erfpacht meer sinds 2022 - positief maar irrelevant). Bouwvergunning aanwezig. Parkregels limiteren bebouwing tot 25%. MAAR: zonder expliciete verhuurvrijheid is dit alles waardeloos. Dit is het prototype van een DEALBREAKER investering.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">DEALBREAKER: Permanente bewoning verboden</div><div class="flag-item">DEALBREAKER: Verhuur niet expliciet toegestaan</div><div class="flag-item">Juridische onduidelijkheid over exploitatierecht</div><div class="flag-item">Tegenstrijdige informatie in beschrijving</div><div class="flag-item">Geen zekerheid over verhuurmogelijkheden</div><div class="flag-item">Risico op boetes bij ongeoorloofde verhuur</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">AFWIJZEN - verhuurrecht fundamenteel onduidelijk/verboden</div><div class="rec-item">Nooit investeren zonder schriftelijke bevestiging verhuurrecht</div><div class="rec-item">Dit object past niet in zelfverhuur strategie</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>DEALBREAKER: Verhuur niet toegestaan of juridisch onduidelijk - object kan niet geëxploiteerd worden</li><li>€250-300k totale investering zonder enkele vorm van rendement of inkomsten mogelijk</li><li>Lege bouwkavel met 12-18 maanden ontwikkeltijd + bouwkostenrisico - zelfs als verhuur zou mogen</li><li>Jaarlijkse kosten €3.500+ zonder mogelijkheid deze terug te verdienen</li><li>Fundamenteel strijdig met BNB strategie: geen zelfverhuur = geen rendement = geen scale-up</li></li>
+                

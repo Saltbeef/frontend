@@ -1,0 +1,99 @@
+{
+  "house_id": "89991513",
+  "analyzed_at": "2025-11-08T22:56:08.353410+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 0.8,
+  "category_scores": {
+    "location": {
+      "score": 2.0,
+      "reasoning": "Dirkshorn ligt in Noord-Holland op ca. 10 km van de Noordzeekust en 15 km van Alkmaar. Recreatiegebied Geestmerambacht ligt nabij. Lokale voorzieningen binnen 500m (winkels, horeca, golfbaan, zwembad). Bereikbaarheid via N9 richting A7 (ca. 15 km). Locatie heeft toeristische potentie voor natuurliefhebbers en strandgangers. ECHTER: Dit is enkel een bouwkavel zonder bestaand object - betekent 1-2 jaar ontwikkeltijd voor verhuur kan starten. Concurrentie op park Dirkshoeve aanwezig maar exacte marktdata ontbreekt. Locatie zelf is redelijk (B-locatie), maar onbruikbaar door verhuurverbod.",
+      "red_flags": [
+        "Bouwgrond zonder object - 1-2 jaar tot verhuurstart",
+        "Verhuur NIET toegestaan volgens beschrijving",
+        "Geen directe strandbereikbaarheid (10km)",
+        "Marktdata/concurrentie-analyse niet uitgevoerd mogelijk door ontbreken object"
+      ],
+      "recommendations": [
+        "Niet relevant - pand moet worden afgewezen"
+      ],
+      "market_data": "Geen marktdata beschikbaar - pand heeft verhuurverbod en is ongeschikt voor BNB exploitatie"
+    },
+    "property": {
+      "score": 1.0,
+      "reasoning": "Dit betreft een LEGE BOUWKAVEL van 482m\u00b2, geen bestaand verhuurobject. Bouwvergunning aanwezig voor 100m\u00b2 villa (6-persoons, 3 slaapkamers). Ontwerp lijkt kwalitatief met duurzame features (warmtepomp, zonnepanelen, goede isolatie). Perceel niet bouwrijp. ECHTER: Cruciaal probleem staat in beschrijving: 'Permanente bewoning is niet toegestaan op het park' EN 'Inschrijven en permanente bewoning is niet toegestaan'. Er staat NERGENS expliciet dat verhuur WEL is toegestaan. De tekst vermeldt verhuurmogelijkheden maar dit is tegenstrijdig met permanente bewoning verbod. Voor BNB strategie is dit een DEALBREAKER - zonder verhuurrecht is dit object waardeloos voor investering. Ontwerp en kavel kwaliteit zijn irrelevant als exploitatie niet mogelijk is.",
+      "red_flags": [
+        "DEALBREAKER: Verhuur juridisch onduidelijk/verboden",
+        "Lege kavel - geen directe inkomsten mogelijk",
+        "Bouwkosten ontbreken volledig (geschat \u20ac150-200k)",
+        "Niet bouwrijp - extra kosten onbekend",
+        "Minimaal 12-18 maanden tot realisatie",
+        "Risico op tegenvallende bouwkosten"
+      ],
+      "recommendations": [
+        "AFWIJZEN - geen verhuurrecht betekent geen BNB potentieel"
+      ],
+      "usp_highlights": []
+    },
+    "financial": {
+      "score": 0.0,
+      "reasoning": "FINANCI\u00cbLE ANALYSE NIET RELEVANT - pand moet worden afgewezen wegens verhuurverbod. Voor volledigheid: Kavelprijs \u20ac81.000 + BTW (21%) = \u20ac98.010. Bouwkosten geschat \u20ac150-200k (100m\u00b2 villa, hoogwaardig) = TOTAAL \u20ac250-300k investering. Parklasten \u20ac3.500/jaar. Bij theoretische verhuur (NIET MOGELIJK): 6-persoons villa zou \u20ac120-180/nacht kunnen opbrengen, bij 60% bezetting = \u20ac26-39k bruto. Na kosten (\u20ac15k) = \u20ac11-24k netto. Return 4-8% op \u20ac300k. Break-even 12+ jaar. ECHTER: Dit is allemaal irrelevant omdat verhuur NIET is toegestaan. Object genereert \u20ac0 inkomsten en alleen maar kosten (parklasten \u20ac3.500/jaar). Negatieve cashflow gegarandeerd. Geen scale-up potentieel want geen verhuur = geen waardegroei op basis van rendement.",
+      "red_flags": [
+        "DEALBREAKER: Geen verhuurrecht = \u20ac0 inkomsten",
+        "Totale investering \u20ac250-300k zonder return",
+        "Jaarlijkse kosten \u20ac3.500+ zonder inkomsten",
+        "Bouwkosten risico 20-30% overschrijding",
+        "21% BTW op kavelprijs",
+        "Geen enkele vorm van rendement mogelijk"
+      ],
+      "recommendations": [
+        "NIET INVESTEREN - fundamenteel onrendabel"
+      ],
+      "calculations": {
+        "purchase_price": 81000,
+        "total_investment": 280000,
+        "estimated_annual_revenue": 0,
+        "estimated_annual_costs": 3500,
+        "net_annual_income": -3500,
+        "cash_on_cash_return": -1.25,
+        "breakeven_years": 999
+      }
+    },
+    "legal": {
+      "score": 0.0,
+      "reasoning": "KRITIEKE DEALBREAKER AANWEZIG. Beschrijving stelt: 'Permanente bewoning is niet toegestaan'. De tekst suggereert verhuurmogelijkheden ('leent zich prima voor verhuurmogelijkheden', 'park is het gehele jaar geopend') MAAR dit is tegenstrijdig. Pre-screening detecteerde expliciet: 'verhuur niet toegestaan'. Er is geen duidelijke vermelding dat recreatieve verhuur WEL is toegestaan. Dit is onacceptabel voor BNB strategie - zonder verhuurrecht is exploitatie onmogelijk. Volle eigendom (geen erfpacht meer sinds 2022 - positief maar irrelevant). Bouwvergunning aanwezig. Parkregels limiteren bebouwing tot 25%. MAAR: zonder expliciete verhuurvrijheid is dit alles waardeloos. Dit is het prototype van een DEALBREAKER investering.",
+      "red_flags": [
+        "DEALBREAKER: Permanente bewoning verboden",
+        "DEALBREAKER: Verhuur niet expliciet toegestaan",
+        "Juridische onduidelijkheid over exploitatierecht",
+        "Tegenstrijdige informatie in beschrijving",
+        "Geen zekerheid over verhuurmogelijkheden",
+        "Risico op boetes bij ongeoorloofde verhuur"
+      ],
+      "recommendations": [
+        "AFWIJZEN - verhuurrecht fundamenteel onduidelijk/verboden",
+        "Nooit investeren zonder schriftelijke bevestiging verhuurrecht",
+        "Dit object past niet in zelfverhuur strategie"
+      ],
+      "rental_freedom": "NIET TOEGESTAAN of zeer onduidelijk - permanente bewoning verboden, verhuur niet expliciet toegestaan. DEALBREAKER voor BNB strategie."
+    }
+  },
+  "overall_assessment": "DIRECT AFWIJZEN - dit pand is fundamenteel ongeschikt voor BNB/vakantieverhuur strategie. Kernprobleem: verhuur is NIET toegestaan of hooguit juridisch onduidelijk. De beschrijving vermeldt 'permanente bewoning niet toegestaan' en suggereert verhuurmogelijkheden, maar dit is tegenstrijdig en onbetrouwbaar. Pre-screening detecteerde dealbreaker 'verhuur niet toegestaan'. Zonder verhuurrecht genereert dit object \u20ac0 inkomsten bij totale investering van \u20ac250-300k (kavel + bouw) en jaarlijkse kosten van \u20ac3.500+. Dit is een gegarandeerd verliesgevende investering. Bovendien betreft het een lege bouwkavel - betekent 12-18 maanden ontwikkeltijd voordat \u00fcberhaupt iets mogelijk zou zijn. Voor BNB strategie (kopen-verhuren-verkopen-opschalen) is dit object compleet onbruikbaar. Score 0.8/10 overall (gemiddeld van vier zeer lage categorie scores).",
+  "top_strengths": [
+    "Volle eigendom sinds 2022 (geen erfpacht) - maar irrelevant bij verhuurverbod",
+    "Bouwvergunning aanwezig voor 6-persoons villa - maar onbruikbaar zonder verhuurrecht",
+    "Redelijke locatie in Noord-Holland nabij kust - maar niet relevant voor niet-verhuurbaar object"
+  ],
+  "top_concerns": [
+    "DEALBREAKER: Verhuur niet toegestaan of juridisch onduidelijk - object kan niet ge\u00ebxploiteerd worden",
+    "\u20ac250-300k totale investering zonder enkele vorm van rendement of inkomsten mogelijk",
+    "Lege bouwkavel met 12-18 maanden ontwikkeltijd + bouwkostenrisico - zelfs als verhuur zou mogen",
+    "Jaarlijkse kosten \u20ac3.500+ zonder mogelijkheid deze terug te verdienen",
+    "Fundamenteel strijdig met BNB strategie: geen zelfverhuur = geen rendement = geen scale-up"
+  ],
+  "investment_recommendation": "AFWIJZEN - Dit pand moet direct worden afgewezen wegens ontbreken van verhuurrecht. De core strategie is gebaseerd op ZELF verhuren voor maximaal rendement. Dit object maakt dat fundamenteel onmogelijk. Zonder verhuurrecht is dit een kostenpost zonder inkomsten. Permanente bewoning is verboden, verhuur is niet expliciet toegestaan - dit is de definitie van een DEALBREAKER. Investeren in dit object zou \u20ac250-300k vastleggen zonder enige mogelijkheid tot rendement. Voor BNB strategie volledig ongeschikt.",
+  "metadata": {
+    "processing_time_seconds": 62.1,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
