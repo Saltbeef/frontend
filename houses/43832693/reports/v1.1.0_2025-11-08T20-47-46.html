@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 43832693</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 43832693<br>
+                <strong>Analyzed:</strong> 2025-11-08T20:47:46.843056+00:00<br>
+                <strong>Rules Version:</strong> v1.1.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">5.86/10</div>
+            <div class="recommendation consider">
+                AFWIJZEN tegen huidige vraagprijs. Dit object biedt onvoldoende financieel rendement (2,6-4,9%) om de investering van €139.000 te rechtvaardigen. De combinatie van beperkt woonoppervlak, bescheiden verhuurpotentieel en lange verkooptijd (6+ maanden) wijst op overpricing. ALTERNATIEF: Zou overwogen kunnen worden bij agressieve onderhandeling naar €110.000-€115.000, waarmee het rendement naar acceptabele 6-8% zou stijgen. Ook dan blijft het een lifestyle-investering met bescheiden opbrengsten, geen hoogrenderende vakantieverhuur. Voor serieuze investeerders adviseren we door te zoeken naar grotere objecten (3+ slaapkamers, 80m²+) met beter rendementsperspectief.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Deze recreatiewoning in Hof van Zeeland is een bescheiden, goed onderhouden maar kleine vakantiewoning in een rustige Zeeuwse locatie. Met slechts 54m² woonoppervlak en 2 slaapkamers is het potentieel voor vakantieverhuur beperkt. De vraagprijs van €139.000 is te hoog gezien het verwachte rendement van 2,6-4,9%, wat deze investering financieel onaantrekkelijk maakt. Het object staat niet voor niets 6+ maanden te koop. De recreatiebestemming is juridisch geschikt voor verhuur, maar onduidelijkheid over parklasten en -reglement vormt een risico. Het pand zou bij een substantieel lagere prijs (€110.000 of minder) interessant kunnen zijn, of zou aanzienlijke upgrades nodig hebben om hogere huurprijzen te rechtvaardigen. Als lifestyle-aankoop met bescheiden bijverdienste kan het overwogen worden, maar als serieuze investering met rendementsdoelstelling is dit object af te raden tegen de huidige vraagprijs.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Recreatiebestemming zonder permanente bewoning - ideaal voor legale vakantieverhuur zonder gemeentelijke restricties</li><li>Recent onderhoud met nieuwe CV-ketel (2023), goede isolatie en energielabel C houdt operationele kosten beheersbaar</li><li>Vrijstaande woning met tuin rondom en privacy in gevestigd recreatiepark met verhuurondersteuning</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Zeer beperkt woonoppervlak (54m²) en slechts 2 slaapkamers limiteert doelgroep en omzetpotentieel sterk</li><li>Vraagprijs van €139.000 resulteert in teleurstellend rendement van slechts 2,6-4,9% - object staat 6+ maanden te koop wat overpricing bevestigt</li><li>Onduidelijke parklasten en mogelijk verplichte verhuur via parkorganisatie kunnen rendement verder onder druk zetten</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">7.2/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    De recreatiewoning ligt in Recreatiepark Hof van Zeeland in Heinkenszand, Zeeland. De locatie scoort redelijk goed voor vakantieverhuur om de volgende redenen: (1) Strategische ligging in de 'Zak van Zuid-Beveland' met goede bereikbaarheid naar populaire Zeeuwse steden zoals Goes, Middelburg, Zierikzee en Vlissingen, (2) Het Noordzeestrand ligt op 30 minuten rijafstand, wat aantrekkelijk is voor strandtoerisme, (3) Ligging in een gevestigd recreatiepark met voorzieningen, wat gasten structuur en veiligheid biedt. Negatieve aspecten: Heinkenszand zelf is een kleine plaats zonder grote toeristische trekpleisters, waardoor de lokatie meer geschikt is voor rustzoekers dan voor gasten die levendigheid zoeken. De buurt 'Buitengebied Heinkenszand' suggereert een landelijke, wat afgelegen ligging. Het park biedt wel verhuurmogelijkheden via eigen kanalen, wat een pluspunt is voor exploitatie.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Relatief afgelegen locatie in buitengebied, mogelijk minder aantrekkelijk voor bepaalde doelgroepen</div><div class="flag-item">30 minuten naar strand is acceptabel maar niet ideaal voor strandzoekers</div><div class="flag-item">Kleinschalige toeristische infrastructuur in directe omgeving</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Focus marketing op rustzoekers, natuur- en fietsliefhebbers die Zeeland willen verkennen</div><div class="rec-item">Benadruk de nabijheid van historische steden in advertenties</div><div class="rec-item">Onderzoek samenwerkingsmogelijkheden met Hof van Zeeland voor verhuur via parkkanalen</div><div class="rec-item">Creëer pakketten met lokale activiteiten (fietsverhuur, streekproducten, wandelroutes)</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">5.8/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    De woning is een bescheiden vrijstaande recreatiewoning uit 1998 met duidelijke voor- en nadelen. POSITIEF: (1) Vrijstaande ligging met tuin rondom biedt privacy, (2) Recent onderhoud met nieuwe CV-ketel (2023) en goede isolatie (dak, muur, vloer, dubbel glas) resulterend in energielabel C, (3) Alle woonruimte op begane grond is toegankelijk en praktisch, (4) Glazen windscherm op terras vergroot gebruiksmogelijkheden, (5) Inpandige berging met voorzieningen, (6) Parkeerplaats op eigen terrein. NEGATIEF: (1) Met slechts 54m² woonoppervlak is dit zeer beperkt voor vakantieverhuur - dit beperkt de doelgroep sterk tot maximaal 4 personen, (2) Slechts 2 slaapkamers limiteert huurpotentieel, (3) Badkamer heeft geen bad, alleen douche, (4) Toilet is apart maar er is maar 1 toilet voor het hele huis, (5) De zolderruimte via losse trap is niet officieel als woonruimte aangemerkt (13m² overige inpandige ruimte), (6) Beperkte foto's tonen gedateerde inrichting, geen hoogwaardige afwerking zichtbaar, (7) Gebouw is 27 jaar oud en hoewel onderhouden, geen premium uitstraling. Voor vakantieverhuur is de beperkte ruimte het grootste minpunt.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Zeer klein woonoppervlak (54m²) beperkt doelgroep en huurpotentieel aanzienlijk</div><div class="flag-item">Zolderruimte met slaapplaatsen mogelijk niet gelegaliseerd als officiële woonruimte - verificatie nodig</div><div class="flag-item">Slechts 1 toilet voor hele woning is ondermaats voor vakantieverhuur</div><div class="flag-item">Gedateerde uitstraling op basis van beschikbare foto's</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Moderniseer interieur met eigentijdse, gastgerichte inrichting om hogere nachtprijzen te rechtvaardigen</div><div class="rec-item">Upgrade badkamer met hoogwaardige douchefaciliteiten en modern sanitair</div><div class="rec-item">Investeer in professionele fotografie en staging om online aantrekkelijker te presenteren</div><div class="rec-item">Voeg tweede toilet toe indien ruimtelijk/financieel haalbaar</div><div class="rec-item">Legaliseer zolderruimte als officiële slaapruimte of gebruik deze niet voor gasten (aansprakelijkheid)</div><div class="rec-item">Creëer duidelijke USP's: volledig geïsoleerd, energiezuinig, huisdiervriendelijk, etc.</div><div class="rec-item">Investeer in buitenruimte: tuinmeubilair, BBQ-faciliteiten, tuinverlichting voor sfeer</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">4.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    AANKOOPKOSTEN: Vraagprijs €139.000 k.k. Met overdrachtsbelasting (2% recreatie), notariskosten en advieskosten kom je op circa €145.000-€147.000 totale investering. VERHUURPOTENTIEEL: Voor een kleine recreatiewoning (2 slaapkamers, 54m²) in Zeeland in een recreatiepark kun je rekenen op: (1) Nachtprijs: €80-€120 per nacht afhankelijk van seizoen en kwaliteit interieur (huidige staat: ondergemiddeld, dus eerder €80-€95), (2) Bezettingsgraad: 25-35% voor passief beheer via platform, mogelijk 40-50% via actief beheer en parkorganisatie, (3) Geschatte bruto jaaromzet bij 35% bezetting en €90 gemiddeld: 365 x 0.35 x €90 = €11.500. Bij optimistische 45% bezetting: €14.850. OPERATIONELE KOSTEN (geschat): Parklasten €2.000-€3.000/jaar, energie/water €800, onderhoud/reservering €1.500, schoonmaak (15% omzet) €1.700, verzekeringen €400, administratie/software €300, gemeentelijke lasten €500 = totaal circa €7.200-€8.200 per jaar. NETTO: Bij €11.500 omzet - €7.700 kosten = €3.800 netto rendement = 2,6% op investering van €145.000. Bij optimistisch scenario €14.850 - €7.700 = €7.150 = 4,9%. KRITISCHE ANALYSE: Dit zijn teleurstellende rendementen. De woning is 6+ maanden te koop wat marktinteresse bevestigt dat de prijs te hoog is. Voor gezond rendement (8-12%) zou de prijs rond €90.000-€100.000 moeten liggen of het object moet substantieel geüpgraded worden om €140-€180 per nacht te kunnen vragen.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Object staat 6+ maanden te koop - duidelijk signaal van overpricing</div><div class="flag-item">Zeer laag geschat rendement van 2,6-4,9% rechtvaardigt investering niet</div><div class="flag-item">Beperkte omzetpotentieel door kleine oppervlakte en slechts 2 slaapkamers</div><div class="flag-item">Parklasten zijn onbekend maar kunnen aanzienlijk zijn en rendement verder drukken</div><div class="flag-item">Geen historische verhuurdata beschikbaar om projecties te valideren</div><div class="flag-item">Investering van €20.000-€30.000 nodig voor upgrades om hogere tarieven te rechtvaardigen</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">CRUCIAAL: Onderhandel stevig - bied maximaal €110.000-€115.000 gezien lange verkooptijd</div><div class="rec-item">Vraag gedetailleerde specificatie van alle parklasten en lopende kosten</div><div class="rec-item">Onderzoek verhuurstatistieken van vergelijkbare woningen in Hof van Zeeland</div><div class="rec-item">Maak realistische businesscase met parkbeheer verhuuroptie versus zelfstandig verhuren</div><div class="rec-item">Bereken break-even na upgrade-investering (nieuwe keuken, badkamer, meubilair: €25.000-€35.000)</div><div class="rec-item">Overweeg deze investering alleen als lifestyle-aankoop met bescheiden bijverdienste, niet als serieuze ROI-investering</div><div class="rec-item">Alternatief: zoek naar beter geprijsde objecten met 3+ slaapkamers en groter oppervlak</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">6.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    RECREATIEBESTEMMING: De woning heeft expliciet de vermelding 'Permanente bewoning is niet toegestaan', wat betekent dat het een recreatiebestemming heeft. Dit is POSITIEF voor vakantieverhuur omdat: (1) Recreatiewoningen specifiek bedoeld zijn voor toeristische verhuur, (2) Geen conflicten met gemeentelijke regelgeving voor vakantieverhuur in woonbestemmingen, (3) Parkreglement ondersteunt commerciële verhuur. EIGENDOM: Volle eigendom op 272m² perceel is duidelijk en zonder erfpacht, wat juridisch eenvoudig is. AANDACHTSPUNTEN: (1) Parklasten en parkreglement zijn van toepassing - deze kunnen beperkingen opleggen aan verhuur (minimum/maximum verhuurdagen, verplicht via parkorganisatie, etc.), (2) Gemeente Borsele heeft mogelijk aanvullende regels voor recreatiewoningen en toeristenbelasting, (3) Zolderruimte gebruikt als slaapruimte moet voldoen aan bouwbesluit (vluchtwegen, plafondhoogte, etc.) - verificatie nodig, (4) Bij verhuur zijn AVG-regelgeving, belastingplicht (inkomstenbelasting of btw-plicht boven €20.000 omzet), en aansprakelijkheidsverzekering verplicht. RISICO'S: Onduidelijkheid over parkreglement is grootste zorg - sommige parken verplichten verhuur via parkorganisatie met hoge commissies (30-40%).
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Parkreglement en -lasten niet gedocumenteerd - kunnen significante beperkingen en kosten bevatten</div><div class="flag-item">Mogelijk verplichte verhuur via parkorganisatie met hoge commissies</div><div class="flag-item">Zolder met slaapplaatsen mogelijk niet legaal als verblijfsruimte - aansprakelijkheidsrisico</div><div class="flag-item">Toeristenbelasting en administratieve verplichtingen voor gemeente Borsele niet uitgezocht</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">ESSENTIEEL: Verkrijg volledig parkreglement en alle parkkosten voor aankoop</div><div class="rec-item">Verificeer bij parkbeheer: vrijheid van verhuur, commissiestructuur, verplichtingen</div><div class="rec-item">Laat bouwkundig inspecteur zolderruimte beoordelen op legaliteit voor slaapfunctie</div><div class="rec-item">Neem contact op met gemeente Borsele over toeristenbelasting en meldingsplicht</div><div class="rec-item">Regel adequate aansprakelijkheidsverzekering voor vakantieverhuur (2-5 miljoen dekking)</div><div class="rec-item">Overweeg fiscaal advies: boxindeling, btw-plicht, aftrekposten optimaliseren</div><div class="rec-item">Stel duidelijke verhuurvoorwaarden op conform consumentenwetgeving</div><div class="rec-item">Check of HOA/VvE-constructie bestaat binnen park met bijbehorende verplichtingen</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Zeer beperkt woonoppervlak (54m²) en slechts 2 slaapkamers limiteert doelgroep en omzetpotentieel sterk</li><li>Vraagprijs van €139.000 resulteert in teleurstellend rendement van slechts 2,6-4,9% - object staat 6+ maanden te koop wat overpricing bevestigt</li><li>Onduidelijke parklasten en mogelijk verplichte verhuur via parkorganisatie kunnen rendement verder onder druk zetten</li></li>
+                

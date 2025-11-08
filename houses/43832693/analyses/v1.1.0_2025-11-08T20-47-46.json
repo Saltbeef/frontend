@@ -1,0 +1,100 @@
+{
+  "house_id": "43832693",
+  "analyzed_at": "2025-11-08T20:47:46.843056+00:00",
+  "rules_version": "v1.1.0",
+  "overall_score": 5.86,
+  "category_scores": {
+    "location": {
+      "score": 7.2,
+      "reasoning": "De recreatiewoning ligt in Recreatiepark Hof van Zeeland in Heinkenszand, Zeeland. De locatie scoort redelijk goed voor vakantieverhuur om de volgende redenen: (1) Strategische ligging in de 'Zak van Zuid-Beveland' met goede bereikbaarheid naar populaire Zeeuwse steden zoals Goes, Middelburg, Zierikzee en Vlissingen, (2) Het Noordzeestrand ligt op 30 minuten rijafstand, wat aantrekkelijk is voor strandtoerisme, (3) Ligging in een gevestigd recreatiepark met voorzieningen, wat gasten structuur en veiligheid biedt. Negatieve aspecten: Heinkenszand zelf is een kleine plaats zonder grote toeristische trekpleisters, waardoor de lokatie meer geschikt is voor rustzoekers dan voor gasten die levendigheid zoeken. De buurt 'Buitengebied Heinkenszand' suggereert een landelijke, wat afgelegen ligging. Het park biedt wel verhuurmogelijkheden via eigen kanalen, wat een pluspunt is voor exploitatie.",
+      "red_flags": [
+        "Relatief afgelegen locatie in buitengebied, mogelijk minder aantrekkelijk voor bepaalde doelgroepen",
+        "30 minuten naar strand is acceptabel maar niet ideaal voor strandzoekers",
+        "Kleinschalige toeristische infrastructuur in directe omgeving"
+      ],
+      "recommendations": [
+        "Focus marketing op rustzoekers, natuur- en fietsliefhebbers die Zeeland willen verkennen",
+        "Benadruk de nabijheid van historische steden in advertenties",
+        "Onderzoek samenwerkingsmogelijkheden met Hof van Zeeland voor verhuur via parkkanalen",
+        "Cre\u00eber pakketten met lokale activiteiten (fietsverhuur, streekproducten, wandelroutes)"
+      ]
+    },
+    "property": {
+      "score": 5.8,
+      "reasoning": "De woning is een bescheiden vrijstaande recreatiewoning uit 1998 met duidelijke voor- en nadelen. POSITIEF: (1) Vrijstaande ligging met tuin rondom biedt privacy, (2) Recent onderhoud met nieuwe CV-ketel (2023) en goede isolatie (dak, muur, vloer, dubbel glas) resulterend in energielabel C, (3) Alle woonruimte op begane grond is toegankelijk en praktisch, (4) Glazen windscherm op terras vergroot gebruiksmogelijkheden, (5) Inpandige berging met voorzieningen, (6) Parkeerplaats op eigen terrein. NEGATIEF: (1) Met slechts 54m\u00b2 woonoppervlak is dit zeer beperkt voor vakantieverhuur - dit beperkt de doelgroep sterk tot maximaal 4 personen, (2) Slechts 2 slaapkamers limiteert huurpotentieel, (3) Badkamer heeft geen bad, alleen douche, (4) Toilet is apart maar er is maar 1 toilet voor het hele huis, (5) De zolderruimte via losse trap is niet officieel als woonruimte aangemerkt (13m\u00b2 overige inpandige ruimte), (6) Beperkte foto's tonen gedateerde inrichting, geen hoogwaardige afwerking zichtbaar, (7) Gebouw is 27 jaar oud en hoewel onderhouden, geen premium uitstraling. Voor vakantieverhuur is de beperkte ruimte het grootste minpunt.",
+      "red_flags": [
+        "Zeer klein woonoppervlak (54m\u00b2) beperkt doelgroep en huurpotentieel aanzienlijk",
+        "Zolderruimte met slaapplaatsen mogelijk niet gelegaliseerd als offici\u00eble woonruimte - verificatie nodig",
+        "Slechts 1 toilet voor hele woning is ondermaats voor vakantieverhuur",
+        "Gedateerde uitstraling op basis van beschikbare foto's"
+      ],
+      "recommendations": [
+        "Moderniseer interieur met eigentijdse, gastgerichte inrichting om hogere nachtprijzen te rechtvaardigen",
+        "Upgrade badkamer met hoogwaardige douchefaciliteiten en modern sanitair",
+        "Investeer in professionele fotografie en staging om online aantrekkelijker te presenteren",
+        "Voeg tweede toilet toe indien ruimtelijk/financieel haalbaar",
+        "Legaliseer zolderruimte als offici\u00eble slaapruimte of gebruik deze niet voor gasten (aansprakelijkheid)",
+        "Cre\u00eber duidelijke USP's: volledig ge\u00efsoleerd, energiezuinig, huisdiervriendelijk, etc.",
+        "Investeer in buitenruimte: tuinmeubilair, BBQ-faciliteiten, tuinverlichting voor sfeer"
+      ]
+    },
+    "financial": {
+      "score": 4.5,
+      "reasoning": "AANKOOPKOSTEN: Vraagprijs \u20ac139.000 k.k. Met overdrachtsbelasting (2% recreatie), notariskosten en advieskosten kom je op circa \u20ac145.000-\u20ac147.000 totale investering. VERHUURPOTENTIEEL: Voor een kleine recreatiewoning (2 slaapkamers, 54m\u00b2) in Zeeland in een recreatiepark kun je rekenen op: (1) Nachtprijs: \u20ac80-\u20ac120 per nacht afhankelijk van seizoen en kwaliteit interieur (huidige staat: ondergemiddeld, dus eerder \u20ac80-\u20ac95), (2) Bezettingsgraad: 25-35% voor passief beheer via platform, mogelijk 40-50% via actief beheer en parkorganisatie, (3) Geschatte bruto jaaromzet bij 35% bezetting en \u20ac90 gemiddeld: 365 x 0.35 x \u20ac90 = \u20ac11.500. Bij optimistische 45% bezetting: \u20ac14.850. OPERATIONELE KOSTEN (geschat): Parklasten \u20ac2.000-\u20ac3.000/jaar, energie/water \u20ac800, onderhoud/reservering \u20ac1.500, schoonmaak (15% omzet) \u20ac1.700, verzekeringen \u20ac400, administratie/software \u20ac300, gemeentelijke lasten \u20ac500 = totaal circa \u20ac7.200-\u20ac8.200 per jaar. NETTO: Bij \u20ac11.500 omzet - \u20ac7.700 kosten = \u20ac3.800 netto rendement = 2,6% op investering van \u20ac145.000. Bij optimistisch scenario \u20ac14.850 - \u20ac7.700 = \u20ac7.150 = 4,9%. KRITISCHE ANALYSE: Dit zijn teleurstellende rendementen. De woning is 6+ maanden te koop wat marktinteresse bevestigt dat de prijs te hoog is. Voor gezond rendement (8-12%) zou de prijs rond \u20ac90.000-\u20ac100.000 moeten liggen of het object moet substantieel ge\u00fcpgraded worden om \u20ac140-\u20ac180 per nacht te kunnen vragen.",
+      "red_flags": [
+        "Object staat 6+ maanden te koop - duidelijk signaal van overpricing",
+        "Zeer laag geschat rendement van 2,6-4,9% rechtvaardigt investering niet",
+        "Beperkte omzetpotentieel door kleine oppervlakte en slechts 2 slaapkamers",
+        "Parklasten zijn onbekend maar kunnen aanzienlijk zijn en rendement verder drukken",
+        "Geen historische verhuurdata beschikbaar om projecties te valideren",
+        "Investering van \u20ac20.000-\u20ac30.000 nodig voor upgrades om hogere tarieven te rechtvaardigen"
+      ],
+      "recommendations": [
+        "CRUCIAAL: Onderhandel stevig - bied maximaal \u20ac110.000-\u20ac115.000 gezien lange verkooptijd",
+        "Vraag gedetailleerde specificatie van alle parklasten en lopende kosten",
+        "Onderzoek verhuurstatistieken van vergelijkbare woningen in Hof van Zeeland",
+        "Maak realistische businesscase met parkbeheer verhuuroptie versus zelfstandig verhuren",
+        "Bereken break-even na upgrade-investering (nieuwe keuken, badkamer, meubilair: \u20ac25.000-\u20ac35.000)",
+        "Overweeg deze investering alleen als lifestyle-aankoop met bescheiden bijverdienste, niet als serieuze ROI-investering",
+        "Alternatief: zoek naar beter geprijsde objecten met 3+ slaapkamers en groter oppervlak"
+      ]
+    },
+    "legal": {
+      "score": 6.5,
+      "reasoning": "RECREATIEBESTEMMING: De woning heeft expliciet de vermelding 'Permanente bewoning is niet toegestaan', wat betekent dat het een recreatiebestemming heeft. Dit is POSITIEF voor vakantieverhuur omdat: (1) Recreatiewoningen specifiek bedoeld zijn voor toeristische verhuur, (2) Geen conflicten met gemeentelijke regelgeving voor vakantieverhuur in woonbestemmingen, (3) Parkreglement ondersteunt commerci\u00eble verhuur. EIGENDOM: Volle eigendom op 272m\u00b2 perceel is duidelijk en zonder erfpacht, wat juridisch eenvoudig is. AANDACHTSPUNTEN: (1) Parklasten en parkreglement zijn van toepassing - deze kunnen beperkingen opleggen aan verhuur (minimum/maximum verhuurdagen, verplicht via parkorganisatie, etc.), (2) Gemeente Borsele heeft mogelijk aanvullende regels voor recreatiewoningen en toeristenbelasting, (3) Zolderruimte gebruikt als slaapruimte moet voldoen aan bouwbesluit (vluchtwegen, plafondhoogte, etc.) - verificatie nodig, (4) Bij verhuur zijn AVG-regelgeving, belastingplicht (inkomstenbelasting of btw-plicht boven \u20ac20.000 omzet), en aansprakelijkheidsverzekering verplicht. RISICO'S: Onduidelijkheid over parkreglement is grootste zorg - sommige parken verplichten verhuur via parkorganisatie met hoge commissies (30-40%).",
+      "red_flags": [
+        "Parkreglement en -lasten niet gedocumenteerd - kunnen significante beperkingen en kosten bevatten",
+        "Mogelijk verplichte verhuur via parkorganisatie met hoge commissies",
+        "Zolder met slaapplaatsen mogelijk niet legaal als verblijfsruimte - aansprakelijkheidsrisico",
+        "Toeristenbelasting en administratieve verplichtingen voor gemeente Borsele niet uitgezocht"
+      ],
+      "recommendations": [
+        "ESSENTIEEL: Verkrijg volledig parkreglement en alle parkkosten voor aankoop",
+        "Verificeer bij parkbeheer: vrijheid van verhuur, commissiestructuur, verplichtingen",
+        "Laat bouwkundig inspecteur zolderruimte beoordelen op legaliteit voor slaapfunctie",
+        "Neem contact op met gemeente Borsele over toeristenbelasting en meldingsplicht",
+        "Regel adequate aansprakelijkheidsverzekering voor vakantieverhuur (2-5 miljoen dekking)",
+        "Overweeg fiscaal advies: boxindeling, btw-plicht, aftrekposten optimaliseren",
+        "Stel duidelijke verhuurvoorwaarden op conform consumentenwetgeving",
+        "Check of HOA/VvE-constructie bestaat binnen park met bijbehorende verplichtingen"
+      ]
+    }
+  },
+  "overall_assessment": "Deze recreatiewoning in Hof van Zeeland is een bescheiden, goed onderhouden maar kleine vakantiewoning in een rustige Zeeuwse locatie. Met slechts 54m\u00b2 woonoppervlak en 2 slaapkamers is het potentieel voor vakantieverhuur beperkt. De vraagprijs van \u20ac139.000 is te hoog gezien het verwachte rendement van 2,6-4,9%, wat deze investering financieel onaantrekkelijk maakt. Het object staat niet voor niets 6+ maanden te koop. De recreatiebestemming is juridisch geschikt voor verhuur, maar onduidelijkheid over parklasten en -reglement vormt een risico. Het pand zou bij een substantieel lagere prijs (\u20ac110.000 of minder) interessant kunnen zijn, of zou aanzienlijke upgrades nodig hebben om hogere huurprijzen te rechtvaardigen. Als lifestyle-aankoop met bescheiden bijverdienste kan het overwogen worden, maar als serieuze investering met rendementsdoelstelling is dit object af te raden tegen de huidige vraagprijs.",
+  "top_strengths": [
+    "Recreatiebestemming zonder permanente bewoning - ideaal voor legale vakantieverhuur zonder gemeentelijke restricties",
+    "Recent onderhoud met nieuwe CV-ketel (2023), goede isolatie en energielabel C houdt operationele kosten beheersbaar",
+    "Vrijstaande woning met tuin rondom en privacy in gevestigd recreatiepark met verhuurondersteuning"
+  ],
+  "top_concerns": [
+    "Zeer beperkt woonoppervlak (54m\u00b2) en slechts 2 slaapkamers limiteert doelgroep en omzetpotentieel sterk",
+    "Vraagprijs van \u20ac139.000 resulteert in teleurstellend rendement van slechts 2,6-4,9% - object staat 6+ maanden te koop wat overpricing bevestigt",
+    "Onduidelijke parklasten en mogelijk verplichte verhuur via parkorganisatie kunnen rendement verder onder druk zetten"
+  ],
+  "investment_recommendation": "AFWIJZEN tegen huidige vraagprijs. Dit object biedt onvoldoende financieel rendement (2,6-4,9%) om de investering van \u20ac139.000 te rechtvaardigen. De combinatie van beperkt woonoppervlak, bescheiden verhuurpotentieel en lange verkooptijd (6+ maanden) wijst op overpricing. ALTERNATIEF: Zou overwogen kunnen worden bij agressieve onderhandeling naar \u20ac110.000-\u20ac115.000, waarmee het rendement naar acceptabele 6-8% zou stijgen. Ook dan blijft het een lifestyle-investering met bescheiden opbrengsten, geen hoogrenderende vakantieverhuur. Voor serieuze investeerders adviseren we door te zoeken naar grotere objecten (3+ slaapkamers, 80m\u00b2+) met beter rendementsperspectief.",
+  "metadata": {
+    "processing_time_seconds": 88.37,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
