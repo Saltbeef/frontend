@@ -1,0 +1,99 @@
+{
+  "house_id": "89912141",
+  "analyzed_at": "2025-11-08T20:51:54.806360+00:00",
+  "rules_version": "v1.1.0",
+  "overall_score": 6.83,
+  "category_scores": {
+    "location": {
+      "score": 7.5,
+      "reasoning": "Het pand ligt in Molecaten Park Kuierpad in Wezuperbrug, Drenthe - een goed georganiseerd recreatiepark met uitstekende faciliteiten. De locatie scoort hoog door nabijheid van het Dwingelderveld, Hondsrug UNESCO Global Geopark en authentieke Drentse brinkdorpen. Het park beschikt over aanzienlijke attracties zoals klimpark, kunstskibaan, wildwaterbaan, binnen- en buitenzwembad. De ligging aan de rand van het park met zicht op groen, speeltuin en water is ideaal voor gezinnen met kinderen. Binnen 30 minuten rijden bevinden zich extra attracties zoals Wildlands Emmen, Kabouterland Exloo en Attractiepark 't Drouwenerzand. Voor vakantieverhuur is dit een sterke locatie met hoge aantrekkingskracht voor het Nederlandse gezinssegment. De afzondering in Drenthe betekent wel dat internationale gasten minder snel geneigd zijn hier te boeken - het is primair een Nederlandse vakantiebestemming.",
+      "red_flags": [
+        "Relatief afgelegen locatie in Noord-Nederland - beperkte internationale aantrekkingskracht",
+        "Seizoensgebonden vraag (vooral zomer en schoolvakanties)",
+        "Afhankelijk van parkfaciliteiten voor gastaantrekkingskracht"
+      ],
+      "recommendations": [
+        "Focus marketing op Nederlandse gezinnen met kinderen (4-12 jaar)",
+        "Benadruk nabijheid unieke attracties in advertenties",
+        "Ontwikkel off-season packages voor wandel/natuurliefhebbers",
+        "Partner met park voor cross-promotie mogelijkheden"
+      ]
+    },
+    "property": {
+      "score": 6.8,
+      "reasoning": "Vrijstaande recreatiebungalow uit 2007 met 74m\u00b2 woonoppervlak op 682m\u00b2 perceel. De indeling is praktisch: 3 slaapkamers (waarvan 1 bedstee beneden), 2 badkamers en apart toilet, wat goed is voor een 6-persoons accommodatie. Sterke punten zijn de volledig ge\u00efsoleerde constructie (dak, muur, vloer, dubbel glas), energielabel B, mechanische ventilatie en cv-ketel. De woning wordt gemeubileerd verkocht wat direct gebruik mogelijk maakt. De ligging met terras op het zuiden en zicht op groen/speeltuin/water is aantrekkelijk. Zwakke punten: de cv-ketel is uit 2007 (17 jaar oud) en zal binnen afzienbare tijd vervangen moeten worden. Het woonoppervlak van 74m\u00b2 is aan de krappe kant voor 6 personen - acceptabel maar niet ruim. De presentatie in foto's is netjes maar niet luxe - het is een standaard parkwoning zonder bijzondere wow-factor. De bedstee als slaapruimte is authentiek maar niet voor iedereen prettig. Twee badkamers is een pluspunt voor groepen. De aangebouwde ge\u00efsoleerde berging van 5m\u00b2 is functioneel maar beperkt.",
+      "red_flags": [
+        "CV-ketel uit 2007 - vervanging op korte termijn noodzakelijk (\u20ac4.000-6.000)",
+        "Beperkt woonoppervlak van 74m\u00b2 voor 6 personen - kan krap aanvoelen",
+        "Geen luxe uitstraling - middenklasse recreatiewoning",
+        "Openbaar parkeren (geen eigen parkeerplaats behalve met slagboom als eigenaar)"
+      ],
+      "recommendations": [
+        "Budget reserveren voor vervanging cv-ketel binnen 2-3 jaar",
+        "Inrichting moderniseren met frisse kleuren en hedendaagse meubels voor betere verhuurprijzen",
+        "Investeren in buitenterras-upgrade (loungesets, BBQ) om outdoor experience te verbeteren",
+        "Toevoegen smart-home features voor gasten (smart-locks, WiFi versterker)",
+        "Professionele interieur foto's laten maken na refresh"
+      ]
+    },
+    "financial": {
+      "score": 6.2,
+      "reasoning": "Vraagprijs \u20ac180.000 k.k. (oorspronkelijk \u20ac199.000, nu 9,5% verlaagd - staat 6+ maanden te koop, wat onderhandelingsruimte suggereert). Voor financi\u00eble analyse: Aankoopkosten (8% van \u20ac180.000) = \u20ac14.400, totale investering circa \u20ac194.400. Parkkosten bedragen \u20ac1.500/jaar. Geschatte verhuurinkomsten: Op Molecaten parken zijn vergelijkbare 6-persoons woningen te huur voor \u20ac600-900/week afhankelijk van seizoen. Bij conservatieve inschatting: 20 weken verhuur per jaar (haalbaar op goed park) x gemiddeld \u20ac700/week = \u20ac14.000 bruto jaarhuurinkomsten. Kosten: parkkosten \u20ac1.500, schoonmaak na verblijf (20x \u20ac75) = \u20ac1.500, onderhoud/reparaties \u20ac1.000, verzekering \u20ac600, energie \u20ac800, linnengoed/verbruiksartikelen \u20ac800, marketing/boekingsplatforms \u20ac500, accountancy \u20ac300. Totale operationele kosten: circa \u20ac7.000. Netto rendement: \u20ac7.000 op investering van \u20ac194.400 = 3,6% - onder de 5% doelstelling voor vakantieverhuur. Bij 25 weken verhuur: \u20ac17.500 bruto, \u20ac10.500 netto = 5,4% rendement. Financiering is beperkt mogelijk (recreatiebestemming), eigen vermogen noodzakelijk. De prijsverlaging en lange verkooptijd wijzen op beperkte marktwaarde.",
+      "red_flags": [
+        "Lange verkooptijd (6+ maanden) duidt op overgewaardeerd of beperkte vraag",
+        "Beperkte financieringsmogelijkheden door recreatiebestemming - minimaal 70% eigen vermogen vereist",
+        "Rendement 3,6-5,4% is matig voor vakantieverhuur (target normaal 7-10%)",
+        "Afhankelijk van seizoensgebonden verhuur - cashflow variabiliteit",
+        "Parkkosten van \u20ac1.500 relatief hoog voor dit type woning"
+      ],
+      "recommendations": [
+        "Onderhandelen tot \u20ac165.000-170.000 gezien lange verkooptijd",
+        "Calculeren met minimaal 25 bezettingspercentage (13 weken) voor worst-case scenario",
+        "Verhuurstrategie optimaliseren via meerdere platformen (Booking.com, Airbnb, parkeigen systeem)",
+        "Overwegen van professioneel verhuurbeheer als eigen tijd beperkt is",
+        "Prijsstrategie: dynamic pricing met hogere tarieven tijdens schoolvakanties (tot \u20ac1.000/week)",
+        "Exit-strategie bepalen - doorverkoop na 5-7 jaar gezien beperkte waardestijging recreatie"
+      ]
+    },
+    "legal": {
+      "score": 7.0,
+      "reasoning": "Juridisch gezien is dit een relatief rechttoe rechtaan recreatiewoning met duidelijke bestemming. Cruciale factor: 'Permanente bewoning is niet toegestaan' - dit is expliciet vermeld en betekent dat eigenaar en huurders alleen recreatief gebruik mogen maken van de woning. Dit is typisch voor recreatieparken en juridisch goed geregeld. Eigendomssituatie is 'volle eigendom' wat gunstig is. Kadastrale gegevens zijn helder (ZWEELOO F 3905, 682 m\u00b2). Het betreft een gevestigd Molecaten park met parkreglement dat nageleefd moet worden. Voor vakantieverhuur zijn er geen specifieke vergunningen nodig op dit park (valt onder parkexploitatie), maar eigenaar moet zich wel houden aan parkregels omtrent verhuur. Geen VVE-situatie maar parkbeheer. Risico's zijn beperkt maar wel aanwezig: parkbeheer kan regels wijzigen, verhuurbeleid kan beperkt worden, parkkosten kunnen stijgen. De recreatiebestemming betekent ook dat banken terughoudend zijn met financiering. Positief is dat Molecaten een professionele, gevestigde organisatie is met goede reputatie.",
+      "red_flags": [
+        "Permanente bewoning niet toegestaan - strikt recreatief gebruik",
+        "Onderworpen aan parkreglement - beperkte autonomie als eigenaar",
+        "Parkbeheer kan verhuurbeleid of regels eenzijdig wijzigen",
+        "Recreatiebestemming beperkt financieringsmogelijkheden significant",
+        "Geen controle over gemeenschappelijke voorzieningen of parkkosten"
+      ],
+      "recommendations": [
+        "Grondig parkreglement bestuderen voor verhuurrestricties",
+        "Schriftelijk bevestigen dat eigen beheer verhuur is toegestaan",
+        "Onderzoeken of minimum/maximum aantal verhuurdagen per jaar geldt",
+        "Juridisch advies inwinnen over eigendomsrechten en parkbeheer verplichtingen",
+        "Verzekering afsluiten specifiek voor recreatieve verhuur (aansprakelijkheid)",
+        "Contact leggen met andere eigenaren over ervaringen met parkbeheer"
+      ]
+    }
+  },
+  "overall_assessment": "Dit is een degelijke maar niet uitzonderlijke vakantieverhuur investering op een goed recreatiepark in Drenthe. De woning biedt solide basisvoorzieningen (energielabel B, 2 badkamers, goede ligging op park) en wordt turn-key aangeboden. Het park zelf scoort uitstekend met vele attracties die gezinnen aantrekken. Echter, de financi\u00eble cijfers zijn matig met een verwacht rendement van 3,6-5,4%, wat onder de norm ligt voor vakantieverhuur. De lange verkooptijd (6+ maanden) en prijsverlaging van \u20ac199.000 naar \u20ac180.000 tonen aan dat de markt de huidige vraagprijs als te hoog beschouwt. Voor een investeerder die primair rendement zoekt, is dit pand op huidige prijs niet aantrekkelijk. Voor iemand die ook zelf gebruik wil maken (50% eigen gebruik, 50% verhuur) kan het interessant zijn, mits verder onderhandeld wordt. De recreatiebestemming en parkgebondenheid brengen juridische beperkingen met zich mee die de flexibiliteit en exit-mogelijkheden beperken.",
+  "top_strengths": [
+    "Uitstekende parkfaciliteiten (klimpark, zwembaden, kunstskibaan) trekken gezinnen aan en ondersteunen verhuurpotentieel",
+    "Turn-key aangeboden inclusief inventaris - direct inzetbaar voor verhuur zonder extra investering",
+    "Energiezuinig (label B) met volledige isolatie houdt operationele kosten beheersbaar",
+    "2 badkamers en 3 slaapkamers biedt comfort voor 6-persoons verhuur en onderscheidt van basis accommodaties",
+    "Aantrekkelijke ligging op park met zicht op groen, speeltuin en water - premium positie binnen park"
+  ],
+  "top_concerns": [
+    "Financieel rendement 3,6-5,4% is significant onder benchmarks voor vakantieverhuur (7-10%) - zwakke business case op huidige prijs",
+    "Lange verkooptijd (6+ maanden) en prijsverlaging van 9,5% duiden op structurele overwaardering of beperkte marktvraag",
+    "CV-ketel uit 2007 vereist op korte termijn vervanging (\u20ac4.000-6.000) - verborgen kosten die rendement verder drukken",
+    "Recreatiebestemming beperkt financieringsmogelijkheden drastisch - vereist 70%+ eigen vermogen",
+    "Beperkte internationale aantrekkingskracht door afgelegen Drentse locatie - afhankelijk van Nederlandse marktvraag en seizoensgebonden"
+  ],
+  "investment_recommendation": "OVERWEGEN - Alleen bij onderhandeling tot \u20ac165.000-170.000. Op de huidige vraagprijs van \u20ac180.000 is het financi\u00eble rendement (3,6-5,4%) te laag voor een pure investering in vakantieverhuur. De woning heeft degelijke kwaliteiten en ligt op een uitstekend park, maar de cijfers kloppen niet. De lange verkooptijd geeft onderhandelingsruimte. Bij \u20ac165.000 verbetert het rendement naar 4,8-6,5%, wat acceptabel wordt, vooral als je ook zelf 4-6 weken per jaar gebruik maakt. Voor kopers die een recreatiewoning zoeken met bijverdienste uit verhuur (hybride gebruik) is dit interessanter dan voor pure investeerders. Alternatief advies: AFWIJZEN als verkoper niet wil onderhandelen en je puur voor rendement gaat. De markt heeft gesproken door dit pand 6+ maanden te laten staan - luister naar dat signaal. Er zijn betere vakantieverhuur investeringen beschikbaar met hogere rendementen en meer flexibiliteit.",
+  "metadata": {
+    "processing_time_seconds": 84.52,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}

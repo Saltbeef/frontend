@@ -1,0 +1,951 @@
+{
+  "Identifiers": {
+    "GlobalId": 7103142,
+    "TinyId": "89912141"
+  },
+  "Price": {
+    "SellingPrice": "\u20ac 180.000 k.k.",
+    "NumericSellingPrice": 180000,
+    "IsAuction": false
+  },
+  "KenmerkSections": [
+    {
+      "Index": 1,
+      "Id": "overdracht",
+      "Title": "Overdracht",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "overdracht-vraagprijs",
+          "Label": "Vraagprijs",
+          "Value": "\u20ac 180.000 kosten koper",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Oorspronkelijke vraagprijs",
+          "Value": "\u20ac 199.000 kosten koper",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 0,
+          "Id": "overdracht-aangeboden-sinds",
+          "Label": "Aangeboden sinds",
+          "Value": "6+ maanden",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 5,
+          "Id": "overdracht-status",
+          "Label": "Status",
+          "Value": "Beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Aanvaarding",
+          "Value": "In overleg",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 7,
+          "Id": "overdracht-permanentebewoning",
+          "Label": "Permanente bewoning",
+          "Value": "Permanente bewoning is niet toegestaan",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 2,
+      "Id": "bouw",
+      "Title": "Bouw",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "bouw-soortobject",
+          "Label": "Soort woonhuis",
+          "Value": "Bungalow, vrijstaande woning",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "bouw-soortbouw",
+          "Label": "Soort bouw",
+          "Value": "Bestaande bouw",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "bouw-bouwjaar",
+          "Label": "Bouwjaar",
+          "Value": "2007",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 6,
+          "Id": "bouw-dak",
+          "Label": "Soort dak",
+          "Value": "Zadeldak bedekt met pannen",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 3,
+      "Id": "afmetingen",
+      "Title": "Oppervlakten en inhoud",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Label": "Gebruiksoppervlakten",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 1,
+              "Id": "afmetingen-gebruiksoppervlakten-wonen",
+              "Label": "Wonen",
+              "Value": "74 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 2,
+              "Id": "afmetingen-gebruiksoppervlakte-overigeinpandigeruimte",
+              "Label": "Overige inpandige ruimte",
+              "Value": "4 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 4,
+              "Id": "afmetingen-gebruiksoppervlakte-externebergruimte",
+              "Label": "Externe bergruimte",
+              "Value": "5 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        },
+        {
+          "Index": 2,
+          "Id": "afmetingen-perceel",
+          "Label": "Perceel",
+          "Value": "682 m\u00b2",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "afmetingen-inhoud",
+          "Label": "Inhoud",
+          "Value": "281 m\u00b3",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 4,
+      "Id": "indeling",
+      "Title": "Indeling",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "indeling-totalrooms",
+          "Label": "Aantal kamers",
+          "Value": "4 kamers (3 slaapkamers)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "indeling-totalbathroom",
+          "Label": "Aantal badkamers",
+          "Value": "2 badkamers en 1 apart toilet",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "indeling-bathroom",
+          "Label": "Badkamervoorzieningen",
+          "Value": "2 wastafels, zitbad, douche, en toilet",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "indeling-totalstories",
+          "Label": "Aantal woonlagen",
+          "Value": "2 woonlagen",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 5,
+          "Id": "indeling-generalfacilities",
+          "Label": "Voorzieningen",
+          "Value": "Mechanische ventilatie",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 5,
+      "Id": "energie",
+      "Title": "Energie",
+      "KenmerkenList": [
+        {
+          "EnergyData": {
+            "EnergyLabel": "B"
+          },
+          "EnergyLabel": "B",
+          "Index": 1,
+          "Id": "energie-energielabel",
+          "Label": "Energielabel",
+          "Value": "Wat betekent dit?",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "energie-isolatie",
+          "Label": "Isolatie",
+          "Value": "Dakisolatie, dubbel glas, muurisolatie en vloerisolatie",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "energie-verwarming",
+          "Label": "Verwarming",
+          "Value": "Cv-ketel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "energie-warmwater",
+          "Label": "Warm water",
+          "Value": "Cv-ketel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 5,
+          "Id": "energie-cv",
+          "Label": "Cv-ketel",
+          "Value": "Gas gestookt combiketel uit 2007, eigendom",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 6,
+      "Id": "cadastral",
+      "Title": "Kadastrale gegevens",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "cadastral-parcel",
+          "Label": "ZWEELOO F 3905",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 2,
+              "Id": "cadastral-area",
+              "Label": "Oppervlakte",
+              "Value": "682 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "cadastral-ownershipsituation",
+              "Label": "Eigendomssituatie",
+              "Value": "Volle eigendom",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 7,
+      "Id": "buitenruimte",
+      "Title": "Buitenruimte",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "buitenruimte-ligging",
+          "Label": "Ligging",
+          "Value": "Aan park, aan rustige weg, aan vaarwater, aan water, in bosrijke omgeving en in recreatiepark",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "buitenruimte-tuin",
+          "Label": "Tuin",
+          "Value": "Tuin rondom",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 8,
+      "Id": "bergruimte",
+      "Title": "Bergruimte",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Schuur/berging",
+          "Value": "Aangebouwde stenen berging",
+          "LabelStyle": "None"
+        }
+      ]
+    },
+    {
+      "Index": 10,
+      "Id": "parkeergelegenheid",
+      "Title": "Parkeergelegenheid",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Soort parkeergelegenheid",
+          "Value": "Openbaar parkeren",
+          "LabelStyle": "None"
+        }
+      ]
+    }
+  ],
+  "Labels": [],
+  "Urls": {
+    "FriendlyUrl": {
+      "FullUrl": "https://www.funda.nl/detail/recreatie/wezuperbrug/huis-oranjekanaal-nz-10-0002/89912141/",
+      "RelativeUrl": "/detail/recreatie/wezuperbrug/huis-oranjekanaal-nz-10-0002/89912141/"
+    },
+    "ReportErrorUrl": "https://help.funda.nl:443/s/mef?globalID=7103142&returnURL=https%3a%2f%2fwww.funda.nl%2fdetail%2frecreatie%2fwezuperbrug%2fhuis-oranjekanaal-nz-10-0002%2f89912141%2f&brokerID=63098"
+  },
+  "ListingDescription": {
+    "Title": "Omschrijving",
+    "Description": "Oranjekanaal NZ 10-0002 Wezuperbrug\nActief of passief genieten\nWelkom op Molecaten Park Kuierpad in Wezuperbrug, Drenthe. Drents genieten kun je zeker in deze vrijstaande recreatiewoning. Het park noemt het een paradijs voor avonturiers en durfals!\n\nMolecaten park Kuierpad\nHet Dwingelderveld ten westen, de Hondsrug UNESCO Global Geopark ten oosten, authentieke Drentse brinkdorpen dichtbij en sportieve mogelijkheden overal; dit is Molecaten Park Kuierpad op de Drentse Hooglanden! Nergens anders in Drenthe vind je een vakantiepark met zoveel spannende faciliteiten bij elkaar op Molecaten Outdoor Drenthe; klimpark, skibaan, wildwaterbaan, skatebaan.... Relaxen doe je op \u00e9\u00e9n van de zandstrandjes of dobber heerlijk rond in een rubberbootje op \u00e9\u00e9n van de vijvers.\n\nDe 6-persoons vakantiewoning ligt aan de rand van het park met een royaal parkeerterrein voor de gasten. Met een slagboom kun je als eigenaar bij de woning parkeren. \n\nDe uitstraling is mooi met de luiken, de ligging is nog mooier met zicht op groen, de speeltuin en het nabij het klimpark en het water. Ideaal als je hier met (jonge) kinderen verblijft.\n\nCompleet \nDe woning wordt met het grootste deel van de inventaris aangeboden (op wat persoonlijke spullen na) zodat je direct volop kunt genieten. De inrichting is voor zes personen. \n\nGenieten \nDe woonkamer is ruim en licht en is voorzien van een schuifpui naar het terras op het zuiden en een trap naar de verdieping. De keuken aan de straatzijde heeft een open karakter en de eettafel nodigt uit om met z\u2019n zessen gezellig te eten, bij te kletsen of een spelletje monopoly te spelen.\n\nDubbel\nZowel op de begane grond als op de verdieping is een badkamer. De badkamer beneden is voorzien van een ligbad en een wastafel. Praktisch is een apart toilet in de hal. De badkamer boven is voorzien van een inloopdouche, een wastafel en een tweede toilet.\n\nSlapen\nOp de begane grond kun je slapen in een echte bedstee met een prima 2-persoons slaapgelegenheid maar dit kan ook gebruikt worden als speelruimte voor de kinderen. Op de verdieping vind je twee ruime slaapkamers. \n\nTerras\nStel je eens voor, na een korte wandeling bij de waterplas om daarna op het buitenterras na te genieten van de ondergaande zon. \n\nBerging\nAan de zijkant van de woning bevindt zich een aangebouwde, ge\u00efsoleerde berging. Ideaal voor het stallen van de fietsen en het tuinmeubilair. Hier zit ook de cv-ketel.\n\nEigen gebruik of verhuur\nMet drie slaapkamers is de woning geschikt tot wel zes personen. Ideaal voor eigen gebruik als voor de verhuur (in eigen beheer). Je dient natuurlijk wel rekening te houden met de parkregels.\n\nBijzonderheden:\n- Bouwjaar 2007\n- De woning is volledig ge\u00efsoleerd\n- Aangebouwde ge\u00efsoleerde berging met cv-ketel\n- Slaapgelegenheid en badkamer op de begane grond\n- Zonneterras gelegen op het zuiden\n- Houd rekening met een beperkte financiering vanwege de recreatieve bestemming\n\nParkvoorzieningen:\n- Overdekt zwembad\n- Groot buitenzwembad met waterglijbaan \n- Speeltuinen en speelplaatsen\n- Drie zwem- en surfplassen met zandstrand\n- Kunstskibaan\n- Gezellige horecafaciliteiten\n- Parkkosten bedragen ongeveer \u20ac 1.500,- per jaar \n\nWat is er te doen op park Kuierpad?\n- Klimpark\n- Kunstskibaan\n- Binnen- en buitenzwembad \n- Restaurant\n- Supermarkt \n\nWat heeft de omgeving te bieden?\n- Schitterende wandel- en fietsroutes in nabije omgeving\n- Wildlands Avonturenpark Emmen \n- Ellert en Brammert Schoonoord \n- Kabouterland Exloo \n- Attractiepark \u2019t Drouwenerzand\u2019 Gasselte\n- Poolshoogte Staatsbos Exloo\n- Atlas theater Emmen \n- Bioscoop Kinepolis Emmen\n\nMeer informatie vind je op de website oranjekanaalnz10-0002.nl. \n\nZie je jezelf hier vakantie vieren, actief of passief genieten van het park of vind je het een interessante investering voor verhuur in eigen beheer? Neem dan contact met ons op.\n\nDe vakantie staat voor de deur dus aarzel niet te lang. De aanvaarding kan spoedig. \n\nProclaimer\nZwanenburg Makelaardij is verantwoordelijk voor de inhoud van deze informatie en doet er alles aan deze actueel en juist te houden. Je kunt ervan uitgaan dat de teksten, kenmerken en maatvoeringen met de grootste zorgvuldigheid zijn opgesteld en berekend. Kom je desondanks toch iets tegen dat niet correct of verouderd is, dan stellen wij je reactie bijzonder op prijs."
+  },
+  "AddressDetails": {
+    "Title": "Oranjekanaal NZ 10-0002",
+    "SubTitle": "7853 TA Wezuperbrug",
+    "IsInternational": false,
+    "NeighborhoodName": "Verspreide huizen Wezuperbrug",
+    "NeighborhoodIdentifier": "wezuperbrug/verspreide-huizen-wezuperbrug",
+    "City": "Wezuperbrug",
+    "Province": "Drenthe",
+    "Country": "Nederland",
+    "HouseNumber": "10",
+    "HouseNumberExtension": "0002",
+    "PostCode": "7853TA"
+  },
+  "Coordinates": {
+    "Latitude": 52.840733,
+    "Longitude": 6.732705
+  },
+  "KadastraleKaartBaseUrl": "https://service.pdok.nl/kadaster/kadastralekaart/wms/v5_0",
+  "Media": {
+    "Layout": {
+      "MediaViewerIsVisible": true,
+      "MainPhotoThumbnailIsVisible": false
+    },
+    "Photos": {
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "MediaBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "Items": [
+        {
+          "Id": "189/392/357"
+        },
+        {
+          "Id": "189/392/362"
+        },
+        {
+          "Id": "189/392/359"
+        },
+        {
+          "Id": "189/392/360"
+        },
+        {
+          "Id": "189/392/361"
+        },
+        {
+          "Id": "189/392/364"
+        },
+        {
+          "Id": "189/392/363"
+        },
+        {
+          "Id": "189/392/368"
+        },
+        {
+          "Id": "189/392/365"
+        },
+        {
+          "Id": "189/392/366"
+        },
+        {
+          "Id": "189/392/367"
+        },
+        {
+          "Id": "189/392/370"
+        },
+        {
+          "Id": "189/392/369"
+        },
+        {
+          "Id": "189/392/371"
+        },
+        {
+          "Id": "189/392/372"
+        },
+        {
+          "Id": "189/392/376"
+        },
+        {
+          "Id": "189/392/374"
+        },
+        {
+          "Id": "189/392/375"
+        },
+        {
+          "Id": "189/392/373"
+        },
+        {
+          "Id": "189/392/378"
+        },
+        {
+          "Id": "189/392/377"
+        },
+        {
+          "Id": "189/392/385"
+        },
+        {
+          "Id": "189/392/384"
+        },
+        {
+          "Id": "189/392/382"
+        },
+        {
+          "Id": "189/392/379"
+        },
+        {
+          "Id": "189/392/381"
+        },
+        {
+          "Id": "189/392/380"
+        },
+        {
+          "Id": "189/392/383"
+        },
+        {
+          "Id": "189/392/391"
+        },
+        {
+          "Id": "189/392/392"
+        },
+        {
+          "Id": "189/392/393"
+        },
+        {
+          "Id": "189/392/395"
+        },
+        {
+          "Id": "189/392/396"
+        },
+        {
+          "Id": "189/392/394"
+        },
+        {
+          "Id": "189/392/397"
+        },
+        {
+          "Id": "189/392/398"
+        },
+        {
+          "Id": "189/392/399"
+        },
+        {
+          "Id": "189/392/405"
+        },
+        {
+          "Id": "189/392/402"
+        },
+        {
+          "Id": "189/392/401"
+        },
+        {
+          "Id": "189/392/403"
+        },
+        {
+          "Id": "189/392/407"
+        },
+        {
+          "Id": "189/392/408"
+        },
+        {
+          "Id": "189/392/406"
+        }
+      ]
+    },
+    "Videos": {
+      "ThumbnailBaseUrl": "https://customer-vzk8jgcsaz84e8sb.cloudflarestream.com/{id}/thumbnails/thumbnail.jpg",
+      "MediaBaseUrl": "https://customer-vzk8jgcsaz84e8sb.cloudflarestream.com/{id}/manifest/video.m3u8",
+      "Items": [
+        {
+          "Id": "cbf30f24c2a9f55a69c3188e8f24ac46"
+        }
+      ]
+    },
+    "LegacyPhotos360": {
+      "MediaBaseUrl": "https://www.funda.nl/detail/89912141/panorama/{name}/",
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}_groot.jpg",
+      "ImageTileBaseUrl": "https://cloud.funda.nl/valentina_media",
+      "Items": [
+        {
+          "Id": "189/078/723",
+          "DisplayName": "Entree",
+          "Name": "entree",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/189/078/723/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/189/078/723/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/189/078/723/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 729,
+              "Height": 729
+            },
+            "L2": {
+              "Url": "/189/078/723/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1458,
+              "Height": 1458
+            }
+          }
+        },
+        {
+          "Id": "189/078/724",
+          "DisplayName": "Woonkamer",
+          "Name": "woonkamer1",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/189/078/724/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/189/078/724/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/189/078/724/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 729,
+              "Height": 729
+            },
+            "L2": {
+              "Url": "/189/078/724/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1458,
+              "Height": 1458
+            }
+          }
+        },
+        {
+          "Id": "189/078/725",
+          "DisplayName": "Woonkamer",
+          "Name": "woonkamer2",
+          "VerticalFieldOfView": 79.93886462882097,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/189/078/725/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/189/078/725/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/189/078/725/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 729,
+              "Height": 729
+            },
+            "L2": {
+              "Url": "/189/078/725/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1458,
+              "Height": 1458
+            }
+          }
+        },
+        {
+          "Id": "189/078/726",
+          "DisplayName": "Keuken",
+          "Name": "keuken",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/189/078/726/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/189/078/726/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/189/078/726/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 729,
+              "Height": 729
+            },
+            "L2": {
+              "Url": "/189/078/726/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1458,
+              "Height": 1458
+            }
+          }
+        },
+        {
+          "Id": "189/078/727",
+          "DisplayName": "Woonkamer",
+          "Name": "woonkamer3",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/189/078/727/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/189/078/727/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/189/078/727/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 729,
+              "Height": 729
+            },
+            "L2": {
+              "Url": "/189/078/727/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1458,
+              "Height": 1458
+            }
+          }
+        },
+        {
+          "Id": "189/078/728",
+          "DisplayName": "Badkamer",
+          "Name": "badkamer1",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/189/078/728/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/189/078/728/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/189/078/728/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 729,
+              "Height": 729
+            },
+            "L2": {
+              "Url": "/189/078/728/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1458,
+              "Height": 1458
+            }
+          }
+        },
+        {
+          "Id": "189/078/729",
+          "DisplayName": "Overloop",
+          "Name": "overloop",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/189/078/729/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/189/078/729/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/189/078/729/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 729,
+              "Height": 729
+            },
+            "L2": {
+              "Url": "/189/078/729/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1458,
+              "Height": 1458
+            }
+          }
+        },
+        {
+          "Id": "189/078/730",
+          "DisplayName": "Badkamer",
+          "Name": "badkamer2",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/189/078/730/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/189/078/730/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/189/078/730/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 729,
+              "Height": 729
+            },
+            "L2": {
+              "Url": "/189/078/730/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1458,
+              "Height": 1458
+            }
+          }
+        },
+        {
+          "Id": "189/078/731",
+          "DisplayName": "Slaapkamer",
+          "Name": "slaapkamer1",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/189/078/731/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/189/078/731/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/189/078/731/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 729,
+              "Height": 729
+            },
+            "L2": {
+              "Url": "/189/078/731/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1458,
+              "Height": 1458
+            }
+          }
+        },
+        {
+          "Id": "189/078/732",
+          "DisplayName": "Slaapkamer",
+          "Name": "slaapkamer2",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/189/078/732/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/189/078/732/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/189/078/732/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 729,
+              "Height": 729
+            },
+            "L2": {
+              "Url": "/189/078/732/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1458,
+              "Height": 1458
+            }
+          }
+        },
+        {
+          "Id": "189/078/733",
+          "DisplayName": "Achtertuin",
+          "Name": "achtertuin",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/189/078/733/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/189/078/733/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/189/078/733/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 729,
+              "Height": 729
+            },
+            "L2": {
+              "Url": "/189/078/733/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1458,
+              "Height": 1458
+            }
+          }
+        },
+        {
+          "Id": "189/078/734",
+          "DisplayName": "Voortuin",
+          "Name": "voortuin",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/189/078/734/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/189/078/734/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/189/078/734/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 729,
+              "Height": 729
+            },
+            "L2": {
+              "Url": "/189/078/734/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1458,
+              "Height": 1458
+            }
+          }
+        }
+      ]
+    },
+    "LegacyFloorPlan": {
+      "ProjectId": "156030819",
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.png",
+      "MediaBaseUrl": "https://www.funda.nl/detail/89912141/floorplan/{index}/",
+      "Items": [
+        {
+          "DisplayName": "Begane Grond",
+          "Id": "238304037",
+          "ThumbnailId": "189/135/270"
+        },
+        {
+          "DisplayName": "Eerste Verdieping",
+          "Id": "238304040",
+          "ThumbnailId": "189/135/271"
+        }
+      ]
+    },
+    "Brochure": {
+      "ProxyUrl": "https://www.funda.nl/recreatie/wezuperbrug/huis-89912141-oranjekanaal-nz-10-0002/brochure/download/",
+      "CdnUrl": "https://cloud.funda.nl/valentina_media/189/078/693.pdf"
+    }
+  },
+  "FastView": {
+    "LivingArea": "74 m\u00b2",
+    "PlotArea": "682 m\u00b2",
+    "NumberOfBedrooms": "3",
+    "EnergyLabel": "B"
+  },
+  "IsSoldOrRented": false,
+  "ObjectType": "House",
+  "OfferingType": "Sale",
+  "ConstructionType": "ExistingConstruction",
+  "PublicationDate": "2024-04-17T00:00:00",
+  "ObjectInsights": {
+    "Views": "4.329",
+    "Saves": "28"
+  },
+  "sitemapData": {
+    "originalUrl": "https://www.funda.nl/detail/recreatie/wezuperbrug/huis-oranjekanaal-nz-10-0002/89912141/",
+    "propertyId": "89912141",
+    "lastmod": "2025-07-31T14:21:28+02:00",
+    "processedAt": "2025-09-15T19:58:02.874Z",
+    "apiUrl": "https://listing-detail-page.funda.io/api/v4/listing/nl/tinyId/89912141"
+  }
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 89912141</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 89912141<br>
+                <strong>Analyzed:</strong> 2025-11-08T20:51:54.806360+00:00<br>
+                <strong>Rules Version:</strong> v1.1.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">6.83/10</div>
+            <div class="recommendation consider">
+                OVERWEGEN - Alleen bij onderhandeling tot €165.000-170.000. Op de huidige vraagprijs van €180.000 is het financiële rendement (3,6-5,4%) te laag voor een pure investering in vakantieverhuur. De woning heeft degelijke kwaliteiten en ligt op een uitstekend park, maar de cijfers kloppen niet. De lange verkooptijd geeft onderhandelingsruimte. Bij €165.000 verbetert het rendement naar 4,8-6,5%, wat acceptabel wordt, vooral als je ook zelf 4-6 weken per jaar gebruik maakt. Voor kopers die een recreatiewoning zoeken met bijverdienste uit verhuur (hybride gebruik) is dit interessanter dan voor pure investeerders. Alternatief advies: AFWIJZEN als verkoper niet wil onderhandelen en je puur voor rendement gaat. De markt heeft gesproken door dit pand 6+ maanden te laten staan - luister naar dat signaal. Er zijn betere vakantieverhuur investeringen beschikbaar met hogere rendementen en meer flexibiliteit.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Dit is een degelijke maar niet uitzonderlijke vakantieverhuur investering op een goed recreatiepark in Drenthe. De woning biedt solide basisvoorzieningen (energielabel B, 2 badkamers, goede ligging op park) en wordt turn-key aangeboden. Het park zelf scoort uitstekend met vele attracties die gezinnen aantrekken. Echter, de financiële cijfers zijn matig met een verwacht rendement van 3,6-5,4%, wat onder de norm ligt voor vakantieverhuur. De lange verkooptijd (6+ maanden) en prijsverlaging van €199.000 naar €180.000 tonen aan dat de markt de huidige vraagprijs als te hoog beschouwt. Voor een investeerder die primair rendement zoekt, is dit pand op huidige prijs niet aantrekkelijk. Voor iemand die ook zelf gebruik wil maken (50% eigen gebruik, 50% verhuur) kan het interessant zijn, mits verder onderhandeld wordt. De recreatiebestemming en parkgebondenheid brengen juridische beperkingen met zich mee die de flexibiliteit en exit-mogelijkheden beperken.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Uitstekende parkfaciliteiten (klimpark, zwembaden, kunstskibaan) trekken gezinnen aan en ondersteunen verhuurpotentieel</li><li>Turn-key aangeboden inclusief inventaris - direct inzetbaar voor verhuur zonder extra investering</li><li>Energiezuinig (label B) met volledige isolatie houdt operationele kosten beheersbaar</li><li>2 badkamers en 3 slaapkamers biedt comfort voor 6-persoons verhuur en onderscheidt van basis accommodaties</li><li>Aantrekkelijke ligging op park met zicht op groen, speeltuin en water - premium positie binnen park</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Financieel rendement 3,6-5,4% is significant onder benchmarks voor vakantieverhuur (7-10%) - zwakke business case op huidige prijs</li><li>Lange verkooptijd (6+ maanden) en prijsverlaging van 9,5% duiden op structurele overwaardering of beperkte marktvraag</li><li>CV-ketel uit 2007 vereist op korte termijn vervanging (€4.000-6.000) - verborgen kosten die rendement verder drukken</li><li>Recreatiebestemming beperkt financieringsmogelijkheden drastisch - vereist 70%+ eigen vermogen</li><li>Beperkte internationale aantrekkingskracht door afgelegen Drentse locatie - afhankelijk van Nederlandse marktvraag en seizoensgebonden</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">7.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Het pand ligt in Molecaten Park Kuierpad in Wezuperbrug, Drenthe - een goed georganiseerd recreatiepark met uitstekende faciliteiten. De locatie scoort hoog door nabijheid van het Dwingelderveld, Hondsrug UNESCO Global Geopark en authentieke Drentse brinkdorpen. Het park beschikt over aanzienlijke attracties zoals klimpark, kunstskibaan, wildwaterbaan, binnen- en buitenzwembad. De ligging aan de rand van het park met zicht op groen, speeltuin en water is ideaal voor gezinnen met kinderen. Binnen 30 minuten rijden bevinden zich extra attracties zoals Wildlands Emmen, Kabouterland Exloo en Attractiepark 't Drouwenerzand. Voor vakantieverhuur is dit een sterke locatie met hoge aantrekkingskracht voor het Nederlandse gezinssegment. De afzondering in Drenthe betekent wel dat internationale gasten minder snel geneigd zijn hier te boeken - het is primair een Nederlandse vakantiebestemming.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Relatief afgelegen locatie in Noord-Nederland - beperkte internationale aantrekkingskracht</div><div class="flag-item">Seizoensgebonden vraag (vooral zomer en schoolvakanties)</div><div class="flag-item">Afhankelijk van parkfaciliteiten voor gastaantrekkingskracht</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Focus marketing op Nederlandse gezinnen met kinderen (4-12 jaar)</div><div class="rec-item">Benadruk nabijheid unieke attracties in advertenties</div><div class="rec-item">Ontwikkel off-season packages voor wandel/natuurliefhebbers</div><div class="rec-item">Partner met park voor cross-promotie mogelijkheden</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">6.8/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Vrijstaande recreatiebungalow uit 2007 met 74m² woonoppervlak op 682m² perceel. De indeling is praktisch: 3 slaapkamers (waarvan 1 bedstee beneden), 2 badkamers en apart toilet, wat goed is voor een 6-persoons accommodatie. Sterke punten zijn de volledig geïsoleerde constructie (dak, muur, vloer, dubbel glas), energielabel B, mechanische ventilatie en cv-ketel. De woning wordt gemeubileerd verkocht wat direct gebruik mogelijk maakt. De ligging met terras op het zuiden en zicht op groen/speeltuin/water is aantrekkelijk. Zwakke punten: de cv-ketel is uit 2007 (17 jaar oud) en zal binnen afzienbare tijd vervangen moeten worden. Het woonoppervlak van 74m² is aan de krappe kant voor 6 personen - acceptabel maar niet ruim. De presentatie in foto's is netjes maar niet luxe - het is een standaard parkwoning zonder bijzondere wow-factor. De bedstee als slaapruimte is authentiek maar niet voor iedereen prettig. Twee badkamers is een pluspunt voor groepen. De aangebouwde geïsoleerde berging van 5m² is functioneel maar beperkt.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">CV-ketel uit 2007 - vervanging op korte termijn noodzakelijk (€4.000-6.000)</div><div class="flag-item">Beperkt woonoppervlak van 74m² voor 6 personen - kan krap aanvoelen</div><div class="flag-item">Geen luxe uitstraling - middenklasse recreatiewoning</div><div class="flag-item">Openbaar parkeren (geen eigen parkeerplaats behalve met slagboom als eigenaar)</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Budget reserveren voor vervanging cv-ketel binnen 2-3 jaar</div><div class="rec-item">Inrichting moderniseren met frisse kleuren en hedendaagse meubels voor betere verhuurprijzen</div><div class="rec-item">Investeren in buitenterras-upgrade (loungesets, BBQ) om outdoor experience te verbeteren</div><div class="rec-item">Toevoegen smart-home features voor gasten (smart-locks, WiFi versterker)</div><div class="rec-item">Professionele interieur foto's laten maken na refresh</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">6.2/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Vraagprijs €180.000 k.k. (oorspronkelijk €199.000, nu 9,5% verlaagd - staat 6+ maanden te koop, wat onderhandelingsruimte suggereert). Voor financiële analyse: Aankoopkosten (8% van €180.000) = €14.400, totale investering circa €194.400. Parkkosten bedragen €1.500/jaar. Geschatte verhuurinkomsten: Op Molecaten parken zijn vergelijkbare 6-persoons woningen te huur voor €600-900/week afhankelijk van seizoen. Bij conservatieve inschatting: 20 weken verhuur per jaar (haalbaar op goed park) x gemiddeld €700/week = €14.000 bruto jaarhuurinkomsten. Kosten: parkkosten €1.500, schoonmaak na verblijf (20x €75) = €1.500, onderhoud/reparaties €1.000, verzekering €600, energie €800, linnengoed/verbruiksartikelen €800, marketing/boekingsplatforms €500, accountancy €300. Totale operationele kosten: circa €7.000. Netto rendement: €7.000 op investering van €194.400 = 3,6% - onder de 5% doelstelling voor vakantieverhuur. Bij 25 weken verhuur: €17.500 bruto, €10.500 netto = 5,4% rendement. Financiering is beperkt mogelijk (recreatiebestemming), eigen vermogen noodzakelijk. De prijsverlaging en lange verkooptijd wijzen op beperkte marktwaarde.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Lange verkooptijd (6+ maanden) duidt op overgewaardeerd of beperkte vraag</div><div class="flag-item">Beperkte financieringsmogelijkheden door recreatiebestemming - minimaal 70% eigen vermogen vereist</div><div class="flag-item">Rendement 3,6-5,4% is matig voor vakantieverhuur (target normaal 7-10%)</div><div class="flag-item">Afhankelijk van seizoensgebonden verhuur - cashflow variabiliteit</div><div class="flag-item">Parkkosten van €1.500 relatief hoog voor dit type woning</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Onderhandelen tot €165.000-170.000 gezien lange verkooptijd</div><div class="rec-item">Calculeren met minimaal 25 bezettingspercentage (13 weken) voor worst-case scenario</div><div class="rec-item">Verhuurstrategie optimaliseren via meerdere platformen (Booking.com, Airbnb, parkeigen systeem)</div><div class="rec-item">Overwegen van professioneel verhuurbeheer als eigen tijd beperkt is</div><div class="rec-item">Prijsstrategie: dynamic pricing met hogere tarieven tijdens schoolvakanties (tot €1.000/week)</div><div class="rec-item">Exit-strategie bepalen - doorverkoop na 5-7 jaar gezien beperkte waardestijging recreatie</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">7.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Juridisch gezien is dit een relatief rechttoe rechtaan recreatiewoning met duidelijke bestemming. Cruciale factor: 'Permanente bewoning is niet toegestaan' - dit is expliciet vermeld en betekent dat eigenaar en huurders alleen recreatief gebruik mogen maken van de woning. Dit is typisch voor recreatieparken en juridisch goed geregeld. Eigendomssituatie is 'volle eigendom' wat gunstig is. Kadastrale gegevens zijn helder (ZWEELOO F 3905, 682 m²). Het betreft een gevestigd Molecaten park met parkreglement dat nageleefd moet worden. Voor vakantieverhuur zijn er geen specifieke vergunningen nodig op dit park (valt onder parkexploitatie), maar eigenaar moet zich wel houden aan parkregels omtrent verhuur. Geen VVE-situatie maar parkbeheer. Risico's zijn beperkt maar wel aanwezig: parkbeheer kan regels wijzigen, verhuurbeleid kan beperkt worden, parkkosten kunnen stijgen. De recreatiebestemming betekent ook dat banken terughoudend zijn met financiering. Positief is dat Molecaten een professionele, gevestigde organisatie is met goede reputatie.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Permanente bewoning niet toegestaan - strikt recreatief gebruik</div><div class="flag-item">Onderworpen aan parkreglement - beperkte autonomie als eigenaar</div><div class="flag-item">Parkbeheer kan verhuurbeleid of regels eenzijdig wijzigen</div><div class="flag-item">Recreatiebestemming beperkt financieringsmogelijkheden significant</div><div class="flag-item">Geen controle over gemeenschappelijke voorzieningen of parkkosten</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Grondig parkreglement bestuderen voor verhuurrestricties</div><div class="rec-item">Schriftelijk bevestigen dat eigen beheer verhuur is toegestaan</div><div class="rec-item">Onderzoeken of minimum/maximum aantal verhuurdagen per jaar geldt</div><div class="rec-item">Juridisch advies inwinnen over eigendomsrechten en parkbeheer verplichtingen</div><div class="rec-item">Verzekering afsluiten specifiek voor recreatieve verhuur (aansprakelijkheid)</div><div class="rec-item">Contact leggen met andere eigenaren over ervaringen met parkbeheer</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Financieel rendement 3,6-5,4% is significant onder benchmarks voor vakantieverhuur (7-10%) - zwakke business case op huidige prijs</li><li>Lange verkooptijd (6+ maanden) en prijsverlaging van 9,5% duiden op structurele overwaardering of beperkte marktvraag</li><li>CV-ketel uit 2007 vereist op korte termijn vervanging (€4.000-6.000) - verborgen kosten die rendement verder drukken</li><li>Recreatiebestemming beperkt financieringsmogelijkheden drastisch - vereist 70%+ eigen vermogen</li><li>Beperkte internationale aantrekkingskracht door afgelegen Drentse locatie - afhankelijk van Nederlandse marktvraag en seizoensgebonden</li></li>
+                
