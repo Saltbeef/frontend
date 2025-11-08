@@ -505,6 +505,8 @@ Reageer met een geldig JSON-object in deze EXACTE structuur:
 8. **Scale-up:** Altijd beoordelen of dit object winst kan maken voor opschaling
 9. **Nederlands:** Alle tekst in correct Nederlands
 10. **JSON:** Valide JSON structuur, geen syntax errors
+11. **BELANGRIJK - Beknoptheid:** Reasoning per categorie MAX 400 woorden. Focus op kernpunten en cijfers.
+    De HELE JSON moet binnen 8000 tokens passen, dus wees efficiënt met woorden!
 
 **LET OP:** Als red flag pre-screening "AFWIJZEN" aanbeveelt, moet je investment_recommendation
 ook "AFWIJZEN" zijn met duidelijke focus op de dealbreakers.
