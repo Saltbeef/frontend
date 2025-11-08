@@ -1,0 +1,869 @@
+{
+  "Identifiers": {
+    "GlobalId": 7624001,
+    "TinyId": "89433000"
+  },
+  "Price": {
+    "SellingPrice": "\u20ac 260.000 k.k.",
+    "NumericSellingPrice": 260000,
+    "IsAuction": false
+  },
+  "KenmerkSections": [
+    {
+      "Index": 1,
+      "Id": "overdracht",
+      "Title": "Overdracht",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "overdracht-vraagprijs",
+          "Label": "Vraagprijs",
+          "Value": "\u20ac 260.000 kosten koper",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Id": "overdracht-aangeboden-sinds",
+          "Label": "Aangeboden sinds",
+          "Value": "2 maanden",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 5,
+          "Id": "overdracht-status",
+          "Label": "Status",
+          "Value": "Beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Aanvaarding",
+          "Value": "In overleg",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 7,
+          "Id": "overdracht-permanentebewoning",
+          "Label": "Permanente bewoning",
+          "Value": "Permanente bewoning is niet toegestaan",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 2,
+      "Id": "bouw",
+      "Title": "Bouw",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "bouw-soortobject",
+          "Label": "Soort woonhuis",
+          "Value": "Bungalow, vrijstaande woning",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "bouw-soortbouw",
+          "Label": "Soort bouw",
+          "Value": "Bestaande bouw",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Label": "Bouwperiode",
+          "Value": "2011-2020",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 6,
+          "Id": "bouw-dak",
+          "Label": "Soort dak",
+          "Value": "Lessenaardak bedekt met metaal",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 3,
+      "Id": "afmetingen",
+      "Title": "Oppervlakten en inhoud",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Label": "Gebruiksoppervlakten",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 1,
+              "Id": "afmetingen-gebruiksoppervlakten-wonen",
+              "Label": "Wonen",
+              "Value": "76 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 4,
+              "Id": "afmetingen-gebruiksoppervlakte-externebergruimte",
+              "Label": "Externe bergruimte",
+              "Value": "7 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        },
+        {
+          "Index": 2,
+          "Id": "afmetingen-perceel",
+          "Label": "Perceel",
+          "Value": "445 m\u00b2",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "afmetingen-inhoud",
+          "Label": "Inhoud",
+          "Value": "281 m\u00b3",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 4,
+      "Id": "indeling",
+      "Title": "Indeling",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "indeling-totalrooms",
+          "Label": "Aantal kamers",
+          "Value": "4 kamers (3 slaapkamers)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "indeling-totalbathroom",
+          "Label": "Aantal badkamers",
+          "Value": "1 badkamer en 1 apart toilet",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "indeling-bathroom",
+          "Label": "Badkamervoorzieningen",
+          "Value": "Sauna, douche, wastafel, en wastafelmeubel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "indeling-totalstories",
+          "Label": "Aantal woonlagen",
+          "Value": "1 woonlaag",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 5,
+          "Id": "indeling-generalfacilities",
+          "Label": "Voorzieningen",
+          "Value": "Buitenzonwering, natuurlijke ventilatie, rolluiken, sauna, schuifpui, en TV kabel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 5,
+      "Id": "energie",
+      "Title": "Energie",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "energie-energielabel",
+          "Label": "Energielabel",
+          "Value": "Niet beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "energie-isolatie",
+          "Label": "Isolatie",
+          "Value": "HR-glas en volledig ge\u00efsoleerd",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "energie-verwarming",
+          "Label": "Verwarming",
+          "Value": "Cv-ketel en gehele vloerverwarming",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "energie-warmwater",
+          "Label": "Warm water",
+          "Value": "Cv-ketel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 5,
+          "Id": "energie-cv",
+          "Label": "Cv-ketel",
+          "Value": "Intergas HRE (gas gestookt combiketel uit 2012, eigendom)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 6,
+      "Id": "cadastral",
+      "Title": "Kadastrale gegevens",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "cadastral-parcel",
+          "Label": "HARENKARSPEL I 2375",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 2,
+              "Id": "cadastral-area",
+              "Label": "Oppervlakte",
+              "Value": "445 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "cadastral-ownershipsituation",
+              "Label": "Eigendomssituatie",
+              "Value": "Volle eigendom",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 7,
+      "Id": "buitenruimte",
+      "Title": "Buitenruimte",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "buitenruimte-ligging",
+          "Label": "Ligging",
+          "Value": "Aan rustige weg, aan water en in recreatiepark",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "buitenruimte-tuin",
+          "Label": "Tuin",
+          "Value": "Tuin rondom",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 8,
+      "Id": "bergruimte",
+      "Title": "Bergruimte",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Schuur/berging",
+          "Value": "Vrijstaande houten berging",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 0,
+          "Label": "Voorzieningen",
+          "Value": "Elektra en stromend water",
+          "LabelStyle": "None"
+        }
+      ]
+    },
+    {
+      "Index": 10,
+      "Id": "parkeergelegenheid",
+      "Title": "Parkeergelegenheid",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Soort parkeergelegenheid",
+          "Value": "Openbaar parkeren",
+          "LabelStyle": "None"
+        }
+      ]
+    }
+  ],
+  "Labels": [],
+  "Urls": {
+    "FriendlyUrl": {
+      "FullUrl": "https://www.funda.nl/detail/recreatie/dirkshorn/huis-raadhuisstraat-27-h132/89433000/",
+      "RelativeUrl": "/detail/recreatie/dirkshorn/huis-raadhuisstraat-27-h132/89433000/"
+    },
+    "ReportErrorUrl": "https://help.funda.nl:443/s/mef?globalID=7624001&returnURL=https%3a%2f%2fwww.funda.nl%2fdetail%2frecreatie%2fdirkshorn%2fhuis-raadhuisstraat-27-h132%2f89433000%2f&brokerID=80914"
+  },
+  "ListingDescription": {
+    "Title": "Omschrijving",
+    "Description": "English translation below | Deutsche \u00dcbersetzung unten\n\nLuxe Recreatiewoning aan het Water op Bungalow Park Dirkshoeve\n\nWelkom aan de Raadhuisstraat 27 H132 te Dirkshorn, waar deze ruime en moderne recreatiewoning wacht op een nieuwe eigenaar. Gelegen op \u00e9\u00e9n van de mooiste plekken van Bungalow Park Dirkshoeve, biedt deze woning alles wat u nodig heeft voor een ontspannen en comfortabel verblijf.\n\nUnieke Locatie\nGeniet van een fabuleus uitzicht over de uitgestrekte weilanden en het water vanuit uw achtertuin. Deze woning is een waar paradijs voor natuurliefhebbers en rustzoekers.\n\nModerne Gemakken\nDe woning is goed ge\u00efsoleerd en beschikt over een eigentijdse uitstraling. Binnen vindt u een ruime en lichte woonkamer, een moderne keuken uitgerust met alle nodige apparatuur, en een stijlvolle badkamer.\n\nOntspanning en Comfort\nWat deze woning echt bijzonder maakt, is de sauna in de berging. Hier kunt u na een lange dag heerlijk ontspannen en tot rust komen. Met drie slaapkamers is er genoeg ruimte voor familie en vrienden om te blijven overnachten.\n\nRuim Perceel eigen grond\nDe woning staat op een royaal perceel van 445 m\u00b2 eigen grond, wat volop mogelijkheden biedt voor buitenactiviteiten en het cre\u00ebren van uw eigen tuinparadijs.\n\nKom deze prachtige recreatiewoning zelf ervaren en laat u betoveren door de rust, ruimte en luxe die deze plek te bieden heeft? Neem contact met ons op voor een bezichtiging en ontdek uw nieuwe droomplek in Dirkshorn!\n\nKenmerken:\n\u2022\tBouwjaar: 2012\n\u2022\tVloeroppervlakte: 98 M2\n\u2022\tWoonoppervlakte: 76 M2\n\u2022\tInhoud woning: 281 M3\n\u2022\tPerceeloppervlakte: 445 M2\n\u2022\tEnergielabel wordt nog opgesteld\n\u2022\tAantal slaapkamers: 3\n\u2022\tVloerverwarming door de gehele woning\n\u2022\tModerne keuken en badkamer \n\u2022\tZonnige tuin op het zuiden\n\u2022\tPrachtig en weids uitzicht\n\u2022\tRecre\u00ebren aan het water\n\u2022\tSauna in de Berging\n\u2022\tDubbele schuifdeur met Rolluiken achter.\n\nDeutsch\nLuxuri\u00f6ses Ferienhaus am Wasser im Bungalowpark Dirkshoeve\n\nWillkommen in der Raadhuisstraat 27 H132 in Dirkshorn, wo dieses ger\u00e4umige und moderne Ferienhaus auf einen neuen Besitzer wartet. An einem der sch\u00f6nsten Orte im Bungalowpark Dirkshoeve gelegen, bietet dieses Haus alles, was Sie f\u00fcr einen erholsamen und komfortablen Aufenthalt ben\u00f6tigen.\n\nEinzigartige Lage\nGenie\u00dfen Sie von Ihrem Garten aus einen herrlichen Ausblick \u00fcber die weiten Wiesen und das Wasser. Dieses Haus ist ein wahres Paradies f\u00fcr Naturliebhaber und Ruhesuchende.\n\nKomfort\nDas Haus ist gut isoliert und hat ein modernes Erscheinungsbild. Im Inneren finden Sie ein ger\u00e4umiges und helles Wohnzimmer, eine moderne K\u00fcche mit allen notwendigen Ger\u00e4ten und ein stilvolles Badezimmer.\n\nEntspannung und Komfort\nDas Besondere an diesem Haus ist die Sauna im Abstellraum. Hier k\u00f6nnen Sie sich nach einem langen Tag entspannen und erholen. Mit drei Schlafzimmern gibt es viel Platz f\u00fcr die \u00dcbernachtung von Familie und Freunden.\n\nGer\u00e4umiges Privatgrundst\u00fcck\nDas Haus steht auf einem gro\u00dfz\u00fcgigen Grundst\u00fcck von 445 m\u00b2 Privatgrundst\u00fcck, das zahlreiche M\u00f6glichkeiten f\u00fcr Outdoor-Aktivit\u00e4ten und die Schaffung Ihres eigenen Gartenparadieses bietet.\n\nErleben Sie dieses wundersch\u00f6ne Ferienhaus selbst und lassen Sie sich von der Ruhe, dem Raum und dem Luxus verzaubern, die dieser Ort zu bieten hat? Kontaktieren Sie uns f\u00fcr eine Besichtigung und entdecken Sie Ihren neuen Traumort in Dirkshorn!\n\nEigenschaften:\n\n\u2022 Baujahr:  2012\n\u2022 Grundfl\u00e4che: 98 M2\n\u2022 Wohnfl\u00e4che: 76 M2\n\u2022 Heiminhalt: 281 M3\n\u2022 Grundst\u00fccksfl\u00e4che: 445 M2\n\u2022 Energielabel wird noch erstellt\n\u2022 Anzahl der Schlafzimmer: 3\n\u2022 Fu\u00dfbodenheizung im gesamten Haus\n\u2022 Moderne K\u00fcche und Badezimmer\n\u2022 Sonniger S\u00fcdgarten\n\u2022 Sch\u00f6ne und weite Aussicht\n\u2022 Erholung am Wasser\n\u2022 Sauna im Lagerraum\n\u2022 Doppelschiebet\u00fcr mit Rolll\u00e4den auf der R\u00fcckseite.\n_________________________________________________________________-\nEnglish\n\nLuxury Recreational Home on the Water at Bungalow Park Dirkshoeve\n\nWelcome to Raadhuisstraat 27 H132 in Dirkshorn, where this spacious and modern holiday home is waiting for a new owner. Located in one of the most beautiful places in Bungalow Park Dirkshoeve, this house offers everything you need for a relaxing and comfortable stay.\n\nUnique Location\nEnjoy a fabulous view over the vast meadows and the water from your backyard. This house is a true paradise for nature lovers and peace seekers.\n\nModern Conveniences\nThe house is well insulated and has a contemporary appearance. Inside you will find a spacious and bright living room, a modern kitchen equipped with all necessary appliances, and a stylish bathroom.\n\nRelaxation and Comfort\nWhat really makes this house special is the sauna in the storage room. Here you can relax and unwind after a long day. With three bedrooms, there is plenty of room for family and friends to stay overnight.\n\nSpacious plot of private land\nThe house stands on a generous plot of 445 m\u00b2 of private land, which offers plenty of opportunities for outdoor activities and creating your own garden paradise.\n\nCome experience this beautiful holiday home for yourself and be enchanted by the peace, space and luxury that this place has to offer? Contact us for a viewing and discover your new dream place in Dirkshorn!\n\nCharacteristics:\n\n\u2022 Year of construction: 2012\n\u2022 Floor area: 98 M2\n\u2022 Living area: 76 M2\n\u2022 Home content: 281 M3\n\u2022 Plot area: 445 M2\n\u2022 Energy label is still being drawn up\n\u2022 Number of bedrooms: 3\n\u2022 Underfloor heating throughout the entire house\n\u2022 Modern kitchen and bathroom\n\u2022 Sunny south-facing garden\n\u2022 Beautiful and wide view\n\u2022 Recreation by the water\n\u2022 Sauna in the Storage Room\n\u2022 Double sliding door with roller shutters at the back."
+  },
+  "AddressDetails": {
+    "Title": "Raadhuisstraat 27-H132",
+    "SubTitle": "1746 BE Dirkshorn",
+    "IsInternational": false,
+    "NeighborhoodName": "Dirkshorn (woonkern)",
+    "NeighborhoodIdentifier": "dirkshorn/dirkshorn-woonkern",
+    "City": "Dirkshorn",
+    "Province": "Noord-Holland",
+    "Country": "Nederland",
+    "HouseNumber": "27",
+    "HouseNumberExtension": "h132",
+    "PostCode": "1746BE"
+  },
+  "Coordinates": {
+    "Latitude": 52.747715,
+    "Longitude": 4.773238
+  },
+  "KadastraleKaartBaseUrl": "https://service.pdok.nl/kadaster/kadastralekaart/wms/v5_0",
+  "Media": {
+    "Layout": {
+      "MediaViewerIsVisible": true,
+      "MainPhotoThumbnailIsVisible": false
+    },
+    "Photos": {
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "MediaBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "Items": [
+        {
+          "Id": "212/679/680"
+        },
+        {
+          "Id": "212/679/684"
+        },
+        {
+          "Id": "212/679/685"
+        },
+        {
+          "Id": "212/679/686"
+        },
+        {
+          "Id": "212/679/687"
+        },
+        {
+          "Id": "212/679/688"
+        },
+        {
+          "Id": "212/679/689"
+        },
+        {
+          "Id": "212/679/690"
+        },
+        {
+          "Id": "212/679/691"
+        },
+        {
+          "Id": "212/679/692"
+        },
+        {
+          "Id": "212/679/693"
+        },
+        {
+          "Id": "212/679/694"
+        },
+        {
+          "Id": "212/679/695"
+        },
+        {
+          "Id": "212/679/696"
+        },
+        {
+          "Id": "212/679/697"
+        },
+        {
+          "Id": "212/679/698"
+        },
+        {
+          "Id": "212/679/699"
+        },
+        {
+          "Id": "212/679/700"
+        },
+        {
+          "Id": "212/679/701"
+        },
+        {
+          "Id": "212/679/702"
+        },
+        {
+          "Id": "212/679/703"
+        },
+        {
+          "Id": "212/679/704"
+        },
+        {
+          "Id": "212/679/705"
+        },
+        {
+          "Id": "212/679/706"
+        },
+        {
+          "Id": "212/679/707"
+        },
+        {
+          "Id": "212/679/708"
+        },
+        {
+          "Id": "212/679/709"
+        },
+        {
+          "Id": "212/679/710"
+        },
+        {
+          "Id": "212/679/711"
+        },
+        {
+          "Id": "212/679/712"
+        },
+        {
+          "Id": "212/679/713"
+        },
+        {
+          "Id": "212/679/714"
+        }
+      ]
+    },
+    "Videos": {
+      "ThumbnailBaseUrl": "https://customer-vzk8jgcsaz84e8sb.cloudflarestream.com/{id}/thumbnails/thumbnail.jpg",
+      "MediaBaseUrl": "https://customer-vzk8jgcsaz84e8sb.cloudflarestream.com/{id}/manifest/video.m3u8",
+      "Items": [
+        {
+          "Id": "5c3c736376f6ef6c85e42bc539b2b4dd"
+        }
+      ]
+    },
+    "LegacyPhotos360": {
+      "MediaBaseUrl": "https://www.funda.nl/detail/89433000/panorama/{name}/",
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}_groot.jpg",
+      "ImageTileBaseUrl": "https://cloud.funda.nl/valentina_media",
+      "Items": [
+        {
+          "Id": "212/680/380",
+          "DisplayName": "Voortuin",
+          "Name": "voortuin",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/212/680/380/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/212/680/380/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/212/680/380/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 856,
+              "Height": 856
+            },
+            "L2": {
+              "Url": "/212/680/380/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1711,
+              "Height": 1711
+            }
+          }
+        },
+        {
+          "Id": "212/680/374",
+          "DisplayName": "Hal",
+          "Name": "hal1",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/212/680/374/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/212/680/374/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/212/680/374/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 856,
+              "Height": 856
+            },
+            "L2": {
+              "Url": "/212/680/374/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1711,
+              "Height": 1711
+            }
+          }
+        },
+        {
+          "Id": "212/680/375",
+          "DisplayName": "Hal",
+          "Name": "hal2",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/212/680/375/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/212/680/375/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/212/680/375/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 856,
+              "Height": 856
+            },
+            "L2": {
+              "Url": "/212/680/375/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1711,
+              "Height": 1711
+            }
+          }
+        },
+        {
+          "Id": "212/680/376",
+          "DisplayName": "Keuken",
+          "Name": "keuken",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/212/680/376/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/212/680/376/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/212/680/376/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 856,
+              "Height": 856
+            },
+            "L2": {
+              "Url": "/212/680/376/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1711,
+              "Height": 1711
+            }
+          }
+        },
+        {
+          "Id": "212/680/382",
+          "DisplayName": "Woonkamer",
+          "Name": "woonkamer1",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/212/680/382/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/212/680/382/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/212/680/382/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 856,
+              "Height": 856
+            },
+            "L2": {
+              "Url": "/212/680/382/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1711,
+              "Height": 1711
+            }
+          }
+        },
+        {
+          "Id": "212/680/381",
+          "DisplayName": "Woonkamer",
+          "Name": "woonkamer2",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/212/680/381/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/212/680/381/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/212/680/381/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 856,
+              "Height": 856
+            },
+            "L2": {
+              "Url": "/212/680/381/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1711,
+              "Height": 1711
+            }
+          }
+        },
+        {
+          "Id": "212/680/377",
+          "DisplayName": "Slaapkamer",
+          "Name": "slaapkamer1",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/212/680/377/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/212/680/377/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/212/680/377/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 856,
+              "Height": 856
+            },
+            "L2": {
+              "Url": "/212/680/377/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1711,
+              "Height": 1711
+            }
+          }
+        },
+        {
+          "Id": "212/680/373",
+          "DisplayName": "Badkamer",
+          "Name": "badkamer",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/212/680/373/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/212/680/373/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/212/680/373/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 856,
+              "Height": 856
+            },
+            "L2": {
+              "Url": "/212/680/373/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1711,
+              "Height": 1711
+            }
+          }
+        },
+        {
+          "Id": "212/680/379",
+          "DisplayName": "Slaapkamer",
+          "Name": "slaapkamer2",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/212/680/379/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/212/680/379/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/212/680/379/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 856,
+              "Height": 856
+            },
+            "L2": {
+              "Url": "/212/680/379/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1711,
+              "Height": 1711
+            }
+          }
+        },
+        {
+          "Id": "212/680/378",
+          "DisplayName": "Slaapkamer",
+          "Name": "slaapkamer3",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/212/680/378/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/212/680/378/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/212/680/378/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 856,
+              "Height": 856
+            },
+            "L2": {
+              "Url": "/212/680/378/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1711,
+              "Height": 1711
+            }
+          }
+        },
+        {
+          "Id": "212/680/372",
+          "DisplayName": "Achtertuin",
+          "Name": "achtertuin",
+          "VerticalFieldOfView": 90,
+          "InitialHorizontalViewingAngle": 0,
+          "TiledImageSetsTileSize": 512,
+          "Hotspots": [],
+          "Infospots": [],
+          "ImageSets": {
+            "Mobile": {
+              "Url": "/212/680/372/mobile_%s.jpg",
+              "Width": 480,
+              "Height": 480
+            },
+            "Tablet": {
+              "Url": "/212/680/372/tablet_%s.jpg",
+              "Width": 1280,
+              "Height": 1280
+            },
+            "L1": {
+              "Url": "/212/680/372/tile.l1_%s_%00y_%00x.jpg",
+              "Width": 856,
+              "Height": 856
+            },
+            "L2": {
+              "Url": "/212/680/372/tile.l2_%s_%00y_%00x.jpg",
+              "Width": 1711,
+              "Height": 1711
+            }
+          }
+        }
+      ]
+    },
+    "LegacyFloorPlan": {
+      "ProjectId": "174316657",
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.png",
+      "MediaBaseUrl": "https://www.funda.nl/detail/89433000/floorplan/{index}/",
+      "Items": [
+        {
+          "DisplayName": "Begane Grond",
+          "Id": "267262213",
+          "ThumbnailId": "212/680/370"
+        },
+        {
+          "DisplayName": "Berging",
+          "Id": "267262216",
+          "ThumbnailId": "212/680/371"
+        }
+      ]
+    },
+    "Brochure": {
+      "ProxyUrl": "https://www.funda.nl/recreatie/dirkshorn/huis-89433000-raadhuisstraat-27-h132/brochure/download/",
+      "CdnUrl": "https://cloud.funda.nl/valentina_media/212/679/716.pdf"
+    }
+  },
+  "FastView": {
+    "LivingArea": "76 m\u00b2",
+    "PlotArea": "445 m\u00b2",
+    "NumberOfBedrooms": "3"
+  },
+  "IsSoldOrRented": false,
+  "ObjectType": "House",
+  "OfferingType": "Sale",
+  "ConstructionType": "ExistingConstruction",
+  "PublicationDate": "2025-06-25T00:00:00",
+  "ObjectInsights": {
+    "Views": "1.658",
+    "Saves": "42"
+  },
+  "sitemapData": {
+    "originalUrl": "https://www.funda.nl/detail/recreatie/dirkshorn/huis-raadhuisstraat-27-h132/89433000/",
+    "propertyId": "89433000",
+    "lastmod": "2025-08-12T09:34:51+02:00",
+    "processedAt": "2025-09-15T20:07:37.343Z",
+    "apiUrl": "https://listing-detail-page.funda.io/api/v4/listing/nl/tinyId/89433000"
+  }
+}

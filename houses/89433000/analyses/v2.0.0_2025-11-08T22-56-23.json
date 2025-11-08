@@ -1,0 +1,107 @@
+{
+  "house_id": "89433000",
+  "analyzed_at": "2025-11-08T22:56:23.554573+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 6.85,
+  "category_scores": {
+    "location": {
+      "score": 7.0,
+      "reasoning": "Dirkshorn ligt in Noord-Holland, regio met goed toerisme potentieel. AFSTANDEN: Bergen aan Zee (strand) 8km, Alkmaar (stad) 15km, Schoorl (duinen) 12km, Amsterdam 45km. BEREIKBAARHEID: N9 op 2km, A9 op 20km, station Schagen 10km. DOELGROEP: Aantrekkelijk voor Nederlandse gezinnen en Duitse toeristen (grensregio). SEIZOEN: Primair voorjaar-herfst sterk, winter minder vraag. CONCURRENTIE: Bungalowpark Dirkshoeve heeft meerdere vergelijkbare objecten. Check Airbnb toont 15-20 vergelijkbare woningen binnen 5km, nachtprijzen \u20ac80-140. Locatie aan water is USP. MARKTDATA: Bezetting vergelijkbare objecten 55-65% jaargemiddeld volgens platformdata. A-/B+ locatie: goed voor Noord-Holland maar geen top kustlocatie zoals Texel of Zandvoort.",
+      "red_flags": [
+        "Niet top kustlocatie - 8km van strand",
+        "Winterseizoen zwakker (november-februari)",
+        "Concurrentie binnen park zelf"
+      ],
+      "recommendations": [
+        "Positioneer op rust en natuur (weiland/water uitzicht)",
+        "Target Duitse markt actief (Ruhrgebied 250km)",
+        "Focus op middenseizoen deals"
+      ],
+      "market_data": "Vergelijkbare objecten Dirkshorn: \u20ac90-120/nacht, 55-65% bezetting, 25-30 reviews gemiddeld = 250-300 gastnachten/jaar"
+    },
+    "property": {
+      "score": 8.5,
+      "reasoning": "SPECS: 76m\u00b2 woonoppervlak, 3 slaapkamers, 1 badkamer, max 6 gasten. Bouwjaar 2012 = modern, laag onderhoud. USP'S STERK: (1) SAUNA in berging - groot verkoopargument! (2) Uitzicht water en weilanden - rust/natuur (3) Moderne afwerking (4) Vloerverwarming (5) Tuin rondom 445m\u00b2 eigen grond. DOELGROEP: Perfect voor gezinnen (3 slaapkamers) en stellen (sauna, romantisch). VOORZIENINGEN: Moderne keuken, schuifpui met rolluiken, berging 7m\u00b2, BBQ mogelijk. FOTOGRAFIE: Professioneel met 360\u00b0 tour - uitstekend! HUISDIEREN: Niet vermeld - CRUCIAAL om te checken (30% grotere markt). STAAT: Verhuurklaar, geen renovatie nodig. Sauna is killer-feature die \u20ac10-20/nacht extra kan opleveren. Woning ziet er verzorgd en luxe uit op foto's.",
+      "red_flags": [
+        "Huisdieren beleid onduidelijk - moet gecheckt",
+        "Geen hottub (wel sauna)",
+        "Slechts 1 badkamer voor 6 personen"
+      ],
+      "recommendations": [
+        "Vraag parkbeheer over huisdierenbeleid - indien mogelijk TOESTAAN",
+        "Overweeg hottub toevoeging (\u20ac3-5k investering, \u20ac15-25/nacht extra)",
+        "Benadruk sauna zwaar in marketing"
+      ],
+      "usp_highlights": [
+        "Priv\u00e9 sauna",
+        "Water- en weiland uitzicht",
+        "Modern (2012)",
+        "445m\u00b2 eigen grond",
+        "Volledig ge\u00efsoleerd + vloerverwarming"
+      ]
+    },
+    "financial": {
+      "score": 6.0,
+      "reasoning": "INVESTERING: Vraagprijs \u20ac260k + 2% overdracht \u20ac5.2k + notaris \u20ac2k = \u20ac267.2k totaal. OMZET SCHATTING (conservatief): Hoogseizoen 90 dagen \u00d7 70% bezetting \u00d7 \u20ac130/nacht = \u20ac8.190 | Middenseizoen 180 dagen \u00d7 50% bezetting \u00d7 \u20ac100/nacht = \u20ac9.000 | Laagseizoen 95 dagen \u00d7 25% bezetting \u00d7 \u20ac80/nacht = \u20ac1.900 | TOTAAL: \u20ac19.090 bruto. KOSTEN: Parkkosten \u20ac2.400/jaar (schatting, MOET GECHECKT), energie \u20ac1.800, gemeentelijke lasten \u20ac600, platform fees 10% = \u20ac1.909, schoonmaak 45 beurten \u00d7 \u20ac60 = \u20ac2.700, wasgoed \u20ac800, onderhoud 7% = \u20ac1.336, accountant \u20ac1.000, verzekering \u20ac500 = TOTAAL \u20ac13.045. NETTO: \u20ac19.090 - \u20ac13.045 = \u20ac6.045/jaar = 2.3% rendement op \u20ac267k. PROBLEEM: Te laag rendement! Bij 30% eigen inbreng (\u20ac80k) = 7.6% cash-on-cash - nog steeds matig. Breakeven 13+ jaar is te lang. CONCLUSIE: Prijs te hoog voor dit rendement. Moet naar \u20ac200-220k voor acceptabel rendement.",
+      "red_flags": [
+        "Rendement 2.3% op totale investering - veel te laag",
+        "Cash-on-cash 7.6% - onder target 10%+",
+        "Parkkosten onduidelijk - kan hoger zijn",
+        "Breakeven 13+ jaar te lang"
+      ],
+      "recommendations": [
+        "ONDERHANDEL naar \u20ac220k maximum (\u20ac180k + kosten = \u20ac187k totaal)",
+        "Check parkkosten exact bij beheerder",
+        "Verhoog nachtprijzen met hottub-toevoeging",
+        "Optimaliseer bezetting via dynamic pricing"
+      ],
+      "calculations": {
+        "purchase_price": 260000,
+        "total_investment": 267200,
+        "estimated_annual_revenue": 19090,
+        "estimated_annual_costs": 13045,
+        "net_annual_income": 6045,
+        "cash_on_cash_return": 7.6,
+        "breakeven_years": 13.2
+      }
+    },
+    "legal": {
+      "score": 5.0,
+      "reasoning": "KRITIEKE ZORG: \"Permanente bewoning niet toegestaan\" staat vermeld, MAAR verhuur beleid is NIET EXPLICIET genoemd in data. Dit is GIGANTISCHE RED FLAG! ESSENTIEEL OM TE CHECKEN: (1) Is zelfverhuur via Airbnb/Booking toegestaan? (2) Verplichte verhuur via parkorganisatie? (3) Commissies? (4) Seizoensbeperking? EIGENDOM: Volle eigendom 445m\u00b2 - positief, geen erfpacht. GROND: Eigen grond, geen canon. RECRON: Niet vermeld maar Bungalowpark suggereert mogelijk Recron-voorwaarden - MOET ONDERZOCHT. RISICO: Veel recreatieparken hebben verplichte verhuurorganisatie of minimumleeftijd. Score 5.0 door GEBREK AAN INFORMATIE - dit is dealbreaker potentieel. Zonder verhuurvrijheid is dit object ONGESCHIKT voor strategie.",
+      "red_flags": [
+        "Verhuurbeleid NIET vermeld - kritieke ontbrekende info",
+        "Permanente bewoning verboden - suggereert restricties",
+        "Mogelijk Recron voorwaarden",
+        "Parkreglement niet beschikbaar",
+        "Onbekend of zelfverhuur toegestaan"
+      ],
+      "recommendations": [
+        "DIRECT contact makelaar: vraag volledig parkreglement",
+        "Specifiek vragen: zelfverhuur via platforms toegestaan?",
+        "Check commissiestructuur parkbeheer",
+        "Vraag naar Recron-lidmaatschap park",
+        "Laat notaris parkvoorwaarden reviewen voor aankoop"
+      ],
+      "rental_freedom": "ONBEKEND - kritieke informatie ontbreekt. Zonder bevestiging van vrije verhuur is dit DEALBREAKER"
+    }
+  },
+  "overall_assessment": "Modern vakantieobject (2012) met sterke USP's (sauna, water uitzicht, 445m\u00b2 eigen grond) op redelijke locatie in Noord-Holland. ECHTER: twee KRITIEKE problemen: (1) RENDEMENT TE LAAG op vraagprijs \u20ac260k - slechts 2.3% totaal, 7.6% cash-on-cash bij financiering. (2) VERHUURVRIJHEID ONBEKEND - zonder bevestiging van vrije verhuur via eigen platforms is dit project ONGESCHIKT voor zelfverhuur strategie. Pand heeft potentieel bij juiste prijs (max \u20ac220k) \u00e9n bij bevestigde verhuurvrijheid. Nu te risicovol door gebrek aan juridische informatie en te hoge vraagprijs.",
+  "top_strengths": [
+    "Priv\u00e9 sauna - unieke USP die \u20ac15-20/nacht extra oplevert",
+    "Modern pand (2012) met lage onderhoudskosten, verhuurklaar",
+    "445m\u00b2 eigen grond (volle eigendom), water/weiland uitzicht",
+    "Professionele foto's/360\u00b0 tour, goede presentatie"
+  ],
+  "top_concerns": [
+    "VERHUURVRIJHEID ONBEKEND - mogelijk geen zelfverhuur toegestaan (DEALBREAKER)",
+    "Rendement 2.3%/7.6% veel te laag - prijs \u20ac40-50k te hoog",
+    "Parkkosten onduidelijk - kan \u20ac2.400-4.000/jaar zijn",
+    "Geen bevestiging huisdieren toegestaan (mist 30% markt)"
+  ],
+  "investment_recommendation": "AFWIJZEN (nu) - Voorwaardelijk OVERWEGEN bij wijzigingen: Object heeft potentieel maar is ONGESCHIKT in huidige vorm door: (1) Ontbrekende bevestiging verhuurvrijheid - zonder garantie van zelfverhuur via platforms is dit NO-GO. (2) Prijs te hoog voor rendement - moet minimaal \u20ac40k omlaag naar \u20ac220k max. (3) Onduidelijke parkkosten. ENKEL OVERWEGEN indien: makelaar bevestigt volledige verhuurvrijheid (geen parkorganisatie verplicht) + prijs daalt naar \u20ac210-220k. Dan wordt cash-on-cash 10-11% wat acceptabel is.",
+  "metadata": {
+    "processing_time_seconds": 74.61,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
