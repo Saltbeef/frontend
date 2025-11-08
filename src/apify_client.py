@@ -171,11 +171,10 @@ class ApifyClient:
         analysis_url: Optional[str] = None
     ) -> bool:
         """
-        Update house analysis status in Apify dataset.
+        Update house analysis status in Apify Key-Value Store.
 
-        Note: This uses the Key-Value Store API since datasets are append-only.
-        For persistent updates, you might need to use Apify's Key-Value Store
-        or a custom API endpoint.
+        Note: This is optional status tracking. If the Key-Value Store doesn't exist,
+        a warning is logged but the operation doesn't fail.
 
         Args:
             dataset_id: Apify dataset ID
@@ -185,7 +184,7 @@ class ApifyClient:
             analysis_url: URL to the analysis report
 
         Returns:
-            True if update successful
+            True if update successful, False otherwise (non-critical)
         """
         # Store analysis summary in Key-Value Store
         # Format: analysis_{house_id}
@@ -204,14 +203,25 @@ class ApifyClient:
             update_data["analysis_url"] = analysis_url
 
         try:
+            # Try to create Key-Value Store if it doesn't exist
+            try:
+                self._make_request("POST", "key-value-stores", data={"name": "default"})
+                print(f"Created default Key-Value Store")
+            except Exception as create_error:
+                # Store might already exist, that's fine
+                if "already exists" not in str(create_error).lower() and "409" not in str(create_error):
+                    print(f"Note: Could not create Key-Value Store (may already exist): {create_error}")
+
             # Use default key-value store
             endpoint = f"key-value-stores/default/records/{store_key}"
             self._make_request("PUT", endpoint, data=update_data)
-            print(f"Updated analysis status for house {house_id}: {status}")
+            print(f"✅ Updated analysis status for house {house_id}: {status}")
             return True
 
         except Exception as e:
-            print(f"Error updating analysis status: {e}")
+            # This is non-critical - analysis results are saved to Git anyway
+            print(f"⚠️  Could not update Apify status (non-critical): {e}")
+            print(f"   Analysis results are still saved to Git repository")
             return False
 
     def get_analysis_status(
