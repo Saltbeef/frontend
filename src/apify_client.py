@@ -114,12 +114,19 @@ class ApifyClient:
                 "internalId"
             ]
 
+            # Nested field paths to check (for Funda API structure)
+            nested_fields = [
+                ("Identifiers", "TinyId"),
+                ("Identifiers", "GlobalId"),
+                ("sitemapData", "propertyId"),
+            ]
+
             print(f"🔍 Searching for house {house_id} in dataset {dataset_id}")
             print(f"   Dataset contains {len(items)} items")
 
             # Find the house by checking multiple possible ID fields
             for idx, item in enumerate(items):
-                # Check all possible ID fields
+                # Check root-level ID fields
                 for field in id_fields:
                     field_value = item.get(field)
                     if field_value is not None:
@@ -128,8 +135,23 @@ class ApifyClient:
                             print(f"✅ Found house using field '{field}' = {field_value}")
                             return item
 
+                # Check nested ID fields (e.g., Identifiers.TinyId)
+                for parent, child in nested_fields:
+                    parent_obj = item.get(parent, {})
+                    if isinstance(parent_obj, dict):
+                        field_value = parent_obj.get(child)
+                        if field_value is not None:
+                            # Try both string and integer comparison
+                            if str(field_value) == str(house_id):
+                                print(f"✅ Found house using nested field '{parent}.{child}' = {field_value}")
+                                return item
+
                 # Also check if the ID appears in the URL
                 url = item.get("url", "")
+                if not url and isinstance(item.get("Urls"), dict):
+                    friendly_url = item.get("Urls", {}).get("FriendlyUrl", {})
+                    url = friendly_url.get("FullUrl", "") if isinstance(friendly_url, dict) else ""
+
                 if house_id in str(url):
                     print(f"✅ Found house by URL match: {url}")
                     return item
@@ -149,9 +171,22 @@ class ApifyClient:
                         value = sample.get(field)
                         print(f"     - {field}: {value}")
 
+                # Show nested Identifiers structure
+                if "Identifiers" in sample and isinstance(sample["Identifiers"], dict):
+                    print(f"     - Identifiers.TinyId: {sample['Identifiers'].get('TinyId')}")
+                    print(f"     - Identifiers.GlobalId: {sample['Identifiers'].get('GlobalId')}")
+
+                # Show sitemapData propertyId
+                if "sitemapData" in sample and isinstance(sample["sitemapData"], dict):
+                    print(f"     - sitemapData.propertyId: {sample['sitemapData'].get('propertyId')}")
+
                 # Show URL if available
                 if 'url' in sample:
                     print(f"     - url: {sample.get('url')}")
+                elif 'Urls' in sample and isinstance(sample['Urls'], dict):
+                    friendly_url = sample['Urls'].get('FriendlyUrl', {})
+                    if isinstance(friendly_url, dict):
+                        print(f"     - Urls.FriendlyUrl.FullUrl: {friendly_url.get('FullUrl')}")
 
             print(f"\n💡 Tip: Check Apify Console at:")
             print(f"   https://console.apify.com/storage/datasets/{dataset_id}")
