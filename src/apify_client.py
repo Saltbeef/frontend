@@ -102,14 +102,95 @@ class ApifyClient:
             response = self._make_request("GET", endpoint)
             items = response if isinstance(response, list) else response.get("data", [])
 
-            # Find the house by ID
-            for item in items:
-                # Assuming house data has an 'id' field
-                # Adjust this based on actual Apify data structure
-                if item.get("id") == house_id or item.get("house_id") == house_id:
+            # Possible ID fields to check (common patterns in Funda/property datasets)
+            id_fields = [
+                "id",
+                "house_id",
+                "globalId",
+                "makelaarId",
+                "objectId",
+                "propertyId",
+                "advertentieId",
+                "internalId"
+            ]
+
+            # Nested field paths to check (for Funda API structure)
+            nested_fields = [
+                ("Identifiers", "TinyId"),
+                ("Identifiers", "GlobalId"),
+                ("sitemapData", "propertyId"),
+            ]
+
+            print(f"🔍 Searching for house {house_id} in dataset {dataset_id}")
+            print(f"   Dataset contains {len(items)} items")
+
+            # Find the house by checking multiple possible ID fields
+            for idx, item in enumerate(items):
+                # Check root-level ID fields
+                for field in id_fields:
+                    field_value = item.get(field)
+                    if field_value is not None:
+                        # Try both string and integer comparison
+                        if str(field_value) == str(house_id):
+                            print(f"✅ Found house using field '{field}' = {field_value}")
+                            return item
+
+                # Check nested ID fields (e.g., Identifiers.TinyId)
+                for parent, child in nested_fields:
+                    parent_obj = item.get(parent, {})
+                    if isinstance(parent_obj, dict):
+                        field_value = parent_obj.get(child)
+                        if field_value is not None:
+                            # Try both string and integer comparison
+                            if str(field_value) == str(house_id):
+                                print(f"✅ Found house using nested field '{parent}.{child}' = {field_value}")
+                                return item
+
+                # Also check if the ID appears in the URL
+                url = item.get("url", "")
+                if not url and isinstance(item.get("Urls"), dict):
+                    friendly_url = item.get("Urls", {}).get("FriendlyUrl", {})
+                    url = friendly_url.get("FullUrl", "") if isinstance(friendly_url, dict) else ""
+
+                if house_id in str(url):
+                    print(f"✅ Found house by URL match: {url}")
                     return item
 
-            print(f"House {house_id} not found in dataset {dataset_id}")
+            # If not found, show debugging information
+            print(f"❌ House {house_id} not found in dataset {dataset_id}")
+            print(f"\n📋 Sample data structure from first item:")
+            if items:
+                sample = items[0]
+                available_fields = list(sample.keys())
+                print(f"   Available fields: {', '.join(available_fields[:20])}")
+
+                # Show ID-like fields and their values
+                print(f"\n   ID-like fields in first item:")
+                for field in available_fields:
+                    if any(keyword in field.lower() for keyword in ['id', 'code', 'number', 'ref']):
+                        value = sample.get(field)
+                        print(f"     - {field}: {value}")
+
+                # Show nested Identifiers structure
+                if "Identifiers" in sample and isinstance(sample["Identifiers"], dict):
+                    print(f"     - Identifiers.TinyId: {sample['Identifiers'].get('TinyId')}")
+                    print(f"     - Identifiers.GlobalId: {sample['Identifiers'].get('GlobalId')}")
+
+                # Show sitemapData propertyId
+                if "sitemapData" in sample and isinstance(sample["sitemapData"], dict):
+                    print(f"     - sitemapData.propertyId: {sample['sitemapData'].get('propertyId')}")
+
+                # Show URL if available
+                if 'url' in sample:
+                    print(f"     - url: {sample.get('url')}")
+                elif 'Urls' in sample and isinstance(sample['Urls'], dict):
+                    friendly_url = sample['Urls'].get('FriendlyUrl', {})
+                    if isinstance(friendly_url, dict):
+                        print(f"     - Urls.FriendlyUrl.FullUrl: {friendly_url.get('FullUrl')}")
+
+            print(f"\n💡 Tip: Check Apify Console at:")
+            print(f"   https://console.apify.com/storage/datasets/{dataset_id}")
+
             return None
 
         except Exception as e:
@@ -125,11 +206,10 @@ class ApifyClient:
         analysis_url: Optional[str] = None
     ) -> bool:
         """
-        Update house analysis status in Apify dataset.
+        Update house analysis status in Apify Key-Value Store.
 
-        Note: This uses the Key-Value Store API since datasets are append-only.
-        For persistent updates, you might need to use Apify's Key-Value Store
-        or a custom API endpoint.
+        Note: This is optional status tracking. If the Key-Value Store doesn't exist,
+        a warning is logged but the operation doesn't fail.
 
         Args:
             dataset_id: Apify dataset ID
@@ -139,7 +219,7 @@ class ApifyClient:
             analysis_url: URL to the analysis report
 
         Returns:
-            True if update successful
+            True if update successful, False otherwise (non-critical)
         """
         # Store analysis summary in Key-Value Store
         # Format: analysis_{house_id}
@@ -158,14 +238,25 @@ class ApifyClient:
             update_data["analysis_url"] = analysis_url
 
         try:
+            # Try to create Key-Value Store if it doesn't exist
+            try:
+                self._make_request("POST", "key-value-stores", data={"name": "default"})
+                print(f"Created default Key-Value Store")
+            except Exception as create_error:
+                # Store might already exist, that's fine
+                if "already exists" not in str(create_error).lower() and "409" not in str(create_error):
+                    print(f"Note: Could not create Key-Value Store (may already exist): {create_error}")
+
             # Use default key-value store
             endpoint = f"key-value-stores/default/records/{store_key}"
             self._make_request("PUT", endpoint, data=update_data)
-            print(f"Updated analysis status for house {house_id}: {status}")
+            print(f"✅ Updated analysis status for house {house_id}: {status}")
             return True
 
         except Exception as e:
-            print(f"Error updating analysis status: {e}")
+            # This is non-critical - analysis results are saved to Git anyway
+            print(f"⚠️  Could not update Apify status (non-critical): {e}")
+            print(f"   Analysis results are still saved to Git repository")
             return False
 
     def get_analysis_status(
