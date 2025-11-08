@@ -2177,8 +2177,35 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
         }
 
         function showError(message) {
-            const container = document.getElementById('resultsList');
-            container.innerHTML = `<div class="error">${message}</div>`;
+            showToast(message, 'error');
+        }
+
+        function showSuccess(message) {
+            showToast(message, 'success');
+        }
+
+        function showToast(message, type = 'info') {
+            // Create toast element
+            const toast = document.createElement('div');
+            toast.className = `fixed top-5 right-5 px-5 py-3 rounded-lg shadow-lg z-50 text-white transition-all duration-300 transform translate-x-0`;
+
+            if (type === 'success') {
+                toast.className += ' bg-green-600';
+            } else if (type === 'error') {
+                toast.className += ' bg-red-600';
+            } else {
+                toast.className += ' bg-blue-600';
+            }
+
+            toast.textContent = message;
+            document.body.appendChild(toast);
+
+            // Fade out and remove after 3 seconds
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateX(400px)';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
         }
 
         function updateStats(message) {
