@@ -1142,25 +1142,7 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
 
         // Get analysis status
         async function getAnalysisStatus(houseId) {
-            if (!analysisConfig.apify.token) {
-                // Try checking GitHub directly
-                return await getAnalysisFromGitHub(houseId);
-            }
-
-            try {
-                const response = await fetch(
-                    `https://api.apify.com/v2/key-value-stores/default/records/analysis_${houseId}?token=${analysisConfig.apify.token}`
-                );
-
-                if (response.ok) {
-                    const data = await response.json();
-                    return data;
-                }
-            } catch (error) {
-                console.log('Apify check failed, trying GitHub:', error.message);
-            }
-
-            // Fallback to GitHub
+            // Always use GitHub for analysis status
             return await getAnalysisFromGitHub(houseId);
         }
 

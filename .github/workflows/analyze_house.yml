@@ -223,8 +223,28 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Analysis: ${{ inputs.house_id }} using ${{ inputs.rules_version }} (score: ${{ steps.analyze.outputs.score }})"
-            git push origin main
-            echo "✅ Analysis results pushed to main branch"
+
+            # Retry push up to 3 times in case of concurrent workflow conflicts
+            max_attempts=3
+            attempt=1
+            while [ $attempt -le $max_attempts ]; do
+              echo "Push attempt $attempt of $max_attempts..."
+
+              if git push origin main; then
+                echo "✅ Analysis results pushed to main branch"
+                break
+              else
+                if [ $attempt -lt $max_attempts ]; then
+                  echo "Push failed, pulling and retrying..."
+                  git pull --rebase origin main
+                  attempt=$((attempt + 1))
+                  sleep $((attempt * 2))  # Exponential backoff
+                else
+                  echo "❌ Failed to push after $max_attempts attempts"
+                  exit 1
+                fi
+              fi
+            done
           fi
 
       - name: Update Apify status - Completed
