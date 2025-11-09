@@ -1834,14 +1834,10 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
             try {
                 // Try parsing as JSON array first (Apify dataset format)
                 updateStats('Parsing JSON array...');
-                console.log(`Attempting to parse ${(text.length / 1024 / 1024).toFixed(2)}MB of JSON data`);
-                console.log(`First 100 chars: ${text.substring(0, 100)}`);
-
                 const parsed = JSON.parse(text);
 
                 if (Array.isArray(parsed)) {
                     // It's a JSON array - process in batches for UI responsiveness
-                    console.log(`Successfully parsed JSON array with ${parsed.length} items`);
                     const batchSize = 100;
                     for (let i = 0; i < parsed.length; i += batchSize) {
                         const batch = parsed.slice(i, i + batchSize);
@@ -1857,13 +1853,10 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                     }
                 } else {
                     // Single object
-                    console.log('Parsed single object');
                     properties.push(parsed);
                 }
             } catch (e) {
                 // Fall back to JSONL format (newline-delimited)
-                console.error('JSON.parse failed:', e.message);
-                console.log('Not a JSON array, trying JSONL format...');
                 const lines = text.split('\n').filter(line => line.trim());
 
                 const batchSize = 50;
