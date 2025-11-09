@@ -7,10 +7,6 @@ on:
         description: 'Unique ID of the house to analyze'
         required: true
         type: string
-      apify_dataset_id:
-        description: 'Apify dataset ID containing house data'
-        required: true
-        type: string
       rules_version:
         description: 'Version of analysis rules to use (e.g., v1.0.0 or latest)'
         required: false
@@ -50,43 +46,35 @@ jobs:
           python -m pip install --upgrade pip
           # No external dependencies needed - using stdlib only
 
-      - name: Fetch house data from Apify
+      - name: Fetch house data from local dataset
         id: fetch_data
-        env:
-          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: |
           python -c "
           import sys
           import json
-          from src.apify_client import ApifyClient
 
-          client = ApifyClient()
-          house_data = client.get_house_data('${{ inputs.apify_dataset_id }}', '${{ inputs.house_id }}')
+          # Load dataset from local file
+          with open('data/apify_dataset.json', 'r') as f:
+              dataset = json.load(f)
+
+          # Find house by ID
+          house_id = '${{ inputs.house_id }}'
+          house_data = None
+
+          for item in dataset:
+              if str(item.get('id')) == house_id:
+                  house_data = item
+                  break
 
           if not house_data:
-              print('ERROR: House not found in dataset')
+              print(f'ERROR: House {house_id} not found in dataset')
               sys.exit(1)
 
           # Save to file for next step
           with open('house_data.json', 'w') as f:
               json.dump(house_data, f, indent=2)
 
-          print('House data fetched successfully')
-          "
-
-      - name: Update Apify status - Processing
-        env:
-          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
-        run: |
-          python -c "
-          from src.apify_client import ApifyClient
-
-          client = ApifyClient()
-          client.update_analysis_status(
-              dataset_id='${{ inputs.apify_dataset_id }}',
-              house_id='${{ inputs.house_id }}',
-              status='processing'
-          )
+          print(f'House data found: {house_id}')
           "
 
       - name: Run analysis
@@ -114,7 +102,7 @@ jobs:
           analysis = agent.analyze_house(
               house_data=house_data,
               house_id='${{ inputs.house_id }}',
-              apify_dataset_id='${{ inputs.apify_dataset_id }}'
+              apify_dataset_id='Yb4fTMJ9wQsuyZf3L'  # Hardcoded dataset ID
           )
 
           # Validate
@@ -212,12 +200,47 @@ jobs:
           print(f'Symlinks created: latest.md -> {base_filename}.md')
           "
 
+      - name: Update analysis scores index
+        run: |
+          python -c "
+          import json
+          from pathlib import Path
+          from datetime import datetime, timezone
+
+          # Load current scores index
+          scores_file = Path('data/analysis_scores.json')
+          if scores_file.exists():
+              with open(scores_file, 'r') as f:
+                  scores_data = json.load(f)
+          else:
+              scores_data = {'last_updated': '', 'houses': {}}
+
+          # Load latest analysis
+          house_dir = Path('houses') / '${{ inputs.house_id }}'
+          with open(house_dir / 'latest_analysis.json', 'r') as f:
+              latest = json.load(f)
+
+          # Update scores index
+          scores_data['last_updated'] = datetime.now(timezone.utc).isoformat()
+          scores_data['houses']['${{ inputs.house_id }}'] = {
+              'score': latest['overall_score'],
+              'analyzed_at': latest['analyzed_at'],
+              'rules_version': latest['rules_version']
+          }
+
+          # Save updated index
+          with open(scores_file, 'w') as f:
+              json.dump(scores_data, f, indent=2)
+
+          print(f'Updated scores index for house ${{ inputs.house_id }}')
+          "
+
       - name: Commit and push analysis results to main
         run: |
           git config user.name "House Analysis Bot"
           git config user.email "bot@github-actions"
 
-          git add houses/${{ inputs.house_id }}/
+          git add houses/${{ inputs.house_id }}/ data/analysis_scores.json
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
@@ -246,43 +269,3 @@ jobs:
               fi
             done
           fi
-
-      - name: Update Apify status - Completed
-        if: success()
-        env:
-          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
-        run: |
-          python -c "
-          from src.apify_client import ApifyClient
-
-          # Generate GitHub URL to report (always points to main branch)
-          repo_url = 'https://github.com/${{ github.repository }}'
-          report_url = f\"{repo_url}/blob/main/houses/${{ inputs.house_id }}/reports/\"
-
-          client = ApifyClient()
-          client.update_analysis_status(
-              dataset_id='${{ inputs.apify_dataset_id }}',
-              house_id='${{ inputs.house_id }}',
-              status='completed',
-              score=${{ steps.analyze.outputs.score }},
-              analysis_url=report_url
-          )
-          print('Apify status updated: completed')
-          "
-
-      - name: Update Apify status - Failed
-        if: failure()
-        env:
-          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
-        run: |
-          python -c "
-          from src.apify_client import ApifyClient
-
-          client = ApifyClient()
-          client.update_analysis_status(
-              dataset_id='${{ inputs.apify_dataset_id }}',
-              house_id='${{ inputs.house_id }}',
-              status='failed'
-          )
-          print('Apify status updated: failed')
-          "

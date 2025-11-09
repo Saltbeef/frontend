@@ -1,0 +1,73 @@
+name: Sync Apify Dataset
+
+on:
+  repository_dispatch:
+    types: [apify_dataset_updated]
+  workflow_dispatch:  # Manual trigger for testing
+  schedule:
+    # Run every 6 hours as backup
+    - cron: '0 */6 * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Download Apify dataset
+        id: download
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        run: |
+          DATASET_ID="Yb4fTMJ9wQsuyZf3L"
+
+          echo "Downloading dataset ${DATASET_ID}..."
+
+          # Download dataset as JSON
+          curl -s "https://api.apify.com/v2/datasets/${DATASET_ID}/items?token=${APIFY_API_TOKEN}&format=json&clean=true" \
+            -o data/apify_dataset.json
+
+          # Check if file was downloaded successfully
+          if [ ! -s data/apify_dataset.json ]; then
+            echo "Error: Failed to download dataset or file is empty"
+            exit 1
+          fi
+
+          # Pretty print JSON for better git diffs
+          python3 -m json.tool data/apify_dataset.json > data/apify_dataset_formatted.json
+          mv data/apify_dataset_formatted.json data/apify_dataset.json
+
+          # Get dataset info
+          ITEM_COUNT=$(jq 'length' data/apify_dataset.json)
+          echo "Downloaded ${ITEM_COUNT} items"
+          echo "item_count=${ITEM_COUNT}" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "Apify Sync Bot"
+          git config user.email "bot@github-actions"
+
+          git add data/apify_dataset.json
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            echo "✅ Dataset is up to date"
+          else
+            ITEM_COUNT="${{ steps.download.outputs.item_count }}"
+            git commit -m "Sync Apify dataset (${ITEM_COUNT} items)
+
+Updated dataset from Apify datasource Yb4fTMJ9wQsuyZf3L
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+            git push origin main
+            echo "✅ Dataset updated and pushed"
+          fi
