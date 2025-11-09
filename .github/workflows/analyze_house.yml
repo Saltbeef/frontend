@@ -115,17 +115,58 @@ jobs:
           lon = house_data.get('AddressDetails', {}).get('Longitude')
           bedrooms = house_data.get('FastView', {}).get('NumberOfBedrooms', 2)
           city = house_data.get('AddressDetails', {}).get('City', '')
+          postcode = house_data.get('AddressDetails', {}).get('PostCode', '')
 
+          # If no coordinates, try to geocode using postcode
           if not lat or not lon:
-              print("⚠️  No coordinates found, skipping enrichment")
-              with open('houses/${{ inputs.house_id }}/enrichment/airroi_enrichment.json', 'w') as f:
-                  json.dump({'enriched': False, 'reason': 'No coordinates'}, f, indent=2)
-              exit(0)
+              if not postcode:
+                  print("⚠️  No coordinates and no postcode found, skipping enrichment")
+                  with open('houses/${{ inputs.house_id }}/enrichment/airroi_enrichment.json', 'w') as f:
+                      json.dump({'enriched': False, 'reason': 'No coordinates or postcode'}, f, indent=2)
+                  exit(0)
+
+              print(f"🗺️  Geocoding postcode {postcode} using Nominatim...")
+              try:
+                  # Use Nominatim (OpenStreetMap) for free geocoding
+                  import time
+                  time.sleep(1)  # Rate limit: 1 request per second
+
+                  geocode_url = f"https://nominatim.openstreetmap.org/search?postalcode={postcode}&country=NL&format=json"
+                  geocode_req = urllib.request.Request(
+                      geocode_url,
+                      headers={
+                          'User-Agent': 'BNB-Analysis-Tool/1.0'  # Required by Nominatim
+                      }
+                  )
+
+                  with urllib.request.urlopen(geocode_req, timeout=10) as response:
+                      geocode_results = json.loads(response.read().decode())
+
+                  if geocode_results and len(geocode_results) > 0:
+                      lat = float(geocode_results[0]['lat'])
+                      lon = float(geocode_results[0]['lon'])
+                      print(f"  ✅ Geocoded to ({lat}, {lon})")
+                  else:
+                      print(f"  ❌ Could not geocode postcode {postcode}")
+                      with open('houses/${{ inputs.house_id }}/enrichment/airroi_enrichment.json', 'w') as f:
+                          json.dump({'enriched': False, 'reason': 'Geocoding failed'}, f, indent=2)
+                      exit(0)
+
+              except Exception as e:
+                  print(f"  ❌ Geocoding error: {e}")
+                  with open('houses/${{ inputs.house_id }}/enrichment/airroi_enrichment.json', 'w') as f:
+                      json.dump({'enriched': False, 'reason': f'Geocoding error: {str(e)}'}, f, indent=2)
+                  exit(0)
 
           enrichment = {
               'enriched': True,
               'enriched_at': datetime.now(timezone.utc).isoformat(),
               'house_id': '${{ inputs.house_id }}',
+              'coordinates': {
+                  'latitude': lat,
+                  'longitude': lon,
+                  'source': 'geocoded' if (not house_data.get('AddressDetails', {}).get('Latitude')) else 'original'
+              },
               'api_calls': 0,
               'estimated_cost': 0.0
           }
