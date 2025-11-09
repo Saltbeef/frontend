@@ -57,7 +57,7 @@ jobs:
           gunzip -c data/apify_dataset.json.gz > dataset_temp.json
 
           # Extract specific house data using jq
-          jq --arg house_id "${HOUSE_ID}" '.[] | select(.id == ($house_id | tonumber))' dataset_temp.json > house_data.json
+          jq --arg house_id "${HOUSE_ID}" '.[] | select(.Identifiers.TinyId == $house_id)' dataset_temp.json > house_data.json
 
           # Check if house was found
           if [ ! -s house_data.json ] || [ "$(cat house_data.json)" = "null" ]; then
