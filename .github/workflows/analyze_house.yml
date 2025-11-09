@@ -180,10 +180,10 @@ jobs:
               print(f"Fetching comparable listings near {city} ({lat}, {lon})...")
               print(f"  Property specs: {bedrooms} bed, {bathrooms} bath, {guests} guests")
 
-              # Build query string for GET request - use lat/lng not latitude/longitude
+              # Build query string for GET request
               params = {
-                  'lat': lat,
-                  'lng': lon,
+                  'latitude': lat,
+                  'longitude': lon,
                   'bedrooms': bedrooms,
                   'baths': bathrooms,
                   'guests': guests,
@@ -194,7 +194,7 @@ jobs:
 
               comparables_req = urllib.request.Request(
                   comparables_url,
-                  headers={'x-api-key': API_KEY}  # lowercase header name
+                  headers={'x-api-key': API_KEY}
               )
 
               with urllib.request.urlopen(comparables_req, timeout=30) as response:
@@ -209,10 +209,10 @@ jobs:
               # 2. Get revenue estimate
               print(f"Fetching revenue estimate...")
 
-              # Use correct endpoint: /calculator/estimate (not revenue-potential)
+              # Calculator estimate endpoint
               estimate_params = {
-                  'lat': lat,
-                  'lng': lon,
+                  'latitude': lat,
+                  'longitude': lon,
                   'bedrooms': bedrooms,
                   'baths': bathrooms,
                   'guests': guests,
@@ -223,7 +223,7 @@ jobs:
 
               estimate_req = urllib.request.Request(
                   estimate_url,
-                  headers={'x-api-key': API_KEY}  # lowercase header name
+                  headers={'x-api-key': API_KEY}
               )
 
               with urllib.request.urlopen(estimate_req, timeout=30) as response:
