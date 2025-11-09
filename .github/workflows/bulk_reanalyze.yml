@@ -3,14 +3,15 @@ name: Bulk Re-analyze Houses
 on:
   workflow_dispatch:
     inputs:
-      apify_dataset_id:
-        description: 'Apify dataset ID containing houses'
-        required: true
-        type: string
       rules_version:
         description: 'New rules version to apply'
         required: true
-        type: string
+        default: 'v2.0.0'
+        type: choice
+        options:
+          - v2.0.0
+          - v1.1.0
+          - v1.0.0
       house_ids:
         description: 'Comma-separated house IDs (leave empty for all)'
         required: false
@@ -21,13 +22,12 @@ on:
         default: 'claude'
         type: choice
         options:
-          - mock
           - claude
           - openai
       max_concurrent:
         description: 'Maximum concurrent analyses'
         required: false
-        default: '5'
+        default: '3'
         type: string
 
 jobs:
@@ -47,14 +47,11 @@ jobs:
 
       - name: Get house list
         id: get_houses
-        env:
-          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: |
           python -c "
           import json
           import sys
           from pathlib import Path
-          from src.apify_client import ApifyClient
 
           # Get houses to analyze
           if '${{ inputs.house_ids }}'.strip():
@@ -105,7 +102,6 @@ jobs:
               ref: 'main',  // Always trigger on main branch
               inputs: {
                 house_id: '${{ matrix.house_id }}',
-                apify_dataset_id: '${{ inputs.apify_dataset_id }}',
                 rules_version: '${{ inputs.rules_version }}',
                 llm_provider: '${{ inputs.llm_provider }}'
               }
