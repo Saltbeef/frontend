@@ -61,13 +61,12 @@ jobs:
             echo "✅ Dataset is up to date"
           else
             ITEM_COUNT="${{ steps.download.outputs.item_count }}"
-            git commit -m "Sync Apify dataset (${ITEM_COUNT} items)
 
-Updated dataset from Apify datasource Yb4fTMJ9wQsuyZf3L
+            git commit -m "Sync Apify dataset (${ITEM_COUNT} items)" \
+              -m "Updated dataset from Apify datasource Yb4fTMJ9wQsuyZf3L" \
+              -m "🤖 Generated with [Claude Code](https://claude.com/claude-code)" \
+              -m "Co-Authored-By: Claude <noreply@anthropic.com>"
 
-🤖 Generated with [Claude Code](https://claude.com/claude-code)
-
-Co-Authored-By: Claude <noreply@anthropic.com>"
             git push origin main
             echo "✅ Dataset updated and pushed"
           fi
