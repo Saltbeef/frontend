@@ -1,0 +1,13 @@
+{
+  "enriched": false,
+  "enriched_at": "2025-11-09T21:40:21.020936+00:00",
+  "house_id": "43084820",
+  "coordinates": {
+    "latitude": 52.3959055,
+    "longitude": 4.955293,
+    "source": "geocoded"
+  },
+  "api_calls": 0,
+  "estimated_cost": 0.0,
+  "error": "HTTP 400: Bad Request"
+}
