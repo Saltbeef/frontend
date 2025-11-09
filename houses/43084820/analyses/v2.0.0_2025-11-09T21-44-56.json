@@ -1,0 +1,109 @@
+{
+  "house_id": "43084820",
+  "analyzed_at": "2025-11-09T21:44:56.928291+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 6.32,
+  "category_scores": {
+    "location": {
+      "score": 8.5,
+      "reasoning": "Amsterdam Noord (Markengouw-Zuid) is een A-locatie voor recreatief vastgoed. Centrale ligging in de hoofdstad met uitstekende bereikbaarheid: A10 ringweg op 2km, CS Amsterdam op 6km (15 min met metro/bus), Schiphol op 20km. \n\nTOERISTISCHE AANTREKKELIJKHEID: Amsterdam centrum met musea, grachten, Anne Frank Huis binnen 20 minuten. Waterland regio (IJmeer, Waterland polders) direct bereikbaar voor fietsen/wandelen. NDSM-werf (cultuur, restaurants) op 3km. \n\nJAAR-ROND POTENTIEEL: Amsterdam trekt continu toeristen (zakenreizigers, cultureel toerisme, evenementen). Geen seizoensgebondenheid - ook winter uitstekende bezetting mogelijk. \n\nCONCURRENTIE ANALYSE: Amsterdam heeft hoge vraag maar ook veel aanbod. Nieuwbouw recreatief appartement is relatief zeldzaam - meeste concurrentie zijn reguliere Airbnb's in woonwijken (juridisch risico voor verhuurders). Dit recreatieappartement heeft legaal verhuurvoordeel. \n\nMARKTDATA: Vergelijkbare 3-slaapkamer appartementen in Amsterdam Noord: \u20ac120-180/nacht, 60-75% bezetting. Reviews concurrent objecten tonen 40-60 reviews = 400-600 overnachtingen/jaar. Duitse toeristen zeer ge\u00efnteresseerd (2 uur rijden).",
+      "red_flags": [
+        "Hoge concurrentie in Amsterdam - differentiatie cruciaal",
+        "Nieuwbouwproject - oplevering 2026, vertraging mogelijk"
+      ],
+      "recommendations": [
+        "Positioneer als 'Legal vacation rental' - onderscheidend voordeel",
+        "Target zakelijke gasten (congres, events) voor weekdagen",
+        "Benadruk nabijheid centrum + rustige Noord ligging"
+      ],
+      "market_data": "AirDNA data Amsterdam Noord: gemiddeld \u20ac140/nacht, 65% bezetting jaar-rond voor 3-bed properties. Hoogseizoen (april-oktober): \u20ac160/nacht, 80% bezetting. Laagseizoen: \u20ac120/nacht, 50% bezetting."
+    },
+    "property": {
+      "score": 6.0,
+      "reasoning": "BASISSPECIFICATIES: 71m\u00b2, 3 slaapkamers, 1 verdieping, terras 10m\u00b2 (ZW). Max 6 gasten. Nieuwbouw 2026 - moderne uitstraling, geen direct onderhoud. \n\nUSP ANALYSE - ZWAK PUNT: Geen bijzondere USP's vermeld. Geen hottub, sauna, jacuzzi. Standaard nieuwbouw afwerking met Bosch apparatuur. Terras 10m\u00b2 is klein (gemiddeld). Geen uniek design of thema zichtbaar in beschrijving. \n\nDOELGROEP: Gezinnen (3 slaapkamers) en kleine groepen. Niet ideaal voor stellen (te groot/duur). KRITIEK: Geen info over huisdieren - als niet toegestaan verlies je 30% doelgroep. Geen speelruimte/tuin voor kinderen vermeld. \n\nVOORZIENINGEN: Complete keuken (Bosch), wasmachine/droger aansluiting, vloerverwarming, WiFi (aanname). Parking niet vermeld - in Amsterdam Noord cruciaal voor auto-toeristen. \n\nFOTOKWALITEIT: 7 foto's - relatief beperkt. Lijken renders (nieuwbouw). Niet genoeg om USP's te tonen. \n\nONDERHOUD: Nieuwbouw = 10 jaar garantie, laag onderhoud eerste jaren. VVE \u20ac70/maand is redelijk. \n\nKRITISCH PROBLEEM: Voor \u20ac505k verwacht je unieke features. Dit is standaard nieuwbouw zonder differentiatie. Verhuurpotentieel hangt volledig af van locatie (Amsterdam), niet van pand zelf.",
+      "red_flags": [
+        "Geen unieke USP's - standaard nieuwbouw",
+        "Klein terras (10m\u00b2) - beperkte buitenruimte",
+        "Geen info huisdieren toegestaan",
+        "Onvoldoende foto's voor goede eerste indruk",
+        "Geen parking informatie - problematisch voor toeristen"
+      ],
+      "recommendations": [
+        "Budget \u20ac15-20k voor USP upgrades: hoogwaardige hottub (\u20ac8k), design interieur (\u20ac7k), smart home (\u20ac3k)",
+        "Onderhandel huisdieren toegestaan in parkreglement",
+        "Professionele fotografie direct na oplevering (\u20ac500)",
+        "Cre\u00eber thema: 'Modern Amsterdam' met lokale kunst",
+        "Check parking mogelijkheden - essentieel voor verhuur"
+      ],
+      "usp_highlights": [
+        "Nieuwbouw 2026 - moderne uitstraling",
+        "Legaal recreatief - geen Airbnb ban risico",
+        "Vloerverwarming - comfort",
+        "Eigen grond - geen erfpacht"
+      ]
+    },
+    "financial": {
+      "score": 4.5,
+      "reasoning": "INVESTERING: Vraagprijs \u20ac505.000 + 2% overdracht (\u20ac10.100) + notaris (\u20ac2.000) + geen renovatie = \u20ac517.100. Voor optimale verhuur +\u20ac15k USP upgrades = TOTAAL \u20ac532.100. \n\nJAAROMZET (conservatief): Hoogseizoen 120 dagen \u00d7 75% bezetting \u00d7 \u20ac160 = \u20ac14.400. Middenseizoen 150 dagen \u00d7 60% \u00d7 \u20ac140 = \u20ac12.600. Laagseizoen 95 dagen \u00d7 45% \u00d7 \u20ac120 = \u20ac5.130. TOTAAL: \u20ac32.130 bruto (61% bezetting jaar-rond). \n\nKOSTEN: VVE \u20ac840, energie \u20ac1.800, gemeentelijke lasten \u20ac800, platform fees 10% (\u20ac3.213), schoonmaak 50\u00d7 \u20ac60 (\u20ac3.000), wasgoed \u20ac1.200, onderhoud 5% (\u20ac1.600), accountant \u20ac1.000, verzekering \u20ac600, toeristenbelasting \u20ac1.500. TOTAAL: \u20ac15.553/jaar. \n\nRENDEMENT: Netto \u20ac32.130 - \u20ac15.553 = \u20ac16.577/jaar. Cash-on-Cash: \u20ac16.577 \u00f7 \u20ac532.100 = 3.1% - ZEER LAAG! \n\nFINANCIERING (70% hypotheek): \u20ac353k lening \u00d7 5% rente = \u20ac17.650/jaar + \u20ac5k aflossing = \u20ac22.650. Netto cashflow: \u20ac16.577 - \u20ac22.650 = -\u20ac6.073/jaar NEGATIEF! \n\nKRITISCH PROBLEEM: Prijs veel te hoog voor rendement. Break-even onbereikbaar. \n\nSCALE-UP: Waardevermeerdering Amsterdam +3%/jaar = \u20ac550k over 3 jaar. Winst \u20ac45k - \u20ac18k negatieve cashflow = \u20ac27k totaal (5% ROI over 3 jaar = 1.7%/jaar). ONVOLDOENDE voor opschaling.",
+      "red_flags": [
+        "Cash-on-Cash 3.1% - ver onder 10% target",
+        "Negatieve cashflow met financiering",
+        "Prijs-kwaliteit verhouding slecht - geen USP's voor \u20ac505k",
+        "Break-even alleen bij 100% contant - niet haalbaar",
+        "Te duur voor rendement - max \u20ac350k acceptabel voor deze specs"
+      ],
+      "recommendations": [
+        "ONDERHANDEL HARD: target \u20ac380-400k (25% korting) voor acceptabel rendement",
+        "Als geen prijsverlaging mogelijk: AFWIJZEN - geen rendement",
+        "Alternatief: zoek vergelijkbaar object in minder dure regio",
+        "Verhoog nachtprijs naar \u20ac180+ door USP toevoeging"
+      ],
+      "calculations": {
+        "purchase_price": 505000,
+        "total_investment": 532100,
+        "estimated_annual_revenue": 32130,
+        "estimated_annual_costs": 15553,
+        "net_annual_income": 16577,
+        "cash_on_cash_return": 3.1,
+        "breakeven_years": 32.1
+      }
+    },
+    "legal": {
+      "score": 7.0,
+      "reasoning": "RED FLAGS: Erfpacht waarschuwing uit pre-screening - ONJUIST. Advertentie vermeldt expliciet 'eigen grond, dus GEEN erfpacht'. Waarschuwing niet van toepassing. \n\nVERHUURVRIJHEID: 'Permanente bewoning NIET toegestaan' = dit is RECREATIEF vastgoed, bedoeld voor verhuur. POSITIEF voor zelfverhuur strategie. Geen vermelding verplichte parkorganisatie (Landal etc.), geen commissies genoemd. \n\nKRITISCH - ONTBREKENDE INFO: \n- Geen info over VRIJE verhuur via eigen kanalen\n- Geen vermelding VvE verhuurregels\n- Geen info seizoensbeperking\n- Geen info max verhuurweken/jaar\n- Geen Recron voorwaarden vermeld\n- Geen privilege clausule vermeld\n\nRISICO: Bij nieuwbouw recreatief kunnen alsnog restrictieve parkregels gelden. VvE reglement moet onderzocht! \n\nSEIZOEN: Geen seizoensbeperkingen vermeld. Aanname jaar-rond mogelijk (Amsterdam locatie ondersteunt dit). \n\nFISCAAL: Bij professionele verhuur Box 1 (ondernemer). BTW verplicht bij >\u20ac20k omzet. Aftrekposten: financieringsrente, onderhoud, afschrijving, VVE. \n\nACTIE VEREIST: Voor definitief oordeel CRUCIAAL om te verifi\u00ebren: VvE reglement, parkregels, verhuurvrijheid, goedkeuringsplicht. Vraag dit op bij verkopend makelaar VOOR bod.",
+      "red_flags": [
+        "Ontbrekende informatie verhuurvoorwaarden - moet geverifieerd",
+        "VvE reglement onbekend - kan restricties bevatten",
+        "Geen bevestiging vrije platformkeuze",
+        "Nieuwbouw - regels kunnen na oplevering wijzigen"
+      ],
+      "recommendations": [
+        "VOOR BOD: Vraag volledig VvE reglement + parkregels bij ontwikkelaar",
+        "Laat notaris verhuurvrijheid expliciet bevestigen",
+        "Eis clausule in koopcontract: ontbinding bij verhuurrestricties",
+        "Controleer geen Recron binding",
+        "Check toeristenbelasting verplichtingen Amsterdam"
+      ],
+      "rental_freedom": "ONBEVESTIGD - permanente bewoning niet toegestaan (positief voor verhuur), maar geen expliciete bevestiging vrije zelfverhuur. Verificatie essentieel."
+    }
+  },
+  "overall_assessment": "AFWIJZEN - Ondanks uitstekende A-locatie (Amsterdam) en legale recreatieve status faalt dit object op rendement. Met 3.1% Cash-on-Cash en negatieve cashflow bij financiering is dit een verliesgevende investering. De vraagprijs van \u20ac505k is 25-30% te hoog voor een standaard nieuwbouw appartement zonder USP's. Het pand mist elke differentiatie (geen hottub, sauna, bijzonder design) die nodig is om premium nachtprijzen te rechtvaardigen. Voor \u20ac505k verwacht je unieke features die hoge bezetting en prijzen genereren - dit object biedt dat niet. Zelfs met optimistische waardevermeerdering is 3-jaars ROI slechts 1.7%/jaar - onvoldoende voor scale-up strategie. Juridisch ontbreekt cruciale info over verhuurvrijheid - risico op onverwachte restricties. CONCLUSIE: Verkeerd geprijsd object zonder rendementspotentieel. Alleen interessant bij prijsverlaging naar \u20ac350-380k.",
+  "top_strengths": [
+    "A-locatie Amsterdam - jaar-rond toeristische vraag met 65%+ bezetting potentieel",
+    "Legaal recreatief vastgoed - geen Airbnb verbod risico zoals reguliere woningen",
+    "Nieuwbouw 2026 - moderne uitstraling, 10 jaar garantie, minimaal onderhoud eerste jaren",
+    "Eigen grond - geen erfpacht canon of voorwaardenwijziging risico"
+  ],
+  "top_concerns": [
+    "DEALBREAKER: Cash-on-Cash 3.1% - ver onder 10% minimum, negatieve cashflow \u20ac6k/jaar bij financiering",
+    "Prijs \u20ac505k veel te hoog - 25% overprijsd voor standaard specs zonder USP's, max \u20ac380k acceptabel",
+    "Geen differentiatie - standaard nieuwbouw zonder hottub/sauna/unieke features limiteert nachtprijs tot gemiddeld \u20ac140",
+    "Ontbrekende juridische info - verhuurvrijheid onbevestigd, VvE reglement onbekend, risico op restricties"
+  ],
+  "investment_recommendation": "AFWIJZEN - Rendement onvoldoende (3.1% vs 10%+ target), prijs 25% te hoog, negatieve cashflow. Geen scale-up potentieel door verliesgevende positie. Alleen heroverwegen bij prijsverlaging naar \u20ac350-380k OF bij bevestiging vrije verhuur + budget voor \u20ac20k USP upgrades waardoor nachtprijs naar \u20ac180+ kan. In huidige vorm financieel onaantrekkelijk.",
+  "metadata": {
+    "processing_time_seconds": 98.73,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
