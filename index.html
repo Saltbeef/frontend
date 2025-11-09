@@ -286,11 +286,10 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
             <div class="bg-white p-4 rounded-lg mb-4 shadow-sm">
                 <h3 class="mb-3 text-base font-medium text-gray-800 border-b border-gray-200 pb-2">Data Sources & Actions</h3>
                 <button onclick="document.getElementById('fileInput').click()" class="w-full p-2.5 mb-2 bg-blue-600 text-white border-none rounded cursor-pointer text-sm hover:bg-blue-700">📁 Load JSONL File</button>
-                <button onclick="showUrlModal()" class="w-full p-2.5 mb-2 bg-blue-600 text-white border-none rounded cursor-pointer text-sm hover:bg-blue-700">🌐 Load from URL</button>
                 <button onclick="showBulkBlacklistModal()" class="w-full p-2.5 mb-2 bg-red-600 text-white border-none rounded cursor-pointer text-sm hover:bg-red-700">Bulk Blacklist Results</button>
                 <input type="file" id="fileInput" accept=".jsonl,.json" class="hidden">
-                <div id="dataSourceInfo" class="text-xs text-gray-600 mt-2 break-all leading-tight">No data loaded</div>
-                <div class="text-xs text-gray-400 mt-0.5">Remote files cached for 15 minutes</div>
+                <div id="dataSourceInfo" class="text-xs text-gray-600 mt-2 break-all leading-tight">Loading dataset...</div>
+                <div class="text-xs text-gray-400 mt-0.5">Dataset cached in browser for faster loads</div>
             </div>
         </div>
 
@@ -325,20 +324,6 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
         </div>
     </div>
 
-    <!-- URL Modal -->
-    <div id="urlModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50">
-        <div class="bg-white my-20 mx-auto p-5 rounded-lg w-11/12 max-w-lg">
-            <h3 class="mb-4 text-lg font-semibold">Load JSONL from URL</h3>
-            <input type="url" id="modalUrlInput" placeholder="Enter JSONL URL (supports .gz compressed files)" class="w-full p-2.5 border border-gray-300 rounded mb-4">
-            <p class="text-xs text-gray-500 mb-2">💡 Tip: .gz files are automatically decompressed</p>
-            <p class="text-xs text-gray-500 mb-4">Default: <code class="bg-gray-100 px-1">https://raw.githubusercontent.com/Saltbeef/frontend/main/data/apify_dataset.json.gz</code></p>
-            <div class="flex gap-2.5 justify-end">
-                <button onclick="hideUrlModal()" class="px-3 py-2 bg-gray-600 text-white rounded hover:bg-gray-700">Cancel</button>
-                <button onclick="loadFromModalUrl()" class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Load</button>
-            </div>
-        </div>
-    </div>
-
     <!-- Bulk Blacklist Modal -->
     <div id="bulkBlacklistModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50">
         <div class="bg-white my-20 mx-auto p-5 rounded-lg w-11/12 max-w-lg">
@@ -356,20 +341,21 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
     <div id="analysisConfigModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50">
         <div class="bg-white my-20 mx-auto p-5 rounded-lg w-11/12 max-w-2xl">
             <h3 class="mb-4 text-lg font-semibold text-blue-600">🔑 Analysis Configuration</h3>
-            <p class="mb-4 text-sm text-gray-600">Configure API tokens to enable house analysis functionality. Your tokens are stored locally in your browser.</p>
+            <p class="mb-4 text-sm text-gray-600">Configure GitHub token to trigger house analysis workflows. Token is stored locally in your browser.</p>
 
             <div class="space-y-4">
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">GitHub Personal Access Token</label>
                     <input type="password" id="githubTokenInput" placeholder="ghp_..." class="w-full px-3 py-2 border border-gray-300 rounded">
-                    <p class="mt-1 text-xs text-gray-500">Required permissions: repo, workflow</p>
-                    <p class="mt-1 text-xs text-gray-500">Used to trigger analysis workflows. Dataset is stored in the repository.</p>
+                    <p class="mt-1 text-xs text-gray-500">Required permissions: <code>repo</code>, <code>workflow</code></p>
+                    <p class="mt-1 text-xs text-gray-500">Used to trigger GitHub Actions workflows for analysis</p>
+                    <p class="mt-1 text-xs text-blue-600"><a href="https://github.com/settings/tokens" target="_blank" class="hover:underline">→ Create token</a></p>
                 </div>
             </div>
 
             <div class="flex gap-2.5 justify-end mt-5">
                 <button onclick="hideAnalysisConfigModal()" class="px-3 py-2 bg-gray-600 text-white rounded hover:bg-gray-700">Cancel</button>
-                <button onclick="saveAnalysisConfig()" class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Save Configuration</button>
+                <button onclick="saveAnalysisConfig()" class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Save Token</button>
             </div>
         </div>
     </div>
@@ -575,23 +561,8 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
         }
 
         // Load saved URL from localStorage
-        function loadSavedUrl() {
-            const savedUrl = localStorage.getItem('jsonl-url');
-            if (savedUrl) {
-                document.getElementById('modalUrlInput').value = savedUrl;
-                return savedUrl;
-            }
-            return null;
-        }
-
-        // Save URL to localStorage
-        function saveUrl(url) {
-            if (url) {
-                localStorage.setItem('jsonl-url', url);
-            } else {
-                localStorage.removeItem('jsonl-url');
-            }
-        }
+        // Hardcoded dataset URL
+        const DATASET_URL = 'https://raw.githubusercontent.com/Saltbeef/frontend/main/data/apify_dataset.json.gz';
 
         // IndexedDB cache management for large JSONL data
         let dbCache = null;
@@ -719,50 +690,8 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
             }
         }
 
-        // Show URL modal
-        function showUrlModal() {
-            const savedUrl = localStorage.getItem('jsonl-url');
-            const defaultUrl = 'https://raw.githubusercontent.com/Saltbeef/frontend/main/data/apify_dataset.json.gz';
-
-            if (savedUrl) {
-                document.getElementById('modalUrlInput').value = savedUrl;
-            } else {
-                document.getElementById('modalUrlInput').value = defaultUrl;
-            }
-            document.getElementById('urlModal').style.display = 'block';
-        }
-
-        // Hide URL modal
-        function hideUrlModal() {
-            document.getElementById('urlModal').style.display = 'none';
-        }
-
-        // Load from modal URL
-        async function loadFromModalUrl() {
-            const url = document.getElementById('modalUrlInput').value.trim();
-            if (!url) {
-                showError('Please enter a URL');
-                return;
-            }
-            hideUrlModal();
-            await loadFromUrl(url);
-        }
-
         // Load JSONL from URL
-        async function loadFromUrl(url = null) {
-            if (!url) {
-                url = document.getElementById('modalUrlInput').value.trim();
-            }
-
-            if (!url) {
-                showError('Please enter a URL');
-                return;
-            }
-
-            if (!url.match(/^https?:\/\//)) {
-                showError('Please enter a valid HTTP/HTTPS URL');
-                return;
-            }
+        async function loadFromUrl(url) {
 
             // Check IndexedDB cache first
             const cachedData = await getCachedData(url);
@@ -770,8 +699,7 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                 currentDataSource = url;
                 currentDataUrl = url;
                 currentDataLoaded = Date.now();
-                saveUrl(url);
-                updateDataSourceInfo(url + ' (cached)');
+                updateDataSourceInfo('Dataset (cached)');
                 await parseJSONL(cachedData);
                 return;
             }
@@ -814,8 +742,7 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                 currentDataSource = url;
                 currentDataUrl = url;
                 currentDataLoaded = Date.now();
-                saveUrl(url);
-                updateDataSourceInfo(url);
+                updateDataSourceInfo('Dataset loaded');
 
                 await parseJSONL(text);
             } catch (error) {
@@ -2404,34 +2331,19 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
             loadPropertyRatings();
             loadSavedQuery(); // Restore saved query on page load
 
-            // Auto-load from saved URL if available
-            const savedUrl = loadSavedUrl();
-            if (savedUrl) {
-                await loadFromUrl(savedUrl);
-                // After data loads, apply saved query if it exists and data is available
-                const savedQuery = localStorage.getItem('funda-current-query');
-                if (savedQuery && properties.length > 0) {
-                    executeQuery();
-                }
+            // Auto-load dataset
+            await loadFromUrl(DATASET_URL);
+
+            // After data loads, apply saved query if it exists and data is available
+            const savedQuery = localStorage.getItem('funda-current-query');
+            if (savedQuery && properties.length > 0) {
+                executeQuery();
             }
 
             document.getElementById('queryInput').focus();
         });
 
-        // Allow Enter key to load URL in modal
-        document.getElementById('modalUrlInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                loadFromModalUrl();
-            }
-        });
-
         // Close modals when clicking outside
-        document.getElementById('urlModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                hideUrlModal();
-            }
-        });
-
         document.getElementById('bulkBlacklistModal').addEventListener('click', function(e) {
             if (e.target === this) {
                 hideBulkBlacklistModal();
