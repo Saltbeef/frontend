@@ -2304,9 +2304,10 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
             });
         });
 
-        // Add event listener for sort dropdown to sync with query box
+        // Add event listener for sort dropdown to sync with query box and apply sorting
         document.getElementById('sortSelect').addEventListener('change', function(e) {
             syncQueryWithQuickFilters();
+            applySorting();
         });
 
         document.addEventListener('DOMContentLoaded', async function() {
