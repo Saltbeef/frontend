@@ -1,0 +1,214 @@
+name: Sync Market Metrics
+
+on:
+  workflow_dispatch:  # Manual trigger
+  schedule:
+    # Run once per month on the 1st at 2am UTC
+    - cron: '0 2 1 * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Extract unique cities from dataset
+        id: extract_cities
+        run: |
+          echo "Extracting unique cities from compressed dataset..."
+
+          # Decompress dataset
+          gunzip -c data/apify_dataset.json.gz > dataset_temp.json
+
+          # Extract unique cities with their province and coordinates
+          python3 << 'EOF'
+          import json
+          from collections import defaultdict
+
+          with open('dataset_temp.json', 'r') as f:
+              dataset = json.load(f)
+
+          # Group by city, keep first occurrence for coordinates
+          cities = {}
+          for item in dataset:
+              city = item.get('AddressDetails', {}).get('City')
+              province = item.get('AddressDetails', {}).get('Province')
+              lat = item.get('AddressDetails', {}).get('Latitude')
+              lon = item.get('AddressDetails', {}).get('Longitude')
+
+              if city and province and lat and lon:
+                  if city not in cities:
+                      cities[city] = {
+                          'city': city,
+                          'province': province,
+                          'latitude': lat,
+                          'longitude': lon
+                      }
+
+          # Save to file
+          with open('cities.json', 'w') as f:
+              json.dump(list(cities.values()), f, indent=2)
+
+          print(f"Found {len(cities)} unique cities")
+          print(f"Cities: {', '.join(sorted(cities.keys())[:10])}...")
+          EOF
+
+          rm -f dataset_temp.json
+
+          CITY_COUNT=$(python3 -c "import json; print(len(json.load(open('cities.json'))))")
+          echo "city_count=${CITY_COUNT}" >> $GITHUB_OUTPUT
+
+      - name: Fetch market metrics from AirROI
+        env:
+          AIRROI_API_KEY: ${{ secrets.AIRROI_API_KEY }}
+        run: |
+          echo "Fetching market metrics for cities..."
+
+          python3 << 'EOF'
+          import json
+          import urllib.request
+          import urllib.error
+          import os
+          import time
+          from datetime import datetime, timezone
+
+          API_KEY = os.environ['AIRROI_API_KEY']
+
+          # Load cities
+          with open('cities.json', 'r') as f:
+              cities = json.load(f)
+
+          market_metrics = {
+              'last_updated': datetime.now(timezone.utc).isoformat(),
+              'cities': {}
+          }
+
+          total_cost = 0
+          successful = 0
+          failed = 0
+
+          for i, city_data in enumerate(cities):
+              city = city_data['city']
+              province = city_data['province']
+              lat = city_data['latitude']
+              lon = city_data['longitude']
+
+              print(f"[{i+1}/{len(cities)}] Fetching metrics for {city}, {province}...")
+
+              try:
+                  # Use market lookup endpoint to find market by coordinates
+                  lookup_url = f"https://api.airroi.com/v2/markets/lookup?latitude={lat}&longitude={lon}"
+
+                  lookup_req = urllib.request.Request(
+                      lookup_url,
+                      headers={
+                          'X-API-KEY': API_KEY,
+                          'Content-Type': 'application/json'
+                      }
+                  )
+
+                  with urllib.request.urlopen(lookup_req, timeout=30) as response:
+                      lookup_result = json.loads(response.read().decode())
+                      total_cost += 0.01  # $0.01 per call
+
+                  if not lookup_result.get('data'):
+                      print(f"  ⚠️  No market found for {city}")
+                      failed += 1
+                      continue
+
+                  market_data = lookup_result['data']
+
+                  # Now get market metrics for this market
+                  # Use POST /markets/metrics with the market info
+                  metrics_url = "https://api.airroi.com/v2/markets/metrics"
+
+                  metrics_body = {
+                      "markets": [
+                          {
+                              "country": market_data.get('country'),
+                              "region": market_data.get('region'),
+                              "locality": market_data.get('locality')
+                          }
+                      ],
+                      "currency": "native",
+                      "metrics_period": "ttm"  # Trailing twelve months
+                  }
+
+                  metrics_req = urllib.request.Request(
+                      metrics_url,
+                      data=json.dumps(metrics_body).encode(),
+                      headers={
+                          'X-API-KEY': API_KEY,
+                          'Content-Type': 'application/json'
+                      }
+                  )
+
+                  with urllib.request.urlopen(metrics_req, timeout=30) as response:
+                      metrics_result = json.loads(response.read().decode())
+                      total_cost += 0.01  # $0.01 per call
+
+                  # Store both market info and metrics
+                  market_metrics['cities'][city] = {
+                      'province': province,
+                      'market': market_data,
+                      'metrics': metrics_result.get('data', [{}])[0] if metrics_result.get('data') else {},
+                      'fetched_at': datetime.now(timezone.utc).isoformat()
+                  }
+
+                  successful += 1
+                  print(f"  ✅ Success (Total cost: ${total_cost:.2f})")
+
+                  # Rate limiting: small delay between requests
+                  time.sleep(0.5)
+
+              except urllib.error.HTTPError as e:
+                  print(f"  ❌ HTTP Error {e.code}: {e.reason}")
+                  failed += 1
+              except Exception as e:
+                  print(f"  ❌ Error: {e}")
+                  failed += 1
+
+          # Save market metrics
+          with open('data/market_metrics.json', 'w') as f:
+              json.dump(market_metrics, f, indent=2)
+
+          print(f"\n{'='*60}")
+          print(f"Summary:")
+          print(f"  Total cities: {len(cities)}")
+          print(f"  Successful: {successful}")
+          print(f"  Failed: {failed}")
+          print(f"  Total API cost: ${total_cost:.2f}")
+          print(f"{'='*60}")
+          EOF
+
+      - name: Commit and push market metrics
+        run: |
+          git config user.name "Market Metrics Bot"
+          git config user.email "bot@github-actions"
+
+          git add data/market_metrics.json
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update market metrics from AirROI API
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+
+            git push origin main
+            echo "✅ Market metrics updated and pushed"
+          fi

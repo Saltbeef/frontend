@@ -115,7 +115,7 @@ Red flags: [Critical compliance issues]"""
             ),
         }
 
-    def get_analysis_prompt(self, house_data: dict) -> str:
+    def get_analysis_prompt(self, house_data: dict, enrichment_data: dict = None, market_metrics: dict = None) -> str:
         """Generate the complete analysis prompt for the LLM."""
         prompt_parts = [self.system_prompt, "\n\n## PROPERTY DATA\n"]
 

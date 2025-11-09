@@ -370,11 +370,21 @@ Aanbevelingen: [Juridisch advies indien onduidelijk]"""
             ),
         }
 
-    def get_analysis_prompt(self, house_data: dict) -> str:
+    def get_analysis_prompt(
+        self,
+        house_data: dict,
+        enrichment_data: dict = None,
+        market_metrics: dict = None
+    ) -> str:
         """
         Genereer complete analyse prompt met RED FLAG PRE-SCREENING.
 
         Integreert red flag detectie VOOR deep analysis.
+
+        Args:
+            house_data: Raw house data from Apify
+            enrichment_data: Optional AirROI enrichment (comparables, revenue estimate)
+            market_metrics: Optional market-level metrics from AirROI
         """
         from src.red_flags import RedFlagDetector
 
@@ -419,6 +429,54 @@ Investement recommendation moet AFWIJZEN zijn met duidelijke onderbouwing.
         # Add house data
         prompt_parts.append("## 📋 PAND DATA\n\n")
         prompt_parts.append(f"```json\n{json.dumps(house_data, indent=2, ensure_ascii=False)}\n```\n\n")
+
+        # Add AirROI enrichment data if available
+        if enrichment_data and enrichment_data.get('enriched'):
+            prompt_parts.append("## 🌍 AIRROI MARKTDATA (AIRBNB/SHORT-TERM RENTAL)\n\n")
+            prompt_parts.append("**Belangrijk:** Deze data komt van echte Airbnb listings in de buurt en kan gebruikt worden voor concretere revenue schattingen en marktanalyse.\n\n")
+
+            # Add comparable listings summary
+            comparables = enrichment_data.get('comparables', [])
+            if comparables:
+                prompt_parts.append(f"### Vergelijkbare Airbnb listings in de buurt ({len(comparables)} listings)\n\n")
+                prompt_parts.append("Top vergelijkbare properties:\n\n")
+                for i, comp in enumerate(comparables[:5], 1):
+                    prompt_parts.append(f"**Listing {i}:**\n")
+                    prompt_parts.append(f"- Bedrooms: {comp.get('bedrooms', 'N/A')}\n")
+                    prompt_parts.append(f"- Bathrooms: {comp.get('bathrooms', 'N/A')}\n")
+
+                    # Metrics (TTM = Trailing Twelve Months)
+                    metrics = comp.get('metrics', {}).get('ttm', {})
+                    if metrics:
+                        prompt_parts.append(f"- Annual Revenue (TTM): {metrics.get('revenue', 'N/A')}\n")
+                        prompt_parts.append(f"- Occupancy Rate (TTM): {metrics.get('occupancy', 'N/A')}%\n")
+                        prompt_parts.append(f"- Average Daily Rate (TTM): {metrics.get('adr', 'N/A')}\n")
+                        prompt_parts.append(f"- Days Booked (TTM): {metrics.get('days_booked', 'N/A')}\n")
+                    prompt_parts.append("\n")
+
+            # Add revenue estimate
+            revenue_estimate = enrichment_data.get('revenue_estimate', {})
+            if revenue_estimate:
+                prompt_parts.append("### Revenue Schatting voor dit pand\n\n")
+                prompt_parts.append("**Gebaseerd op vergelijkbare listings in de buurt:**\n\n")
+                estimate_data = revenue_estimate.get('estimate', {})
+                if estimate_data:
+                    prompt_parts.append(f"```json\n{json.dumps(estimate_data, indent=2, ensure_ascii=False)}\n```\n\n")
+
+            prompt_parts.append("**Gebruik deze data actief in je financial analysis!** De revenue estimate en comparable listings geven concrete marktdata voor realistische projecties.\n\n")
+
+        # Add market-level metrics if available
+        if market_metrics:
+            prompt_parts.append("## 📊 MARKT METRICS (STAD-NIVEAU)\n\n")
+            city = house_data.get('AddressDetails', {}).get('City', 'Unknown')
+            province = market_metrics.get('province', 'Unknown')
+            prompt_parts.append(f"**Markt:** {city}, {province}\n\n")
+
+            metrics = market_metrics.get('metrics', {})
+            if metrics:
+                prompt_parts.append("**Market Performance (Trailing 12 Months):**\n\n")
+                prompt_parts.append(f"```json\n{json.dumps(metrics, indent=2, ensure_ascii=False)}\n```\n\n")
+                prompt_parts.append("**Gebruik deze data voor context:** Vergelijk de property's potentieel met het marktgemiddelde.\n\n")
 
         # Add category-specific analysis requests
         prompt_parts.append("## 🔍 VEREISTE ANALYSE PER CATEGORIE\n\n")

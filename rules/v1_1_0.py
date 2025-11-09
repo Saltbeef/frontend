@@ -117,7 +117,7 @@ Rode vlaggen: [Kritieke nalevingsproblemen]"""
             ),
         }
 
-    def get_analysis_prompt(self, house_data: dict) -> str:
+    def get_analysis_prompt(self, house_data: dict, enrichment_data: dict = None, market_metrics: dict = None) -> str:
         """Genereer de complete analyse prompt voor de LLM."""
         prompt_parts = [self.system_prompt, "\n\n## PAND DATA\n"]
 

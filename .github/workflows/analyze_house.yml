@@ -69,6 +69,159 @@ jobs:
           rm -f dataset_temp.json
           echo "House data extracted successfully"
 
+      - name: Fetch AirROI enrichment data
+        id: enrichment
+        env:
+          AIRROI_API_KEY: ${{ secrets.AIRROI_API_KEY }}
+        run: |
+          HOUSE_ID="${{ inputs.house_id }}"
+          ENRICHMENT_DIR="houses/${HOUSE_ID}/enrichment"
+          ENRICHMENT_FILE="${ENRICHMENT_DIR}/airroi_enrichment.json"
+
+          # Check if enrichment already exists
+          if [ -f "${ENRICHMENT_FILE}" ]; then
+            echo "✅ Enrichment data already exists, skipping AirROI API call"
+            echo "exists=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          echo "📡 Fetching enrichment data from AirROI API..."
+
+          # Create enrichment directory
+          mkdir -p "${ENRICHMENT_DIR}"
+
+          python3 << 'EOF'
+          import json
+          import urllib.request
+          import urllib.error
+          import os
+          from datetime import datetime, timezone
+
+          API_KEY = os.environ.get('AIRROI_API_KEY')
+
+          if not API_KEY:
+              print("⚠️  No AirROI API key configured, skipping enrichment")
+              # Create empty enrichment file
+              with open('${{ env.ENRICHMENT_FILE }}', 'w') as f:
+                  json.dump({'enriched': False, 'reason': 'No API key'}, f, indent=2)
+              exit(0)
+
+          # Load house data
+          with open('house_data.json', 'r') as f:
+              house_data = json.load(f)
+
+          # Extract coordinates and property details
+          lat = house_data.get('AddressDetails', {}).get('Latitude')
+          lon = house_data.get('AddressDetails', {}).get('Longitude')
+          bedrooms = house_data.get('FastView', {}).get('NumberOfBedrooms', 2)
+          city = house_data.get('AddressDetails', {}).get('City', '')
+
+          if not lat or not lon:
+              print("⚠️  No coordinates found, skipping enrichment")
+              with open('houses/${{ inputs.house_id }}/enrichment/airroi_enrichment.json', 'w') as f:
+                  json.dump({'enriched': False, 'reason': 'No coordinates'}, f, indent=2)
+              exit(0)
+
+          enrichment = {
+              'enriched': True,
+              'enriched_at': datetime.now(timezone.utc).isoformat(),
+              'house_id': '${{ inputs.house_id }}',
+              'api_calls': 0,
+              'estimated_cost': 0.0
+          }
+
+          try:
+              # 1. Search for comparable listings within 5km radius
+              print(f"Searching for comparable listings near {city} ({lat}, {lon})...")
+
+              radius_search_url = "https://api.airroi.com/v2/listings/search/radius"
+              radius_body = {
+                  "latitude": lat,
+                  "longitude": lon,
+                  "radius_km": 5,
+                  "filters": {
+                      "bedrooms": {"eq": bedrooms}
+                  },
+                  "pagination": {
+                      "page_size": 10,
+                      "offset": 0
+                  },
+                  "currency": "native",
+                  "metrics_period": "ttm"
+              }
+
+              radius_req = urllib.request.Request(
+                  radius_search_url,
+                  data=json.dumps(radius_body).encode(),
+                  headers={
+                      'X-API-KEY': API_KEY,
+                      'Content-Type': 'application/json'
+                  }
+              )
+
+              with urllib.request.urlopen(radius_req, timeout=30) as response:
+                  comparables = json.loads(response.read().decode())
+
+              enrichment['comparables'] = comparables.get('data', [])
+              enrichment['api_calls'] += 1
+              enrichment['estimated_cost'] += 0.01
+
+              print(f"  ✅ Found {len(enrichment['comparables'])} comparable listings")
+
+              # 2. Get revenue estimate
+              print(f"Fetching revenue estimate...")
+
+              # Build query params
+              params = {
+                  'latitude': lat,
+                  'longitude': lon,
+                  'bedrooms': bedrooms
+              }
+              query_string = '&'.join([f"{k}={v}" for k, v in params.items()])
+              estimate_url = f"https://api.airroi.com/v2/calculator/estimate?{query_string}"
+
+              estimate_req = urllib.request.Request(
+                  estimate_url,
+                  headers={
+                      'X-API-KEY': API_KEY,
+                      'Content-Type': 'application/json'
+                  }
+              )
+
+              with urllib.request.urlopen(estimate_req, timeout=30) as response:
+                  revenue_estimate = json.loads(response.read().decode())
+
+              enrichment['revenue_estimate'] = revenue_estimate.get('data', {})
+              enrichment['api_calls'] += 1
+              enrichment['estimated_cost'] += 0.01
+
+              print(f"  ✅ Revenue estimate fetched")
+
+              print(f"\n{'='*60}")
+              print(f"Enrichment Summary:")
+              print(f"  API calls: {enrichment['api_calls']}")
+              print(f"  Estimated cost: ${enrichment['estimated_cost']:.2f}")
+              print(f"  Comparables found: {len(enrichment.get('comparables', []))}")
+              print(f"{'='*60}")
+
+          except urllib.error.HTTPError as e:
+              print(f"❌ AirROI API Error {e.code}: {e.reason}")
+              enrichment['enriched'] = False
+              enrichment['error'] = f"HTTP {e.code}: {e.reason}"
+          except Exception as e:
+              print(f"❌ Error fetching enrichment: {e}")
+              enrichment['enriched'] = False
+              enrichment['error'] = str(e)
+
+          # Save enrichment data
+          with open('houses/${{ inputs.house_id }}/enrichment/airroi_enrichment.json', 'w') as f:
+              json.dump(enrichment, f, indent=2)
+
+          print(f"✅ Enrichment data saved")
+          EOF
+
+          echo "exists=false" >> $GITHUB_OUTPUT
+
       - name: Run analysis
         id: analyze
         env:
@@ -84,17 +237,40 @@ jobs:
           with open('house_data.json', 'r') as f:
               house_data = json.load(f)
 
+          # Load enrichment data if available
+          enrichment_path = Path('houses') / '${{ inputs.house_id }}' / 'enrichment' / 'airroi_enrichment.json'
+          enrichment_data = None
+          if enrichment_path.exists():
+              with open(enrichment_path, 'r') as f:
+                  enrichment_data = json.load(f)
+              print(f'✅ Loaded enrichment data (enriched: {enrichment_data.get(\"enriched\", False)})')
+          else:
+              print('⚠️  No enrichment data found')
+
+          # Load market metrics if available
+          market_metrics_path = Path('data') / 'market_metrics.json'
+          market_metrics = None
+          if market_metrics_path.exists():
+              with open(market_metrics_path, 'r') as f:
+                  market_data = json.load(f)
+                  city = house_data.get('AddressDetails', {}).get('City')
+                  if city and city in market_data.get('cities', {}):
+                      market_metrics = market_data['cities'][city]
+                      print(f'✅ Loaded market metrics for {city}')
+
           # Initialize agent
           agent = HouseAnalysisAgent(
               rules_version='${{ inputs.rules_version }}',
               llm_provider='${{ inputs.llm_provider }}'
           )
 
-          # Run analysis
+          # Run analysis with enrichment data
           analysis = agent.analyze_house(
               house_data=house_data,
               house_id='${{ inputs.house_id }}',
-              apify_dataset_id='Yb4fTMJ9wQsuyZf3L'  # Hardcoded dataset ID
+              apify_dataset_id='Yb4fTMJ9wQsuyZf3L',  # Hardcoded dataset ID
+              enrichment_data=enrichment_data,
+              market_metrics=market_metrics
           )
 
           # Validate

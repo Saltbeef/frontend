@@ -219,7 +219,9 @@ class HouseAnalysisAgent:
         self,
         house_data: Dict[str, Any],
         house_id: str,
-        apify_dataset_id: Optional[str] = None
+        apify_dataset_id: Optional[str] = None,
+        enrichment_data: Optional[Dict[str, Any]] = None,
+        market_metrics: Optional[Dict[str, Any]] = None
     ) -> Dict[str, Any]:
         """
         Analyze a house using the configured rules and LLM.
@@ -228,14 +230,20 @@ class HouseAnalysisAgent:
             house_data: Raw house data from Apify
             house_id: Unique identifier for the house
             apify_dataset_id: Optional Apify dataset ID for metadata
+            enrichment_data: Optional AirROI enrichment data (comparables, revenue estimate)
+            market_metrics: Optional market-level metrics from AirROI
 
         Returns:
             Complete analysis result
         """
         start_time = time.time()
 
-        # Generate analysis prompt
-        prompt = self.rules.get_analysis_prompt(house_data)
+        # Generate analysis prompt with enrichment
+        prompt = self.rules.get_analysis_prompt(
+            house_data,
+            enrichment_data=enrichment_data,
+            market_metrics=market_metrics
+        )
 
         # Get LLM analysis
         print(f"Analyzing house {house_id} using {self.llm_provider}...")
