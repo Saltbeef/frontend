@@ -1538,7 +1538,7 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
         // Refresh current results display (fallback for full refresh)
         function refreshCurrentResults() {
             if (currentResults.length > 0) {
-                displayResults(currentResults, document.getElementById('queryTime').textContent.replace('ms', ''));
+                displayResults(currentResults, '0');
             }
         }
 
@@ -1613,51 +1613,7 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
         }
 
         function updateCacheInfo() {
-            const cacheInfoEl = document.getElementById('cacheInfo');
-
-            if (!properties || properties.length === 0) {
-                cacheInfoEl.textContent = '-';
-                return;
-            }
-
-            // Find newest listing date
-            let newestDate = null;
-            properties.forEach(prop => {
-                const lastmod = prop.sitemapData?.lastmod;
-                if (lastmod) {
-                    const date = new Date(lastmod);
-                    if (!newestDate || date > newestDate) {
-                        newestDate = date;
-                    }
-                }
-            });
-
-            // Format cache info
-            let cacheText = '';
-            if (currentDataLoaded) {
-                const loadTime = new Date(currentDataLoaded);
-                const hoursAgo = Math.floor((Date.now() - currentDataLoaded) / (1000 * 60 * 60));
-                if (hoursAgo < 1) {
-                    cacheText = 'Just loaded';
-                } else if (hoursAgo < 24) {
-                    cacheText = `${hoursAgo}h ago`;
-                } else {
-                    const daysAgo = Math.floor(hoursAgo / 24);
-                    cacheText = `${daysAgo}d ago`;
-                }
-            }
-
-            if (newestDate) {
-                const newestDaysAgo = Math.floor((Date.now() - newestDate.getTime()) / (1000 * 60 * 60 * 24));
-                if (newestDaysAgo === 0) {
-                    cacheText += ', newest: today';
-                } else {
-                    cacheText += `, newest: ${newestDaysAgo}d ago`;
-                }
-            }
-
-            cacheInfoEl.textContent = cacheText || '-';
-            cacheInfoEl.title = `Data loaded: ${currentDataLoaded ? new Date(currentDataLoaded).toLocaleString() : 'Unknown'}\nNewest listing: ${newestDate ? newestDate.toLocaleString() : 'Unknown'}`;
+            // Cache info display removed from UI
         }
 
         // Toggle filter functionality
@@ -2037,10 +1993,8 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
 
             const container = document.getElementById('resultsList');
             const countEl = document.getElementById('resultsCount');
-            const timeEl = document.getElementById('queryTime');
 
             countEl.textContent = `${results.length} results`;
-            timeEl.textContent = `${queryTime}ms`;
             
             if (results.length === 0) {
                 container.innerHTML = '<div class="loading">No properties match your filter</div>';
@@ -2146,13 +2100,13 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
             const sortValue = document.getElementById('sortSelect').value;
             if (!sortValue) {
                 // Reset to original order (no sorting)
-                displayResults(currentResults, document.getElementById('queryTime').textContent.replace('ms', ''));
+                displayResults(currentResults, '0');
                 return;
             }
-            
+
             const startTime = performance.now();
             let sortedResults = [...currentResults];
-            
+
             switch (sortValue) {
                 case 'price-asc':
                     sortedResults.sort((a, b) => {
@@ -2161,7 +2115,7 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                         return priceA - priceB;
                     });
                     break;
-                    
+
                 case 'price-desc':
                     sortedResults.sort((a, b) => {
                         const priceA = a.Price?.NumericSellingPrice || 0;
@@ -2169,7 +2123,7 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                         return priceB - priceA;
                     });
                     break;
-                    
+
                 case 'date-asc':
                     sortedResults.sort((a, b) => {
                         const dateA = new Date(a.sitemapData?.lastmod || 0);
@@ -2177,7 +2131,7 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                         return dateA - dateB;
                     });
                     break;
-                    
+
                 case 'date-desc':
                     sortedResults.sort((a, b) => {
                         const dateA = new Date(a.sitemapData?.lastmod || 0);
@@ -2186,11 +2140,11 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                     });
                     break;
             }
-            
+
             const endTime = performance.now();
             const sortTime = (endTime - startTime).toFixed(2);
-            
-            displayResults(sortedResults, `${document.getElementById('queryTime').textContent.replace('ms', '')} + ${sortTime}ms sort`);
+
+            displayResults(sortedResults, '0');
         }
 
         function setQuery(query) {
@@ -2204,7 +2158,6 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
         function clearResults() {
             document.getElementById('resultsList').innerHTML = '<div class="loading">Enter a filter to search</div>';
             document.getElementById('resultsCount').textContent = '0 results';
-            document.getElementById('queryTime').textContent = '';
             document.getElementById('queryInput').value = '';
             document.getElementById('priceMin').value = '';
             document.getElementById('priceMax').value = '';
