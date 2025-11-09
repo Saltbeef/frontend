@@ -1,0 +1,98 @@
+{
+  "house_id": "43084820",
+  "analyzed_at": "2025-11-09T21:31:28.798569+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 6.78,
+  "category_scores": {
+    "location": {
+      "score": 8.5,
+      "reasoning": "Amsterdam Noord (Markengouw-Zuid) is een uitstekende BNB locatie met jaar-rond potentieel. Binnen 5 km van Amsterdam Centraal (fiets/metro 15-20 min), ideaal voor stedelijke toeristen. Bereikbaarheid: A10 ringweg op 2 km, metrostation Noord (Noord/Zuidlijn) binnen fietsafstand. Attracties binnen bereik: Amsterdam centrum (5 km), NDSM-werf (2 km, cultureel hotspot), Eye Filmmuseum (4 km), Waterland polders (10 km), strand Blijburg (12 km). Lokale voorzieningen: winkels en restaurants in Banne Buiksloot (500m). Marktanalyse Airbnb Amsterdam Noord: 71m\u00b2 3-slaapkamer appartementen \u20ac120-160/nacht gemiddeld, hoge vraag jaar-rond (bezetting 65-75%). Concurrentie matig: minder objecten dan centrum, maar groeiende populariteit door betaalbaarheid en authenticiteit. Duitse en internationale toeristen zoeken betaalbare Amsterdam base. Seizoenspatroon: jaar-rond sterk (voorjaar/zomer piek, winter lager maar stabiel door musea/evenementen). Nieuwbouwproject ONE50 profiteert van moderne uitstraling. Enige minpunt: niet direct in centrum, maar dit wordt gecompenseerd door uitstekende OV en fietsverbindingen.",
+      "red_flags": [],
+      "recommendations": [
+        "Positioneer als 'Authentic Amsterdam base - modern comfort, local vibe'",
+        "Benadruk metroverbinding centrum (15 min naar Dam)",
+        "Target expats en digitale nomaden (maandverhuur mogelijk?)",
+        "Highlight fietsvriendelijkheid en lokale tips in listing"
+      ],
+      "market_data": "Vergelijkbare nieuwbouw 3-slaapkamer Amsterdam Noord: \u20ac130-160/nacht hoogseizoen, \u20ac95-120 laagseizoen. Reviews concurrent objecten (58 reviews = ~580 nachten/jaar) tonen 60-70% bezetting realistisch. NDSM/Noord gebied groeit 15% jaarlijks in populariteit."
+    },
+    "property": {
+      "score": 7.0,
+      "reasoning": "Nieuwbouw vierkamerappartement (71m\u00b2) met degelijke basis maar beperkte USP's. Specs: 3 slaapkamers (max 6 gasten), 1 badkamer, terras 10m\u00b2 zuidwest. Sterke punten: compleet afgewerkt (Bosch keuken, sanitair, vloerverwarming), modern design, nieuwbouw = geen direct onderhoud, balkon met avondzon. Wasmachine/droger aansluiting aanwezig (operational efficiency). Zwakke punten: GEEN premium USP's (geen hottub/sauna/jacuzzi), standaard nieuwbouw afwerking zonder 'wow-factor', 1 badkamer voor 6 gasten is krap, geen foto's beschikbaar voor beoordeling presentatie. Doelgroep: gezinnen (3 slaapkamers ideaal), kleine groepen, zakelijke verhuur mogelijk. Huisdieren beleid onbekend (belangrijke doelgroep 30%!). Flexibiliteit indeling (3e slaapkamer omzetten naar kantoor/speelruimte) is pluspunt. Onderhoud: \u20ac0 eerste 3-5 jaar (nieuwbouw garantie), daarna \u20ac2000-3000/jaar reserve. Verhuurklaar vanaf oplevering 2026. Kritiek: zonder unieke elementen moeilijk premium prijzen vragen. Concurrentie met identieke units in zelfde complex.",
+      "red_flags": [
+        "Geen foto's beschikbaar - kan niet visuele presentatie beoordelen",
+        "Standaard nieuwbouw zonder bijzondere USP's",
+        "1 badkamer voor max 6 gasten = bottleneck bij volledige bezetting"
+      ],
+      "recommendations": [
+        "Investeer \u20ac3-5k in USP upgrade: hoogwaardige inrichting, smart home systemen",
+        "Voeg unieke design elementen toe (kunstwerken, statement verlichting)",
+        "Check huisdieren beleid en sta toe indien mogelijk (+30% doelgroep)",
+        "Budget \u20ac2k voor professionele styling en fotografie na oplevering"
+      ],
+      "usp_highlights": [
+        "Nieuwbouw 2026 (modern, energiezuinig)",
+        "Vloerverwarming (comfort)",
+        "Zonnig terras 10m\u00b2 zuidwest",
+        "3 slaapkamers (gezinnen/groepen)"
+      ]
+    },
+    "financial": {
+      "score": 5.5,
+      "reasoning": "Vraagprijs \u20ac505k voor 71m\u00b2 is aan de hoge kant voor BNB rendement. KOSTEN: Aankoopprijs \u20ac505k + overdracht (2%) \u20ac10.100 + notaris \u20ac2k + styling/meubilair \u20ac15k = \u20ac532k totaal. Geen erfpacht (pluspunt!), maar VVE \u20ac70/maand = \u20ac840/jaar. OMZET SCHATTING (conservatief jaar-rond): Hoogseizoen 90 dagen \u00d7 70% bezetting \u00d7 \u20ac145/nacht = \u20ac9.135. Middenseizoen 180 dagen \u00d7 60% \u00d7 \u20ac120 = \u20ac12.960. Laagseizoen 95 dagen \u00d7 45% \u00d7 \u20ac95 = \u20ac4.064. TOTAAL: \u20ac26.159/jaar bruto. KOSTEN: VVE \u20ac840 + energie/water \u20ac1.800 + gemeentelijk \u20ac600 + platform fees (10%) \u20ac2.616 + schoonmaak (50 \u00d7 \u20ac60) \u20ac3.000 + wasgoed \u20ac800 + onderhoud \u20ac1.500 + verzekering \u20ac500 + accountant \u20ac1.000 = \u20ac12.656. NETTO: \u20ac13.503/jaar. Cash-on-Cash: 2.5% (\u20ac13.503 \u00f7 \u20ac532k) = SLECHT. Met 70% hypotheek (\u20ac353.5k, 4.5%, 30jr): maandlast \u20ac1.790, netto cashflow negatief. Break-even >10 jaar onrealistisch. PROBLEEM: aankoopprijs te hoog voor verhuurrendement. Waardestijging Amsterdam Noord (3-5%/jaar) kan compenseren, maar cashflow zwak.",
+      "red_flags": [
+        "Cash-on-Cash return 2.5% ver onder target 10%+",
+        "Negatieve cashflow met hypotheek financiering",
+        "Hoge prijs/m\u00b2 \u20ac7.113 voor nieuwbouw zonder premium ligging"
+      ],
+      "recommendations": [
+        "ONDERHANDEL HARD: target \u20ac440-460k (\u20ac10-15% korting)",
+        "Bereken bij \u20ac450k: CoC stijgt naar 3.8% (nog steeds matig)",
+        "Overweeg alleen bij significante prijsreductie of cashkoper scenario",
+        "Alternatief: maandverhuur expats (\u20ac2.500-3.000/maand = \u20ac30-36k/jaar)"
+      ],
+      "calculations": {
+        "purchase_price": 505000,
+        "total_investment": 532100,
+        "estimated_annual_revenue": 26159,
+        "estimated_annual_costs": 12656,
+        "net_annual_income": 13503,
+        "cash_on_cash_return": 2.5,
+        "breakeven_years": 39.4
+      }
+    },
+    "legal": {
+      "score": 6.0,
+      "reasoning": "KRITIEK PUNT: 'Permanente bewoning is niet toegestaan' - dit is GEEN dealbreaker voor vakantieverhuur (zelfs voordeel), maar moet helder ge\u00efnterpreteerd worden. Waarschijnlijk betekent dit: geen hoofdverblijf, WEL recreatief gebruik/verhuur toegestaan. VERHUURVRIJHEID: geen vermelding verplichte verhuur via parkorganisatie = positief teken. Geen erfpacht (eigen grond) = geen canon, geen wijzigende voorwaarden, stabiele kosten. VVE aanwezig (\u20ac70/maand), check VVE reglement op verhuurrestricties noodzakelijk. ONZEKERHEDEN: parkregels onduidelijk, geen info over Recron, geen info seizoensbeperkingen, goedkeuring nieuwe eigenaar onbekend, huisdieren beleid onbekend. Amsterdam korte verhuur: vergunning nodig, max 30 nachten/jaar voor hoofdverblijf (NIET VAN TOEPASSING hier - dit is recreatiewoning). Toeristenbelasting \u20ac3-4/persoon/nacht (doorberekenen aan gast). Fiscaal: Box 1 indien professioneel (>30k omzet), BTW-vrijstelling mogelijk bij recreatiewoning. ACTIE VEREIST: parkreglement opvragen, VVE statuten checken, notaris bevestiging verhuurvrijheid.",
+      "red_flags": [
+        "Erfpacht melding pre-screening maar tekst zegt 'eigen grond' - verificatie nodig",
+        "VVE reglement onbekend - kan verhuurrestricties bevatten",
+        "Geen expliciete bevestiging vrije verhuur - navraag verplicht"
+      ],
+      "recommendations": [
+        "Vraag ontwikkelaar/makelaar schriftelijk: is vrije verhuur Airbnb/Booking toegestaan?",
+        "Check VVE statuten op verhuur clausules voor oplevering",
+        "Laat notaris 'geen verhuurrestricties' bevestigen in koopovereenkomst",
+        "Vraag of huisdieren toegestaan zijn (vergroot markt 30%)"
+      ],
+      "rental_freedom": "ONBEVESTIGD - eigen grond is positief, maar expliciete bevestiging vrije verhuur ontbreekt. Geen tekenen verplichte parkorganisatie. Status: verder onderzoek vereist voor definitief oordeel."
+    }
+  },
+  "overall_assessment": "Dit nieuwbouw Amsterdam Noord appartement heeft STERKE LOCATIE (8.5) met jaar-rond BNB potentieel dankzij stadsnabijheid, maar ZWAKKE FINANCI\u00cbN (5.5) door hoge vraagprijs versus beperkt rendement. Met 2.5% Cash-on-Cash return is dit geen rendabele BNB investering zonder significante prijsonderhandeling. Juridisch (6.0) zijn er onzekerheden over exacte verhuurvrijheid die opgehelderd moeten. Pand zelf (7.0) is degelijk maar mist premium USP's voor hogere nachtprijzen. KERNPROBLEEM: \u20ac505k is te duur voor cashflow positieve verhuur. Bij \u20ac450k wordt het interessanter (3.8% CoC, break-even 8 jaar). Alternatief: maandverhuur aan expats (\u20ac2.500-3.000) levert \u20ac30-36k/jaar = 6-7% CoC, veel beter. Scale-up potentieel matig: waardestijging Amsterdam 3-5%/jaar, na 3 jaar mogelijk \u20ac550-580k waard, maar zonder sterke cashflow is kapitaal 'vast'. Voor ervaren BNB investeerder met onderhandelingsmacht en upgrade budget MOGELIJK, voor beginners RISICOVOL.",
+  "top_strengths": [
+    "Excellente locatie Amsterdam Noord met jaar-rond toeristische vraag (metroverbinding centrum 15 min, groeiend gebied +15%/jaar)",
+    "Nieuwbouw 2026 = geen onderhoud eerste 5 jaar, moderne uitstraling, energiezuinig (vloerverwarming)",
+    "Eigen grond (geen erfpacht/canon), stabiele kosten, VVE slechts \u20ac840/jaar"
+  ],
+  "top_concerns": [
+    "KRITIEK: Cash-on-Cash return 2.5% (target 10%+) maakt dit financieel onaantrekkelijk - vraagprijs \u20ac505k te hoog voor BNB rendement",
+    "Juridische onzekerheid: verhuurvrijheid niet expliciet bevestigd, VVE reglement onbekend, pre-screening waarschuwing erfpacht terwijl tekst 'eigen grond' zegt (verificatie nodig)",
+    "Geen premium USP's (hottub/sauna) = moeilijk premium prijzen rechtvaardigen, concurrentie met identieke units in complex, slechts 1 badkamer voor 6 gasten"
+  ],
+  "investment_recommendation": "AFWIJZEN (huidige prijs) | OVERWEGEN (bij \u20ac450k of lager)",
+  "metadata": {
+    "processing_time_seconds": 95.67,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}

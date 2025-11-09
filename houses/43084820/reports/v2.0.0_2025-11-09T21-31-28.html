@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 43084820</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 43084820<br>
+                <strong>Analyzed:</strong> 2025-11-09T21:31:28.798569+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">6.78/10</div>
+            <div class="recommendation consider">
+                AFWIJZEN (huidige prijs) | OVERWEGEN (bij €450k of lager)
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Dit nieuwbouw Amsterdam Noord appartement heeft STERKE LOCATIE (8.5) met jaar-rond BNB potentieel dankzij stadsnabijheid, maar ZWAKKE FINANCIËN (5.5) door hoge vraagprijs versus beperkt rendement. Met 2.5% Cash-on-Cash return is dit geen rendabele BNB investering zonder significante prijsonderhandeling. Juridisch (6.0) zijn er onzekerheden over exacte verhuurvrijheid die opgehelderd moeten. Pand zelf (7.0) is degelijk maar mist premium USP's voor hogere nachtprijzen. KERNPROBLEEM: €505k is te duur voor cashflow positieve verhuur. Bij €450k wordt het interessanter (3.8% CoC, break-even 8 jaar). Alternatief: maandverhuur aan expats (€2.500-3.000) levert €30-36k/jaar = 6-7% CoC, veel beter. Scale-up potentieel matig: waardestijging Amsterdam 3-5%/jaar, na 3 jaar mogelijk €550-580k waard, maar zonder sterke cashflow is kapitaal 'vast'. Voor ervaren BNB investeerder met onderhandelingsmacht en upgrade budget MOGELIJK, voor beginners RISICOVOL.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Excellente locatie Amsterdam Noord met jaar-rond toeristische vraag (metroverbinding centrum 15 min, groeiend gebied +15%/jaar)</li><li>Nieuwbouw 2026 = geen onderhoud eerste 5 jaar, moderne uitstraling, energiezuinig (vloerverwarming)</li><li>Eigen grond (geen erfpacht/canon), stabiele kosten, VVE slechts €840/jaar</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>KRITIEK: Cash-on-Cash return 2.5% (target 10%+) maakt dit financieel onaantrekkelijk - vraagprijs €505k te hoog voor BNB rendement</li><li>Juridische onzekerheid: verhuurvrijheid niet expliciet bevestigd, VVE reglement onbekend, pre-screening waarschuwing erfpacht terwijl tekst 'eigen grond' zegt (verificatie nodig)</li><li>Geen premium USP's (hottub/sauna) = moeilijk premium prijzen rechtvaardigen, concurrentie met identieke units in complex, slechts 1 badkamer voor 6 gasten</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">8.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Amsterdam Noord (Markengouw-Zuid) is een uitstekende BNB locatie met jaar-rond potentieel. Binnen 5 km van Amsterdam Centraal (fiets/metro 15-20 min), ideaal voor stedelijke toeristen. Bereikbaarheid: A10 ringweg op 2 km, metrostation Noord (Noord/Zuidlijn) binnen fietsafstand. Attracties binnen bereik: Amsterdam centrum (5 km), NDSM-werf (2 km, cultureel hotspot), Eye Filmmuseum (4 km), Waterland polders (10 km), strand Blijburg (12 km). Lokale voorzieningen: winkels en restaurants in Banne Buiksloot (500m). Marktanalyse Airbnb Amsterdam Noord: 71m² 3-slaapkamer appartementen €120-160/nacht gemiddeld, hoge vraag jaar-rond (bezetting 65-75%). Concurrentie matig: minder objecten dan centrum, maar groeiende populariteit door betaalbaarheid en authenticiteit. Duitse en internationale toeristen zoeken betaalbare Amsterdam base. Seizoenspatroon: jaar-rond sterk (voorjaar/zomer piek, winter lager maar stabiel door musea/evenementen). Nieuwbouwproject ONE50 profiteert van moderne uitstraling. Enige minpunt: niet direct in centrum, maar dit wordt gecompenseerd door uitstekende OV en fietsverbindingen.
+                </div>
+            
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Positioneer als 'Authentic Amsterdam base - modern comfort, local vibe'</div><div class="rec-item">Benadruk metroverbinding centrum (15 min naar Dam)</div><div class="rec-item">Target expats en digitale nomaden (maandverhuur mogelijk?)</div><div class="rec-item">Highlight fietsvriendelijkheid en lokale tips in listing</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">7.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Nieuwbouw vierkamerappartement (71m²) met degelijke basis maar beperkte USP's. Specs: 3 slaapkamers (max 6 gasten), 1 badkamer, terras 10m² zuidwest. Sterke punten: compleet afgewerkt (Bosch keuken, sanitair, vloerverwarming), modern design, nieuwbouw = geen direct onderhoud, balkon met avondzon. Wasmachine/droger aansluiting aanwezig (operational efficiency). Zwakke punten: GEEN premium USP's (geen hottub/sauna/jacuzzi), standaard nieuwbouw afwerking zonder 'wow-factor', 1 badkamer voor 6 gasten is krap, geen foto's beschikbaar voor beoordeling presentatie. Doelgroep: gezinnen (3 slaapkamers ideaal), kleine groepen, zakelijke verhuur mogelijk. Huisdieren beleid onbekend (belangrijke doelgroep 30%!). Flexibiliteit indeling (3e slaapkamer omzetten naar kantoor/speelruimte) is pluspunt. Onderhoud: €0 eerste 3-5 jaar (nieuwbouw garantie), daarna €2000-3000/jaar reserve. Verhuurklaar vanaf oplevering 2026. Kritiek: zonder unieke elementen moeilijk premium prijzen vragen. Concurrentie met identieke units in zelfde complex.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Geen foto's beschikbaar - kan niet visuele presentatie beoordelen</div><div class="flag-item">Standaard nieuwbouw zonder bijzondere USP's</div><div class="flag-item">1 badkamer voor max 6 gasten = bottleneck bij volledige bezetting</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Investeer €3-5k in USP upgrade: hoogwaardige inrichting, smart home systemen</div><div class="rec-item">Voeg unieke design elementen toe (kunstwerken, statement verlichting)</div><div class="rec-item">Check huisdieren beleid en sta toe indien mogelijk (+30% doelgroep)</div><div class="rec-item">Budget €2k voor professionele styling en fotografie na oplevering</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">5.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Vraagprijs €505k voor 71m² is aan de hoge kant voor BNB rendement. KOSTEN: Aankoopprijs €505k + overdracht (2%) €10.100 + notaris €2k + styling/meubilair €15k = €532k totaal. Geen erfpacht (pluspunt!), maar VVE €70/maand = €840/jaar. OMZET SCHATTING (conservatief jaar-rond): Hoogseizoen 90 dagen × 70% bezetting × €145/nacht = €9.135. Middenseizoen 180 dagen × 60% × €120 = €12.960. Laagseizoen 95 dagen × 45% × €95 = €4.064. TOTAAL: €26.159/jaar bruto. KOSTEN: VVE €840 + energie/water €1.800 + gemeentelijk €600 + platform fees (10%) €2.616 + schoonmaak (50 × €60) €3.000 + wasgoed €800 + onderhoud €1.500 + verzekering €500 + accountant €1.000 = €12.656. NETTO: €13.503/jaar. Cash-on-Cash: 2.5% (€13.503 ÷ €532k) = SLECHT. Met 70% hypotheek (€353.5k, 4.5%, 30jr): maandlast €1.790, netto cashflow negatief. Break-even >10 jaar onrealistisch. PROBLEEM: aankoopprijs te hoog voor verhuurrendement. Waardestijging Amsterdam Noord (3-5%/jaar) kan compenseren, maar cashflow zwak.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Cash-on-Cash return 2.5% ver onder target 10%+</div><div class="flag-item">Negatieve cashflow met hypotheek financiering</div><div class="flag-item">Hoge prijs/m² €7.113 voor nieuwbouw zonder premium ligging</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">ONDERHANDEL HARD: target €440-460k (€10-15% korting)</div><div class="rec-item">Bereken bij €450k: CoC stijgt naar 3.8% (nog steeds matig)</div><div class="rec-item">Overweeg alleen bij significante prijsreductie of cashkoper scenario</div><div class="rec-item">Alternatief: maandverhuur expats (€2.500-3.000/maand = €30-36k/jaar)</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">6.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    KRITIEK PUNT: 'Permanente bewoning is niet toegestaan' - dit is GEEN dealbreaker voor vakantieverhuur (zelfs voordeel), maar moet helder geïnterpreteerd worden. Waarschijnlijk betekent dit: geen hoofdverblijf, WEL recreatief gebruik/verhuur toegestaan. VERHUURVRIJHEID: geen vermelding verplichte verhuur via parkorganisatie = positief teken. Geen erfpacht (eigen grond) = geen canon, geen wijzigende voorwaarden, stabiele kosten. VVE aanwezig (€70/maand), check VVE reglement op verhuurrestricties noodzakelijk. ONZEKERHEDEN: parkregels onduidelijk, geen info over Recron, geen info seizoensbeperkingen, goedkeuring nieuwe eigenaar onbekend, huisdieren beleid onbekend. Amsterdam korte verhuur: vergunning nodig, max 30 nachten/jaar voor hoofdverblijf (NIET VAN TOEPASSING hier - dit is recreatiewoning). Toeristenbelasting €3-4/persoon/nacht (doorberekenen aan gast). Fiscaal: Box 1 indien professioneel (>30k omzet), BTW-vrijstelling mogelijk bij recreatiewoning. ACTIE VEREIST: parkreglement opvragen, VVE statuten checken, notaris bevestiging verhuurvrijheid.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Erfpacht melding pre-screening maar tekst zegt 'eigen grond' - verificatie nodig</div><div class="flag-item">VVE reglement onbekend - kan verhuurrestricties bevatten</div><div class="flag-item">Geen expliciete bevestiging vrije verhuur - navraag verplicht</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Vraag ontwikkelaar/makelaar schriftelijk: is vrije verhuur Airbnb/Booking toegestaan?</div><div class="rec-item">Check VVE statuten op verhuur clausules voor oplevering</div><div class="rec-item">Laat notaris 'geen verhuurrestricties' bevestigen in koopovereenkomst</div><div class="rec-item">Vraag of huisdieren toegestaan zijn (vergroot markt 30%)</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>KRITIEK: Cash-on-Cash return 2.5% (target 10%+) maakt dit financieel onaantrekkelijk - vraagprijs €505k te hoog voor BNB rendement</li><li>Juridische onzekerheid: verhuurvrijheid niet expliciet bevestigd, VVE reglement onbekend, pre-screening waarschuwing erfpacht terwijl tekst 'eigen grond' zegt (verificatie nodig)</li><li>Geen premium USP's (hottub/sauna) = moeilijk premium prijzen rechtvaardigen, concurrentie met identieke units in complex, slechts 1 badkamer voor 6 gasten</li></li>
+                

@@ -1,0 +1,14 @@
+{
+  "enriched": false,
+  "enriched_at": "2025-11-09T21:29:52.673285+00:00",
+  "house_id": "43084820",
+  "coordinates": {
+    "latitude": 52.3959055,
+    "longitude": 4.955293,
+    "source": "geocoded"
+  },
+  "api_calls": 1,
+  "estimated_cost": 0.01,
+  "comparables": [],
+  "error": "HTTP 404: Not Found"
+}
