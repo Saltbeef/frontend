@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 43084820</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 43084820<br>
+                <strong>Analyzed:</strong> 2025-11-09T21:23:13.959160+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">6.17/10</div>
+            <div class="recommendation consider">
+                AFWIJZEN - Te hoog risico en te laag rendement. Prijs €105k boven acceptabel niveau (zou max €400k moeten zijn). Juridische onduidelijkheid verhuurrechten is dealbreaker. Alleen heroverwegen bij: 1) Schriftelijke onbeperkte verhuurgarantie ontwikkelaar, 2) Prijs onderhandeling naar €400k, 3) Definitief VVE reglement zonder restricties.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Nieuwbouw 3-slaapkamer appartement in opkomend Amsterdam Noord met uitstekende locatie (score 8.5), maar KRITIEKE problemen maken dit momenteel GEEN geschikte BNB investering:
+
+1) **JURIDISCH RISICO (score 4.0):** Geen expliciete verhuurrechten, Amsterdam 30-nacht limiet mogelijk van toepassing, VVE reglement onbekend. Dit is DEALBREAKER zonder schriftelijke garanties.
+
+2) **DRAMATISCH RENDEMENT (score 5.0):** Bij €505k slechts 3.9% Cash-on-Cash return. Vergelijk: target is 10%+, uitstekend is 15%+. Break-even 25+ jaar = onhaalbaar. Alleen interessant onder €400k.
+
+3) **ZWAKKE USP's (score 6.5):** Standaard nieuwbouw zonder onderscheidende features. Geen hottub, geen bijzonder design, klein terras. Moeilijk om premium prijzen te vragen in competitieve Amsterdam markt.
+
+4) **STERKE LOCATIE (score 8.5):** Enige redding is toplocatie Amsterdam Noord met groeiend toeristisch potentieel en jaar-rond vraag.
+
+**SCALE-UP ANALYSE:** Amsterdam vastgoed stijgt 4-6%/jaar. Na 3 jaar waarde €580-610k = €75-105k winst op papier. MAAR negatieve/lage cashflow eerste jaren. Alleen interessant voor pure vermogensopbouw, niet voor actieve BNB ondernemerschap.
+
+**CONCLUSIE:** In huidige staat AFWIJZEN. Te duur, te risicoVol juridisch, te weinig rendement. Zou alleen interessant worden bij prijs €400k én schriftelijke verhuurgaranties.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Toplocatie Amsterdam Noord - 6 km van centrum, uitstekende bereikbaarheid A10/OV, groeiend toeristisch gebied (score 8.5)</li><li>Eigen grond zonder erfpacht - besparing €2000-4000/jaar canonkosten, meer zekerheid lange termijn</li><li>Nieuwbouw 2026 - geen onderhoud eerste 5-10 jaar, moderne voorzieningen, energiezuinig, aantrekkelijk voor gasten</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>KRITIEK: Juridische onzekerheid verhuurrechten - geen expliciete bevestiging, Amsterdam 30-nacht limiet risico (€32.940 omzetverlies), VVE reglement onbekend</li><li>DRAMATISCH laag rendement - 3.9% Cash-on-Cash bij €505k vraagprijs (target 10%+), break-even 25+ jaar, alleen cashflow positief na flinke onderhandeling</li><li>Geen sterke USP's - standaard nieuwbouw zonder hottub/sauna/design, moeilijk premium prijzen rechtvaardigen, hoge concurrentie Amsterdam (28.000+ listings)</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">8.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Amsterdam Noord (Markengouw-Zuid) - uitstekende locatie voor BNB:
+
+**TOERISTISCHE AANTREKKELIJKHEID (A-locatie):**
+- Amsterdam Centrum: 6 km (15 min fiets/auto)
+- Eye Filmmuseum: 3 km
+- NDSM-werf (cultuur hotspot): 4 km
+- Amsterdam Noord recreatiegebied: direct nabij
+- Waterland polders: 5 km
+- Strand Blijburg/Ijburg: 8 km
+- Zaanse Schans: 15 km
+- Volendam/Marken: 20 km
+Jaar-rond bestemming met constante toeristische vraag.
+
+**BEREIKBAARHEID:**
+- A10 ring: 2 km (uitstekend!)
+- Amsterdam Centraal: 20 min OV
+- Metrostation Noord: 10 min fiets
+- Gratis pont naar centrum (24/7)
+- Schiphol: 25 min
+Ideaal voor internationale toeristen én lokale verhuur.
+
+**LOKALE MARKT (Airbnb data Amsterdam Noord):**
+- Gemiddelde nachtprijs 3-bed: €150-220
+- Bezettingsgraad: 65-75% (hoog!)
+- Concurrentie: Matig (minder dan centrum)
+- Vraag groeiend door hippe ontwikkeling gebied
+- Duitse toeristen: zeer populair (nabij snelweg)
+
+**BNB POTENTIEEL:**
+Amsterdam = top 5 EU steden voor vakantieverhuur. Noord groeit explosief. Jaar-rond vraag van toeristen, zakenreizigers, expats.
+
+**OPMERKING:** Wel Amsterdam vakantieverhuurvergunning nodig (max 30 nachten/jaar voor particulieren) - kan probleem zijn! Check of recreatief object hier buiten valt.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Amsterdam vakantieverhuurvergunning mogelijk vereist (30-nacht limiet voor particulieren)</div><div class="flag-item">Nieuwbouwproject - oplevering 2026, risico vertraging</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Verifieer urgently of recreatief object vrijgesteld is van 30-nacht limiet Amsterdam</div><div class="rec-item">Check bij ontwikkelaar of project op schema ligt voor 2026</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">6.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    **BASISSPECIFICATIES:**
+- 3 slaapkamers → max 6-8 gasten (gezinsmarkt!)
+- 1 badkamer (zou 2e ideaal zijn)
+- 71 m² woonoppervlak + 10 m² terras
+- Nieuwbouw 2026 → geen onderhoud eerste 5-10 jaar
+- Begane grond → toegankelijk, maar minder privacy
+
+**USP's (BEPERKT - probleem!):**
+✓ Nieuwbouw (modern, schoon)
+✓ Terras 10 m² zuidwesten (zon!)
+✓ 3 slaapkamers (geschikt gezinnen)
+✓ Complete keuken Bosch
+✓ Vloerverwarming
+✓ Wasmachine aansluiting
+✗ GEEN hottub/sauna (grote gemis!)
+✗ GEEN bijzonder design (standaard nieuwbouw)
+✗ GEEN uitzicht genoemd
+✗ Begane grond = beperkte privacy
+✗ Klein terras voor 6-8 personen
+
+**DOELGROEP:**
+- Gezinnen: ✓ Ja (3 slaapkamers)
+- Stellen: ± Minder (te groot, geen luxe)
+- Groepen: ✓ Ja (6-8 personen)
+- Huisdieren: ❓ Niet vermeld
+
+**VISUELE PRESENTATIE:**
+Renderbeelden nieuwbouw - professioneel maar generiek. Geen unieke features zichtbaar.
+
+**KRITIEK:**
+Standaard nieuwbouwappartement zonder onderscheidende USP's. In competitieve Amsterdam markt is dit probleem. Concurrent objecten hebben vaak hottub, rooftop terrassen, design interieurs.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Geen sterke USP's voor onderscheiding in markt</div><div class="flag-item">Klein terras (10 m²) voor capaciteit 6-8 personen</div><div class="flag-item">Begane grond = privacy beperking</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Budget €3-5k voor hottub op terras (ROI <1 jaar)</div><div class="rec-item">Investeer €2k in design interieur/fotografie voor premium uitstraling</div><div class="rec-item">Markteer als 'Modern Amsterdam Base' voor city explorers</div><div class="rec-item">Huisdieren toestaan (+30% doelgroep)</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">5.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    **INVESTERING:**
+- Vraagprijs: €505.000
+- Overdrachtsbelasting (2%): €10.100
+- Notaris/advies: €2.500
+- Initiële inrichting BNB: €5.000
+- Reserve ontwikkelrisico: €5.000
+**TOTAAL: €527.600**
+
+**JAAROMZET (conservatief Amsterdam data):**
+Marktonderzoek vergelijkbaar 3-bed Noord:
+- Hoogseizoen 120 dagen: 80% × €180/nacht = €17.280
+- Middenseizoen 180 dagen: 65% × €150/nacht = €17.550
+- Laagseizoen 65 dagen: 45% × €120/nacht = €3.510
+**BRUTO: €38.340** (70% bezetting overall)
+
+**MAAR:** Amsterdam 30-nacht limiet zou dit vernietigen tot €5.400/jaar!
+Assumptie: recreatief = vrijgesteld (KRITISCH OM TE VERIFIËREN)
+
+**JAARKOSTEN:**
+- VVE bijdrage: €840
+- Energie/water: €1.800
+- Gemeentelijke lasten: €800
+- Platform fees (10%): €3.834
+- Schoonmaak (70 × €60): €4.200
+- Wasgoed: €1.400
+- Onderhoud (5%): €1.917
+- Accountant: €1.000
+- Verzekering: €600
+- Toeristenbelasting: €1.200
+**TOTAAL: €17.591**
+
+**RENDEMENT:**
+- Netto: €20.749/jaar
+- Cash-on-Cash: 3.9% (SLECHT!)
+- Break-even: 25+ jaar (ONAANVAARDBAAR)
+
+**MET FINANCIERING (70%):**
+- Hypotheek €353.500 @ 4.5% = €1.325/maand
+- Netto cashflow: €20.749 - €15.900 = €4.849/jaar
+- Eigen inbreng: €174.100
+- Return op eigen geld: 2.8% (DRAMATISCH)
+
+**WAARDEONTWIKKELING:**
+Amsterdam +4-6%/jaar historisch. Na 3 jaar: €580.000-610.000. Winst €53k-83k, maar verlies cashflow ~€15k = netto €38k-68k.
+
+**CONCLUSIE:** Te duur voor rendement. Alleen interessant bij:
+1) 30-nacht limiet niet van toepassing
+2) Onderhandeling naar €400k
+3) Hogere nachtprijzen mogelijk (€200+)
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Cash-on-Cash 3.9% = ver onder target 10%+</div><div class="flag-item">Break-even >25 jaar = onhaalbaar</div><div class="flag-item">Prijs veel te hoog voor rendement</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Onderhandel naar MAX €400.000 voor acceptabel rendement</div><div class="rec-item">Verifieer 30-nacht limiet niet van toepassing</div><div class="rec-item">Alleen kopen bij waardestijging focus, niet cashflow</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">4.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    **KRITIEKE ISSUES:**
+
+**VERHUURVRIJHEID:**
+✓ Geen parkorganisatie verplicht
+✓ Geen commissies vermeld
+✓ Vrije prijsstelling mogelijk
+✗ "Permanente bewoning NIET toegestaan" (goed voor recreatie)
+❓ MAAR: Amsterdam vakantieverhuurvergunning onduidelijk!
+
+**AMSTERDAM REGELGEVING (DEALBREAKER RISICO!):**
+Amsterdam heeft stricte vakantieverhuurregels:
+- Particulieren: MAX 30 nachten/jaar
+- Vergunning vereist voor meer
+- Boetes tot €21.750 bij overtreding
+
+**CRUCIALE VRAAG:** Is dit recreatief object vrijgesteld?
+- Ontwikkelaar vermeld NIETS over verhuurmogelijkheden
+- "Permanente bewoning niet toegestaan" suggereert recreatief
+- MAAR geen expliciete verhuurrechten genoemd
+- VVE kan extra restricties hebben
+
+**EIGENDOM:**
+✓ Eigen grond (GEEN erfpacht!) - groot pluspunt
+✓ VVE bijdrage slechts €70/maand (redelijk)
+
+**SEIZOEN:**
+❓ Jaar-rond verhuur mogelijk? (niet gespecificeerd)
+❓ Minimaal aantal zelfbewoning dagen vereist?
+
+**GOEDKEURINGEN:**
+✓ Nieuwbouw = geen bestaande beperkingen
+❓ VVE reglement niet beschikbaar (RISICO!)
+
+**FISCAAL:**
+Bij >70% verhuur = Box 1 (onderneming) mogelijk. Gunstig voor aftrekposten.
+
+**DEALBREAKER CHECK:**
+⚠️ Grootste risico: Amsterdam 30-nacht limiet zou investering nutteloos maken!
+⚠️ Ontwikkelaar geeft GEEN duidelijkheid over verhuurrecht
+⚠️ VVE reglement onbekend
+
+**CONCLUSIE:** Juridisch zeer risicovol zonder expliciete verhuurgarantie. In huidige vorm te veel onzekerheden voor serieuze BNB investering.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">KRITIEK: Geen expliciete verhuurrechten vermeld door ontwikkelaar</div><div class="flag-item">Amsterdam 30-nacht limiet mogelijk van toepassing</div><div class="flag-item">VVE reglement niet beschikbaar</div><div class="flag-item">Geen duidelijkheid over jaar-rond verhuur</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">VERPLICHT: Schriftelijke bevestiging ontwikkelaar over onbeperkte verhuurrechten</div><div class="rec-item">Check bij gemeente Amsterdam of recreatief object vrijgesteld is van 30-nacht limiet</div><div class="rec-item">Vraag definitief VVE reglement op voor aankoop</div><div class="rec-item">Laat advocaat vastgoedrecht contracten checken (€1500 investering)</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>KRITIEK: Juridische onzekerheid verhuurrechten - geen expliciete bevestiging, Amsterdam 30-nacht limiet risico (€32.940 omzetverlies), VVE reglement onbekend</li><li>DRAMATISCH laag rendement - 3.9% Cash-on-Cash bij €505k vraagprijs (target 10%+), break-even 25+ jaar, alleen cashflow positief na flinke onderhandeling</li><li>Geen sterke USP's - standaard nieuwbouw zonder hottub/sauna/design, moeilijk premium prijzen rechtvaardigen, hoge concurrentie Amsterdam (28.000+ listings)</li></li>
+                

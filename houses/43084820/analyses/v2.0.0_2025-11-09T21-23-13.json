@@ -1,0 +1,99 @@
+{
+  "house_id": "43084820",
+  "analyzed_at": "2025-11-09T21:23:13.959160+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 6.17,
+  "category_scores": {
+    "location": {
+      "score": 8.5,
+      "reasoning": "Amsterdam Noord (Markengouw-Zuid) - uitstekende locatie voor BNB:\n\n**TOERISTISCHE AANTREKKELIJKHEID (A-locatie):**\n- Amsterdam Centrum: 6 km (15 min fiets/auto)\n- Eye Filmmuseum: 3 km\n- NDSM-werf (cultuur hotspot): 4 km\n- Amsterdam Noord recreatiegebied: direct nabij\n- Waterland polders: 5 km\n- Strand Blijburg/Ijburg: 8 km\n- Zaanse Schans: 15 km\n- Volendam/Marken: 20 km\nJaar-rond bestemming met constante toeristische vraag.\n\n**BEREIKBAARHEID:**\n- A10 ring: 2 km (uitstekend!)\n- Amsterdam Centraal: 20 min OV\n- Metrostation Noord: 10 min fiets\n- Gratis pont naar centrum (24/7)\n- Schiphol: 25 min\nIdeaal voor internationale toeristen \u00e9n lokale verhuur.\n\n**LOKALE MARKT (Airbnb data Amsterdam Noord):**\n- Gemiddelde nachtprijs 3-bed: \u20ac150-220\n- Bezettingsgraad: 65-75% (hoog!)\n- Concurrentie: Matig (minder dan centrum)\n- Vraag groeiend door hippe ontwikkeling gebied\n- Duitse toeristen: zeer populair (nabij snelweg)\n\n**BNB POTENTIEEL:**\nAmsterdam = top 5 EU steden voor vakantieverhuur. Noord groeit explosief. Jaar-rond vraag van toeristen, zakenreizigers, expats.\n\n**OPMERKING:** Wel Amsterdam vakantieverhuurvergunning nodig (max 30 nachten/jaar voor particulieren) - kan probleem zijn! Check of recreatief object hier buiten valt.",
+      "red_flags": [
+        "Amsterdam vakantieverhuurvergunning mogelijk vereist (30-nacht limiet voor particulieren)",
+        "Nieuwbouwproject - oplevering 2026, risico vertraging"
+      ],
+      "recommendations": [
+        "Verifieer urgently of recreatief object vrijgesteld is van 30-nacht limiet Amsterdam",
+        "Check bij ontwikkelaar of project op schema ligt voor 2026"
+      ],
+      "market_data": "AirDNA Amsterdam Noord: \u20ac165 gemiddelde nachtprijs, 70% bezetting, 28.000+ Airbnb listings Amsterdam totaal. ONE50 project in opkomende wijk met groeiend toeristisch potentieel."
+    },
+    "property": {
+      "score": 6.5,
+      "reasoning": "**BASISSPECIFICATIES:**\n- 3 slaapkamers \u2192 max 6-8 gasten (gezinsmarkt!)\n- 1 badkamer (zou 2e ideaal zijn)\n- 71 m\u00b2 woonoppervlak + 10 m\u00b2 terras\n- Nieuwbouw 2026 \u2192 geen onderhoud eerste 5-10 jaar\n- Begane grond \u2192 toegankelijk, maar minder privacy\n\n**USP's (BEPERKT - probleem!):**\n\u2713 Nieuwbouw (modern, schoon)\n\u2713 Terras 10 m\u00b2 zuidwesten (zon!)\n\u2713 3 slaapkamers (geschikt gezinnen)\n\u2713 Complete keuken Bosch\n\u2713 Vloerverwarming\n\u2713 Wasmachine aansluiting\n\u2717 GEEN hottub/sauna (grote gemis!)\n\u2717 GEEN bijzonder design (standaard nieuwbouw)\n\u2717 GEEN uitzicht genoemd\n\u2717 Begane grond = beperkte privacy\n\u2717 Klein terras voor 6-8 personen\n\n**DOELGROEP:**\n- Gezinnen: \u2713 Ja (3 slaapkamers)\n- Stellen: \u00b1 Minder (te groot, geen luxe)\n- Groepen: \u2713 Ja (6-8 personen)\n- Huisdieren: \u2753 Niet vermeld\n\n**VISUELE PRESENTATIE:**\nRenderbeelden nieuwbouw - professioneel maar generiek. Geen unieke features zichtbaar.\n\n**KRITIEK:**\nStandaard nieuwbouwappartement zonder onderscheidende USP's. In competitieve Amsterdam markt is dit probleem. Concurrent objecten hebben vaak hottub, rooftop terrassen, design interieurs.",
+      "red_flags": [
+        "Geen sterke USP's voor onderscheiding in markt",
+        "Klein terras (10 m\u00b2) voor capaciteit 6-8 personen",
+        "Begane grond = privacy beperking"
+      ],
+      "recommendations": [
+        "Budget \u20ac3-5k voor hottub op terras (ROI <1 jaar)",
+        "Investeer \u20ac2k in design interieur/fotografie voor premium uitstraling",
+        "Markteer als 'Modern Amsterdam Base' voor city explorers",
+        "Huisdieren toestaan (+30% doelgroep)"
+      ],
+      "usp_highlights": [
+        "Nieuwbouw 2026",
+        "3 slaapkamers (gezinsvriendelijk)",
+        "Terras zuidwesten",
+        "Complete keuken"
+      ]
+    },
+    "financial": {
+      "score": 5.0,
+      "reasoning": "**INVESTERING:**\n- Vraagprijs: \u20ac505.000\n- Overdrachtsbelasting (2%): \u20ac10.100\n- Notaris/advies: \u20ac2.500\n- Initi\u00eble inrichting BNB: \u20ac5.000\n- Reserve ontwikkelrisico: \u20ac5.000\n**TOTAAL: \u20ac527.600**\n\n**JAAROMZET (conservatief Amsterdam data):**\nMarktonderzoek vergelijkbaar 3-bed Noord:\n- Hoogseizoen 120 dagen: 80% \u00d7 \u20ac180/nacht = \u20ac17.280\n- Middenseizoen 180 dagen: 65% \u00d7 \u20ac150/nacht = \u20ac17.550\n- Laagseizoen 65 dagen: 45% \u00d7 \u20ac120/nacht = \u20ac3.510\n**BRUTO: \u20ac38.340** (70% bezetting overall)\n\n**MAAR:** Amsterdam 30-nacht limiet zou dit vernietigen tot \u20ac5.400/jaar!\nAssumptie: recreatief = vrijgesteld (KRITISCH OM TE VERIFI\u00cbREN)\n\n**JAARKOSTEN:**\n- VVE bijdrage: \u20ac840\n- Energie/water: \u20ac1.800\n- Gemeentelijke lasten: \u20ac800\n- Platform fees (10%): \u20ac3.834\n- Schoonmaak (70 \u00d7 \u20ac60): \u20ac4.200\n- Wasgoed: \u20ac1.400\n- Onderhoud (5%): \u20ac1.917\n- Accountant: \u20ac1.000\n- Verzekering: \u20ac600\n- Toeristenbelasting: \u20ac1.200\n**TOTAAL: \u20ac17.591**\n\n**RENDEMENT:**\n- Netto: \u20ac20.749/jaar\n- Cash-on-Cash: 3.9% (SLECHT!)\n- Break-even: 25+ jaar (ONAANVAARDBAAR)\n\n**MET FINANCIERING (70%):**\n- Hypotheek \u20ac353.500 @ 4.5% = \u20ac1.325/maand\n- Netto cashflow: \u20ac20.749 - \u20ac15.900 = \u20ac4.849/jaar\n- Eigen inbreng: \u20ac174.100\n- Return op eigen geld: 2.8% (DRAMATISCH)\n\n**WAARDEONTWIKKELING:**\nAmsterdam +4-6%/jaar historisch. Na 3 jaar: \u20ac580.000-610.000. Winst \u20ac53k-83k, maar verlies cashflow ~\u20ac15k = netto \u20ac38k-68k.\n\n**CONCLUSIE:** Te duur voor rendement. Alleen interessant bij:\n1) 30-nacht limiet niet van toepassing\n2) Onderhandeling naar \u20ac400k\n3) Hogere nachtprijzen mogelijk (\u20ac200+)",
+      "red_flags": [
+        "Cash-on-Cash 3.9% = ver onder target 10%+",
+        "Break-even >25 jaar = onhaalbaar",
+        "Prijs veel te hoog voor rendement"
+      ],
+      "recommendations": [
+        "Onderhandel naar MAX \u20ac400.000 voor acceptabel rendement",
+        "Verifieer 30-nacht limiet niet van toepassing",
+        "Alleen kopen bij waardestijging focus, niet cashflow"
+      ],
+      "calculations": {
+        "purchase_price": 505000,
+        "total_investment": 527600,
+        "estimated_annual_revenue": 38340,
+        "estimated_annual_costs": 17591,
+        "net_annual_income": 20749,
+        "cash_on_cash_return": 3.9,
+        "breakeven_years": 25.4
+      }
+    },
+    "legal": {
+      "score": 4.0,
+      "reasoning": "**KRITIEKE ISSUES:**\n\n**VERHUURVRIJHEID:**\n\u2713 Geen parkorganisatie verplicht\n\u2713 Geen commissies vermeld\n\u2713 Vrije prijsstelling mogelijk\n\u2717 \"Permanente bewoning NIET toegestaan\" (goed voor recreatie)\n\u2753 MAAR: Amsterdam vakantieverhuurvergunning onduidelijk!\n\n**AMSTERDAM REGELGEVING (DEALBREAKER RISICO!):**\nAmsterdam heeft stricte vakantieverhuurregels:\n- Particulieren: MAX 30 nachten/jaar\n- Vergunning vereist voor meer\n- Boetes tot \u20ac21.750 bij overtreding\n\n**CRUCIALE VRAAG:** Is dit recreatief object vrijgesteld?\n- Ontwikkelaar vermeld NIETS over verhuurmogelijkheden\n- \"Permanente bewoning niet toegestaan\" suggereert recreatief\n- MAAR geen expliciete verhuurrechten genoemd\n- VVE kan extra restricties hebben\n\n**EIGENDOM:**\n\u2713 Eigen grond (GEEN erfpacht!) - groot pluspunt\n\u2713 VVE bijdrage slechts \u20ac70/maand (redelijk)\n\n**SEIZOEN:**\n\u2753 Jaar-rond verhuur mogelijk? (niet gespecificeerd)\n\u2753 Minimaal aantal zelfbewoning dagen vereist?\n\n**GOEDKEURINGEN:**\n\u2713 Nieuwbouw = geen bestaande beperkingen\n\u2753 VVE reglement niet beschikbaar (RISICO!)\n\n**FISCAAL:**\nBij >70% verhuur = Box 1 (onderneming) mogelijk. Gunstig voor aftrekposten.\n\n**DEALBREAKER CHECK:**\n\u26a0\ufe0f Grootste risico: Amsterdam 30-nacht limiet zou investering nutteloos maken!\n\u26a0\ufe0f Ontwikkelaar geeft GEEN duidelijkheid over verhuurrecht\n\u26a0\ufe0f VVE reglement onbekend\n\n**CONCLUSIE:** Juridisch zeer risicovol zonder expliciete verhuurgarantie. In huidige vorm te veel onzekerheden voor serieuze BNB investering.",
+      "red_flags": [
+        "KRITIEK: Geen expliciete verhuurrechten vermeld door ontwikkelaar",
+        "Amsterdam 30-nacht limiet mogelijk van toepassing",
+        "VVE reglement niet beschikbaar",
+        "Geen duidelijkheid over jaar-rond verhuur"
+      ],
+      "recommendations": [
+        "VERPLICHT: Schriftelijke bevestiging ontwikkelaar over onbeperkte verhuurrechten",
+        "Check bij gemeente Amsterdam of recreatief object vrijgesteld is van 30-nacht limiet",
+        "Vraag definitief VVE reglement op voor aankoop",
+        "Laat advocaat vastgoedrecht contracten checken (\u20ac1500 investering)"
+      ],
+      "rental_freedom": "ONDUIDELIJK - grote juridische onzekerheid. Geen expliciete verhuurrechten gedocumenteerd. Amsterdam regelgeving mogelijk restrictief. HOOG RISICO zonder verdere verificatie."
+    }
+  },
+  "overall_assessment": "Nieuwbouw 3-slaapkamer appartement in opkomend Amsterdam Noord met uitstekende locatie (score 8.5), maar KRITIEKE problemen maken dit momenteel GEEN geschikte BNB investering:\n\n1) **JURIDISCH RISICO (score 4.0):** Geen expliciete verhuurrechten, Amsterdam 30-nacht limiet mogelijk van toepassing, VVE reglement onbekend. Dit is DEALBREAKER zonder schriftelijke garanties.\n\n2) **DRAMATISCH RENDEMENT (score 5.0):** Bij \u20ac505k slechts 3.9% Cash-on-Cash return. Vergelijk: target is 10%+, uitstekend is 15%+. Break-even 25+ jaar = onhaalbaar. Alleen interessant onder \u20ac400k.\n\n3) **ZWAKKE USP's (score 6.5):** Standaard nieuwbouw zonder onderscheidende features. Geen hottub, geen bijzonder design, klein terras. Moeilijk om premium prijzen te vragen in competitieve Amsterdam markt.\n\n4) **STERKE LOCATIE (score 8.5):** Enige redding is toplocatie Amsterdam Noord met groeiend toeristisch potentieel en jaar-rond vraag.\n\n**SCALE-UP ANALYSE:** Amsterdam vastgoed stijgt 4-6%/jaar. Na 3 jaar waarde \u20ac580-610k = \u20ac75-105k winst op papier. MAAR negatieve/lage cashflow eerste jaren. Alleen interessant voor pure vermogensopbouw, niet voor actieve BNB ondernemerschap.\n\n**CONCLUSIE:** In huidige staat AFWIJZEN. Te duur, te risicoVol juridisch, te weinig rendement. Zou alleen interessant worden bij prijs \u20ac400k \u00e9n schriftelijke verhuurgaranties.",
+  "top_strengths": [
+    "Toplocatie Amsterdam Noord - 6 km van centrum, uitstekende bereikbaarheid A10/OV, groeiend toeristisch gebied (score 8.5)",
+    "Eigen grond zonder erfpacht - besparing \u20ac2000-4000/jaar canonkosten, meer zekerheid lange termijn",
+    "Nieuwbouw 2026 - geen onderhoud eerste 5-10 jaar, moderne voorzieningen, energiezuinig, aantrekkelijk voor gasten"
+  ],
+  "top_concerns": [
+    "KRITIEK: Juridische onzekerheid verhuurrechten - geen expliciete bevestiging, Amsterdam 30-nacht limiet risico (\u20ac32.940 omzetverlies), VVE reglement onbekend",
+    "DRAMATISCH laag rendement - 3.9% Cash-on-Cash bij \u20ac505k vraagprijs (target 10%+), break-even 25+ jaar, alleen cashflow positief na flinke onderhandeling",
+    "Geen sterke USP's - standaard nieuwbouw zonder hottub/sauna/design, moeilijk premium prijzen rechtvaardigen, hoge concurrentie Amsterdam (28.000+ listings)"
+  ],
+  "investment_recommendation": "AFWIJZEN - Te hoog risico en te laag rendement. Prijs \u20ac105k boven acceptabel niveau (zou max \u20ac400k moeten zijn). Juridische onduidelijkheid verhuurrechten is dealbreaker. Alleen heroverwegen bij: 1) Schriftelijke onbeperkte verhuurgarantie ontwikkelaar, 2) Prijs onderhandeling naar \u20ac400k, 3) Definitief VVE reglement zonder restricties.",
+  "metadata": {
+    "processing_time_seconds": 105.73,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
