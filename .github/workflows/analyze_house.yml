@@ -243,9 +243,13 @@ jobs:
               print(f"{'='*60}")
 
           except urllib.error.HTTPError as e:
+              error_body = e.read().decode() if e.fp else ""
               print(f"❌ AirROI API Error {e.code}: {e.reason}")
+              print(f"   Response: {error_body}")
+              print(f"   URL: {e.url}")
               enrichment['enriched'] = False
               enrichment['error'] = f"HTTP {e.code}: {e.reason}"
+              enrichment['error_details'] = error_body
           except Exception as e:
               print(f"❌ Error fetching enrichment: {e}")
               enrichment['enriched'] = False
