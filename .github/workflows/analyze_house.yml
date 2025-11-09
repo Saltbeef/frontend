@@ -113,7 +113,7 @@ jobs:
           # Extract coordinates and property details
           lat = house_data.get('AddressDetails', {}).get('Latitude')
           lon = house_data.get('AddressDetails', {}).get('Longitude')
-          bedrooms = house_data.get('FastView', {}).get('NumberOfBedrooms', 2)
+          bedrooms = int(house_data.get('FastView', {}).get('NumberOfBedrooms', 2))
           city = house_data.get('AddressDetails', {}).get('City', '')
           postcode = house_data.get('AddressDetails', {}).get('PostCode', '')
 
@@ -173,7 +173,7 @@ jobs:
 
           try:
               # Extract additional property details
-              bathrooms = house_data.get('FastView', {}).get('NumberOfBathrooms', 1.0)
+              bathrooms = float(house_data.get('FastView', {}).get('NumberOfBathrooms', 1.0))
               guests = max(bedrooms * 2, 2)  # Estimate 2 guests per bedroom, min 2
 
               # 1. Get comparable listings
