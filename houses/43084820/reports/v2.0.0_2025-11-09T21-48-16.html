@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 43084820</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 43084820<br>
+                <strong>Analyzed:</strong> 2025-11-09T21:48:16.295585+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">6.47/10</div>
+            <div class="recommendation consider">
+                AFWIJZEN - Combinatie van te hoge prijs (rendement onvoldoende), juridische onduidelijkheid over verhuurrechten, en gebrek aan USP's maakt dit geen geschikte investering voor zelfverhuur strategie. Alleen heroverwegen als: 1) Prijs daalt naar max €400k, 2) Verhuurvrijheid schriftelijk bevestigd, 3) Budget voor USP-toevoeging (hottub €10k).
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>AFWIJZEN - Hoewel locatie Amsterdam uitstekend is (8.5), zijn er te veel kritieke problemen. Financieel rendement is dramatisch laag (2.3% Cash-on-Cash, negatieve cashflow met financiering) door te hoge aankoopprijs van €505k. Juridische situatie is zeer onduidelijk: recreatiestatus zonder permanente bewoning, verhuurvrijheid niet bevestigd, mogelijke Recron-beperkingen. Dit kan een DEALBREAKER zijn als zelfverhuur niet toegestaan blijkt. Pand zelf is solide nieuwbouw maar mist USP's voor premium pricing. Investering vereist minimaal €100k prijsdaling naar €400k én volledige juridische helderheid over verhuurrechten voordat het overweegbaar wordt. Voor zelfverhuur strategie zijn er betere opties met lagere entry price en heldere verhuurvrijheid.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>A+ locatie Amsterdam Noord met jaar-rond toeristische vraag en 70-75% gemiddelde bezetting</li><li>Nieuwbouw 2026 = minimaal onderhoud eerste 5-7 jaar, moderne uitstraling, energiezuinig</li><li>Eigen grond zonder erfpacht (indien bevestigd) = geen canon, meer controle, betere financierbaarheid</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Aankoopprijs €505k resulteert in 2.3% Cash-on-Cash return en negatieve cashflow = financieel onaanvaardbaar</li><li>KRITIEK: Verhuurvrijheid onbevestigd, recreatiestatus creëert juridische onzekerheid, mogelijk geen zelfverhuur toegestaan</li><li>Geen unieke USP's (geen hottub/sauna), standaard nieuwbouw = moeilijk €140+ nachtprijs te rechtvaardigen versus concurrentie</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">8.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Amsterdam Noord - Markengouw-Zuid is strategisch uitstekend gelegen voor BNB verhuur. Binnen 10 min fietsafstand van Amsterdam Centraal Station (6 km), perfecte OV-bereikbaarheid via Noord-Zuid lijn en pont. Toeristische hotspots: Dam 7 km, Museumplein 9 km, Jordaan 8 km, NDSM-werf 3 km. A10 ringweg op 2 km = uitstekende autobereikbaarheid. Amsterdam is jaar-rond toeristische A+ locatie met continue vraag. AirDNA data Amsterdam Noord: gemiddelde bezetting 70-75%, nachtprijzen 2-kamer appartement €110-140. Markengouw is opkomende wijk met moderne uitstraling, aantrekkelijk voor digitale nomaden en jonge professionals. Concurrentie: ca. 800+ Airbnb listings Amsterdam Noord, maar continue vraag door beurscongressen, festivals (ADE, Kingsday, Pride), museumtoerisme. Schiphol 18 km = aantrekkelijk voor internationale gasten. Duitse markt zeer relevant (4 uur rijden). Lokale voorzieningen: winkelcentrum Boven 't IJ op 1 km, horeca ontwikkelt snel. Laagseizoen (nov-feb) blijft sterk door zakelijk verkeer en stedentrips. Enige risico: veel nieuwbouw in Noord kan saturatie veroorzaken, maar vraag groeit mee.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Hoge concurrentie Amsterdam Noord (800+ listings)</div><div class="flag-item">Nieuwbouwontwikkeling kan leiden tot oversupply</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Focus op unieke USP's om te differentiëren</div><div class="rec-item">Target zakelijke gasten en digitale nomaden voor weekverhuur</div><div class="rec-item">Investeer in professionele fotografie voor Amsterdam standaard</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">7.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Nieuwbouw 2026, 71m², 3 slaapkamers, 1 badkamer, max 6 gasten. STERKE PUNTEN: Nieuwbouw = minimaal onderhoud 5-7 jaar, moderne uitstraling, vloerverwarming, volledig uitgerust (Bosch keuken, sanitair, tegels). Terras 10m² ZW = middag/avondzon. Eigen grond (GEEN erfpacht = groot voordeel!). VVE €70/maand is acceptabel. ZWAKKE PUNTEN: Geen bijzondere USP's voor BNB markt - geen hottub, sauna, jacuzzi, bijzonder design. Standaard nieuwbouw afwerking zonder WOW-factor. 1 badkamer voor 6 gasten is minimaal. Geen foto's beschikbaar = kan niet beoordelen visuele presentatie. Begane grond = minder privacy/uitzicht. Geen tuin, alleen terras 10m². DOELGROEP: Geschikt voor gezinnen (3 slaapkamers), groepen vrienden, zakelijke verhuur (meerder expats). Niet ideaal voor romantische stellen (geen luxe uitstraling). Huisdieren: NIET VERMELD = moet uitgezocht. VERBETERING NODIG: Budget €8-12k voor hottub/jacuzzi op terras, upgrade interieur naar Instagram-worthy styling, professionele fotoshoot, smart home features.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Geen unieke USP's zichtbaar</div><div class="flag-item">Standaard nieuwbouw zonder differentiatie</div><div class="flag-item">1 badkamer voor 6 gasten is minimaal</div><div class="flag-item">Begane grond = beperkt uitzicht</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Investeer €10k in hottub op terras (ROI 1-2 jaar)</div><div class="rec-item">Budget €5k voor premium interieurupgrade</div><div class="rec-item">Professionele fotografie + styling (€1500)</div><div class="rec-item">Vraag huisdiervriendelijk beleid na bij VVE</div><div class="rec-item">Overweeg smart lock + home automation</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">5.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    AANKOOPKOSTEN: Vraagprijs €505.000 + overdracht 2% (€10.100) + notaris €2.500 + initiële inrichting €15.000 = TOTAAL €532.600. VERHUUR INKOMSTEN (conservatief): Nachtprijs gemiddeld €120 (Amsterdam Noord benchmark). Bezetting 65% = 237 nachten/jaar (realistisch voor beginnend object zonder USP's). Omzet: 237 × €120 = €28.440/jaar. KOSTEN: VVE €840, energie €1.800, gemeentelijk €600, platform fees 10% (€2.844), schoonmaak 80 beurten × €65 = €5.200, wasgoed €1.600, onderhoud 5% = €1.422, accountant €1.000, verzekering €800 = TOTAAL €16.106/jaar. NETTO: €28.440 - €16.106 = €12.334. Cash-on-Cash: €12.334 ÷ €532.600 = 2.3% = ZEER LAAG! MET FINANCIERING (70%): Hypotheek €353.500 à 4.5% = €1.325/maand (€15.900/jaar). Eigen inbreng €179.100. Cashflow: €12.334 - €15.900 = -€3.566/jaar NEGATIEF! PROBLEEM: Aankoopprijs veel te hoog voor rendement. Bij €400k wordt Cash-on-Cash 6.5% = acceptabel. Bij €350k wordt het 10% = goed. Waardestijging Amsterdam: 3-4%/jaar = €15k/jaar, maar compenseert negatieve cashflow nauwelijks.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Aankoopprijs €505k is te hoog voor verhuurrendement</div><div class="flag-item">Negatieve cashflow met financiering</div><div class="flag-item">Cash-on-Cash slechts 2.3% zonder financiering</div><div class="flag-item">Break-even 43 jaar = onaanvaardbaar</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">CRUCIAAL: onderhandel naar max €400k</div><div class="rec-item">Voeg hottub toe om nachtprijs naar €140-150 te tillen</div><div class="rec-item">Focus op 75%+ bezetting door premium marketing</div><div class="rec-item">Overweeg niet kopen als prijs niet daalt</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">4.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    KRITIEKE RODE VLAG: 'Permanente bewoning is niet toegestaan' = recreatiewoning status. DIT IS COMPLEX! VERHUURVRIJHEID: Niet expliciet vermeld of zelfverhuur toegestaan. Bij recreatiewoningen gelden vaak Recron-voorwaarden of parkreglementen. MOET UITGEZOCHT: Is dit onderdeel van vakantiepark met verplichte verhuurorganisatie? VVE-reglement checken op verhuurbeperkingen. Amsterdam vergunning: recreatiewoningen mogen vaak NIET via Airbnb/Booking verhuurd worden zonder commerciële status. ERFPACHT: Listing zegt 'eigen grond', maar 'vrij op naam' kan dubbelzinnig zijn. PRE-SCREENING waarschuwing erfpacht moet gecheckt worden - listing is onduidelijk. Als het WEL erfpacht is: voorwaarden, canon, looptijd? FISCAAL: Recreatiewoning zonder permanente bewoning = vaak Box 3, maar bij actieve verhuur mogelijk Box 1 (onderneming). BTW-plicht bij omzet >€20k. GROTE ONZEKERHEID: Te weinig info over verhuervrijheid, parkreglement, VVE-restricties. Dit is DEALBREAKER-territoir als zelfverhuur niet mag of sterk beperkt is. ACTIE VEREIST: Contact makelaar voor VVE-reglement, parkvoorwaarden, verhuurbeleid.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Permanente bewoning niet toegestaan = recreatiestatus onduidelijk</div><div class="flag-item">Verhuurvrijheid NIET bevestigd</div><div class="flag-item">Mogelijk Recron voorwaarden</div><div class="flag-item">Amsterdam vergunning voor recreatiewoning verhuur onduidelijk</div><div class="flag-item">Erfpacht warning uit pre-screening niet uitgeklaard</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">KRITISCH: Vraag makelaar om VVE-reglement en verhuurvoorwaarden</div><div class="rec-item">Check of zelfverhuur via Airbnb/Booking expliciet toegestaan is</div><div class="rec-item">Verifieer 'eigen grond' claim - geen erfpacht clausules</div><div class="rec-item">Vraag advies Amsterdam vergunning voor vakantieverhuur recreatiewoning</div><div class="rec-item">Overweeg juridisch advies voordat je verder gaat</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>Aankoopprijs €505k resulteert in 2.3% Cash-on-Cash return en negatieve cashflow = financieel onaanvaardbaar</li><li>KRITIEK: Verhuurvrijheid onbevestigd, recreatiestatus creëert juridische onzekerheid, mogelijk geen zelfverhuur toegestaan</li><li>Geen unieke USP's (geen hottub/sauna), standaard nieuwbouw = moeilijk €140+ nachtprijs te rechtvaardigen versus concurrentie</li></li>
+                
