@@ -1,0 +1,116 @@
+{
+  "house_id": "89213477",
+  "analyzed_at": "2025-11-09T21:04:07.418491+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 6.12,
+  "category_scores": {
+    "location": {
+      "score": 6.5,
+      "reasoning": "Dirkshorn ligt in Noord-Holland, ca. 45 km van Amsterdam en 30 km van Alkmaar. De locatie biedt toegang tot natuur en kustgebieden:\n\n**ATTRACTIES & AFSTANDEN:**\n- Strand (Callantsoog): 8 km - belangrijkste USP\n- Schoorl duinen/klimduin: 15 km - populaire attractie\n- Bergen aan Zee: 20 km\n- Alkmaar centrum: 30 km (kaasmarkt, winkelen)\n- Amsterdam: 45 km\n- Texel veerboot (Den Helder): 25 km\n\n**TOERISTISCHE BEOORDELING:**\nB-locatie: Niet direct aan strand/zee maar binnen 10 minuten rijden. Vooral aantrekkelijk in hoogseizoen (april-september). Laagseizoen vraag beperkt door Nederlandse weersafhankelijkheid.\n\n**BEREIKBAARHEID:**\n- N9 op 3 km (hoofdweg naar Alkmaar/Den Helder)\n- Bushalte op 800m (beperkte frequentie)\n- Amsterdam 50 min rijden, Duitse grens 2,5 uur - matige Duitse markt\n- Geen treinstation nabij (Alkmaar 30 km)\n\n**MARKTCONCURRENTIE (Airbnb check Noord-Holland kust):**\nDirecte gebied heeft ca. 40-60 vakantiewoningen. Vergelijkbare villa's (3 slk, 70m\u00b2):\n- Nachtprijs hoogseizoen: \u20ac120-160\n- Nachtprijs middenseizoen: \u20ac80-110\n- Laagseizoen: \u20ac60-90\n- Bezetting ca. 50-65% gemiddeld\n- Reviews concurrent objecten: 15-40 per jaar = 150-400 overnachtingen\n\n**SEIZOENSPATROON:**\n60% omzet in hoogseizoen (mei-aug), 30% middenseizoen, 10% winter. Jaar-rond verhuur mogelijk maar lastig in nov-feb.",
+      "red_flags": [
+        "Geen A-locatie (niet direct aan strand/zee)",
+        "Seizoensgebonden vraag - zwakke wintermaanden",
+        "Beperkte OV-bereikbaarheid",
+        "Middelmatige aantrekkelijkheid Duitse markt"
+      ],
+      "recommendations": [
+        "Focus marketing op 'rustig park + strand binnen 10 min'",
+        "Prijsoptimalisatie per seizoen cruciaal voor rendement",
+        "Winteraanbiedingen/last-minutes nodig voor bezetting"
+      ],
+      "market_data": "Airbnb Dirkshorn/omgeving: \u20ac95 gem. nachtprijs, 55% bezetting. Concurrent 'Park de Horn' objecten: 20-35 reviews/jaar gemiddeld."
+    },
+    "property": {
+      "score": 7.5,
+      "reasoning": "**SPECIFICATIES:**\n- 3 slaapkamers \u2192 max 6-8 gasten\n- 2 douches + 2 toiletten (goed!)\n- 70m\u00b2 woonoppervlak (ruim voor deze categorie)\n- 250m\u00b2 perceel met tuin rondom\n- Bouwjaar 2023 - NIEUWBOUW (groot voordeel!)\n\n**STERKE USP's:**\n\u2705 24 zonnepanelen - uniek, duurzaamheid als verkooppunt\n\u2705 Nieuwbouw (2023) - geen renovatie, laag onderhoud 5+ jaar\n\u2705 Volledig elektrisch - geen propaan, lagere energiekosten\n\u2705 Minirobot grasmaaier - modern, zorgeloos\n\u2705 Granieten werkblad keuken - luxe uitstraling\n\u2705 2 badkamers/douches - prettig voor groepen/gezinnen\n\u2705 Tuin rondom - privacy\n\n**ONTBREKENDE USP's:**\n\u274c Geen hottub/sauna (gemiste kans!)\n\u274c Geen info over huisdieren (30% groter publiek)\n\u274c Geen openhaard/houtkachel (wintersfeer)\n\n**DOELGROEP MATCH:**\n- Gezinnen: \u2705 3 slaapkamers, tuin, veilig park\n- Stellen: \u2705 Modern, duurzaam, rust\n- Groepen: \u26a0\ufe0f Max 6-8 personen\n- Senioren: \u2705 Gelijkvloers, modern comfort\n\n**FOTO'S & PRESENTATIE:**\nFoto's zijn helder en professioneel. USP's (zonnepanelen, moderne keuken) goed zichtbaar. Voldoende foto's (16).\n\n**ONDERHOUD:**\nNieuwbouw = 5 jaar vrijwel onderhoudsvrij. Jaarbudget \u20ac500-1000 voor kleine zaken.",
+      "red_flags": [
+        "Geen hottub - lagere nachtprijs potentieel dan vergelijkbare objecten m\u00e9t hottub (\u20ac20-30 verschil)",
+        "Onduidelijk of huisdieren toegestaan"
+      ],
+      "recommendations": [
+        "Installeer hottub (\u20ac4-6k) \u2192 verhoogt nachtprijs met \u20ac20-30 direct",
+        "Verifieer huisdierenbeleid park - zo ja: prominente vermelding in ads",
+        "Marketing focus op duurzaamheid (zonnepanelen) voor milieubewuste gasten",
+        "Overweeg smart-home features toevoegen voor extra USP"
+      ],
+      "usp_highlights": [
+        "24 zonnepanelen - energieneutraal",
+        "Nieuwbouw 2023 - geen onderhoudszorgen",
+        "Volledig elektrisch - geen propaan",
+        "Robot grasmaaier - zorgeloos",
+        "2 douches + 2 toiletten - comfort",
+        "Luxe granieten keuken"
+      ]
+    },
+    "financial": {
+      "score": 5.0,
+      "reasoning": "**AANKOOPKOSTEN:**\n- Vraagprijs: \u20ac250.000 vrij op naam (oorspronkelijk \u20ac206k k.k. - 21% verhoging!)\n- Overdrachtsbelasting (2%): \u20ac5.000\n- Notaris/advies: \u20ac2.000\n- Directe kosten: \u20ac0 (nieuwbouw, verhuurklaar)\n- **TOTAAL: \u20ac257.000**\n\nOPMERKING: 21% BTW terugvorderen mogelijk = \u20ac43.750 terug bij verhuur (netto investering \u20ac213.250)\n\n**JAAROMZET (conservatief zonder hottub):**\n- Hoogseizoen 90d \u00d7 60% \u00d7 \u20ac130 = \u20ac7.020\n- Middenseizoen 180d \u00d7 50% \u00d7 \u20ac95 = \u20ac8.550\n- Laagseizoen 95d \u00d7 30% \u00d7 \u20ac70 = \u20ac1.995\n- **BRUTO: \u20ac17.565** (bescheiden!)\n\n**JAARKOSTEN:**\n- Parkkosten: ONBEKEND (KRITIEK!) - schatting \u20ac2.500-4.000\n- Energie/water: \u20ac800 (laag door zonnepanelen)\n- Gemeentelijke lasten: \u20ac400\n- Platform fees (10%): \u20ac1.757\n- Schoonmaak (40 \u00d7 \u20ac60): \u20ac2.400\n- Wasgoed: \u20ac600\n- Onderhoud (5%): \u20ac878\n- Accountant: \u20ac1.000\n- Verzekering: \u20ac500\n- **TOTAAL: \u20ac10.835** (excl. parkkosten!)\n\n**RENDEMENT (worst case - zonder BTW terug):**\n- Netto omzet: \u20ac6.730 (met \u20ac3k parkkosten)\n- Cash-on-Cash: 2,6% - ONDERMAATS\n\n**RENDEMENT (best case - m\u00e9t BTW terug):**\n- Investering: \u20ac213.250\n- Cash-on-Cash: 3,2% - MATIG\n\n**MET HOTTUB (realistische upgrade):**\n- Investering +\u20ac5k = \u20ac218.250\n- Omzet +\u20ac4.500/jaar (\u20ac25/nacht extra \u00d7 180 nachten)\n- Netto: \u20ac11.230\n- Cash-on-Cash: 5,1% - REDELIJK\n\n**FINANCIERING (70% hypotheek):**\n- Hypotheek: \u20ac149.275 (4,5% rente)\n- Maandlast: \u20ac750\n- Eigen inbreng: \u20ac63.975\n- Cashflow: NEGATIEF \u20ac200-300/maand\n\n**KRITIEKE PUNTEN:**\n\u274c Prijs 21% gestegen vs oorspronkelijk - overprijsd!\n\u274c Parkkosten ONBEKEND - kan deal maken/breken\n\u274c 6+ maanden op markt = geen interesse\n\u274c Zonder hottub: te laag rendement (<5%)\n\u274c BTW constructie complex - accountant nodig",
+      "red_flags": [
+        "Prijs verhoogd van \u20ac206k naar \u20ac250k (+21%) - grote rode vlag!",
+        "6+ maanden te koop - geen interesse markt",
+        "Parkkosten niet vermeld - kan \u20ac3-5k/jaar zijn",
+        "Rendement zonder optimalisatie <5% - ondermaats",
+        "BTW terugvordering vereist professionele verhuur (fiscaal complex)"
+      ],
+      "recommendations": [
+        "ONDERHANDEL naar \u20ac220k of lager - oorspronkelijk \u20ac206k was al realistischer",
+        "Eis transparantie parkkosten VOOR bod",
+        "Installeer hottub direct (ROI <2 jaar)",
+        "Accountant consulteren voor BTW constructie",
+        "Overweeg alleen bij prijs <\u20ac220k + lage parkkosten"
+      ],
+      "calculations": {
+        "purchase_price": 250000,
+        "total_investment": 257000,
+        "estimated_annual_revenue": 17565,
+        "estimated_annual_costs": 13835,
+        "net_annual_income": 3730,
+        "cash_on_cash_return": 1.5,
+        "breakeven_years": 68.9,
+        "with_btw_return": 213250,
+        "with_btw_cash_return": 1.7,
+        "with_hottub_investment": 218250,
+        "with_hottub_revenue": 22065,
+        "with_hottub_net": 8230,
+        "with_hottub_return": 3.8
+      }
+    },
+    "legal": {
+      "score": 5.0,
+      "reasoning": "**VERHUURVRIJHEID:**\n\u2705 Permanente bewoning NIET toegestaan (goed voor verhuur)\n\u26a0\ufe0f GEEN info over verplichte parkorganisatie verhuur\n\u26a0\ufe0f GEEN info over vrije verhuur via Airbnb/Booking\n\u26a0\ufe0f Park De Horn reglement NIET beschikbaar - KRITIEK!\n\n**KRITIEKE ONDUIDELIJKHEDEN:**\nDe advertentie vermeldt: \"Bij verhuur kan 21% btw worden teruggevorderd\" - dit suggereert verhuur mogelijk is, maar:\n- Is zelfverhuur toegestaan of via parkorganisatie?\n- Zijn er commissies?\n- Maximaal aantal verhuurweken?\n- Seizoensbeperkingen?\n\n**EIGENDOM:**\n\u2705 \"Vrij op naam\" - geen erfpacht (goed!)\n\u2705 Kadastrale oppervlakte 250m\u00b2 komt overeen\n\u26a0\ufe0f \"Zie akte\" bij eigendomssituatie - onduidelijk\n\n**PARKREGELS:**\nRecreatieparken hebben vaak:\n- Verplichte verhuurorganisatie (dealbreaker!)\n- Commissies 20-40%\n- Recron voorwaarden\n- Goedkeuring nieuwe eigenaar\n- Bestedingsplicht parkfaciliteiten\n\n**FISCAAL:**\n\u2705 BTW terug mogelijk = professionele verhuur erkend\n\u26a0\ufe0f Vereist ondernemersstatus (IB-ondernemer of BV)\n\u26a0\ufe0f Omzetbelasting aangiftes verplicht\n\u26a0\ufe0f BTW doorberekenen aan gasten?\n\n**SEIZOEN:**\nGeen vermeldde beperkingen, maar parken hebben vaak:\n- Rustige periodes (november-maart)\n- Maximaal verhuurweken per jaar\n- Eigen gebruik verplichtingen\n\n**DEALBREAKER CHECK:**\n\ud83d\udea8 **KRITIEK GEBREK INFORMATIE**\nZonder parkreglement kan ik niet vaststellen of:\n- Verhuur via derden verplicht is\n- Er hoge commissies zijn\n- Zelfverhuur mogelijk is\n\n**RODE VLAG:** 6+ maanden op markt + prijsverhoging = mogelijk probleem met verhuurregels dat kopers afschrikt.",
+      "red_flags": [
+        "Parkreglement niet beschikbaar - KRITIEKE informatie ontbreekt",
+        "Geen info over verhuurvrijheid/commissies",
+        "6+ maanden op markt suggereert probleem",
+        "Onduidelijk of zelfverhuur via Airbnb/Booking toegestaan",
+        "BTW constructie vereist professionele status - fiscaal complex"
+      ],
+      "recommendations": [
+        "DIRECT Park De Horn reglement opvragen bij beheerder",
+        "Vraag specifiek naar: verplichte verhuurorganisatie, commissies, zelfverhuur",
+        "Check bij huidige eigenaar: hoe verhuurt hij? Via welke kanalen?",
+        "Accountant raadplegen voor BTW terugvordering (\u20ac44k is substantieel)",
+        "Notaris laten checken akte op verhuurrestricties",
+        "NIET kopen zonder volledige parkvoorwaarden!"
+      ],
+      "rental_freedom": "ONBEKEND - kritieke informatie ontbreekt. Zonder parkreglement niet te beoordelen of zelfverhuur mogelijk is. Dit is een DEALBREAKER voor deze strategie."
+    }
+  },
+  "overall_assessment": "Deze nieuwbouw villa (2023) op Park De Horn biedt moderne voorzieningen en duurzaamheid (24 zonnepanelen), maar heeft KRITIEKE tekortkomingen voor een zelfverhuur strategie. De prijs is 21% gestegen naar \u20ac250k (was \u20ac206k) terwijl het object 6+ maanden te koop staat - rode vlag. Het grootste probleem: GEEN informatie over verhuurvrijheid en parkregels beschikbaar. Zonder deze cruciale data is beoordeling of zelfverhuur mogelijk is onmogelijk. Financieel rendement is teleurstellend: 1,5-3,8% zonder optimalisatie. Zelfs m\u00e9t BTW terugvordering (\u20ac44k) en hottub komt rendement niet boven 5%. Locatie is B-klasse (8km van strand), geen A-locatie. Voor \u20ac250k zijn er betere kansen in de markt. ALLEEN interessant bij: (1) Parkreglement bevestigt vrije zelfverhuur, (2) Prijs daalt naar \u20ac210-220k, (3) Parkkosten <\u20ac2.500/jaar. Momenteel te veel onzekerheden en te laag rendement voor de gevraagde prijs.",
+  "top_strengths": [
+    "Nieuwbouw 2023 - 5+ jaar onderhoudsvrij, moderne uitstraling, geen verrassingen",
+    "24 zonnepanelen + volledig elektrisch - \u20ac1.500+ besparing/jaar, sterke marketing USP voor milieubewuste gasten",
+    "Vrij op naam (geen erfpacht) - geen onzekere canonverhogingen of beperkte looptijden"
+  ],
+  "top_concerns": [
+    "Parkreglement onbekend - kan dealbreaker zijn als verplichte parkorganisatie verhuur met 30-40% commissie (\u20ac5-7k/jaar verlies)",
+    "Prijs +21% gestegen maar 6+ maanden geen verkoop - markt wijst overpricing af, onderhandel naar \u20ac210-220k of afwijzen",
+    "Rendement 1,5-3,8% zonder optimalisatie - ver onder 10% target, zelfs m\u00e9t hottub en BTW terug blijft het marginaal"
+  ],
+  "investment_recommendation": "AFWIJZEN - tenzij aan strikte voorwaarden voldaan wordt. Te veel kritieke onzekerheden (parkregels, verhuurvrijheid) gecombineerd met matig rendement en overpricing. Object is 6+ maanden op markt met 21% prijsverhoging - significante rode vlag. Voor deze prijs (\u20ac250k) zijn betere A-locatie objecten beschikbaar met transparante verhuurvoorwaarden. ALLEEN heroverwegen als: (1) Parkreglement bevestigt 100% vrije zelfverhuur zonder commissies, (2) Prijs daalt naar max \u20ac220k, (3) Parkkosten <\u20ac2.500/jaar bewezen. Zelfs dan blijft rendement marginaal zonder hottub investering. Focus op objecten met duidelijke verhuurvrijheid en betere locatie voor deze prijsklasse.",
+  "metadata": {
+    "processing_time_seconds": 119.92,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
