@@ -180,10 +180,10 @@ jobs:
               print(f"Fetching comparable listings near {city} ({lat}, {lon})...")
               print(f"  Property specs: {bedrooms} bed, {bathrooms} bath, {guests} guests")
 
-              # Build query string for GET request
+              # Build query string for GET request - use lat/lng not latitude/longitude
               params = {
-                  'latitude': lat,
-                  'longitude': lon,
+                  'lat': lat,
+                  'lng': lon,
                   'bedrooms': bedrooms,
                   'baths': bathrooms,
                   'guests': guests,
@@ -194,7 +194,7 @@ jobs:
 
               comparables_req = urllib.request.Request(
                   comparables_url,
-                  headers={'X-API-KEY': API_KEY}
+                  headers={'x-api-key': API_KEY}  # lowercase header name
               )
 
               with urllib.request.urlopen(comparables_req, timeout=30) as response:
@@ -209,20 +209,21 @@ jobs:
               # 2. Get revenue estimate
               print(f"Fetching revenue estimate...")
 
-              # Try revenue-potential endpoint
-              revenue_params = {
-                  'latitude': lat,
-                  'longitude': lon,
+              # Use correct endpoint: /calculator/estimate (not revenue-potential)
+              estimate_params = {
+                  'lat': lat,
+                  'lng': lon,
                   'bedrooms': bedrooms,
                   'baths': bathrooms,
-                  'guests': guests
+                  'guests': guests,
+                  'currency': 'native'
               }
-              revenue_query = '&'.join([f"{k}={v}" for k, v in revenue_params.items()])
-              estimate_url = f"https://api.airroi.com/calculator/revenue-potential?{revenue_query}"
+              estimate_query = '&'.join([f"{k}={v}" for k, v in estimate_params.items()])
+              estimate_url = f"https://api.airroi.com/calculator/estimate?{estimate_query}"
 
               estimate_req = urllib.request.Request(
                   estimate_url,
-                  headers={'X-API-KEY': API_KEY}
+                  headers={'x-api-key': API_KEY}  # lowercase header name
               )
 
               with urllib.request.urlopen(estimate_req, timeout=30) as response:
