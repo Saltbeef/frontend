@@ -1157,7 +1157,7 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
 
                 if (response.ok) {
                     const latest = await response.json();
-                    console.log(`Analysis found for ${houseId}: score ${latest.overall_score}`);
+                    console.log(`✓ Analysis found for ${houseId}: ${latest.overall_score}/10`);
                     return {
                         status: 'completed',
                         score: latest.overall_score,
@@ -1165,12 +1165,11 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                         rules_version: latest.rules_version
                     };
                 } else if (response.status === 404) {
-                    // No analysis exists
-                    console.log(`No analysis for ${houseId}`);
+                    // No analysis exists - this is normal, no need to log
                     return null;
                 }
             } catch (error) {
-                console.log(`GitHub check failed for ${houseId}:`, error.message);
+                console.error(`GitHub check failed for ${houseId}:`, error.message);
             }
 
             return null;
@@ -1435,10 +1434,10 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
         }
 
         // Check analysis status for all visible properties
-        async function checkAnalysisStatuses() {
-            if (!currentResults || currentResults.length === 0) return;
+        async function checkAnalysisStatuses(visibleProperties = []) {
+            if (visibleProperties.length === 0) return;
 
-            const visibleHouseIds = currentResults.slice(0, 50).map(p => p.Identifiers?.TinyId).filter(Boolean);
+            const visibleHouseIds = visibleProperties.map(p => p.Identifiers?.TinyId).filter(Boolean);
 
             for (const houseId of visibleHouseIds) {
                 // Always check for existing analyses, unless we're already polling
@@ -2178,8 +2177,8 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
             const renderTime = (renderEnd - renderStart).toFixed(2);
             console.log(`UI rendered ${displayResults.length} cards in ${renderTime}ms (total: ${results.length} results)`);
 
-            // Check analysis statuses for visible properties
-            checkAnalysisStatuses();
+            // Check analysis statuses for visible properties only
+            checkAnalysisStatuses(displayResults);
         }
 
         function showPropertyDetails(propertyId) {
