@@ -172,38 +172,35 @@ jobs:
           }
 
           try:
-              # 1. Search for comparable listings within 5km radius
-              print(f"Searching for comparable listings near {city} ({lat}, {lon})...")
+              # Extract additional property details
+              bathrooms = house_data.get('FastView', {}).get('NumberOfBathrooms', 1.0)
+              guests = max(bedrooms * 2, 2)  # Estimate 2 guests per bedroom, min 2
 
-              radius_search_url = "https://api.airroi.com/v2/listings/search/radius"
-              radius_body = {
-                  "latitude": lat,
-                  "longitude": lon,
-                  "radius_km": 5,
-                  "filters": {
-                      "bedrooms": {"eq": bedrooms}
-                  },
-                  "pagination": {
-                      "page_size": 10,
-                      "offset": 0
-                  },
-                  "currency": "native",
-                  "metrics_period": "ttm"
+              # 1. Get comparable listings
+              print(f"Fetching comparable listings near {city} ({lat}, {lon})...")
+              print(f"  Property specs: {bedrooms} bed, {bathrooms} bath, {guests} guests")
+
+              # Build query string for GET request
+              params = {
+                  'latitude': lat,
+                  'longitude': lon,
+                  'bedrooms': bedrooms,
+                  'baths': bathrooms,
+                  'guests': guests,
+                  'currency': 'native'
               }
+              query_string = '&'.join([f"{k}={v}" for k, v in params.items()])
+              comparables_url = f"https://api.airroi.com/listings/comparables?{query_string}"
 
-              radius_req = urllib.request.Request(
-                  radius_search_url,
-                  data=json.dumps(radius_body).encode(),
-                  headers={
-                      'X-API-KEY': API_KEY,
-                      'Content-Type': 'application/json'
-                  }
+              comparables_req = urllib.request.Request(
+                  comparables_url,
+                  headers={'X-API-KEY': API_KEY}
               )
 
-              with urllib.request.urlopen(radius_req, timeout=30) as response:
-                  comparables = json.loads(response.read().decode())
+              with urllib.request.urlopen(comparables_req, timeout=30) as response:
+                  comparables_data = json.loads(response.read().decode())
 
-              enrichment['comparables'] = comparables.get('data', [])
+              enrichment['comparables'] = comparables_data.get('data', [])
               enrichment['api_calls'] += 1
               enrichment['estimated_cost'] += 0.01
 
@@ -212,21 +209,20 @@ jobs:
               # 2. Get revenue estimate
               print(f"Fetching revenue estimate...")
 
-              # Build query params
-              params = {
+              # Try revenue-potential endpoint
+              revenue_params = {
                   'latitude': lat,
                   'longitude': lon,
-                  'bedrooms': bedrooms
+                  'bedrooms': bedrooms,
+                  'baths': bathrooms,
+                  'guests': guests
               }
-              query_string = '&'.join([f"{k}={v}" for k, v in params.items()])
-              estimate_url = f"https://api.airroi.com/v2/calculator/estimate?{query_string}"
+              revenue_query = '&'.join([f"{k}={v}" for k, v in revenue_params.items()])
+              estimate_url = f"https://api.airroi.com/calculator/revenue-potential?{revenue_query}"
 
               estimate_req = urllib.request.Request(
                   estimate_url,
-                  headers={
-                      'X-API-KEY': API_KEY,
-                      'Content-Type': 'application/json'
-                  }
+                  headers={'X-API-KEY': API_KEY}
               )
 
               with urllib.request.urlopen(estimate_req, timeout=30) as response:
