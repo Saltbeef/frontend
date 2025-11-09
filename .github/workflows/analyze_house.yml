@@ -209,10 +209,10 @@ jobs:
               # 2. Get revenue estimate
               print(f"Fetching revenue estimate...")
 
-              # Calculator estimate endpoint
+              # Calculator estimate endpoint uses lat/lng (not latitude/longitude)
               estimate_params = {
-                  'latitude': lat,
-                  'longitude': lon,
+                  'lat': lat,
+                  'lng': lon,
                   'bedrooms': bedrooms,
                   'baths': bathrooms,
                   'guests': guests,
