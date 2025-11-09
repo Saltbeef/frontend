@@ -11,7 +11,7 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     permissions:
       contents: write
 
@@ -21,7 +21,7 @@ jobs:
         with:
           ref: main
 
-      - name: Download Apify dataset
+      - name: Download and compress Apify dataset
         id: download
         env:
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
@@ -40,30 +40,38 @@ jobs:
             exit 1
           fi
 
-          # Pretty print JSON for better git diffs
-          python3 -m json.tool data/apify_dataset.json > data/apify_dataset_formatted.json
-          mv data/apify_dataset_formatted.json data/apify_dataset.json
-
-          # Get dataset info
+          # Get dataset info before compression
           ITEM_COUNT=$(jq 'length' data/apify_dataset.json)
-          echo "Downloaded ${ITEM_COUNT} items"
+          UNCOMPRESSED_SIZE=$(du -h data/apify_dataset.json | cut -f1)
+          echo "Downloaded ${ITEM_COUNT} items (${UNCOMPRESSED_SIZE})"
+
+          # Compress with gzip
+          gzip -9 data/apify_dataset.json
+          COMPRESSED_SIZE=$(du -h data/apify_dataset.json.gz | cut -f1)
+          echo "Compressed to ${COMPRESSED_SIZE}"
+
+          # Output for commit message
           echo "item_count=${ITEM_COUNT}" >> $GITHUB_OUTPUT
+          echo "uncompressed_size=${UNCOMPRESSED_SIZE}" >> $GITHUB_OUTPUT
+          echo "compressed_size=${COMPRESSED_SIZE}" >> $GITHUB_OUTPUT
 
       - name: Commit and push if changed
         run: |
           git config user.name "Apify Sync Bot"
           git config user.email "bot@github-actions"
 
-          git add data/apify_dataset.json
+          git add data/apify_dataset.json.gz
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
             echo "✅ Dataset is up to date"
           else
             ITEM_COUNT="${{ steps.download.outputs.item_count }}"
+            UNCOMPRESSED="${{ steps.download.outputs.uncompressed_size }}"
+            COMPRESSED="${{ steps.download.outputs.compressed_size }}"
 
-            git commit -m "Sync Apify dataset (${ITEM_COUNT} items)" \
-              -m "Updated dataset from Apify datasource Yb4fTMJ9wQsuyZf3L" \
+            git commit -m "Sync Apify dataset (${ITEM_COUNT} items, ${UNCOMPRESSED} → ${COMPRESSED})" \
+              -m "Updated compressed dataset from Apify datasource Yb4fTMJ9wQsuyZf3L" \
               -m "🤖 Generated with [Claude Code](https://claude.com/claude-code)" \
               -m "Co-Authored-By: Claude <noreply@anthropic.com>"
 

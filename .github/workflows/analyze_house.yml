@@ -46,36 +46,28 @@ jobs:
           python -m pip install --upgrade pip
           # No external dependencies needed - using stdlib only
 
-      - name: Fetch house data from local dataset
+      - name: Fetch house data from compressed dataset
         id: fetch_data
         run: |
-          python -c "
-          import sys
-          import json
+          HOUSE_ID="${{ inputs.house_id }}"
 
-          # Load dataset from local file
-          with open('data/apify_dataset.json', 'r') as f:
-              dataset = json.load(f)
+          echo "Extracting house ${HOUSE_ID} from compressed dataset..."
 
-          # Find house by ID
-          house_id = '${{ inputs.house_id }}'
-          house_data = None
+          # Decompress dataset
+          gunzip -c data/apify_dataset.json.gz > dataset_temp.json
 
-          for item in dataset:
-              if str(item.get('id')) == house_id:
-                  house_data = item
-                  break
+          # Extract specific house data using jq
+          jq --arg house_id "${HOUSE_ID}" '.[] | select(.id == ($house_id | tonumber))' dataset_temp.json > house_data.json
 
-          if not house_data:
-              print(f'ERROR: House {house_id} not found in dataset')
-              sys.exit(1)
+          # Check if house was found
+          if [ ! -s house_data.json ] || [ "$(cat house_data.json)" = "null" ]; then
+            echo "ERROR: House ${HOUSE_ID} not found in dataset"
+            rm -f dataset_temp.json house_data.json
+            exit 1
+          fi
 
-          # Save to file for next step
-          with open('house_data.json', 'w') as f:
-              json.dump(house_data, f, indent=2)
-
-          print(f'House data found: {house_id}')
-          "
+          rm -f dataset_temp.json
+          echo "House data extracted successfully"
 
       - name: Run analysis
         id: analyze

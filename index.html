@@ -329,7 +329,9 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
     <div id="urlModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50">
         <div class="bg-white my-20 mx-auto p-5 rounded-lg w-11/12 max-w-lg">
             <h3 class="mb-4 text-lg font-semibold">Load JSONL from URL</h3>
-            <input type="url" id="modalUrlInput" placeholder="Enter JSONL URL" class="w-full p-2.5 border border-gray-300 rounded mb-4">
+            <input type="url" id="modalUrlInput" placeholder="Enter JSONL URL (supports .gz compressed files)" class="w-full p-2.5 border border-gray-300 rounded mb-4">
+            <p class="text-xs text-gray-500 mb-2">💡 Tip: .gz files are automatically decompressed</p>
+            <p class="text-xs text-gray-500 mb-4">Default: <code class="bg-gray-100 px-1">https://raw.githubusercontent.com/Saltbeef/frontend/main/data/apify_dataset.json.gz</code></p>
             <div class="flex gap-2.5 justify-end">
                 <button onclick="hideUrlModal()" class="px-3 py-2 bg-gray-600 text-white rounded hover:bg-gray-700">Cancel</button>
                 <button onclick="loadFromModalUrl()" class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Load</button>
@@ -720,8 +722,12 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
         // Show URL modal
         function showUrlModal() {
             const savedUrl = localStorage.getItem('jsonl-url');
+            const defaultUrl = 'https://raw.githubusercontent.com/Saltbeef/frontend/main/data/apify_dataset.json.gz';
+
             if (savedUrl) {
                 document.getElementById('modalUrlInput').value = savedUrl;
+            } else {
+                document.getElementById('modalUrlInput').value = defaultUrl;
             }
             document.getElementById('urlModal').style.display = 'block';
         }
@@ -774,10 +780,12 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
             showProgress(true);
 
             try {
+                const isGzipped = url.endsWith('.gz');
+
                 const response = await fetch(url, {
                     mode: 'cors',
                     headers: {
-                        'Accept': 'application/json, text/plain, */*'
+                        'Accept': isGzipped ? 'application/gzip, */*' : 'application/json, text/plain, */*'
                     }
                 });
 
@@ -785,7 +793,20 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 }
 
-                const text = await response.text();
+                let text;
+                if (isGzipped) {
+                    // Download as binary and decompress with pako
+                    console.log('Downloading compressed dataset...');
+                    const compressed = await response.arrayBuffer();
+                    console.log(`Downloaded ${(compressed.byteLength / 1024 / 1024).toFixed(2)}MB compressed`);
+
+                    // Decompress using pako
+                    const decompressed = pako.inflate(new Uint8Array(compressed), { to: 'string' });
+                    console.log(`Decompressed to ${(decompressed.length / 1024 / 1024).toFixed(2)}MB`);
+                    text = decompressed;
+                } else {
+                    text = await response.text();
+                }
 
                 // Cache the data in IndexedDB
                 await setCachedData(url, text);
