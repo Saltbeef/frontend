@@ -1,0 +1,251 @@
+{
+  "Identifiers": {
+    "GlobalId": 7639467,
+    "TinyId": "43084820"
+  },
+  "Price": {
+    "SellingPrice": "\u20ac 505.000 v.o.n.",
+    "NumericSellingPrice": 505000,
+    "IsAuction": false
+  },
+  "KenmerkSections": [
+    {
+      "Index": 1,
+      "Id": "overdracht",
+      "Title": "Overdracht",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "overdracht-vraagprijs",
+          "Label": "Vraagprijs",
+          "Value": "\u20ac 505.000 vrij op naam",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Id": "overdracht-aangeboden-sinds",
+          "Label": "Aangeboden sinds",
+          "Value": "2 maanden",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 5,
+          "Id": "overdracht-status",
+          "Label": "Status",
+          "Value": "Beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Aanvaarding",
+          "Value": "In overleg",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 7,
+          "Id": "overdracht-permanentebewoning",
+          "Label": "Permanente bewoning",
+          "Value": "Permanente bewoning is niet toegestaan",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 2,
+      "Id": "bouw",
+      "Title": "Bouw",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "bouw-soortobject",
+          "Label": "Soort appartement",
+          "Value": "Bovenwoning",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "bouw-soortbouw",
+          "Label": "Soort bouw",
+          "Value": "Nieuwbouw",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "bouw-bouwjaar",
+          "Label": "Bouwjaar",
+          "Value": "2026",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 3,
+      "Id": "afmetingen",
+      "Title": "Oppervlakten en inhoud",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Label": "Gebruiksoppervlakten",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 1,
+              "Id": "afmetingen-gebruiksoppervlakten-wonen",
+              "Label": "Wonen",
+              "Value": "71 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            },
+            {
+              "Index": 3,
+              "Id": "afmetingen-gebruiksoppervlakte-gebouwgebondenbuitenruimte",
+              "Label": "Gebouwgebonden buitenruimte",
+              "Value": "10 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        },
+        {
+          "Index": 3,
+          "Id": "afmetingen-inhoud",
+          "Label": "Inhoud",
+          "Value": "213 m\u00b3",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 4,
+      "Id": "indeling",
+      "Title": "Indeling",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "indeling-totalrooms",
+          "Label": "Aantal kamers",
+          "Value": "4 kamers (3 slaapkamers)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "indeling-totalstories",
+          "Label": "Aantal woonlagen",
+          "Value": "1 woonlaag",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 5,
+      "Id": "energie",
+      "Title": "Energie",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "energie-energielabel",
+          "Label": "Energielabel",
+          "Value": "Niet beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    }
+  ],
+  "Labels": [],
+  "Urls": {
+    "FriendlyUrl": {
+      "FullUrl": "https://www.funda.nl/detail/recreatie/amsterdam/appartement-woningtype-a1-bouwnr-2/43084820/",
+      "RelativeUrl": "/detail/recreatie/amsterdam/appartement-woningtype-a1-bouwnr-2/43084820/"
+    },
+    "ReportErrorUrl": "https://help.funda.nl:443/s/mef?globalID=7639467&returnURL=https%3a%2f%2fwww.funda.nl%2fdetail%2frecreatie%2famsterdam%2fappartement-woningtype-a1-bouwnr-2%2f43084820%2f&brokerID=24587"
+  },
+  "ListingDescription": {
+    "Title": "Omschrijving",
+    "Description": "Woningtype A1 is een slim ingedeeld vierkamerappartement van ruim 71m\u00b2. Dit ruime appartement met maar liefst drie slaapkamers is ideaal voor wie net een extra kamer nodig heeft. Maar heb je liever een ruimere woonkamer of een riante master bedroom met inloopkast? Dan kun je \u00e9\u00e9n slaapkamer laten vervallen en deze ruimte bij je woon- of slaapkamer betrekken. \n\nIn ONE50 woon je ruim, comfortabel en met de stad altijd binnen handbereik \u2013 per fiets of ov. Daarnaast vind je de winkels voor de dagelijkse boodschappen \u00e9n hippe eettentjes om de hoek. Het terras van 10 m\u00b2 op het zuidwesten biedt volop middag en avondzon. En dankzij eigen grond betaal je geen erfpacht: wel zo prettig.\n- Vierkamerappartement van 71m2 gelegen op de begane grond\n- Zonnig terras op het zuidwesten van 10m2\n- Inclusief complete keuken met Bosch apparatuur, sanitair en tegelwerk\n- Technische ruimte met wasmachine- en drogeraansluiting\n- Vloerverwarming \n- Gelegen op eigen grond \u2013 dus g\u00e9\u00e9n erfpacht\n- \u20ac70,00 maandelijkse VVE bijdrage (indicatie)"
+  },
+  "AddressDetails": {
+    "Title": "Woningtype A1 (Bouwnr. 2)",
+    "SubTitle": "1024 KV Amsterdam",
+    "IsInternational": false,
+    "NeighborhoodName": "Markengouw-Zuid",
+    "NeighborhoodIdentifier": "amsterdam/markengouw-zuid",
+    "City": "Amsterdam",
+    "Province": "Noord-Holland",
+    "Country": "Nederland",
+    "HouseNumber": "0",
+    "HouseNumberExtension": "ong",
+    "PostCode": "1024KV"
+  },
+  "Coordinates": {
+    "Latitude": 52.391678,
+    "Longitude": 4.9582705
+  },
+  "KadastraleKaartBaseUrl": "https://service.pdok.nl/kadaster/kadastralekaart/wms/v5_0",
+  "Media": {
+    "Layout": {
+      "MediaViewerIsVisible": true,
+      "MainPhotoThumbnailIsVisible": false
+    },
+    "Photos": {
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "MediaBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "Items": [
+        {
+          "Id": "213/353/617"
+        },
+        {
+          "Id": "213/353/619"
+        },
+        {
+          "Id": "213/353/622"
+        },
+        {
+          "Id": "213/353/625"
+        },
+        {
+          "Id": "213/353/628"
+        },
+        {
+          "Id": "213/353/632"
+        },
+        {
+          "Id": "213/353/635"
+        }
+      ]
+    }
+  },
+  "FastView": {
+    "LivingArea": "71 m\u00b2",
+    "PlotArea": "",
+    "NumberOfBedrooms": "3"
+  },
+  "ParentProject": {
+    "GlobalId": 7626847,
+    "Title": "One50, Amsterdam",
+    "City": "Amsterdam",
+    "Type": "nieuwbouwproject",
+    "Url": "https://www.funda.nl/nieuwbouw/amsterdam/project-43071200-one50/"
+  },
+  "IsSoldOrRented": false,
+  "ObjectType": "Apartment",
+  "OfferingType": "Sale",
+  "ConstructionType": "NewConstruction",
+  "PublicationDate": "2025-07-07T00:00:00",
+  "sitemapData": {
+    "originalUrl": "https://www.funda.nl/detail/recreatie/amsterdam/appartement-woningtype-a1-bouwnr-2/43084820/",
+    "propertyId": "43084820",
+    "lastmod": "2025-08-01T11:20:48+02:00",
+    "processedAt": "2025-09-15T20:06:26.861Z",
+    "apiUrl": "https://listing-detail-page.funda.io/api/v4/listing/nl/tinyId/43084820"
+  }
+}

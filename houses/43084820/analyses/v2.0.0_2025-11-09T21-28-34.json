@@ -1,0 +1,94 @@
+{
+  "house_id": "43084820",
+  "analyzed_at": "2025-11-09T21:28:34.844199+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 6.92,
+  "category_scores": {
+    "location": {
+      "score": 8.5,
+      "reasoning": "Amsterdam-Noord, Markengouw-Zuid - uitstekende stedelijke locatie. Binnen 5 km: Amsterdam Centraal, binnen 10 km: alle toeristische highlights (Rijksmuseum, Van Gogh Museum, Jordaan, grachtengordel). Bereikbaarheid excellent: A10 direct bereikbaar, Noord-Zuidlijn metro binnen 2 km (Noord station), veerverbindingen naar centrum. \n\nJaar-rond potentieel ZEER HOOG: Amsterdam is top-3 Europese steden voor stedelijk toerisme met 365 dagen vraag. Peak seizoen maart-oktober, maar ook winter goed door zakenreizigers, citytrips, feestdagen.\n\nConcurrentie analyse: Amsterdam heeft 8000+ Airbnb listings, maar vraag is enorm. Vergelijkbare 3-kamer appartementen in Noord: \u20ac120-180/nacht (gemiddeld \u20ac145). Bezettingsgraden 70-85% bij goede presentatie. Markengouw-Zuid is opkomende wijk met moderne nieuwbouw - trendy voor jongere doelgroep.\n\nVoorzieningen nabij: Boodschappen, restaurants, parken allemaal <1 km. Eye Filmmuseum 3 km, NDSM werf (culturele hotspot) 4 km. Duitse markt: uitstekend bereikbaar via A1/A2, 4-5 uur rijden.\n\nEnige minpunt: niet direct aan water/centrum, maar dit weerspiegelt zich in lagere aankoopprijs bij gelijke vraag.",
+      "red_flags": [],
+      "recommendations": [
+        "Target zakelijke gasten weekdagen + toeristen weekenden voor optimale bezetting",
+        "Positioneer als 'modern Amsterdam experience' voor internationale gasten"
+      ],
+      "market_data": "Amsterdam gemiddeld \u20ac145/nacht voor 3-kamer, 70-85% bezetting mogelijk, 250+ verhuurbare dagen/jaar realistisch"
+    },
+    "property": {
+      "score": 7.0,
+      "reasoning": "SPECS: 71m\u00b2, 3 slaapkamers, 1 badkamer (aanname), max 6 gasten. Nieuwbouw 2026 - GROOT VOORDEEL: geen onderhoud eerste 5-10 jaar, moderne energie-effici\u00ebntie, garanties. Terras 10m\u00b2 zuidwest - goed voor zomermaanden.\n\nUSP's HUIDIG: (1) Nieuwbouw = modern design, (2) 3 slaapkamers zeldzaam in dit segment, (3) Vloerverwarming, (4) Compleet turn-key (keuken Bosch + sanitair).\n\nUSP's ONTBREKEND: Geen hottub/sauna, geen bijzonder design zichtbaar in renders, geen huisdieren info (KRITISCH - 30% grotere markt!).\n\nDOELGROEP: Gezinnen (3 slaapkamers perfect), groepen vrienden (6 personen), zakelijke groepen. NIET ideaal voor romantische stellen (te groot).\n\nFOTO's: Professionele renders, maar nog geen echte foto's (nieuwbouw). Ziet er modern/neutraal uit - goed, maar niet WOW-factor voor premium pricing.\n\nVERBETERINGEN \u20ac5k-10k: Smart home features (\u20ac1500), premium bedden/beddengoed (\u20ac2000), kunstwerken/styling (\u20ac2000), eventueel kleine sauna (\u20ac8000) voor differentiatie. Wasmachine/droger aanwezig (essentieel voor 3+ nachten verblijven).\n\nDirect verhuurklaar bij oplevering 2026.",
+      "red_flags": [
+        "Nog niet opgeleverd - risico vertraging tot 2026",
+        "Geen unique selling point versus andere nieuwbouw"
+      ],
+      "recommendations": [
+        "Investeer \u20ac5-8k in premium inrichting + styling voor hogere nachtprijs",
+        "Maak huisdiervriendelijk (\u20ac500 investering, 30% grotere doelgroep)",
+        "Professional fotoshoot direct na oplevering (\u20ac500)"
+      ],
+      "usp_highlights": [
+        "Nieuwbouw 2026 - geen onderhoud",
+        "3 slaapkamers - families + groepen",
+        "Compleet turn-key",
+        "Vloerverwarming"
+      ]
+    },
+    "financial": {
+      "score": 5.5,
+      "reasoning": "INVESTERING: Vraagprijs \u20ac505.000 + overdracht 2% \u20ac10.100 + notaris \u20ac2.500 + inrichting premium \u20ac8.000 = TOTAAL \u20ac525.600. Voor nieuwbouw project mogelijk onderhandelen beperkt.\n\nJAAROMZET (conservatief): Nachtprijs gemiddeld \u20ac145 (Amsterdam Noord markt). 250 nachten bezetting jaar 1 (70%), groei naar 280 nachten jaar 2-3 (80%). Jaar 1: 250 \u00d7 \u20ac145 = \u20ac36.250. Jaar 2-3: 280 \u00d7 \u20ac145 = \u20ac40.600.\n\nKOSTEN JAARLIJKS: VVE \u20ac840, energie \u20ac1.800, gemeentelijk \u20ac400, platform fees 10% (\u20ac3.625), schoonmaak 50\u00d7 \u20ac60 (\u20ac3.000), wasgoed \u20ac1.200, onderhoud 5% (\u20ac1.800 - laag door nieuwbouw), accountant \u20ac1.000, verzekering \u20ac600 = TOTAAL \u20ac14.265.\n\nNETTO JAAR 1: \u20ac36.250 - \u20ac14.265 = \u20ac21.985. Cash-on-Cash: 21.985 \u00f7 525.600 = 4.2% - ONDERMAATS!\n\nMET FINANCIERING (70% hypotheek \u20ac353.500 @ 4.5%): Maandlast \u20ac1.850, jaarlijks \u20ac22.200. Cashflow: \u20ac21.985 - \u20ac22.200 = NEGATIEF \u20ac215/jaar. Met eigen inbreng \u20ac172.100.\n\nBreak-even pas na 6+ jaar bij waardestijging. Scale-up potentieel LAAG: te duur voor rendement, zou \u20ac380-420k moeten kosten voor gezond rendement.\n\nGEVOELIGHEID: Bij 10% lagere bezetting (225 nachten): omzet \u20ac32.625, netto \u20ac18.360 = 3.5% rendement. Bij \u20ac165/nacht (15% hoger): \u20ac41.250 omzet, netto \u20ac26.985 = 5.1%.",
+      "red_flags": [
+        "Cash-on-Cash return 4.2% ver onder target 10%+",
+        "Negatieve cashflow met 70% financiering",
+        "Prijs \u20ac100k+ te hoog voor gezond BNB rendement",
+        "Erfpacht ontbreekt maar eigen grond - check of er toch verborgen kosten zijn"
+      ],
+      "recommendations": [
+        "ONDERHANDEL naar \u20ac420-450k of AFWIJZEN - huidige prijs geen BNB business case",
+        "Bij geen onderhandeling: alleen kopen voor eigen gebruik + incidentele verhuur",
+        "Alternatief: zoek vergelijkbaar object \u20ac350-400k in zelfde gebied"
+      ],
+      "calculations": {
+        "purchase_price": 505000,
+        "total_investment": 525600,
+        "estimated_annual_revenue": 36250,
+        "estimated_annual_costs": 14265,
+        "net_annual_income": 21985,
+        "cash_on_cash_return": 4.2,
+        "breakeven_years": 6.5
+      }
+    },
+    "legal": {
+      "score": 7.0,
+      "reasoning": "VERHUURVRIJHEID: 'Permanente bewoning niet toegestaan' - dit is RECREATIE classificatie. CRUCIAAL: geen vermelding van verplichte verhuur via derden of parkorganisatie. VVE \u20ac70/maand is laag. G\u00e9\u00e9n vermelding Recron, privilege clausule, of verhuur restricties.\n\nEIGENDOM: 'Eigen grond - g\u00e9\u00e9n erfpacht' - GROOT VOORDEEL! Geen canon, geen looptijd zorgen, geen voorwaarden wijzigingen. Dit verhoogt score significant versus erfpacht alternatieven.\n\nSEIZOEN: Geen seizoensbeperkingen vermeld - lijkt jaar-rond mogelijk. Amsterdam heeft geen lokale restricties op recreatief vastgoed verhuur zoals woningen (max 30 dagen regel geldt niet).\n\nONZEKERHEDEN (nieuwbouw): VVE reglement nog niet definitief, exacte verhuurvoorwaarden bij oplevering kunnen wijzigen. Huisregels complex nog onbekend. \n\nVERGUNNING: Recreatief vastgoed in Amsterdam = geen vergunning nodig voor vakantieverhuur (wel toeristenbelasting \u20ac3/persoon/nacht afdragen).\n\nFISCAAL: >70% verhuur = waarschijnlijk Box 1 (onderneming), aftrekbare kosten, BTW registratie mogelijk/verplicht. Professioneel accountant \u20ac1000/jaar essentieel.\n\nACTIES: Vraag ontwikkelaar/makelaar EXPLICIET naar verhuurvrijheid, VVE conceptreglement, maximaal aantal verhuurweken. Check of BTW-regelingen effect op aankoopprijs.",
+      "red_flags": [
+        "Erfpacht warning in pre-screening blijkt incorrect - is eigen grond",
+        "VVE reglement nieuwbouw nog niet definitief - verhuurclausules onbekend",
+        "Recreatie classificatie correct voor verhuur, maar bevestig dit schriftelijk"
+      ],
+      "recommendations": [
+        "Eis schriftelijke bevestiging verhuurvrijheid van ontwikkelaar",
+        "Vraag definitief VVE reglement op (of concept met verhuurartikelen)",
+        "Laat notaris recreatie-status en verhuurrecht expliciet checken",
+        "Regel BTW-advies pre-aankoop met fiscalist"
+      ],
+      "rental_freedom": "Lijkt volledig vrij verhuurbaar zonder parkorganisatie, maar BEVESTIGING nodig bij nieuwbouw VVE"
+    }
+  },
+  "overall_assessment": "Modern 3-kamer nieuwbouw appartement in opkomend Amsterdam-Noord met uitstekende locatie voor stedelijk toerisme. GROTE VOORDELEN: jaar-rond vraag, eigen grond, geen onderhoud eerste jaren, turn-key. KRITIEK PROBLEEM: vraagprijs \u20ac505k is \u20ac80-100k TE HOOG voor gezond BNB rendement (4.2% vs target 10%+). Met financiering zelfs negatieve cashflow. Locatie en product zijn goed (8+), maar financieel onrendabel voor pure BNB investering. Alleen interessant bij forse onderhandeling naar \u20ac420-450k, of voor hybride gebruik (eigen + verhuur). Scale-up potentieel laag door te hoge instap.",
+  "top_strengths": [
+    "Amsterdam locatie = 365 dagen vraag, \u20ac145+ nachtprijs, 70-85% bezetting mogelijk",
+    "Eigen grond (geen erfpacht!) = geen verborgen kosten, eenvoudiger financiering",
+    "Nieuwbouw 2026 = 5-10 jaar geen onderhoud, moderne efficiency, garanties, direct verhuurklaar"
+  ],
+  "top_concerns": [
+    "DEALBREAKER: Cash-on-Cash return 4.2% is 60% onder minimum target - prijs \u20ac80-100k te hoog",
+    "Negatieve cashflow \u20ac215/jaar met 70% financiering = maandelijks geld bijleggen",
+    "Break-even 6+ jaar te lang - scale-up strategie niet realiseerbaar binnen 2-3 jaar"
+  ],
+  "investment_recommendation": "AFWIJZEN - tenzij onderhandeling tot \u20ac420-450k mogelijk. Locatie en product zijn goed (score 7-8.5), maar financieel rendement ondermaats (score 5.5) maakt dit geen gezonde BNB investering. Voor \u20ac505k zijn betere opties beschikbaar met 10%+ rendement. Ontwikkelaar prijst voor woningmarkt, niet BNB-markt.",
+  "metadata": {
+    "processing_time_seconds": 90.48,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
