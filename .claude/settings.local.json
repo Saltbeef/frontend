@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh workflow run:*)",
+      "Bash(gh run list:*)",
+      "Bash(gh run watch:*)",
+      "Bash(git pull:*)",
+      "Bash(gh pr create:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nOptimize workflows to auto-merge to main branch\n\n- Analyze House workflow now directly commits to main branch\n- No more manual PR merging required for analysis results\n- Added permissions: contents: write for push access\n- Always checkout main branch for analyses\n- Report URLs always point to main branch\n- Bulk re-analyze also triggers on main branch\n\nThis streamlines the analysis workflow by removing the manual merge step.\nAnalysis results are data, not code, so direct push to main is appropriate.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "Bash(python3:*)",
+      "Bash(__NEW_LINE__ echo \"\")",
+      "Bash(__NEW_LINE__ gh run list --workflow=analyze_house.yml --limit 3)",
+      "Bash(gh run view:*)",
+      "Bash(__NEW_LINE__ sleep 5)",
+      "Bash(git fetch:*)",
+      "Bash(curl:*)",
+      "Bash(gunzip:*)",
+      "WebFetch(domain:airroi.com)",
+      "Bash(cat:*)",
+      "WebFetch(domain:docs.airroi.com)",
+      "WebSearch",
+      "WebFetch(domain:www.airroi.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
