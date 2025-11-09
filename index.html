@@ -93,13 +93,13 @@
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
-    <div class="max-w-7xl mx-auto p-5">
+    <div class="max-w-7xl mx-auto p-2 sm:p-4 md:p-5">
         <!-- Header and Query Section - Full Width -->
-        <div class="bg-white p-5 rounded-lg mb-5 shadow-sm">
-            <h1 class="text-2xl font-bold text-gray-900 mb-4">Property Filter Explorer</h1>
-            <div class="flex gap-2.5">
-                <input type="text" id="queryInput" placeholder="Use $variables (e.g., $price < 200000) or edit manually" value="" class="flex-1 p-3 border border-gray-300 rounded-md text-base focus:border-blue-500 focus:outline-none">
-                <button onclick="executeQuery()" class="px-5 py-3 bg-blue-600 text-white border-none rounded-md cursor-pointer hover:bg-blue-700" title="Available variables:
+        <div class="bg-white p-3 sm:p-4 md:p-5 rounded-lg mb-3 sm:mb-4 md:mb-5 shadow-sm">
+            <h1 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Property Filter Explorer</h1>
+            <div class="flex flex-col sm:flex-row gap-2 sm:gap-2.5">
+                <input type="text" id="queryInput" placeholder="Use $variables (e.g., $price < 200000) or edit manually" value="" class="flex-1 p-2 sm:p-3 border border-gray-300 rounded-md text-sm sm:text-base focus:border-blue-500 focus:outline-none">
+                <button onclick="executeQuery()" class="px-4 sm:px-5 py-2 sm:py-3 bg-blue-600 text-white border-none rounded-md cursor-pointer hover:bg-blue-700 text-sm sm:text-base" title="Available variables:
 $price - Property price
 $livingArea - Living area in m²
 $plotArea - Plot area in m²
@@ -111,8 +111,8 @@ $description - Property description
 $lastmod - Date added
 
 Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
-                <button onclick="shareState()" class="px-5 py-3 bg-green-600 text-white border-none rounded-md cursor-pointer hover:bg-green-700" title="Share current state including query, ratings, and data source via URL">Share</button>
-                <button onclick="showAnalysisConfigModal()" class="px-5 py-3 bg-purple-600 text-white border-none rounded-md cursor-pointer hover:bg-purple-700" title="Configure GitHub and Apify tokens for house analysis">🔑 Analysis Config</button>
+                <button onclick="shareState()" class="px-4 sm:px-5 py-2 sm:py-3 bg-green-600 text-white border-none rounded-md cursor-pointer hover:bg-green-700 text-sm sm:text-base" title="Share current state including query, ratings, and data source via URL">Share</button>
+                <button onclick="showAnalysisConfigModal()" class="px-4 sm:px-5 py-2 sm:py-3 bg-purple-600 text-white border-none rounded-md cursor-pointer hover:bg-purple-700 text-sm sm:text-base" title="Configure GitHub and Apify tokens for house analysis">🔑 Analysis Config</button>
             </div>
             <div class="bg-gray-50 p-2 rounded mt-2 font-mono text-xs border hidden" id="currentQuery">
                 <strong>Active filters:</strong> <span id="currentQueryText"></span>
@@ -123,15 +123,15 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
         </div>
 
         <!-- Progress Bar -->
-        <div class="w-full bg-gray-200 rounded mb-5 hidden" id="progressContainer">
+        <div class="w-full bg-gray-200 rounded mb-3 sm:mb-4 md:mb-5 hidden" id="progressContainer">
             <div class="h-1 bg-blue-600 rounded transition-all duration-300" id="progressBar"></div>
         </div>
 
         <!-- Main Layout: Sidebar + Content -->
-        <div class="flex gap-5">
-        <div class="w-72 flex-shrink-0">
-            <div class="bg-white p-4 rounded-lg mb-4 shadow-sm">
-                <h3 class="mb-3 text-base font-medium text-gray-800 border-b border-gray-200 pb-2">Quick Filters</h3>
+        <div class="flex flex-col md:flex-row gap-3 sm:gap-4 md:gap-5">
+        <div class="w-full md:w-72 flex-shrink-0">
+            <div class="bg-white p-3 sm:p-4 rounded-lg mb-3 sm:mb-4 shadow-sm">
+                <h3 class="mb-3 text-sm sm:text-base font-medium text-gray-800 border-b border-gray-200 pb-2">Quick Filters</h3>
                 <div class="mb-3">
                     <!-- Price range side by side -->
                     <div class="flex items-center gap-2 mb-1.5 w-full">
@@ -283,8 +283,8 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                 </div>
             </div>
 
-            <div class="bg-white p-4 rounded-lg mb-4 shadow-sm">
-                <h3 class="mb-3 text-base font-medium text-gray-800 border-b border-gray-200 pb-2">Actions</h3>
+            <div class="bg-white p-3 sm:p-4 rounded-lg mb-3 sm:mb-4 shadow-sm">
+                <h3 class="mb-3 text-sm sm:text-base font-medium text-gray-800 border-b border-gray-200 pb-2">Actions</h3>
                 <button onclick="showBulkBlacklistModal()" class="w-full p-2.5 mb-2 bg-red-600 text-white border-none rounded cursor-pointer text-sm hover:bg-red-700">Bulk Blacklist Results</button>
                 <div id="dataSourceInfo" class="text-xs text-gray-600 mt-2 break-all leading-tight">Loading dataset...</div>
                 <div class="text-xs text-gray-400 mt-0.5">Dataset cached in browser for faster loads</div>
@@ -295,9 +295,9 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
 
         
             <div class="bg-white rounded-lg shadow-sm">
-                <div class="px-5 py-4 border-b border-gray-200 flex justify-between items-center">
-                    <span id="resultsCount" class="font-medium">0 results</span>
-                    <div class="flex items-center gap-2 text-sm text-gray-600">
+                <div class="px-3 sm:px-4 md:px-5 py-3 sm:py-4 border-b border-gray-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0">
+                    <span id="resultsCount" class="font-medium text-sm sm:text-base">0 results</span>
+                    <div class="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                         <span>Schema: </span><span id="schemaDisplay" style="color: #007bff; font-weight: 500;">funda</span>
                         <span style="margin: 0 8px;">|</span>
                         <span>Sort by:</span>
@@ -323,23 +323,23 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
     </div>
 
     <!-- Bulk Blacklist Modal -->
-    <div id="bulkBlacklistModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50">
-        <div class="bg-white my-20 mx-auto p-5 rounded-lg w-11/12 max-w-lg">
-            <h3 class="mb-4 text-lg font-semibold text-red-600">⚠️ Bulk Blacklist Properties</h3>
-            <p class="mb-4 leading-relaxed">This will blacklist <strong id="bulkCount">0</strong> properties from your current search results.</p>
-            <p class="mb-5 text-gray-600 text-sm">Properties that are already liked will remain liked. Only neutral properties will be blacklisted.</p>
-            <div class="flex gap-2.5 justify-end">
-                <button onclick="hideBulkBlacklistModal()" class="px-3 py-2 bg-gray-600 text-white rounded hover:bg-gray-700">Cancel</button>
-                <button onclick="executeBulkBlacklist()" class="px-3 py-2 bg-red-600 text-white rounded hover:bg-red-700">Blacklist All</button>
+    <div id="bulkBlacklistModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50 overflow-y-auto">
+        <div class="bg-white my-4 sm:my-20 mx-auto p-4 sm:p-5 rounded-lg w-11/12 max-w-lg">
+            <h3 class="mb-3 sm:mb-4 text-base sm:text-lg font-semibold text-red-600">⚠️ Bulk Blacklist Properties</h3>
+            <p class="mb-3 sm:mb-4 leading-relaxed text-sm sm:text-base">This will blacklist <strong id="bulkCount">0</strong> properties from your current search results.</p>
+            <p class="mb-4 sm:mb-5 text-gray-600 text-xs sm:text-sm">Properties that are already liked will remain liked. Only neutral properties will be blacklisted.</p>
+            <div class="flex gap-2 sm:gap-2.5 justify-end">
+                <button onclick="hideBulkBlacklistModal()" class="px-3 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 text-sm">Cancel</button>
+                <button onclick="executeBulkBlacklist()" class="px-3 py-2 bg-red-600 text-white rounded hover:bg-red-700 text-sm">Blacklist All</button>
             </div>
         </div>
     </div>
 
     <!-- Analysis Configuration Modal -->
-    <div id="analysisConfigModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50">
-        <div class="bg-white my-20 mx-auto p-5 rounded-lg w-11/12 max-w-2xl">
-            <h3 class="mb-4 text-lg font-semibold text-blue-600">🔑 Analysis Configuration</h3>
-            <p class="mb-4 text-sm text-gray-600">Configure GitHub token to trigger house analysis workflows. Token is stored locally in your browser.</p>
+    <div id="analysisConfigModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50 overflow-y-auto">
+        <div class="bg-white my-4 sm:my-20 mx-auto p-4 sm:p-5 rounded-lg w-11/12 max-w-2xl">
+            <h3 class="mb-3 sm:mb-4 text-base sm:text-lg font-semibold text-blue-600">🔑 Analysis Configuration</h3>
+            <p class="mb-3 sm:mb-4 text-xs sm:text-sm text-gray-600">Configure GitHub token to trigger house analysis workflows. Token is stored locally in your browser.</p>
 
             <div class="space-y-4">
                 <div>
@@ -360,10 +360,10 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
 
     <!-- Analysis Results Modal -->
     <div id="analysisModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50 overflow-y-auto">
-        <div class="bg-white my-8 mx-auto p-6 rounded-lg w-11/12 max-w-4xl">
-            <div class="flex justify-between items-start mb-4">
-                <h3 class="text-xl font-semibold text-gray-900">🏠 Analysis Results</h3>
-                <button onclick="hideAnalysisModal()" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+        <div class="bg-white my-4 sm:my-8 mx-auto p-4 sm:p-6 rounded-lg w-11/12 max-w-4xl">
+            <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <h3 class="text-lg sm:text-xl font-semibold text-gray-900">🏠 Analysis Results</h3>
+                <button onclick="hideAnalysisModal()" class="text-gray-500 hover:text-gray-700 text-2xl leading-none">&times;</button>
             </div>
 
             <div id="analysisContent" class="space-y-4">
@@ -2080,10 +2080,10 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                 }) : 'Unknown';
                 
                 const imageUrl = getPropertyImageUrl(property);
-                const imageHtml = imageUrl 
-                    ? `<img src="${imageUrl}" alt="${address}" class="w-32 h-24 rounded-md object-cover flex-shrink-0 bg-gray-100" onerror="this.style.display='none'">`
-                    : `<div class="w-32 h-24 rounded-md bg-gray-100 flex items-center justify-center text-gray-400 text-xs flex-shrink-0">No Image</div>`;
-                
+                const imageHtml = imageUrl
+                    ? `<img src="${imageUrl}" alt="${address}" class="w-20 h-16 sm:w-32 sm:h-24 rounded-md object-cover flex-shrink-0 bg-gray-100" onerror="this.style.display='none'">`
+                    : `<div class="w-20 h-16 sm:w-32 sm:h-24 rounded-md bg-gray-100 flex items-center justify-center text-gray-400 text-xs flex-shrink-0">No Image</div>`;
+
                 // Performance: Build HTML string efficiently
                 const ratingIcon = rating === 0 ? '○' : (rating === 1 ? '✓' : '✕');
                 const ratingClass = rating === 0 ? 'neutral' : (rating === 1 ? 'saved' : 'blacklisted');
@@ -2091,23 +2091,23 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
                 const priceDisplay = price;
 
                 htmlParts.push(
-                    '<div class="p-5 border-b border-gray-200 border-l-4 border-l-gray-200 cursor-pointer flex items-start gap-4 hover:bg-gray-50 ', cardClass, '" onclick="showPropertyDetails(\'', propertyId, '\')">',
+                    '<div class="p-3 sm:p-4 md:p-5 border-b border-gray-200 border-l-4 border-l-gray-200 cursor-pointer flex items-start gap-2 sm:gap-3 md:gap-4 hover:bg-gray-50 ', cardClass, '" onclick="showPropertyDetails(\'', propertyId, '\')">',
                     imageHtml,
-                    '<div class="flex-1">',
-                    '<div class="text-lg font-semibold text-gray-800 mb-2">', address, '</div>',
-                    '<div class="grid grid-cols-1 md:grid-cols-2 gap-2.5 mb-2.5">',
-                    '<div class="text-sm text-gray-600"><strong class="text-gray-800">Price:</strong> ', priceDisplay, '</div>',
-                    '<div class="text-sm text-gray-600"><strong class="text-gray-800">City:</strong> ', city, '</div>',
-                    '<div class="text-sm text-gray-600"><strong class="text-gray-800">Province:</strong> ', province, '</div>',
-                    '<div class="text-sm text-gray-600"><strong class="text-gray-800">Added:</strong> ', lastModFormatted, '</div>',
-                    '<div class="text-sm text-gray-600"><strong class="text-gray-800">Living:</strong> ', livingArea, '</div>',
-                    '<div class="text-sm text-gray-600"><strong class="text-gray-800">Plot:</strong> ', plotArea, '</div>',
-                    '<div class="text-sm text-gray-600"><strong class="text-gray-800">Bedrooms:</strong> ', bedrooms, '</div>',
-                    '<div class="text-sm text-gray-600"><strong class="text-gray-800">Energy:</strong> ', energyLabel, '</div>',
+                    '<div class="flex-1 min-w-0">',
+                    '<div class="text-base sm:text-lg font-semibold text-gray-800 mb-1 sm:mb-2 truncate">', address, '</div>',
+                    '<div class="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2 md:gap-2.5 mb-1 sm:mb-2 md:mb-2.5">',
+                    '<div class="text-xs sm:text-sm text-gray-600"><strong class="text-gray-800">Price:</strong> ', priceDisplay, '</div>',
+                    '<div class="text-xs sm:text-sm text-gray-600"><strong class="text-gray-800">City:</strong> ', city, '</div>',
+                    '<div class="text-xs sm:text-sm text-gray-600"><strong class="text-gray-800">Province:</strong> ', province, '</div>',
+                    '<div class="text-xs sm:text-sm text-gray-600"><strong class="text-gray-800">Added:</strong> ', lastModFormatted, '</div>',
+                    '<div class="text-xs sm:text-sm text-gray-600"><strong class="text-gray-800">Living:</strong> ', livingArea, '</div>',
+                    '<div class="text-xs sm:text-sm text-gray-600"><strong class="text-gray-800">Plot:</strong> ', plotArea, '</div>',
+                    '<div class="text-xs sm:text-sm text-gray-600"><strong class="text-gray-800">Bedrooms:</strong> ', bedrooms, '</div>',
+                    '<div class="text-xs sm:text-sm text-gray-600"><strong class="text-gray-800">Energy:</strong> ', energyLabel, '</div>',
                     '</div>',
-                    shortDescription ? '<div class="text-sm text-gray-700 leading-relaxed mt-2.5">' + shortDescription + '</div>' : '',
+                    shortDescription ? '<div class="text-xs sm:text-sm text-gray-700 leading-relaxed mt-1 sm:mt-2 hidden sm:block">' + shortDescription + '</div>' : '',
                     '</div>',
-                    '<div class="flex flex-col gap-2 items-center justify-start pt-2.5 flex-shrink-0" style="min-width: 90px;">',
+                    '<div class="flex flex-col gap-1.5 sm:gap-2 items-center justify-start pt-0 sm:pt-2.5 flex-shrink-0" style="min-width: 60px; sm:min-width: 90px;">',
                     '<button class="rating-btn ', ratingClass, '" onclick="event.stopPropagation(); cyclePropertyRating(', propertyId, ')" title="', ratingTitle, '">',
                     ratingIcon,
                     '</button>',
