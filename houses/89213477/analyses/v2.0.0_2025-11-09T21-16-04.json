@@ -1,0 +1,102 @@
+{
+  "house_id": "89213477",
+  "analyzed_at": "2025-11-09T21:16:04.940055+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 6.28,
+  "category_scores": {
+    "location": {
+      "score": 6.5,
+      "reasoning": "Dirkshorn ligt in Noord-Holland, regio Kop van Noord-Holland, een redelijk toeristische omgeving maar geen A-locatie. Nabijgelegen attracties: Bergen aan Zee (strand) op 12 km, Alkmaar (historische stad) op 20 km, Schoorl (duinen en klimduin) op 15 km, Den Helder (Texel veerboot) op 18 km. De locatie is vooral aantrekkelijk voor natuur- en strandliefhebbers, met wandel- en fietsmogelijkheden. Bereikbaarheid: N9 provinciale weg op 3 km, A9 snelweg op 25 km, dichtstbijzijnde station Schagen 10 km (bus beschikbaar). Voor Duitse toeristen redelijk bereikbaar maar niet optimaal (3+ uur rijden). Seizoenspatroon: sterk zomerseizoen (mei-september), lage bezetting in wintermaanden. Concurrentie-analyse: Park De Horn heeft meerdere villa's in verhuur, schatting 15-20 objecten actief op Airbnb/Booking.com. Nachtprijzen vergelijkbare objecten: \u20ac120-180 in hoogseizoen, \u20ac80-110 in laagseizoen. Reviews concurrent objecten tonen gemiddeld 15-25 reviews/jaar, wat duidt op 150-250 overnachtingen jaarlijks bij actieve verhuur. Dit is geen toplocatie zoals Texel, Veluwe of Limburg, maar heeft stabiel middensegment potentieel.",
+      "red_flags": [
+        "Geen directe strand- of waterligging",
+        "Sterk seizoensgebonden vraag (winter zwak)",
+        "Relatief veel concurrentie binnen park zelf"
+      ],
+      "recommendations": [
+        "Target Nederlandse gezinnen en 55+ doelgroep",
+        "Benadruk nabijheid strand en natuurgebieden in marketing",
+        "Overweeg winter arrangementen (oud & nieuw, wellness weekends)"
+      ],
+      "market_data": "Schatting bezetting: hoogseizoen 70%, middenseizoen 40%, laagseizoen 20%. Nachtprijzen: \u20ac140-180 (zomer), \u20ac100-130 (voor/naseizoen), \u20ac80-100 (winter)."
+    },
+    "property": {
+      "score": 7.5,
+      "reasoning": "Sterke basis specificaties: nieuwbouw 2023, moderne afwerking, 3 slaapkamers (max 6 gasten), 70m\u00b2 woonoppervlak, 250m\u00b2 perceel. Belangrijke USP: 24 zonnepanelen zorgen voor zeer lage energiekosten, moderne badkamer + tweede douche (handig voor gezinnen), luxe granieten keuken, robotmaaier voor tuin (onderhoudsvriendelijk). De villa straalt moderne luxe uit wat goed is voor verhuur. Doelgroep match: uitstekend geschikt voor gezinnen (3 slaapkamers, ruime tuin, natuur omgeving), stellen (modern design, rust), minder geschikt voor grote groepen (max 6 personen). Voorzieningen: compleet ingerichte keuken, WiFi, parking op 50m, terras met tuin rondom. KRITISCH GEMIS: geen hottub/sauna/jacuzzi wat in deze prijsklasse en nieuwbouw eigenlijk standaard zou moeten zijn. Huisdieren: niet vermeld, moet onderzocht worden (kan 30% doelgroep verschil maken). Fotokwaliteit is redelijk professioneel, toont moderne uitstraling maar weinig sfeerbeelden. Onderhoudsstaat: nieuwbouw 2023, direct verhuurklaar, minimaal onderhoud eerste 5 jaar. Geschat jaarlijks onderhoudsbudget \u20ac1000-1500.",
+      "red_flags": [
+        "Geen hottub/sauna (belangrijk voor recreatieverhuur)",
+        "Huisdieren beleid onduidelijk",
+        "Parking op 50m afstand (niet direct bij woning)"
+      ],
+      "recommendations": [
+        "Investeer \u20ac4000-6000 in hottub (ROI <2 jaar door 20-30% hogere nachtprijs)",
+        "Vraag huisdierenbeleid en sta toe indien mogelijk",
+        "Verbeter fotografie met sfeerbeelden en seizoensvariatie"
+      ],
+      "usp_highlights": [
+        "Nieuwbouw 2023 - modern en onderhoudsvriendelijk",
+        "24 zonnepanelen - minimale energiekosten",
+        "Robotmaaier inclusief - zorgeloos tuinonderhoud",
+        "Dubbele douche faciliteit - praktisch voor gezinnen"
+      ]
+    },
+    "financial": {
+      "score": 5.0,
+      "reasoning": "KRITISCH PUNT: Vraagprijs gestegen van \u20ac206k kosten koper (\u2248\u20ac216k totaal) naar \u20ac250k vrij op naam. Dit is een 16% prijsstijging terwijl object 6+ maanden te koop staat - rode vlag! Re\u00eble marktwaarde ligt waarschijnlijk dichter bij oorspronkelijke prijs. BEREKENING BIJ \u20ac250K: Totale investering: \u20ac250k + \u20ac2k notaris = \u20ac252k. Bij \u20ac206k k.k.: \u20ac206k + \u20ac4.1k overdracht + \u20ac2k notaris = \u20ac212k. JAAROMZET (conservatief): Hoogseizoen 90 dagen x 70% bezetting x \u20ac150 = \u20ac9.450, Middenseizoen 180 dagen x 40% x \u20ac110 = \u20ac7.920, Laagseizoen 95 dagen x 20% x \u20ac90 = \u20ac1.710, TOTAAL BRUTO: \u20ac19.080. Met hottub +25%: \u20ac23.850. JAARKOSTEN: Parkkosten \u20ac2.500 (schatting, NIET VERMELD - GEVAARLIJK!), energie \u20ac600 (laag door zonnepanelen), gemeentelijke lasten \u20ac400, platform fees 10% \u20ac2.385, schoonmaak 40x \u20ac50 = \u20ac2.000, wasgoed \u20ac600, onderhoud 5% \u20ac1.193, accountant \u20ac1.000, verzekering \u20ac400, TOTAAL: \u20ac11.078. NETTO zonder hottub: \u20ac8.002 op \u20ac252k = 3.2% COC. NETTO met hottub: \u20ac12.772 op \u20ac258k = 5.0% COC. Dit is ONDERMAATS! Bij \u20ac210k investering: \u20ac12.772 netto = 6.1% COC (nog steeds matig). BREAKEVEN: >10 jaar bij huidige prijs. BTW terugvordering 21% van \u20ac250k = \u20ac52.500 (maar alleen bij professionele verhuur, complex!).",
+      "red_flags": [
+        "Vraagprijs 16% gestegen terwijl 6+ maanden te koop",
+        "Parkkosten NIET vermeld in advertentie (kan \u20ac2000-4000/jaar zijn)",
+        "Rendement 3-5% is ver onder target 10%+",
+        "Breakeven periode >10 jaar is te lang"
+      ],
+      "recommendations": [
+        "Onderhandel HARD: target \u20ac210k maximaal (oorspronkelijke vraagprijs)",
+        "Eis volledige transparantie parkkosten vooraf",
+        "Investeer in hottub direct (\u20ac5k) voor 25% omzet boost",
+        "Overweeg alleen bij prijs <\u20ac210k OF als BTW terugvordering haalbaar"
+      ],
+      "calculations": {
+        "purchase_price": 250000,
+        "total_investment": 258000,
+        "estimated_annual_revenue": 23850,
+        "estimated_annual_costs": 11078,
+        "net_annual_income": 12772,
+        "cash_on_cash_return": 5.0,
+        "breakeven_years": 20.2
+      }
+    },
+    "legal": {
+      "score": 6.0,
+      "reasoning": "POSITIEF: 'Permanente bewoning niet toegestaan' betekent dat dit specifiek voor recreatie is, wat verhuur ondersteunt. Geen expliciete verhuurrestricties vermeld, geen verplichte parkorganisaties genoemd (geen Landal/Roompot fees). KRITIEKE ONDUIDELIJKHEDEN: Parkreglement niet beschikbaar - dit is het grootste risico! Park De Horn kan strikte regels hebben over: verhuurfrequentie, verhuurkanalen, goedkeuring gasten, seizoensbeperkingen. Erfpacht/eigendom: 'Eigendomssituatie: Zie akte' is vaag en zorgwekkend. Dit moet 100% helder zijn. Canon/erfpacht fees ontbreken. Bouwjaar 2023 suggereert mogelijk erfpacht constructie (veel nieuwe recreatieparken werken zo). VERHUURVRIJHEID: Moet expliciet gecontroleerd worden - kan je via Airbnb/Booking.com verhuren of alleen via parkorganisatie? Zijn er commissies? SEIZOEN: Waarschijnlijk jaar-rond verhuur toegestaan (tenzij parkreglement anders stelt), maar wintermaanden zijn toch minder rendabel. FISCAAL: Bij professionele verhuur (>\u20ac5000 omzet structureel) is BTW terugvordering mogelijk van 21%, wat \u20ac52.500 scheelt. Dit vereist wel BTW-registratie en verplichtingen. Box 1 of Box 3 afhankelijk van omvang en professionaliteit. ACTIE VEREIST: Parkreglement opvragen, notaris vraag eigendomssituatie, VvE reglement checken, verhuurvoorwaarden schriftelijk bevestigen.",
+      "red_flags": [
+        "Eigendomssituatie 'Zie akte' is te vaag - kan erfpacht zijn",
+        "Parkreglement niet beschikbaar/vermeld",
+        "Verhuurvrijheid niet expliciet bevestigd",
+        "Parkkosten volledig onduidelijk"
+      ],
+      "recommendations": [
+        "Eis volledig parkreglement VOOR bod",
+        "Laat notaris eigendomssituatie verduidelijken (erfpacht looptijd/canon)",
+        "Vraag schriftelijke bevestiging: vrije verhuur via eigen kanalen toegestaan",
+        "Check VvE notulen laatste 2 jaar voor verborgen kosten/geschillen"
+      ],
+      "rental_freedom": "ONDUIDELIJK - moet geverifieerd worden. Geen expliciete beperkingen vermeld, maar parkreglement ontbreekt. Risico: verborgen restricties of verplichte commissies."
+    }
+  },
+  "overall_assessment": "Moderne nieuwbouw villa (2023) met goede basis specificaties en lage energiekosten door 24 zonnepanelen. Locatie is middelmatig (6.5) - geen topbestemming maar stabiel middensegment. Grootste zorgen: vraagprijs 16% gestegen terwijl 6+ maanden te koop staat, rendement bij \u20ac250k is ondermaats (5% COC vs. target 10%+), en kritieke onduidelijkheden over parkkosten, eigendomssituatie en verhuurvrijheid. Het ontbreken van hottub/sauna is een gemiste kans. Positief: nieuwbouw betekent laag onderhoud, moderne uitstraling werkt goed voor verhuur, zonnepanelen reduceren exploitatiekosten. Dit object heeft potentieel ALLEEN als de prijs fors omlaag gaat (target \u20ac210k) EN alle juridische onduidelijkheden positief uitpakken. Bij huidige prijs is dit geen goede investering voor zelfverhuur strategie.",
+  "top_strengths": [
+    "Nieuwbouw 2023: 5-10 jaar minimaal onderhoud, moderne uitstraling, direct verhuurklaar",
+    "24 zonnepanelen: energiekosten slechts \u20ac600/jaar vs. \u20ac2000+ normaal, sterk USP voor duurzame gasten",
+    "Geen expliciete verhuurrestricties vermeld: potentieel voor volledige zelfverhuur vrijheid (mits parkreglement bevestigt)"
+  ],
+  "top_concerns": [
+    "Vraagprijs \u20ac250k geeft 5% COC rendement - 50% onder target van 10%+, breakeven >20 jaar onacceptabel",
+    "Parkkosten en eigendomssituatie volledig onduidelijk - kan \u20ac2000-4000/jaar extra kosten betekenen, erfpacht risico",
+    "Object 6+ maanden te koop met 16% prijsverhoging - markt wijst vraagprijs af, re\u00eble waarde \u20ac210k max"
+  ],
+  "investment_recommendation": "AFWIJZEN bij huidige prijs \u20ac250k. OVERWEGEN alleen indien: 1) Prijs naar \u20ac210k max, 2) Parkreglement bevestigt vrije verhuur zonder commissies, 3) Eigendomssituatie volledig eigendom (geen erfpacht) of erfpacht met gunstige voorwaarden, 4) Parkkosten <\u20ac2000/jaar. Anders te veel risico's en rendement te laag voor zelfverhuur strategie.",
+  "metadata": {
+    "processing_time_seconds": 91.28,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
