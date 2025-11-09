@@ -1149,31 +1149,28 @@ Example: $price < 200000 && $city.includes('Amsterdam')">Filter</button>
         // Get analysis from GitHub repository
         async function getAnalysisFromGitHub(houseId) {
             try {
-                // Quick check: does latest.html symlink exist?
-                const symlinkUrl = `https://raw.githubusercontent.com/${analysisConfig.github.owner}/${analysisConfig.github.repo}/main/houses/${houseId}/reports/latest.html`;
-
-                const headResponse = await fetch(symlinkUrl, { method: 'HEAD' });
-                if (!headResponse.ok) {
-                    // No analysis exists
-                    return null;
-                }
-
-                // Analysis exists, get details from latest_analysis.json
+                // Directly fetch latest_analysis.json (more reliable than HEAD on symlinks)
                 const response = await fetch(
-                    `https://raw.githubusercontent.com/${analysisConfig.github.owner}/${analysisConfig.github.repo}/main/houses/${houseId}/latest_analysis.json`
+                    `https://raw.githubusercontent.com/${analysisConfig.github.owner}/${analysisConfig.github.repo}/main/houses/${houseId}/latest_analysis.json`,
+                    { cache: 'no-store' }  // Disable caching to get fresh results
                 );
 
                 if (response.ok) {
                     const latest = await response.json();
+                    console.log(`Analysis found for ${houseId}: score ${latest.overall_score}`);
                     return {
                         status: 'completed',
                         score: latest.overall_score,
                         updated_at: latest.analyzed_at,
                         rules_version: latest.rules_version
                     };
+                } else if (response.status === 404) {
+                    // No analysis exists
+                    console.log(`No analysis for ${houseId}`);
+                    return null;
                 }
             } catch (error) {
-                console.log('GitHub check failed:', error.message);
+                console.log(`GitHub check failed for ${houseId}:`, error.message);
             }
 
             return null;
