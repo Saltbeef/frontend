@@ -1,0 +1,102 @@
+{
+  "house_id": "43017473",
+  "analyzed_at": "2025-11-09T21:59:00.128564+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 1.62,
+  "category_scores": {
+    "location": {
+      "score": 2.0,
+      "reasoning": "Bungalowpark Hoenderloo ligt aan de rand van Nationaal Park de Hoge Veluwe (A-locatie natuurgebied), met goede toeristische attracties binnen 20km: Apeldoorn (\u00b115km), Arnhem (\u00b125km), Burgers' Zoo (\u00b120km), Kr\u00f6ller-M\u00fcller Museum (\u00b15km), Julianatoren (\u00b120km). Bereikbaarheid is redelijk via N304/A1 (\u00b110km). Duitse grens op 50km maakt Duitsers mogelijk doelgroep. ECHTER: Verhuur is WEL mogelijk maar ALLEEN via Roompot - dit is een absolute dealbreaker voor zelfverhuur strategie. Het park heeft verplichte verhuurstructuur met naar verwachting 40-50% commissie (typisch voor Roompot). Dit elimineert volledig het potentieel voor zelfbeheer en maximaal rendement. Locatie op zich is uitstekend (8/10), maar door verplichte Roompot structuur wordt dit een 2/10 voor onze strategie.",
+      "red_flags": [
+        "Verhuur ALLEEN via Roompot mogelijk - geen zelfverhuur",
+        "Verwachte commissie 40-50% vernietigt rendement",
+        "Geen controle over pricing en beschikbaarheid",
+        "Geen directe klantrelatie mogelijk"
+      ],
+      "recommendations": [
+        "Zoek vergelijkbaar object zonder verplichte parkorganisatie",
+        "Overweeg priv\u00e9 recreatiewoningen in zelfde gebied"
+      ],
+      "market_data": "Veluwe gebied heeft hoge vraag jaar-rond, maar alleen relevant bij zelfverhuur mogelijkheid"
+    },
+    "property": {
+      "score": 2.5,
+      "reasoning": "Type Veluwevilla uit 1974, 52m\u00b2 woonoppervlak, 3 slaapkamers (max 6 personen), 1 badkamer. Pand heeft enkele positieve punten: volledig gemeubileerd, goed ge\u00efsoleerd (nieuw dak, spouw-, vloerisolatie), CV-ketel 2019, moderne badkamer met inloopdouche. Tuin rondom 260m\u00b2 eigen grond. USP's zijn ZWAK voor professionele verhuur: geen hottub, geen sauna, geen bijzondere features. Houtkachel is enige 'sfeer' element. Fotografie is matig amateuristisch (geen professionele staging). Energielabel E is ondermaats voor 2025. Bouwjaar 1974 betekent hogere onderhoudskosten. Park heeft zwembad/tennis maar deze zijn geen unieke USP's. Voor succesvolle zelfverhuur zou dit pand \u20ac15-20k investering nodig hebben (hottub \u20ac5k, sauna \u20ac8k, professionele styling \u20ac3k, fotografie \u20ac1k). Maar gezien verhuur alleen via Roompot mogelijk is, is deze investering niet rendabel.",
+      "red_flags": [
+        "Geen unieke USP's (hottub/sauna ontbreekt)",
+        "Energielabel E - hoge energiekosten",
+        "Bouwjaar 1974 - verhoogd onderhoudsrisico",
+        "Matige fotografie - niet marktklaar"
+      ],
+      "recommendations": [
+        "\u20ac15-20k investering nodig voor competitieve USP's (niet doen gezien Roompot verplichting)",
+        "Energielabel verbetering naar minimaal C zou \u20ac8-12k kosten"
+      ],
+      "usp_highlights": [
+        "Houtkachel (beperkte USP)",
+        "Volledig gemeubileerd",
+        "Eigen grond (geen erfpacht)"
+      ]
+    },
+    "financial": {
+      "score": 1.0,
+      "reasoning": "INVESTERING: \u20ac155.000 + \u20ac3.100 overdracht + \u20ac2.000 notaris = \u20ac160.100 totaal. Parkkosten \u20ac4.719/jaar (inclusief energie/water/tuinonderhoud). Bij verhuur via Roompot (VERPLICHT): geschatte bruto-omzet \u20ac18.000-22.000/jaar (vergelijkbare Veluwe objecten). Roompot commissie 40-50% = \u20ac7.200-11.000. NETTO OMZET na commissie: \u20ac10.000-12.000. KOSTEN: Parkkosten \u20ac4.719, platform fees (in commissie), onderhoud \u20ac1.500, verzekering \u20ac400, accountant \u20ac1.000 = \u20ac7.619/jaar. NETTO RESULTAAT: \u20ac2.400-4.400/jaar = 1.5-2.7% Cash-on-Cash Return. Dit is DESASTREUS. Break-even na 36-66 jaar. Bij eigen verhuur zou omzet \u20ac28-35k zijn (70% bezetting \u00d7 \u20ac110 nacht gemiddeld \u00d7 365 dagen) met 15% netto rendement mogelijk. Roompot structuur vermindert rendement met factor 6-10x. Geen scale-up potentieel: na 3 jaar mogelijk \u20ac165k verkoopwaarde (+\u20ac5k), maar \u20ac13k verlies door negatieve cashflow.",
+      "red_flags": [
+        "Cash-on-Cash Return 1.5-2.7% - volledig onacceptabel",
+        "Break-even 36-66 jaar - geen viable investering",
+        "Roompot commissie vreet 40-50% omzet op",
+        "Negatieve scale-up potentieel door cashflow verlies"
+      ],
+      "recommendations": [
+        "NIET KOPEN - rendement is desastreus",
+        "Zelfs bij onderhandeling naar \u20ac130k is rendement max 4%",
+        "Zoek objecten met zelfverhuur mogelijkheid"
+      ],
+      "calculations": {
+        "purchase_price": 155000,
+        "total_investment": 160100,
+        "estimated_annual_revenue": 20000,
+        "roompot_commission": 9000,
+        "net_revenue_after_commission": 11000,
+        "estimated_annual_costs": 7619,
+        "net_annual_income": 3400,
+        "cash_on_cash_return": 2.1,
+        "breakeven_years": 47
+      }
+    },
+    "legal": {
+      "score": 0.5,
+      "reasoning": "KRITIEKE DEALBREAKER: Verhuur is 'niet verplicht maar wel mogelijk', maar omschrijving maakt duidelijk dat dit ALLEEN via Roompot kan. Dit elimineert alle zelfverhuur mogelijkheden. Je kunt NIET zelf verhuren via Airbnb/Booking.com. Geen vrije prijsstelling. Geen eigen klantrelatie. Roompot bepaalt tarieven, beschikbaarheid en voorwaarden. Voor eigen gebruik zijn er opties (45 dagen onbeperkt, of 90+14 dagen met seizoenrestricties), maar dit is irrelevant voor investeringsstrategie gericht op maximaal rendement. Positief: eigen grond (geen erfpacht), permanente bewoning niet toegestaan maar recreatief verblijf wel. Parkkosten zijn all-inclusive (gas/water/elektra). VvE bijdrage inbegrepen. MAAR: de verplichte Roompot structuur maakt dit juridisch een no-go voor onze strategie. Score 0.5 omdat verhuur technisch mogelijk is, maar onder onacceptabele voorwaarden.",
+      "red_flags": [
+        "DEALBREAKER: Verhuur alleen via Roompot - geen zelfverhuur",
+        "Geen controle over pricing/beschikbaarheid",
+        "40-50% commissie structuur",
+        "Permanente bewoning niet toegestaan (beperkt gebruik)"
+      ],
+      "recommendations": [
+        "Vraag schriftelijke bevestiging of zelfverhuur echt uitgesloten is",
+        "Check parkreglement - vaak zijn deze voorwaarden onveranderbaar",
+        "Zoek alternatieve objecten zonder Roompot verplichting"
+      ],
+      "rental_freedom": "GEEN verhuurvrijheid - alleen via Roompot parkorganisatie mogelijk met 40-50% commissie. Volledige dealbreaker voor zelfverhuur strategie."
+    }
+  },
+  "overall_assessment": "Dit object moet worden AFGEWEZEN ondanks goede locatie aan Nationaal Park de Hoge Veluwe. De verplichte verhuurstructuur via Roompot met 40-50% commissie maakt zelfverhuur onmogelijk en vernietigt elk rendement. Cash-on-Cash Return van slechts 2.1% is desastreus (target is 10%+). Bij break-even van 47 jaar is dit geen investering maar een geldverslindende hobby. Het pand zelf is basic zonder sterke USP's, zou \u20ac15-20k investering nodig hebben voor hottub/sauna, maar dit is volstrekt niet rendabel gezien de commissiestructuur. Eigen grond is positief maar weegt niet op tegen de fundamentele structurele problemen. Voor succesvolle BNB strategie is volledige zelfverhuurvrijheid essentieel - dit object biedt dat niet.",
+  "top_strengths": [
+    "Eigen grond (geen erfpacht) - \u20ac0 canon bespaart \u20ac2-3k/jaar",
+    "Goede locatie Nationaal Park Hoge Veluwe - A-locatie natuurgebied",
+    "All-inclusive parkkosten (gas/water/elektra) - voorspelbare kosten"
+  ],
+  "top_concerns": [
+    "DEALBREAKER: Verhuur alleen via Roompot - 40-50% commissie elimineert rendement volledig",
+    "Cash-on-Cash Return 2.1% vs target 10%+ - factor 5x te laag",
+    "Break-even 47 jaar - geen viable investering",
+    "Geen USP's (hottub/sauna) en \u20ac15-20k investering niet rendabel door commissiestructuur"
+  ],
+  "investment_recommendation": "AFWIJZEN - Verplichte Roompot verhuurstructuur met 40-50% commissie maakt zelfverhuur onmogelijk en vernietigt rendement volledig. Cash-on-Cash Return van 2.1% is desastreus (target 10%+). Break-even van 47 jaar is onacceptabel. Zelfs bij onderhandeling naar \u20ac130k blijft rendement onder 4%. De fundamentele structuur van verplichte parkorganisatie maakt dit object ongeschikt voor BNB strategie gericht op maximaal rendement door zelfverhuur. Zoek alternatieve objecten met volledige verhuurvrijheid.",
+  "metadata": {
+    "processing_time_seconds": 66.69,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}

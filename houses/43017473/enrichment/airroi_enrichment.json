@@ -1,0 +1,14 @@
+{
+  "enriched": true,
+  "enriched_at": "2025-11-09T21:57:52.453907+00:00",
+  "house_id": "43017473",
+  "coordinates": {
+    "latitude": 52.1201,
+    "longitude": 5.923968,
+    "source": "geocoded"
+  },
+  "api_calls": 2,
+  "estimated_cost": 0.02,
+  "comparables": [],
+  "revenue_estimate": {}
+}

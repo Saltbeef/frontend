@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 43017473</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 43017473<br>
+                <strong>Analyzed:</strong> 2025-11-09T21:59:00.128564+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">1.62/10</div>
+            <div class="recommendation consider">
+                AFWIJZEN - Verplichte Roompot verhuurstructuur met 40-50% commissie maakt zelfverhuur onmogelijk en vernietigt rendement volledig. Cash-on-Cash Return van 2.1% is desastreus (target 10%+). Break-even van 47 jaar is onacceptabel. Zelfs bij onderhandeling naar €130k blijft rendement onder 4%. De fundamentele structuur van verplichte parkorganisatie maakt dit object ongeschikt voor BNB strategie gericht op maximaal rendement door zelfverhuur. Zoek alternatieve objecten met volledige verhuurvrijheid.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Dit object moet worden AFGEWEZEN ondanks goede locatie aan Nationaal Park de Hoge Veluwe. De verplichte verhuurstructuur via Roompot met 40-50% commissie maakt zelfverhuur onmogelijk en vernietigt elk rendement. Cash-on-Cash Return van slechts 2.1% is desastreus (target is 10%+). Bij break-even van 47 jaar is dit geen investering maar een geldverslindende hobby. Het pand zelf is basic zonder sterke USP's, zou €15-20k investering nodig hebben voor hottub/sauna, maar dit is volstrekt niet rendabel gezien de commissiestructuur. Eigen grond is positief maar weegt niet op tegen de fundamentele structurele problemen. Voor succesvolle BNB strategie is volledige zelfverhuurvrijheid essentieel - dit object biedt dat niet.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>Eigen grond (geen erfpacht) - €0 canon bespaart €2-3k/jaar</li><li>Goede locatie Nationaal Park Hoge Veluwe - A-locatie natuurgebied</li><li>All-inclusive parkkosten (gas/water/elektra) - voorspelbare kosten</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>DEALBREAKER: Verhuur alleen via Roompot - 40-50% commissie elimineert rendement volledig</li><li>Cash-on-Cash Return 2.1% vs target 10%+ - factor 5x te laag</li><li>Break-even 47 jaar - geen viable investering</li><li>Geen USP's (hottub/sauna) en €15-20k investering niet rendabel door commissiestructuur</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">2.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Bungalowpark Hoenderloo ligt aan de rand van Nationaal Park de Hoge Veluwe (A-locatie natuurgebied), met goede toeristische attracties binnen 20km: Apeldoorn (±15km), Arnhem (±25km), Burgers' Zoo (±20km), Kröller-Müller Museum (±5km), Julianatoren (±20km). Bereikbaarheid is redelijk via N304/A1 (±10km). Duitse grens op 50km maakt Duitsers mogelijk doelgroep. ECHTER: Verhuur is WEL mogelijk maar ALLEEN via Roompot - dit is een absolute dealbreaker voor zelfverhuur strategie. Het park heeft verplichte verhuurstructuur met naar verwachting 40-50% commissie (typisch voor Roompot). Dit elimineert volledig het potentieel voor zelfbeheer en maximaal rendement. Locatie op zich is uitstekend (8/10), maar door verplichte Roompot structuur wordt dit een 2/10 voor onze strategie.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Verhuur ALLEEN via Roompot mogelijk - geen zelfverhuur</div><div class="flag-item">Verwachte commissie 40-50% vernietigt rendement</div><div class="flag-item">Geen controle over pricing en beschikbaarheid</div><div class="flag-item">Geen directe klantrelatie mogelijk</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Zoek vergelijkbaar object zonder verplichte parkorganisatie</div><div class="rec-item">Overweeg privé recreatiewoningen in zelfde gebied</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">2.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Type Veluwevilla uit 1974, 52m² woonoppervlak, 3 slaapkamers (max 6 personen), 1 badkamer. Pand heeft enkele positieve punten: volledig gemeubileerd, goed geïsoleerd (nieuw dak, spouw-, vloerisolatie), CV-ketel 2019, moderne badkamer met inloopdouche. Tuin rondom 260m² eigen grond. USP's zijn ZWAK voor professionele verhuur: geen hottub, geen sauna, geen bijzondere features. Houtkachel is enige 'sfeer' element. Fotografie is matig amateuristisch (geen professionele staging). Energielabel E is ondermaats voor 2025. Bouwjaar 1974 betekent hogere onderhoudskosten. Park heeft zwembad/tennis maar deze zijn geen unieke USP's. Voor succesvolle zelfverhuur zou dit pand €15-20k investering nodig hebben (hottub €5k, sauna €8k, professionele styling €3k, fotografie €1k). Maar gezien verhuur alleen via Roompot mogelijk is, is deze investering niet rendabel.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Geen unieke USP's (hottub/sauna ontbreekt)</div><div class="flag-item">Energielabel E - hoge energiekosten</div><div class="flag-item">Bouwjaar 1974 - verhoogd onderhoudsrisico</div><div class="flag-item">Matige fotografie - niet marktklaar</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">€15-20k investering nodig voor competitieve USP's (niet doen gezien Roompot verplichting)</div><div class="rec-item">Energielabel verbetering naar minimaal C zou €8-12k kosten</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">1.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    INVESTERING: €155.000 + €3.100 overdracht + €2.000 notaris = €160.100 totaal. Parkkosten €4.719/jaar (inclusief energie/water/tuinonderhoud). Bij verhuur via Roompot (VERPLICHT): geschatte bruto-omzet €18.000-22.000/jaar (vergelijkbare Veluwe objecten). Roompot commissie 40-50% = €7.200-11.000. NETTO OMZET na commissie: €10.000-12.000. KOSTEN: Parkkosten €4.719, platform fees (in commissie), onderhoud €1.500, verzekering €400, accountant €1.000 = €7.619/jaar. NETTO RESULTAAT: €2.400-4.400/jaar = 1.5-2.7% Cash-on-Cash Return. Dit is DESASTREUS. Break-even na 36-66 jaar. Bij eigen verhuur zou omzet €28-35k zijn (70% bezetting × €110 nacht gemiddeld × 365 dagen) met 15% netto rendement mogelijk. Roompot structuur vermindert rendement met factor 6-10x. Geen scale-up potentieel: na 3 jaar mogelijk €165k verkoopwaarde (+€5k), maar €13k verlies door negatieve cashflow.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Cash-on-Cash Return 1.5-2.7% - volledig onacceptabel</div><div class="flag-item">Break-even 36-66 jaar - geen viable investering</div><div class="flag-item">Roompot commissie vreet 40-50% omzet op</div><div class="flag-item">Negatieve scale-up potentieel door cashflow verlies</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">NIET KOPEN - rendement is desastreus</div><div class="rec-item">Zelfs bij onderhandeling naar €130k is rendement max 4%</div><div class="rec-item">Zoek objecten met zelfverhuur mogelijkheid</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">0.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    KRITIEKE DEALBREAKER: Verhuur is 'niet verplicht maar wel mogelijk', maar omschrijving maakt duidelijk dat dit ALLEEN via Roompot kan. Dit elimineert alle zelfverhuur mogelijkheden. Je kunt NIET zelf verhuren via Airbnb/Booking.com. Geen vrije prijsstelling. Geen eigen klantrelatie. Roompot bepaalt tarieven, beschikbaarheid en voorwaarden. Voor eigen gebruik zijn er opties (45 dagen onbeperkt, of 90+14 dagen met seizoenrestricties), maar dit is irrelevant voor investeringsstrategie gericht op maximaal rendement. Positief: eigen grond (geen erfpacht), permanente bewoning niet toegestaan maar recreatief verblijf wel. Parkkosten zijn all-inclusive (gas/water/elektra). VvE bijdrage inbegrepen. MAAR: de verplichte Roompot structuur maakt dit juridisch een no-go voor onze strategie. Score 0.5 omdat verhuur technisch mogelijk is, maar onder onacceptabele voorwaarden.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">DEALBREAKER: Verhuur alleen via Roompot - geen zelfverhuur</div><div class="flag-item">Geen controle over pricing/beschikbaarheid</div><div class="flag-item">40-50% commissie structuur</div><div class="flag-item">Permanente bewoning niet toegestaan (beperkt gebruik)</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Vraag schriftelijke bevestiging of zelfverhuur echt uitgesloten is</div><div class="rec-item">Check parkreglement - vaak zijn deze voorwaarden onveranderbaar</div><div class="rec-item">Zoek alternatieve objecten zonder Roompot verplichting</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>DEALBREAKER: Verhuur alleen via Roompot - 40-50% commissie elimineert rendement volledig</li><li>Cash-on-Cash Return 2.1% vs target 10%+ - factor 5x te laag</li><li>Break-even 47 jaar - geen viable investering</li><li>Geen USP's (hottub/sauna) en €15-20k investering niet rendabel door commissiestructuur</li></li>
+                

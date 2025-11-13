@@ -1,0 +1,367 @@
+{
+  "Identifiers": {
+    "GlobalId": 7745916,
+    "TinyId": "43190379"
+  },
+  "Price": {
+    "SellingPrice": "\u20ac 82.500 v.o.n.",
+    "NumericSellingPrice": 82500,
+    "IsAuction": false
+  },
+  "KenmerkSections": [
+    {
+      "Index": 1,
+      "Id": "overdracht",
+      "Title": "Overdracht",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Id": "overdracht-aangeboden-sinds",
+          "Label": "Aangeboden sinds",
+          "Value": "Oktober 7, 2025",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 0,
+          "Label": "Aanvaarding",
+          "Value": "In overleg",
+          "LabelStyle": "None"
+        },
+        {
+          "Index": 1,
+          "Id": "overdracht-vraagprijs",
+          "Label": "Vraagprijs",
+          "Value": "\u20ac 82.500 vrij op naam",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 5,
+          "Id": "overdracht-status",
+          "Label": "Status",
+          "Value": "Beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 7,
+          "Id": "overdracht-permanentebewoning",
+          "Label": "Permanente bewoning",
+          "Value": "Permanente bewoning is niet toegestaan",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 2,
+      "Id": "bouw",
+      "Title": "Bouw",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "bouw-soortobject",
+          "Label": "Soort woonhuis",
+          "Value": "Bungalow, vrijstaande woning",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "bouw-soortbouw",
+          "Label": "Soort bouw",
+          "Value": "Bestaande bouw",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "bouw-bouwjaar",
+          "Label": "Bouwjaar",
+          "Value": "2026",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 3,
+      "Id": "afmetingen",
+      "Title": "Oppervlakten en inhoud",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Label": "Gebruiksoppervlakten",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 1,
+              "Id": "afmetingen-gebruiksoppervlakten-wonen",
+              "Label": "Wonen",
+              "Value": "54 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        },
+        {
+          "Index": 2,
+          "Id": "afmetingen-perceel",
+          "Label": "Perceel",
+          "Value": "375 m\u00b2",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "afmetingen-inhoud",
+          "Label": "Inhoud",
+          "Value": "160 m\u00b3",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 4,
+      "Id": "indeling",
+      "Title": "Indeling",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "indeling-totalrooms",
+          "Label": "Aantal kamers",
+          "Value": "4 kamers (2 slaapkamers)",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "indeling-totalbathroom",
+          "Label": "Aantal badkamers",
+          "Value": "1 badkamer en 1 apart toilet",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 3,
+          "Id": "indeling-bathroom",
+          "Label": "Badkamervoorzieningen",
+          "Value": "Douche, toilet, wastafel, en wastafelmeubel",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 4,
+          "Id": "indeling-totalstories",
+          "Label": "Aantal woonlagen",
+          "Value": "1 woonlaag",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 5,
+      "Id": "energie",
+      "Title": "Energie",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "energie-energielabel",
+          "Label": "Energielabel",
+          "Value": "Niet beschikbaar",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 6,
+      "Id": "cadastral",
+      "Title": "Kadastrale gegevens",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "cadastral-parcel",
+          "Label": "GROUW C 2047",
+          "LabelStyle": "Title",
+          "KenmerkenList": [
+            {
+              "Index": 2,
+              "Id": "cadastral-area",
+              "Label": "Oppervlakte",
+              "Value": "375 m\u00b2",
+              "LabelStyle": "None",
+              "KenmerkenList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 7,
+      "Id": "buitenruimte",
+      "Title": "Buitenruimte",
+      "KenmerkenList": [
+        {
+          "Index": 1,
+          "Id": "buitenruimte-ligging",
+          "Label": "Ligging",
+          "Value": "Aan park, buiten bebouwde kom, in bosrijke omgeving en in recreatiepark",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        },
+        {
+          "Index": 2,
+          "Id": "buitenruimte-tuin",
+          "Label": "Tuin",
+          "Value": "Tuin rondom",
+          "LabelStyle": "None",
+          "KenmerkenList": []
+        }
+      ]
+    },
+    {
+      "Index": 10,
+      "Id": "parkeergelegenheid",
+      "Title": "Parkeergelegenheid",
+      "KenmerkenList": [
+        {
+          "Index": 0,
+          "Label": "Soort parkeergelegenheid",
+          "Value": "Op eigen terrein",
+          "LabelStyle": "None"
+        }
+      ]
+    }
+  ],
+  "Labels": [
+    {
+      "Text": "Nieuw",
+      "Type": "New"
+    }
+  ],
+  "Urls": {
+    "FriendlyUrl": {
+      "FullUrl": "https://www.funda.nl/detail/recreatie/grou/huis-yn-e-lijte-1/43190379/",
+      "RelativeUrl": "/detail/recreatie/grou/huis-yn-e-lijte-1/43190379/"
+    },
+    "ReportErrorUrl": "https://help.funda.nl:443/s/mef?globalID=7745916&returnURL=https%3a%2f%2fwww.funda.nl%2fdetail%2frecreatie%2fgrou%2fhuis-yn-e-lijte-1%2f43190379%2f&brokerID=15452"
+  },
+  "ListingDescription": {
+    "Title": "Omschrijving",
+    "Description": "Op Waterpark Yn'e Lijte staat er w\u00e9\u00e9r iets moois te gebeuren!\nEr is een nieuwbouwproject in ontwikkeling op het ex zwembad terrein, 2 prachtige vakantiewoningen die volgens bouwbesluit gebouwd worden in een zeer luxe uitvoering op royale huurkavels.\nWilt u het kopen als (gedeeltelijk) belegging? De woning is te verhuren in volledig eigen beheer, semi- eigen beheer of volledig door het park! \n\nHet is mogelijk een huurcontract van 10 jaar vast te leggen voor de grond, waarbij de huurprijs vaststaat en alleen de consumenten index zal gelden. \nDeze duurzame recreatiewoningen kunnen opgeleverd worden met zonnepanelen en een complete tuinaanleg door een vakkundig bedrijf. Zie hiervoor ter impressie de landschappelijke inpassing getoond in de foto's van deze advertentie.\n\nDe foto's van binnen zijn een impressie, de woning kan van binnen geheel op maat gemaakt worden. Dit kan afgestemd worden met de projectontwikkelaar. Voor \u20ac82.500 incl. BTW kan het chalet casco opgeleverd worden met de \"basis afwerking\" of aangevuld worden met uw wensen. \n\nBasis afwerking recreatiewoningen:\n- Houtlook van kunststof rabatdelen met zwarte bies uitgevoerd waardoor duurzaam & onderhoudsarm;\n- Kunststof kozijnen, kleur zwart aan binnen en buitenzijde;\n- Kunststof goten en regenpijp tot maaiveld;\n- Gespoten stalen onderstel op betonplaten;\n- Boeiboorden voorzien van zwart aluminium / trespa;\n- HR++ glas en 3x rooster;\n- Winterisolatie-pakket: dak- en vloerisolatie 8cm + prefabwanden 45 x 100 staanders;\n\nTegen meerprijs:\n- Realisatie wanden woonkamer, keuken, 2 slaapkamers, badkamer en inpandige schuur;\n- Afwerking saus / behang klaar;\n- Toilet en douche met badmeubel;\n- Combi-airco (verwarmen/ koelen);\n- Riool/ water aansluiting;\n- Tuinaanleg volgens de vergunning\n\nKavel Swimmy Houses\nBovenste kavel:\nDit betreft een kavel van maar liefst 386m2. Deze kavel is te huur voor \u20ac6000,- per jaar.\nOnderste kavel:\nDit betreft een kavel van maar liefst 375m2. Deze kavel is te huur voor \u20ac6000,- per jaar.\nDe huurprijs is exclusief nuts (water en elektra) Er is een 3 fase 25 amp. stroomaanleg per kavel, waarbij een eigen oplaadpaal voor een elektrische auto mogelijk is.\n\nWaterpark Yn'e Lijte\nRecreatiepark Yn'e Lijte ligt aan de noordelijke kant van watersportdorp Grou. Met de (fiets)pont ben je in 10 minuten in het centrum, waar je een gevarieerd winkelbestand, meerdere grote supermarkten en gezellige horecagelegenheden aantreft. En wilt u een dagje de stad in, dan bieden Leeuwarden, Sneek en/of Heerenveen op korte afstand genoeg mogelijkheden.\n\nWaterpark Yn'e Lijte heeft zich door de jaren heen ontwikkeld tot een zeer populair waterpark. Dit ruim opgezette park heeft dan ook veel te bieden met een variabel aanbod. U kunt daarbij denken aan Safaritenten, Tiny Houses, stacaravans, chalets en vakantiewoningen in alle soorten en maten. Er is daarbij van alles te beleven op en om het park! Op mooie dagen kunt u een zeilboot, een elektrische boot of een sloep huren voor de hele familie.\n\nFaciliteiten van Waterpark Yn'e Lijte:\n- Speeltuin: Op dit park met chalets vindt u een speeltuin met speeltoestellen en verschillende klimrekken. \n- Restaurant: In Grou kunt u heerlijk eten bij restaurant Oan't Wetter. Zij hebben een divers menu met visgerechten, gebakken kalfslever, spareribs, Mix -Grill, biefstuk en nog veel meer.\n- Watersport: Camping Yn'e Lijte verhuurt elektrische sloepen en openzeilboten\n- Supermarkt: Er zijn drie supermarkten in Grou, Lidl, Jumbo en Poeisz. De Jumbo is zelfs uitgeroepen tot de beste supermarkt van Friesland!\n- Wasserette: Op het park is een wasserette waar u gemakkelijk de nodige was kunt doen.\nParkinformatie Waterpark Yn'e Lijte\n- Hele jaar geopend\n- Honden toegestaan\n- Verhuur mogelijk (Via park of in eigen beheer)\n- Mogelijkheid van huren ligplek voor sloep of zeilboot\n- Per kavel heeft u 2 parkeerplaatsen voor de auto\nHeeft u interesse? \nBel: +31 (0) 226-748262"
+  },
+  "AddressDetails": {
+    "Title": "Yn 'e Lijte 1",
+    "SubTitle": "9001 ZR Grou",
+    "IsInternational": false,
+    "NeighborhoodName": "Grou",
+    "NeighborhoodIdentifier": "grou/grou",
+    "City": "Grou",
+    "Province": "Friesland",
+    "Country": "Nederland",
+    "HouseNumber": "1",
+    "HouseNumberExtension": "",
+    "PostCode": "9001ZR"
+  },
+  "Coordinates": {
+    "Latitude": 53.102516,
+    "Longitude": 5.8426147
+  },
+  "KadastraleKaartBaseUrl": "https://service.pdok.nl/kadaster/kadastralekaart/wms/v5_0",
+  "Media": {
+    "Layout": {
+      "MediaViewerIsVisible": true,
+      "MainPhotoThumbnailIsVisible": false
+    },
+    "Photos": {
+      "ThumbnailBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "MediaBaseUrl": "https://cloud.funda.nl/valentina_media/{id}.jpg",
+      "Items": [
+        {
+          "Id": "218/525/823"
+        },
+        {
+          "Id": "218/525/843"
+        },
+        {
+          "Id": "218/525/816"
+        },
+        {
+          "Id": "218/525/825"
+        },
+        {
+          "Id": "218/525/821"
+        },
+        {
+          "Id": "218/525/827"
+        },
+        {
+          "Id": "218/525/846"
+        },
+        {
+          "Id": "218/525/830"
+        },
+        {
+          "Id": "218/525/848"
+        },
+        {
+          "Id": "218/525/925"
+        },
+        {
+          "Id": "218/525/828"
+        },
+        {
+          "Id": "218/525/856"
+        },
+        {
+          "Id": "218/525/824"
+        },
+        {
+          "Id": "218/525/833"
+        },
+        {
+          "Id": "218/525/826"
+        },
+        {
+          "Id": "218/525/834"
+        },
+        {
+          "Id": "218/525/818"
+        },
+        {
+          "Id": "218/525/855"
+        },
+        {
+          "Id": "218/525/832"
+        },
+        {
+          "Id": "218/525/822"
+        },
+        {
+          "Id": "218/525/831"
+        }
+      ]
+    }
+  },
+  "FastView": {
+    "LivingArea": "54 m\u00b2",
+    "PlotArea": "375 m\u00b2",
+    "NumberOfBedrooms": "2"
+  },
+  "IsSoldOrRented": false,
+  "ObjectType": "House",
+  "OfferingType": "Sale",
+  "ConstructionType": "ExistingConstruction",
+  "PublicationDate": "2025-10-07T00:00:00",
+  "sitemapData": {
+    "originalUrl": "https://www.funda.nl/detail/recreatie/grou/huis-yn-e-lijte-1/43190379/",
+    "propertyId": "43190379",
+    "lastmod": "2025-10-07T10:35:36+02:00",
+    "processedAt": "2025-10-08T02:30:32.445Z",
+    "apiUrl": "https://listing-detail-page.funda.io/api/v4/listing/nl/tinyId/43190379"
+  }
+}
