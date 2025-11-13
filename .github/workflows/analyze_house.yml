@@ -457,8 +457,8 @@ jobs:
           else
             git commit -m "Analysis: ${{ inputs.house_id }} using ${{ inputs.rules_version }} (score: ${{ steps.analyze.outputs.score }})"
 
-            # Retry push up to 3 times in case of concurrent workflow conflicts
-            max_attempts=3
+            # Retry push up to 5 times in case of concurrent workflow conflicts
+            max_attempts=5
             attempt=1
             while [ $attempt -le $max_attempts ]; do
               echo "Push attempt $attempt of $max_attempts..."
@@ -469,7 +469,93 @@ jobs:
               else
                 if [ $attempt -lt $max_attempts ]; then
                   echo "Push failed, pulling and retrying..."
-                  git pull --rebase origin main
+
+                  # Fetch latest changes
+                  git fetch origin main
+
+                  # Try to merge (not rebase to avoid conflicts)
+                  if git merge origin/main --no-edit; then
+                    echo "✅ Merged successfully"
+                  else
+                    # Merge conflict detected - auto-resolve for analysis_scores.json
+                    echo "⚠️  Merge conflict detected, attempting auto-resolution..."
+
+                    # Check if conflict is in analysis_scores.json
+                    if git diff --name-only --diff-filter=U | grep -q "data/analysis_scores.json"; then
+                      echo "Resolving analysis_scores.json conflict..."
+
+                      # Smart merge: combine both versions of the JSON file
+                      python3 << 'MERGE_SCRIPT'
+          import json
+          from pathlib import Path
+
+          scores_file = Path('data/analysis_scores.json')
+
+          # Read the conflicted file and extract both versions
+          with open(scores_file, 'r') as f:
+              content = f.read()
+
+          # Parse conflict markers
+          if '<<<<<<< HEAD' in content and '=======' in content and '>>>>>>>' in content:
+              parts = content.split('=======')
+              ours_part = parts[0].split('<<<<<<< HEAD\n')[1]
+              theirs_part = parts[1].split('\n>>>>>>>')[0]
+
+              # Parse both JSON versions
+              try:
+                  ours = json.loads(ours_part)
+                  theirs = json.loads(theirs_part)
+
+                  # Merge: combine all house entries
+                  merged = {
+                      'last_updated': max(ours.get('last_updated', ''), theirs.get('last_updated', '')),
+                      'houses': {}
+                  }
+
+                  # Add all houses from both versions
+                  if 'houses' in ours:
+                      merged['houses'].update(ours['houses'])
+                  if 'houses' in theirs:
+                      merged['houses'].update(theirs['houses'])
+
+                  # Write merged version
+                  with open(scores_file, 'w') as f:
+                      json.dump(merged, f, indent=2)
+
+                  print(f"✅ Successfully merged {len(merged['houses'])} house entries")
+              except json.JSONDecodeError as e:
+                  print(f"❌ Failed to parse JSON: {e}")
+                  exit(1)
+          else:
+              print("❌ Unexpected conflict format")
+              exit(1)
+          MERGE_SCRIPT
+
+                      if [ $? -eq 0 ]; then
+                        # Mark as resolved
+                        git add data/analysis_scores.json
+                        echo "✅ Conflict resolved automatically"
+                      else
+                        echo "❌ Failed to auto-resolve conflict"
+                        git merge --abort
+                        attempt=$((attempt + 1))
+                        sleep $((attempt * 2))
+                        continue
+                      fi
+                    else
+                      # Conflict in other files - abort and retry
+                      echo "❌ Conflict in unexpected files:"
+                      git diff --name-only --diff-filter=U
+                      git merge --abort
+                      attempt=$((attempt + 1))
+                      sleep $((attempt * 3))
+                      continue
+                    fi
+
+                    # Complete the merge
+                    git commit --no-edit
+                  fi
+
                   attempt=$((attempt + 1))
                   sleep $((attempt * 2))  # Exponential backoff
                 else
