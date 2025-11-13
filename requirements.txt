@@ -1,11 +1,12 @@
 # House Analysis Service - Python Dependencies
 #
-# This project is designed to use only Python standard library
-# to avoid dependency management in GitHub Actions.
-#
+# Core functionality uses only Python standard library for GitHub Actions.
+# Additional dependencies for local CLI tool and development:
+
+# CLI tool (run_analysis.py)
+typer>=0.9.0        # Modern CLI framework
+rich>=13.0.0        # Beautiful terminal output
+
 # Optional dependencies for local development:
 # - jinja2>=3.1.0  # For advanced HTML templating (if needed)
 # - jsonschema>=4.0.0  # For schema validation (if needed)
-# - requests>=2.31.0  # Alternative to urllib (if preferred)
-#
-# No dependencies are required for core functionality.
