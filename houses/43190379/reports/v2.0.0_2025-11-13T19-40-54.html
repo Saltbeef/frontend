@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Analysis Report - 43190379</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .recommendation {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .recommendation.buy {
+            background: #10b981;
+        }
+
+        .recommendation.consider {
+            background: #f59e0b;
+        }
+
+        .recommendation.pass {
+            background: #ef4444;
+        }
+
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .category h2 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .reasoning {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .flags, .recommendations {
+            margin-top: 15px;
+        }
+
+        .flags h3, .recommendations h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .flag-item {
+            background: #fee2e2;
+            border-left: 3px solid #ef4444;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #991b1b;
+        }
+
+        .rec-item {
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 4px;
+            color: #1e40af;
+        }
+
+        .summary-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .summary-section h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>House Analysis Report</h1>
+            <div class="meta">
+                <strong>Property ID:</strong> 43190379<br>
+                <strong>Analyzed:</strong> 2025-11-13T19:40:54.811357+00:00<br>
+                <strong>Rules Version:</strong> v2.0.0
+            </div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">6.52/10</div>
+            <div class="recommendation consider">
+                AFWIJZEN - Financieel rendement ver onder minimum (1% vs 10+ target). Grondhuur structuur en gebrek aan USP's maken dit geen strategische investering voor scale-up model. Cashflow te zwak voor opbouw vermogen.
+            </div>
+        </div>
+
+        
+        <div class="summary-section">
+            <h2>Overall Assessment</h2>
+            <p>Dit nieuwbouw recreatiewoning project op Waterpark Yn'e Lijte biedt **verhuurvrijheid** (groot pluspunt), maar heeft **kritieke financiële zwakheden**. De casco prijs €82.500 misleidt - verhuurklaar maken kost €110k+ totaal. De grondhuur €6.000/jaar (40% van bruto-omzet) en gebrek aan USP's (geen hottub/sauna) resulteren in **slechts 1% rendement** - ver onder de 10% target. Break-even duurt bijna een eeuw zonder optimalisatie. Met hottub-investering (€8k extra) stijgt return naar 6.4% - nog steeds matig. De locatie scoort redelijk (Fryslân watertoerisme), maar seizoensafhankelijkheid en huurgrond-constructie beperken scale-up potentieel. Voor zelfverhuur strategie is dit **niet aantrekkelijk genoeg** - te weinig cashflow voor opschaling naar duurdere objecten. Alleen interessant bij forse prijsdaling (€70k all-in) of inclusie premium voorzieningen.</p>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Strengths</h2>
+            <ul class="summary-list">
+                
+                <li><li>NIEUWBOUW 2026 - 10 jaar onderhoudsvrij, moderne isolatie, energiezuinig</li><li>Volledige verhuurvrijheid - zelfbeheer toegestaan, geen parkcommissie verplicht</li><li>Goede locatie Fryslân watertoerisme - Grou/Pikmeer populair bij natuur/water liefhebbers</li></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>EXTREEM LAAG RENDEMENT 1% - break-even 97 jaar, totaal investering €111k vs €15k jaaromzet</li><li>Grondhuur €6.000/jaar vreet 40% bruto-omzet op - structureel hoge fixed cost</li><li>Geen USP's (hottub/sauna) = lagere nachtprijzen en bezetting - moeilijk concurreren</li><li>Huurgrond = geen grondwaarde stijging - beperkt scale-up exit potentieel</li></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="categories">
+            <h2 style="margin-bottom: 20px;">Detailed Category Analysis</h2>
+
+            
+            <div class="category">
+                <h2>
+                    <span>Location</span>
+                    <span class="category-score">7.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    Waterpark Yn'e Lijte ligt strategisch in Grou, Noord-Friesland. **Toeristische aantrekkelijkheid:** Watersportdorp Grou (10 min met pont), bekende Friese meren (Pikmeer direct grenzend), Leeuwarden 20km (Culturele Hoofdstad 2018), Sneek 25km (watersport centrum). Bosrijke, waterrijke omgeving - typische A-locatie voor natuur & watertoerisme. **Bereikbaarheid:** Snelweg A7 binnen 15km, station Leeuwarden 20 min rijden. Aantrekkelijk voor Nederlandse én Duitse toeristen (grens 100km). **Seizoen:** Fryslân is voornamelijk zomer/voorjaarsbestemming, maar schaatsen/natuurtoerisme trekt ook winter. **Markt:** Grou/Pikmeer area populair op Airbnb - concurrenten vragen €80-150/nacht, goede reviews. Park zelf heeft diverse accommodaties, maar geïsoleerde ligging biedt privacy-USP. **Bezwaar:** Geen strand (zee 50km+), beperkte winter-attracties kan bezetting drukken.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Seizoensafhankelijkheid - Fryslân trekt vooral mei-september, winterbezetting onzeker</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Check AirDNA data voor Grou specifiek - seizoenspatroon cruciaal</div><div class="rec-item">Onderzoek winteractiviteiten marketing (schaatsen, rust-retreats)</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Property</span>
+                    <span class="category-score">6.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    **Basisspecificaties:** 2 slaapkamers, 54m², max 4-6 gasten. Bouwjaar 2026 (NIEUWBOUW - groot pluspunt!). 1 badkamer + apart toilet, goed voor gezinnen. **USP's - TELEURSTELLEND:** Geen hottub, sauna, jacuzzi vermeld. Omschrijving noemt 'zeer luxe', maar basis afwerking is **casco met minimale afwerking** (€82.500 = enkel casco + prefab wanden). Foto's zijn impressies - einduitvoering onzeker. **Positief:** Nieuwbouw = 10 jaar geen onderhoud, moderne isolatie (HR++ glas, 8cm dak/vloer), combi-airco optioneel. Tuin rondom (375m²) biedt privacy. **Doelgroep:** Gezinnen (2 slaapkamers beperkt), stellen (goed). **GROTE MINPUNT:** Huisdieren **niet vermeld** = gemiste kans voor 30% grotere doelgroep. **Visueel:** Impressiefoto's zien er modern/strak uit, maar eindproduct kan afwijken. **Renovatie:** Casco betekent HOGE extra kosten voor verhuurklaar maken (keuken, meubels, TV, beddengoed, servies = €15-25k minstens).
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Casco oplevering - verhuurklaar maken kost €15-25k extra</div><div class="flag-item">Geen hottub/sauna vermeld - cruciaal voor premium prijzen</div><div class="flag-item">Foto's zijn impressies, geen garantie einduitvoering</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Budget €20k voor complete inrichting verhuurklaar</div><div class="rec-item">Onderhandel over inclusie hottub/sauna (€6-10k extra investering, +€30/nacht opbrengst)</div><div class="rec-item">Eis heldere afwerkingsspecificaties op papier van ontwikkelaar</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Financial</span>
+                    <span class="category-score">5.5/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    **Aankoopkosten:** Vraagprijs €82.500 (casco!). Overdrachtsbelasting recreatie 2% = €1.650. Notaris €2.000. **Cruciale extra kosten:** Verhuurklaar maken €20.000 (keuken, meubels, beddengoed, TV, decoratie), tuinaanleg €5.000. **TOTAAL: €111.150**. **Jaaromzet (conservatief):** Hoogseizoen 75 dagen x 75% bezet x €120/nacht = €6.750. Middenseizoen 140 dagen x 50% x €90 = €6.300. Laagseizoen 90 dagen x 25% x €70 = €1.575. Wintertijd 60 dagen x 15% x €80 = €720. **Totaal: €15.345/jaar** (laag door geen hottub/USP's). **Jaarkosten:** Grondhuur €6.000, nuts €1.800, platform fees (10%) €1.535, schoonmaak 50 beurten x €50 = €2.500, onderhoud 5% = €770, accountant €1.000, verzekering €400, gemeentelijk €200. **Totaal: €14.205**. **Rendement:** Netto €1.140/jaar. Cash-on-Cash **1%** - EXTREEM LAAG. Break-even 97 jaar (!) - **NIET HAALBAAR**. **Met hottub scenario:** +€30/nacht = +€6.000 omzet → €7.140 netto → 6.4% return. Nog steeds matig. **Financiering:** 70% hypotheek = €77.805 x 5% = €3.890/jaar rente → NEGATIEVE cashflow €2.750/jaar. **DEALBREAKER: Dit object verdient zichzelf niet terug zonder flinke prijsstijging**.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">1% Cash-on-Cash return - ver onder 10% minimum</div><div class="flag-item">Break-even 97 jaar zonder hottub/optimalisatie</div><div class="flag-item">Negatieve cashflow met financiering</div><div class="flag-item">Grondhuur €6.000/jaar vreet 40% bruto-omzet op</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">ONDERHANDEL: Vraag €70k voor casco of eis inclusie hottub</div><div class="rec-item">Investeer direct €8k in hottub - verhoogt omzet met 40%</div><div class="rec-item">Alternatief: verhuur via park (maar 40% commissie = slechter)</div></div></div>
+            <div class="category">
+                <h2>
+                    <span>Legal</span>
+                    <span class="category-score">8.0/10</span>
+                </h2>
+
+                <div class="reasoning">
+                    **Verhuurvrijheid - GOED NIEUWS:** Omschrijving expliciet: 'verhuren in volledig eigen beheer, semi-eigen beheer of volledig door het park' - **ZELFVERHUUR TOEGESTAAN**. Geen verplichte parkorganisatie, geen Recron beperkingen genoemd. Vrije platformkeuze. **Seizoen:** Tekst zegt 'hele jaar geopend' - jaar-rond verhuur mogelijk (check parkreglement). **Eigendom:** Huurgrond, geen erfpacht. Huurcontract 10 jaar vast mogelijk - stabiliteit. Canon €6.000/jaar (hoog maar voorspelbaar, alleen consumentenindex stijging). **Goedkeuringen:** Niet vermeld dat nieuwe eigenaar goedkeuring nodig heeft - lijkt vrije handel. Geen VvE/privilege clausule genoemd. **Permanente bewoning:** NIET toegestaan (normaal voor recreatie, geen probleem). **Fiscaal:** Box 1 onderneming bij actieve verhuur (aftrekposten), of box 3. Toeristenbelasting moet afgedragen. **Risico:** 10 jaar huurcontract - wat erna? Onzekerheid lange termijn. Geen grond-eigendom = geen waardestijging grond. **Positief:** Geen dealbreakers op verhuurvrijheid - kern strategie blijft intact.
+                </div>
+            
+                <div class="flags">
+                    <h3>⚠️ Red Flags</h3>
+                <div class="flag-item">Huurgrond (geen eigendom) - geen grondwaarde appreciatie</div><div class="flag-item">Onzekerheid na 10 jaar huurcontract</div></div>
+                <div class="recommendations">
+                    <h3>💡 Recommendations</h3>
+                <div class="rec-item">Vraag volledige parkreglement + huurcontract bij ontwikkelaar</div><div class="rec-item">Laat notaris clausule na 10 jaar checken - opzeg/verlenging</div><div class="rec-item">Check fiscaal adviseur: Box 1 vs Box 3 optimalisatie</div></div></div>
+            </ul>
+        </div>
+        
+
+        
+        <div class="summary-section">
+            <h2>Top Concerns</h2>
+            <ul class="summary-list">
+                
+                <li><li>EXTREEM LAAG RENDEMENT 1% - break-even 97 jaar, totaal investering €111k vs €15k jaaromzet</li><li>Grondhuur €6.000/jaar vreet 40% bruto-omzet op - structureel hoge fixed cost</li><li>Geen USP's (hottub/sauna) = lagere nachtprijzen en bezetting - moeilijk concurreren</li><li>Huurgrond = geen grondwaarde stijging - beperkt scale-up exit potentieel</li></li>
+                

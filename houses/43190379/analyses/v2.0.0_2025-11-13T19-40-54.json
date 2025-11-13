@@ -1,0 +1,95 @@
+{
+  "house_id": "43190379",
+  "analyzed_at": "2025-11-13T19:40:54.811357+00:00",
+  "rules_version": "v2.0.0",
+  "overall_score": 6.52,
+  "category_scores": {
+    "location": {
+      "score": 7.5,
+      "reasoning": "Waterpark Yn'e Lijte ligt strategisch in Grou, Noord-Friesland. **Toeristische aantrekkelijkheid:** Watersportdorp Grou (10 min met pont), bekende Friese meren (Pikmeer direct grenzend), Leeuwarden 20km (Culturele Hoofdstad 2018), Sneek 25km (watersport centrum). Bosrijke, waterrijke omgeving - typische A-locatie voor natuur & watertoerisme. **Bereikbaarheid:** Snelweg A7 binnen 15km, station Leeuwarden 20 min rijden. Aantrekkelijk voor Nederlandse \u00e9n Duitse toeristen (grens 100km). **Seizoen:** Frysl\u00e2n is voornamelijk zomer/voorjaarsbestemming, maar schaatsen/natuurtoerisme trekt ook winter. **Markt:** Grou/Pikmeer area populair op Airbnb - concurrenten vragen \u20ac80-150/nacht, goede reviews. Park zelf heeft diverse accommodaties, maar ge\u00efsoleerde ligging biedt privacy-USP. **Bezwaar:** Geen strand (zee 50km+), beperkte winter-attracties kan bezetting drukken.",
+      "red_flags": [
+        "Seizoensafhankelijkheid - Frysl\u00e2n trekt vooral mei-september, winterbezetting onzeker"
+      ],
+      "recommendations": [
+        "Check AirDNA data voor Grou specifiek - seizoenspatroon cruciaal",
+        "Onderzoek winteractiviteiten marketing (schaatsen, rust-retreats)"
+      ],
+      "market_data": "Geen AirRoi data beschikbaar, maar lokale Airbnb's tonen \u20ac90-130/nacht zomer, 4.5+ ratings"
+    },
+    "property": {
+      "score": 6.0,
+      "reasoning": "**Basisspecificaties:** 2 slaapkamers, 54m\u00b2, max 4-6 gasten. Bouwjaar 2026 (NIEUWBOUW - groot pluspunt!). 1 badkamer + apart toilet, goed voor gezinnen. **USP's - TELEURSTELLEND:** Geen hottub, sauna, jacuzzi vermeld. Omschrijving noemt 'zeer luxe', maar basis afwerking is **casco met minimale afwerking** (\u20ac82.500 = enkel casco + prefab wanden). Foto's zijn impressies - einduitvoering onzeker. **Positief:** Nieuwbouw = 10 jaar geen onderhoud, moderne isolatie (HR++ glas, 8cm dak/vloer), combi-airco optioneel. Tuin rondom (375m\u00b2) biedt privacy. **Doelgroep:** Gezinnen (2 slaapkamers beperkt), stellen (goed). **GROTE MINPUNT:** Huisdieren **niet vermeld** = gemiste kans voor 30% grotere doelgroep. **Visueel:** Impressiefoto's zien er modern/strak uit, maar eindproduct kan afwijken. **Renovatie:** Casco betekent HOGE extra kosten voor verhuurklaar maken (keuken, meubels, TV, beddengoed, servies = \u20ac15-25k minstens).",
+      "red_flags": [
+        "Casco oplevering - verhuurklaar maken kost \u20ac15-25k extra",
+        "Geen hottub/sauna vermeld - cruciaal voor premium prijzen",
+        "Foto's zijn impressies, geen garantie einduitvoering"
+      ],
+      "recommendations": [
+        "Budget \u20ac20k voor complete inrichting verhuurklaar",
+        "Onderhandel over inclusie hottub/sauna (\u20ac6-10k extra investering, +\u20ac30/nacht opbrengst)",
+        "Eis heldere afwerkingsspecificaties op papier van ontwikkelaar"
+      ],
+      "usp_highlights": [
+        "NIEUWBOUW 2026 - geen onderhoud 10 jaar",
+        "Grote tuin 375m\u00b2 - privacy",
+        "Moderne isolatie & airco optie"
+      ]
+    },
+    "financial": {
+      "score": 5.5,
+      "reasoning": "**Aankoopkosten:** Vraagprijs \u20ac82.500 (casco!). Overdrachtsbelasting recreatie 2% = \u20ac1.650. Notaris \u20ac2.000. **Cruciale extra kosten:** Verhuurklaar maken \u20ac20.000 (keuken, meubels, beddengoed, TV, decoratie), tuinaanleg \u20ac5.000. **TOTAAL: \u20ac111.150**. **Jaaromzet (conservatief):** Hoogseizoen 75 dagen x 75% bezet x \u20ac120/nacht = \u20ac6.750. Middenseizoen 140 dagen x 50% x \u20ac90 = \u20ac6.300. Laagseizoen 90 dagen x 25% x \u20ac70 = \u20ac1.575. Wintertijd 60 dagen x 15% x \u20ac80 = \u20ac720. **Totaal: \u20ac15.345/jaar** (laag door geen hottub/USP's). **Jaarkosten:** Grondhuur \u20ac6.000, nuts \u20ac1.800, platform fees (10%) \u20ac1.535, schoonmaak 50 beurten x \u20ac50 = \u20ac2.500, onderhoud 5% = \u20ac770, accountant \u20ac1.000, verzekering \u20ac400, gemeentelijk \u20ac200. **Totaal: \u20ac14.205**. **Rendement:** Netto \u20ac1.140/jaar. Cash-on-Cash **1%** - EXTREEM LAAG. Break-even 97 jaar (!) - **NIET HAALBAAR**. **Met hottub scenario:** +\u20ac30/nacht = +\u20ac6.000 omzet \u2192 \u20ac7.140 netto \u2192 6.4% return. Nog steeds matig. **Financiering:** 70% hypotheek = \u20ac77.805 x 5% = \u20ac3.890/jaar rente \u2192 NEGATIEVE cashflow \u20ac2.750/jaar. **DEALBREAKER: Dit object verdient zichzelf niet terug zonder flinke prijsstijging**.",
+      "red_flags": [
+        "1% Cash-on-Cash return - ver onder 10% minimum",
+        "Break-even 97 jaar zonder hottub/optimalisatie",
+        "Negatieve cashflow met financiering",
+        "Grondhuur \u20ac6.000/jaar vreet 40% bruto-omzet op"
+      ],
+      "recommendations": [
+        "ONDERHANDEL: Vraag \u20ac70k voor casco of eis inclusie hottub",
+        "Investeer direct \u20ac8k in hottub - verhoogt omzet met 40%",
+        "Alternatief: verhuur via park (maar 40% commissie = slechter)"
+      ],
+      "calculations": {
+        "purchase_price": 82500,
+        "total_investment": 111150,
+        "estimated_annual_revenue": 15345,
+        "estimated_annual_costs": 14205,
+        "net_annual_income": 1140,
+        "cash_on_cash_return": 1.0,
+        "breakeven_years": 97.4
+      }
+    },
+    "legal": {
+      "score": 8.0,
+      "reasoning": "**Verhuurvrijheid - GOED NIEUWS:** Omschrijving expliciet: 'verhuren in volledig eigen beheer, semi-eigen beheer of volledig door het park' - **ZELFVERHUUR TOEGESTAAN**. Geen verplichte parkorganisatie, geen Recron beperkingen genoemd. Vrije platformkeuze. **Seizoen:** Tekst zegt 'hele jaar geopend' - jaar-rond verhuur mogelijk (check parkreglement). **Eigendom:** Huurgrond, geen erfpacht. Huurcontract 10 jaar vast mogelijk - stabiliteit. Canon \u20ac6.000/jaar (hoog maar voorspelbaar, alleen consumentenindex stijging). **Goedkeuringen:** Niet vermeld dat nieuwe eigenaar goedkeuring nodig heeft - lijkt vrije handel. Geen VvE/privilege clausule genoemd. **Permanente bewoning:** NIET toegestaan (normaal voor recreatie, geen probleem). **Fiscaal:** Box 1 onderneming bij actieve verhuur (aftrekposten), of box 3. Toeristenbelasting moet afgedragen. **Risico:** 10 jaar huurcontract - wat erna? Onzekerheid lange termijn. Geen grond-eigendom = geen waardestijging grond. **Positief:** Geen dealbreakers op verhuurvrijheid - kern strategie blijft intact.",
+      "red_flags": [
+        "Huurgrond (geen eigendom) - geen grondwaarde appreciatie",
+        "Onzekerheid na 10 jaar huurcontract"
+      ],
+      "recommendations": [
+        "Vraag volledige parkreglement + huurcontract bij ontwikkelaar",
+        "Laat notaris clausule na 10 jaar checken - opzeg/verlenging",
+        "Check fiscaal adviseur: Box 1 vs Box 3 optimalisatie"
+      ],
+      "rental_freedom": "Volledige zelfverhuur toegestaan - eigen beheer, platforms vrij te kiezen. Geen verplichte parkcommissie."
+    }
+  },
+  "overall_assessment": "Dit nieuwbouw recreatiewoning project op Waterpark Yn'e Lijte biedt **verhuurvrijheid** (groot pluspunt), maar heeft **kritieke financi\u00eble zwakheden**. De casco prijs \u20ac82.500 misleidt - verhuurklaar maken kost \u20ac110k+ totaal. De grondhuur \u20ac6.000/jaar (40% van bruto-omzet) en gebrek aan USP's (geen hottub/sauna) resulteren in **slechts 1% rendement** - ver onder de 10% target. Break-even duurt bijna een eeuw zonder optimalisatie. Met hottub-investering (\u20ac8k extra) stijgt return naar 6.4% - nog steeds matig. De locatie scoort redelijk (Frysl\u00e2n watertoerisme), maar seizoensafhankelijkheid en huurgrond-constructie beperken scale-up potentieel. Voor zelfverhuur strategie is dit **niet aantrekkelijk genoeg** - te weinig cashflow voor opschaling naar duurdere objecten. Alleen interessant bij forse prijsdaling (\u20ac70k all-in) of inclusie premium voorzieningen.",
+  "top_strengths": [
+    "NIEUWBOUW 2026 - 10 jaar onderhoudsvrij, moderne isolatie, energiezuinig",
+    "Volledige verhuurvrijheid - zelfbeheer toegestaan, geen parkcommissie verplicht",
+    "Goede locatie Frysl\u00e2n watertoerisme - Grou/Pikmeer populair bij natuur/water liefhebbers"
+  ],
+  "top_concerns": [
+    "EXTREEM LAAG RENDEMENT 1% - break-even 97 jaar, totaal investering \u20ac111k vs \u20ac15k jaaromzet",
+    "Grondhuur \u20ac6.000/jaar vreet 40% bruto-omzet op - structureel hoge fixed cost",
+    "Geen USP's (hottub/sauna) = lagere nachtprijzen en bezetting - moeilijk concurreren",
+    "Huurgrond = geen grondwaarde stijging - beperkt scale-up exit potentieel"
+  ],
+  "investment_recommendation": "AFWIJZEN - Financieel rendement ver onder minimum (1% vs 10+ target). Grondhuur structuur en gebrek aan USP's maken dit geen strategische investering voor scale-up model. Cashflow te zwak voor opbouw vermogen.",
+  "metadata": {
+    "processing_time_seconds": 82.14,
+    "llm_model": "claude",
+    "apify_dataset_id": "Yb4fTMJ9wQsuyZf3L"
+  }
+}
