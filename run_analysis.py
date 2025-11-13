@@ -388,6 +388,7 @@ def analyze(
     mock: bool = typer.Option(False, "--mock", "-m", help="Use mock LLM (no API costs)"),
     skip_enrichment: bool = typer.Option(False, "--skip-enrichment", help="Skip AirROI enrichment"),
     force_enrichment: bool = typer.Option(False, "--force-enrichment", help="Force re-fetch enrichment data"),
+    only_enrichment: bool = typer.Option(False, "--only-enrichment", help="Only fetch enrichment data, skip analysis"),
     no_commit: bool = typer.Option(False, "--no-commit", help="Skip git commit and push"),
     no_reports: bool = typer.Option(False, "--no-reports", help="Skip report generation"),
 ):
@@ -420,7 +421,7 @@ def analyze(
     console.print()
 
     # Step 2: Fetch enrichment data
-    if skip_enrichment:
+    if skip_enrichment and not only_enrichment:
         console.print("[bold]2️⃣  Skipping enrichment (--skip-enrichment)[/bold]")
         enrichment_data = None
     else:
@@ -428,6 +429,21 @@ def analyze(
         enrichment_data = fetch_airroi_enrichment(house_id, house_data, force=force_enrichment)
 
     console.print()
+
+    # Early exit if only enrichment was requested
+    if only_enrichment:
+        console.print("[bold green]✨ Enrichment data fetched successfully![/bold green]")
+        console.print(f"[dim]Saved to: houses/{house_id}/enrichment/airroi_enrichment.json[/dim]")
+        console.print()
+
+        if enrichment_data and enrichment_data.get('enriched'):
+            console.print("[cyan]📊 Enrichment Summary:[/cyan]")
+            console.print(f"  • API calls: {enrichment_data.get('api_calls', 0)}")
+            console.print(f"  • Cost: ${enrichment_data.get('estimated_cost', 0):.2f}")
+            console.print(f"  • Comparables found: {len(enrichment_data.get('comparables', []))}")
+            console.print(f"  • Revenue estimate: {'✓' if enrichment_data.get('revenue_estimate') else '✗'}")
+        console.print()
+        return
 
     # Step 3: Load market metrics
     console.print("[bold]3️⃣  Loading market metrics...[/bold]")
